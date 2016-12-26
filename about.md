@@ -5,7 +5,7 @@ title: About
 
 ## ...the game
 
-*Konkr* is a turn-based strategy game that runs directly in web browser.
+*Konkr* is a turn-based strategy game that runs directly in web browser (it's also yet another  shameless bastardization of english language in pursuit of a searchable product name, for which I deeply apologize).
 
 The game is completely free to play and will stay so for the foreseeable future.
 
@@ -24,9 +24,9 @@ If you'd like to chat about the game or whatever, lob me a mail!
 The game is built on HTML5, using a bunch of awesome free technologies:
 
 * Phaser, a nifty game making framework that can operate on HTML5 Canvas or WebGL
-* babel for being able to use the latest and greatest in javascript syntax (ES2016)
+* babel for unlocking the latest and greatest in javascript syntax (ES2016)
 * webpack for putting it all together
-* jekyll for building this cozy little website around it 
+* jekyll for easily whipping up this quaint little website around it 
 * netlify for painlessly publishing the website here for you to see
 
 Feel free to contact me on mike@konkr.io if you'd like to learn more!
