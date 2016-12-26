@@ -2,9 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 64px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -16,6 +14,12 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    text-indent: -9999px;
+    position: absolute;
+    width: 177px;
+    height: 30px;
+    top: 17px;
+    background-image: url(/img/logo.png);
 
     &,
     &:visited {
@@ -156,6 +160,13 @@
     }
 }
 
+/**
+ * Game
+ */
+div#konkr_game_container {
+    width:100%;
+    height: 400px;
+}
 
 
 /**
