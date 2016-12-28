@@ -1,5 +1,6 @@
 ---
 layout: showcase
+comments: true
 includejs:
 - game/dist/bundle.js
 - game/dist/vendor.bundle.js
