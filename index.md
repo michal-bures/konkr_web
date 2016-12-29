@@ -8,16 +8,16 @@ includejs:
 
 ## What's this?
 
-*Konkr* is a free strategy game that runs in your web browser. It's far from being finished, but I think it's already kind of fun. Give it a try!
+*Konkr* is a free strategy game that runs in your web browser. It's far from finished, but I think it's already kind of fun. Give it a try!
 
 ## How to play?
 
-The island is divided among four factions, each represented by different colour of the hexagonal tiles. Adjacent tiles of the same colour form a *Kingdom*. Each kingdom has it's own, independent economy. It gains *gold* each turn based on it's size and pays upkeep for any military units it owns. As tiles change ownership, new kingdoms rise and fall, merge together or split apart.
+The island is divided among multiple factions, each represented by different colour of the hexagonal tiles. Adjacent tiles of the same colour form a *Kingdom*. Each kingdom has it's own, independent economy. It gains *gold* each turn based on it's size and pays upkeep for any military units it owns. As tiles change ownership, new kingdoms rise and fall, merge together or split apart.
 
-You are in control of all kingdoms belonging to the dark green faction and your goal is to bring  lasting peace to the land. Of course, you achieve this noble goal by mercilessly crushing all oposition under the heels of your armies! Here are some basic tips to get you started:
+You are in control of all kingdoms belonging to the dark green faction and your goal is to bring a lasting peace to the land by crushing all oposition under the heels of your armies. Here are some basic tips to get you started:
 
-* Use the gold of your kingdoms to buy *soldiers* and *towers*.
-* Use your soldiers to criple and eventually conquer all kingdoms of oposing factions.
+* Use the accumulated gold in your kingdoms to buy *soldiers* and *towers*.
+* Use your soldiers to criple and eventually conquer all oposing kingdoms.
 * Use soldiers and towers to protect neighbouring tiles from enemy conquest.
 * Your basic militia can only attack undefended territory. Buy more advanced units or upgrade your existing ones by merging them together. Then you'll be able to overcome stronger defenses.   
 * Beware that unlike towers, soldiers have an anual upkeep cost, which reduces the kingdom gold income. More advanced soldiers cost much, *much* more upkeep than your basic militia!
@@ -36,13 +36,6 @@ Right now, <i>Konkr</i> is little more than a bare skeleton of a game. My first 
 * adding more character to the game (proceduraly generated names for the kingdoms, assign name and basic lore to each faction)
 * a basic multiplayer "metagame" (scoreboards, daily/weekly challenges)
 
-After that I'll be experimenting with the gameplay formula and expanding it in whichever ways turn out to be most fun. Just for an example, here are some possible directions I've been considering:
+After that I'll be experimenting with the gameplay formula and expanding it in whichever ways turn out to be most fun (possible directions include diplomacy, terrain, natural events, more complex warfare and even rpg elements). 
 
-* add diverse gameplay affecting "terrain" features (mountain ranges, volcanoes, forests, ...) 
-* slightly different playstyle for each faction (unique units/bonuses etc.)
-* basic diplomacy and relations (trust, grudges) between kingdoms
-* map editor, replay sharing
-* hand crafted challenge missions in the form of story-driven singleplayer campaign
-* actual real-time multiplayer
-
-*Again, feel free to contact me on <a href="mailto:mike@konkr.io">mike@konkr.io</a> if you have any feedback or wish to be updated on future developments!*
+*Feel free to contact me on <a href="mailto:mike@konkr.io">mike@konkr.io</a> if you have any feedback or wish to be updated on future developments! You can also just leave a comment right below.*

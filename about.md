@@ -1,32 +1,28 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
 ## ...the game
 
-*Konkr* is a turn-based strategy game that runs directly in web browser (it's also yet another  shameless bastardization of english language in pursuit of a searchable product name, for which I deeply apologize).
+*Konkr* is a turn-based strategy game that runs directly in web browser.
 
-The game is completely free to play and will stay so for the foreseeable future.
+The game is completely free to play and will remain so for the foreseeable future.
 
-The core game mechanics are heavily inspired by an aged but still briliant game called Slay. The plan is to immensely expand on its basic concept.
+The game is built on HTML5, taking advantage of:
+
+* [Phaser](//phaser.io), a javascript game framework that can operate over HTML5 Canvas or WebGL as needed
+* [Babel](//babeljs.io) for unlocking the latest and greatest in javascript syntax
+* [Webpack](//webpack.github.io/) webpack for putting everything together
+* [Jekyll](//jekyllrb.com/) for maintaining this quaint little website around it 
+* [Netlify](//www.netlify.com/) for publishing the website here for the world to see
+
+Feel free to contact me on <a href="mailto:{{ site.email }}">{{ site.email }}</a> if you'd like to learn more!
 
 ## ...the developer
 
-My name is Michal Bureš. Michal is the czech equivalent of Michael/Mike, so feel free to call me any of that. 
+My name is Michal Bureš (Michal is the czech equivalent of Michael/Mike, so feel free to use any of these). *Konkr* is a passion project that currently occupies a rather unhealthy portion of my spare time.
 
-*Konkr* is a little passion project of mine and currently occupies most of my spare time. When I'm not buried in code, I also enjoy playing video games of all kinds, and occasionally even some activities not constrained to the digital world (like backpacking, downhill skiing, soccer, squash).
+When I'm not buried in code, I also enjoy playing video games of all kinds, and occasionally even some activities not constrained to the digital world (such as backpacking, downhill skiing, soccer and squash).
 
-If you'd like to chat about the game or whatever, lob me a mail!
-
-## ...the technology used
-
-The game is built on HTML5, using a bunch of awesome free technologies:
-
-* Phaser, a nifty game making framework that can operate on HTML5 Canvas or WebGL
-* babel for unlocking the latest and greatest in javascript syntax (ES2016)
-* webpack for putting it all together
-* jekyll for easily whipping up this quaint little website around it 
-* netlify for painlessly publishing the website here for you to see
-
-Feel free to contact me on mike@konkr.io if you'd like to learn more!
