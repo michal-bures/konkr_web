@@ -12,7 +12,7 @@ includejs:
 
 **Controls** are really simple:
 
-* Click on a pawn to pick it up. Click again to drop it. You can drop pawns on your territory, on enemy territory and even on other pawns. Try it and see what happens!
+* Click on a soldier to pick it up. Click again to drop it. You can drop soldier on your territory, on enemy territory and even on other soldiers. Try it and see what happens!
 * Click the green button to end your turn.
 * You can also right-click anywhere to undo your latest action.
 
@@ -27,7 +27,7 @@ You are in control of the dark green faction with all its kingdoms. Your goal is
 * Use soldiers and towers to protect neighbouring tiles from enemy conquest.
 * Your basic militia can only attack undefended territory. Buy more advanced units or upgrade your existing ones by merging them together. Then you'll be able to overcome stronger defenses.   
 * Beware that unlike towers, soldiers have an anual upkeep cost, which reduces the kingdom gold income. More advanced soldiers cost much, *much* more upkeep than your basic militia!
-* Make sure you always have enough gold to pay the upkeep of your soldiers. When not paid properly, all soldiers in the kingdom will instantly and irreversibly become *bandits* and start looting your kingdom! Conversely, you can try to cripple the economy of oposing kingdoms and hus turn their own armies against them!
+* Make sure you always have enough gold to pay the upkeep of your soldiers. When not paid properly, all soldiers in the kingdom will instantly and irreversibly become *bandits* and start looting your kingdom! Conversely, you can try to cripple the economy of oposing kingdoms and thus turn their own armies against them!
 
 ## Like it? Hate it?
 
