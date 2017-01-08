@@ -10,11 +10,17 @@ includejs:
 
 *Konkr* is a free strategy game that runs in your web browser. It's far from finished, but I think it's already kind of fun. Give it a try!
 
+**Controls** are really simple:
+
+* Click on a pawn to pick it up. Click again to drop it. You can drop pawns on your territory, on enemy territory and even on other pawns. Try it and see what happens!
+* Click the green button to end your turn.
+* You can also right-click anywhere to undo your latest action.
+
 ## How to play?
 
 The island is divided among multiple factions, each represented by different colour of the hexagonal tiles. Adjacent tiles of the same colour form a *Kingdom*. Each kingdom has it's own, independent economy. It gains *gold* each turn based on it's size and pays upkeep for any military units it owns. As tiles change ownership, new kingdoms rise and fall, merge together or split apart.
 
-You are in control of all kingdoms belonging to the dark green faction and your goal is to bring a lasting peace to the land by crushing all oposition under the heels of your armies. Here are some basic tips to get you started:
+You are in control of the dark green faction with all its kingdoms. Your goal is to bring a lasting peace to the land by mercilessly crushing all oposition under the might of your armies. Here are some basic tips to get you started:
 
 * Use the accumulated gold in your kingdoms to buy *soldiers* and *towers*.
 * Use your soldiers to criple and eventually conquer all oposing kingdoms.
@@ -25,7 +31,7 @@ You are in control of all kingdoms belonging to the dark green faction and your 
 
 ## Like it? Hate it?
 
-Please do let me know, any and all feedback is much appreciated! Throw me an e-mail at <a href="mailto:mike@konkr.io">mike@konkr.io</a> or hit me up on [twitter]. Your feedback might affect in what direction the game will evolve next! 
+Please do let me know, any and all feedback is much appreciated! Throw me an e-mail to <a href="mailto:mike@konkr.io">mike@konkr.io</a>. Your feedback might affect in what direction the game will evolve next! 
 
 ## What's next?
 
