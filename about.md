@@ -26,3 +26,5 @@ My name is Michal Bureš (Michal is the czech equivalent of Michael/Mike, so fee
 
 When I'm not buried in code, I also enjoy playing video games of all kinds, and occasionally even some activities not constrained to the digital world (such as backpacking, downhill skiing, soccer and squash).
 
+ * 
+
