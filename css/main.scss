@@ -16,17 +16,25 @@ $spacing-unit:     30px;
 $text-color:       #cccccc;
 $background-color: #333333;
 $brand-color:      #2a7ae2;
+$loader-color:     #7f919e;
 
 $grey-color:       #cccccc;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
+
+// used by spinner
+$white: rgb(255,255,255);
+$off-white: rgba($white, 0.2);
+
+
+// Size of the content area
 $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$showcase-height:   540px;
 
 
 // Using media queries with like this:

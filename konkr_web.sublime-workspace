@@ -216,17 +216,6 @@
 	"buffers":
 	[
 		{
-			"contents": "---\nlayout: page\ntitle: About\npermalink: /about/\n---\n\n## ...the game\n\n*Konkr* is a turn-based strategy game that runs directly in web browser.\n\nThe game is completely free to play and will remain so for the foreseeable future.\n\nThe game is built on HTML5, taking advantage of:\n\n* [Phaser](//phaser.io), a javascript game framework that can operate over HTML5 Canvas or WebGL as needed\n* [Babel](//babeljs.io) for unlocking the latest and greatest in javascript syntax\n* [Webpack](//webpack.github.io/) webpack for putting everything together\n* [Jekyll](//jekyllrb.com/) for maintaining this quaint little website around it \n* [Netlify](//www.netlify.com/) for publishing the website here for the world to see\n\nFeel free to contact me on <a href=\"mailto:{{ site.email }}\">{{ site.email }}</a> if you'd like to learn more!\n\n## ...the developer\n\nMy name is Michal Bureš (Michal is the czech equivalent of Michael/Mike, so feel free to use any of these). *Konkr* is a passion project that currently occupies a rather unhealthy portion of my spare time.\n\nWhen I'm not buried in code, I also enjoy playing video games of all kinds, and occasionally even some activities not constrained to the digital world (such as backpacking, downhill skiing, soccer and squash).\n\n * \n\n",
-			"file": "about.md",
-			"file_size": 1290,
-			"file_write_time": 131274953144546526,
-			"settings":
-			{
-				"buffer_size": 1266,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "konkr_web.sublime-project",
 			"settings":
 			{
@@ -236,28 +225,10 @@
 			}
 		},
 		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 380,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "_layouts/showcase.html",
 			"settings":
 			{
 				"buffer_size": 1392,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_sass/_layout.scss",
-			"settings":
-			{
-				"buffer_size": 4309,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -552,6 +523,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Embair/dev/www/konkr_web/about.md",
+		"/C/Users/Embair/dev/www/konkr_web/_config.yml",
+		"/C/Users/Embair/dev/www/konkr_web/_sass/_layout.scss",
 		"/C/Users/Embair/dev/www/konkr_web/_includes/game.html",
 		"/C/Users/Embair/dev/www/konkr_web/index.md",
 		"/C/Users/Embair/dev/www/konkr_web/browserconfig.xml",
@@ -676,10 +650,7 @@
 		"/C/Users/Embair/dev/www/konkr/index.html",
 		"/C/Users/Embair/dev/www/practice/twitterapp/src/index.js",
 		"/C/Users/Embair/dev/www/practice/trackerApp/trackerapp/server.js",
-		"/C/Users/Embair/dev/www/hexwar/phaser-es6-boilerplate/src/states/GameState.js",
-		"/C/Users/Embair/dev/www/practice/twitterapp/package.json",
-		"/C/Users/Embair/dev/www/practice/twitterapp/src/components/SortableTable.js",
-		"/C/Users/Embair/dev/www/practice/twitterapp/src/components/FilterEditor.js"
+		"/C/Users/Embair/dev/www/hexwar/phaser-es6-boilerplate/src/states/GameState.js"
 	],
 	"find":
 	{
@@ -991,40 +962,11 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "about.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1266,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								709,
-								709
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "konkr_web.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -1049,39 +991,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "_config.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 380,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								380,
-								380
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "_layouts/showcase.html",
 					"semi_transient": false,
 					"settings":
@@ -1093,8 +1007,8 @@
 						"selection":
 						[
 							[
-								122,
-								122
+								95,
+								95
 							]
 						],
 						"settings":
@@ -1108,41 +1022,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "_sass/_layout.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4309,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3194,
-								3194
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1848.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 2,
 					"file": "_layouts/post.html",
 					"semi_transient": false,
 					"settings":
@@ -1170,7 +1054,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "_layouts/page.html",
 					"semi_transient": false,
 					"settings":
@@ -1198,7 +1082,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 4,
 					"file": "_site/css/main.css",
 					"semi_transient": false,
 					"settings":
@@ -1210,8 +1094,8 @@
 						"selection":
 						[
 							[
-								8208,
-								8210
+								8229,
+								8229
 							]
 						],
 						"settings":
@@ -1221,14 +1105,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3043.0,
+						"translation.y": 5311.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 5,
 					"file": "_site/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1259,7 +1143,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 6,
 					"file": "css/main.scss",
 					"semi_transient": false,
 					"settings":
@@ -1287,7 +1171,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 7,
 					"file": "_sass/_base.scss",
 					"semi_transient": false,
 					"settings":
@@ -1317,7 +1201,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 8,
 					"file": "news.html",
 					"semi_transient": false,
 					"settings":
@@ -1348,7 +1232,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 9,
 					"file": "_includes/footer.html",
 					"semi_transient": false,
 					"settings":
@@ -1375,11 +1259,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 10,
 					"file": "feed.xml",
 					"semi_transient": false,
 					"settings":
@@ -1405,7 +1289,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
@@ -1463,6 +1347,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"sass",
+				"_sass\\_layout.scss"
+			],
+			[
+				"css",
+				"_site\\css\\main.css"
+			],
 			[
 				"game.html",
 				"_includes\\game.html"
@@ -1966,14 +1858,6 @@
 			[
 				"marshal",
 				"src\\ai\\Marshal.spec.js"
-			],
-			[
-				"games",
-				"src\\rules\\GameState.js"
-			],
-			[
-				"hexg",
-				"src\\lib\\hexgrid\\HexGroup.js"
 			]
 		],
 		"width": 0.0
