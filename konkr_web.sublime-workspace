@@ -225,10 +225,10 @@
 			}
 		},
 		{
-			"file": "_layouts/showcase.html",
+			"file": "_includes/game.html",
 			"settings":
 			{
-				"buffer_size": 1392,
+				"buffer_size": 114,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -254,7 +254,7 @@
 			"file": "_site/css/main.css",
 			"settings":
 			{
-				"buffer_size": 8650,
+				"buffer_size": 9189,
 				"line_ending": "Unix"
 			}
 		},
@@ -262,7 +262,7 @@
 			"file": "_site/index.html",
 			"settings":
 			{
-				"buffer_size": 9800,
+				"buffer_size": 9897,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -271,7 +271,8 @@
 			"file": "css/main.scss",
 			"settings":
 			{
-				"buffer_size": 1031,
+				"buffer_size": 1164,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -280,6 +281,14 @@
 			"settings":
 			{
 				"buffer_size": 2747,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_sass/_syntax-highlighting.scss",
+			"settings":
+			{
+				"buffer_size": 3297,
 				"line_ending": "Windows"
 			}
 		},
@@ -317,10 +326,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 219.0,
+		"last_filter": "insall",
 		"selected_items":
 		[
+			[
+				"insall",
+				"Package Control: Install Package"
+			],
 			[
 				"linter all ",
 				"SublimeLinter: Show All Errors"
@@ -494,7 +507,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 528.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -523,9 +536,10 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Embair/dev/www/konkr_web/_layouts/showcase.html",
+		"/C/Users/Embair/dev/www/konkr_web/_sass/_layout.scss",
 		"/C/Users/Embair/dev/www/konkr_web/about.md",
 		"/C/Users/Embair/dev/www/konkr_web/_config.yml",
-		"/C/Users/Embair/dev/www/konkr_web/_sass/_layout.scss",
 		"/C/Users/Embair/dev/www/konkr_web/_includes/game.html",
 		"/C/Users/Embair/dev/www/konkr_web/index.md",
 		"/C/Users/Embair/dev/www/konkr_web/browserconfig.xml",
@@ -649,8 +663,7 @@
 		"/C/Users/Embair/dev/www/konkr/js/lib/HexGrid.js",
 		"/C/Users/Embair/dev/www/konkr/index.html",
 		"/C/Users/Embair/dev/www/practice/twitterapp/src/index.js",
-		"/C/Users/Embair/dev/www/practice/trackerApp/trackerapp/server.js",
-		"/C/Users/Embair/dev/www/hexwar/phaser-es6-boilerplate/src/states/GameState.js"
+		"/C/Users/Embair/dev/www/practice/trackerApp/trackerapp/server.js"
 	],
 	"find":
 	{
@@ -996,27 +1009,25 @@
 				},
 				{
 					"buffer": 1,
-					"file": "_layouts/showcase.html",
+					"file": "_includes/game.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1392,
+						"buffer_size": 114,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								95,
-								95
+								89,
+								89
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1050,7 +1061,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1078,7 +1089,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1087,7 +1098,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8650,
+						"buffer_size": 9189,
 						"regions":
 						{
 						},
@@ -1105,10 +1116,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5311.0,
+						"translation.y": 5690.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1117,7 +1128,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9800,
+						"buffer_size": 9897,
 						"regions":
 						{
 						},
@@ -1139,7 +1150,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1148,15 +1159,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1031,
+						"buffer_size": 1164,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								544,
-								544
+								396,
+								396
 							]
 						],
 						"settings":
@@ -1194,14 +1205,44 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 294.0,
+						"translation.y": 645.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "_sass/_syntax-highlighting.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "news.html",
 					"semi_transient": false,
 					"settings":
@@ -1228,11 +1269,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "_includes/footer.html",
 					"semi_transient": false,
 					"settings":
@@ -1259,11 +1300,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "feed.xml",
 					"semi_transient": false,
 					"settings":
@@ -1289,7 +1330,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
