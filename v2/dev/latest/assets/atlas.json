@@ -4,61 +4,11 @@
 			"image": "atlas.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 959,
-				"h": 184
+				"w": 1491,
+				"h": 128
 			},
 			"scale": 1,
 			"frames": [
-				{
-					"filename": "ui/desk",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 636,
-						"h": 44
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 636,
-						"h": 44
-					},
-					"frame": {
-						"x": 1,
-						"y": 1,
-						"w": 636,
-						"h": 44
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/desk-tablecloth",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 609,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 609,
-						"h": 46
-					},
-					"frame": {
-						"x": 1,
-						"y": 47,
-						"w": 609,
-						"h": 46
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0
-					}
-				},
 				{
 					"filename": "ui/main-label",
 					"rotated": false,
@@ -74,7 +24,7 @@
 						"h": 71
 					},
 					"frame": {
-						"x": 639,
+						"x": 1,
 						"y": 1,
 						"w": 319,
 						"h": 71
@@ -82,6 +32,31 @@
 					"anchor": {
 						"x": 0.5,
 						"y": 0
+					}
+				},
+				{
+					"filename": "hex",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 50
+					},
+					"frame": {
+						"x": 1,
+						"y": 74,
+						"w": 48,
+						"h": 50
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
 					}
 				},
 				{
@@ -99,8 +74,8 @@
 						"h": 48
 					},
 					"frame": {
-						"x": 1,
-						"y": 95,
+						"x": 51,
+						"y": 74,
 						"w": 142,
 						"h": 48
 					},
@@ -124,133 +99,8 @@
 						"h": 48
 					},
 					"frame": {
-						"x": 145,
-						"y": 95,
-						"w": 142,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/btn-turn-highlight",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 142,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 142,
-						"h": 48
-					},
-					"frame": {
-						"x": 289,
-						"y": 95,
-						"w": 142,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/btn-turn",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 142,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 142,
-						"h": 48
-					},
-					"frame": {
-						"x": 433,
-						"y": 95,
-						"w": 142,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/btn-undo-disabled",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 142,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 142,
-						"h": 48
-					},
-					"frame": {
-						"x": 612,
+						"x": 195,
 						"y": 74,
-						"w": 142,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/btn-undo-down",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 142,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 142,
-						"h": 48
-					},
-					"frame": {
-						"x": 756,
-						"y": 74,
-						"w": 142,
-						"h": 48
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/btn-undo",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 142,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 142,
-						"h": 48
-					},
-					"frame": {
-						"x": 577,
-						"y": 124,
 						"w": 142,
 						"h": 48
 					},
@@ -274,239 +124,14 @@
 						"h": 59
 					},
 					"frame": {
-						"x": 721,
-						"y": 124,
+						"x": 322,
+						"y": 1,
 						"w": 48,
 						"h": 59
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.6
-					}
-				},
-				{
-					"filename": "pawns/militia",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 32,
-						"h": 38
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 32,
-						"h": 38
-					},
-					"frame": {
-						"x": 1,
-						"y": 145,
-						"w": 32,
-						"h": 38
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 1
-					}
-				},
-				{
-					"filename": "hex",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 50
-					},
-					"frame": {
-						"x": 771,
-						"y": 124,
-						"w": 48,
-						"h": 50
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "pawns/bandit",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 28,
-						"h": 38
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 28,
-						"h": 38
-					},
-					"frame": {
-						"x": 35,
-						"y": 145,
-						"w": 28,
-						"h": 38
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 1
-					}
-				},
-				{
-					"filename": "hex-move-indicator-hover",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 44,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 44,
-						"h": 46
-					},
-					"frame": {
-						"x": 900,
-						"y": 74,
-						"w": 44,
-						"h": 46
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.478261
-					}
-				},
-				{
-					"filename": "pawns/pikeman",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 40,
-						"h": 44
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 40,
-						"h": 44
-					},
-					"frame": {
-						"x": 821,
-						"y": 124,
-						"w": 40,
-						"h": 44
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 1
-					}
-				},
-				{
-					"filename": "hex-underwater",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 33
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 33
-					},
-					"frame": {
-						"x": 65,
-						"y": 145,
-						"w": 48,
-						"h": 33
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "hex-collar",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 30
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 30
-					},
-					"frame": {
-						"x": 115,
-						"y": 145,
-						"w": 48,
-						"h": 30
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "pawns/hero",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 34,
-						"h": 44
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 34,
-						"h": 44
-					},
-					"frame": {
-						"x": 863,
-						"y": 124,
-						"w": 34,
-						"h": 44
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 1
-					}
-				},
-				{
-					"filename": "pawns/stonewall",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 43,
-						"h": 34
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 43,
-						"h": 34
-					},
-					"frame": {
-						"x": 165,
-						"y": 145,
-						"w": 43,
-						"h": 34
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 1
 					}
 				},
 				{
@@ -524,64 +149,14 @@
 						"h": 9
 					},
 					"frame": {
-						"x": 210,
-						"y": 145,
+						"x": 322,
+						"y": 62,
 						"w": 60,
 						"h": 9
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.5
-					}
-				},
-				{
-					"filename": "pawns/palisade",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 40,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 40,
-						"h": 20
-					},
-					"frame": {
-						"x": 210,
-						"y": 156,
-						"w": 40,
-						"h": 20
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 1
-					}
-				},
-				{
-					"filename": "borders/plain-h",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 25,
-						"h": 13
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 25,
-						"h": 13
-					},
-					"frame": {
-						"x": 821,
-						"y": 170,
-						"w": 25,
-						"h": 13
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
@@ -599,8 +174,8 @@
 						"h": 55
 					},
 					"frame": {
-						"x": 946,
-						"y": 74,
+						"x": 372,
+						"y": 1,
 						"w": 10,
 						"h": 55
 					},
@@ -610,24 +185,24 @@
 					}
 				},
 				{
-					"filename": "hex-inner-border-h",
+					"filename": "ui/btn-turn-highlight",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 28,
-						"h": 16
+						"w": 142,
+						"h": 48
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 28,
-						"h": 16
+						"w": 142,
+						"h": 48
 					},
 					"frame": {
-						"x": 577,
-						"y": 95,
-						"w": 28,
-						"h": 16
+						"x": 339,
+						"y": 73,
+						"w": 142,
+						"h": 48
 					},
 					"anchor": {
 						"x": 0,
@@ -635,178 +210,53 @@
 					}
 				},
 				{
-					"filename": "pawn-shadow",
+					"filename": "ui/btn-turn",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 36,
-						"h": 8
+						"w": 142,
+						"h": 48
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 36,
-						"h": 8
+						"w": 142,
+						"h": 48
 					},
 					"frame": {
-						"x": 272,
-						"y": 145,
-						"w": 36,
-						"h": 8
+						"x": 384,
+						"y": 1,
+						"w": 142,
+						"h": 48
 					},
 					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 0
 					}
 				},
 				{
-					"filename": "pawns/knight",
+					"filename": "pawns/palisade",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 32,
-						"h": 44
+						"w": 40,
+						"h": 20
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 32,
-						"h": 44
+						"w": 40,
+						"h": 20
 					},
 					"frame": {
-						"x": 899,
-						"y": 124,
-						"w": 32,
-						"h": 44
+						"x": 384,
+						"y": 51,
+						"w": 40,
+						"h": 20
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 1
-					}
-				},
-				{
-					"filename": "debug-arrow",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 19,
-						"h": 5
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 19,
-						"h": 5
-					},
-					"frame": {
-						"x": 210,
-						"y": 178,
-						"w": 19,
-						"h": 5
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "ui/arrow-icon",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 12,
-						"h": 13
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 12,
-						"h": 13
-					},
-					"frame": {
-						"x": 848,
-						"y": 170,
-						"w": 12,
-						"h": 13
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "borders/wall-1-gate-h",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 21,
-						"h": 17
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 21,
-						"h": 17
-					},
-					"frame": {
-						"x": 612,
-						"y": 47,
-						"w": 21,
-						"h": 17
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "hex-move-indicator",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 30,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 30,
-						"h": 32
-					},
-					"frame": {
-						"x": 310,
-						"y": 145,
-						"w": 30,
-						"h": 32
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.46875
-					}
-				},
-				{
-					"filename": "borders/wall-1-solid-h",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 21,
-						"h": 17
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 21,
-						"h": 17
-					},
-					"frame": {
-						"x": 342,
-						"y": 145,
-						"w": 21,
-						"h": 17
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
@@ -824,8 +274,8 @@
 						"h": 19
 					},
 					"frame": {
-						"x": 342,
-						"y": 164,
+						"x": 426,
+						"y": 51,
 						"w": 18,
 						"h": 19
 					},
@@ -849,14 +299,89 @@
 						"h": 18
 					},
 					"frame": {
-						"x": 252,
-						"y": 156,
+						"x": 446,
+						"y": 51,
 						"w": 18,
 						"h": 18
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.5
+					}
+				},
+				{
+					"filename": "borders/wall-1-gate-h",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 17
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 17
+					},
+					"frame": {
+						"x": 466,
+						"y": 51,
+						"w": 21,
+						"h": 17
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/btn-undo-disabled",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 48
+					},
+					"frame": {
+						"x": 483,
+						"y": 70,
+						"w": 142,
+						"h": 48
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "borders/wall-1-solid-h",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 17
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 17
+					},
+					"frame": {
+						"x": 489,
+						"y": 51,
+						"w": 21,
+						"h": 17
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
 					}
 				},
 				{
@@ -874,8 +399,8 @@
 						"h": 17
 					},
 					"frame": {
-						"x": 272,
-						"y": 155,
+						"x": 512,
+						"y": 51,
 						"w": 16,
 						"h": 17
 					},
@@ -885,24 +410,24 @@
 					}
 				},
 				{
-					"filename": "hex-inner-border-v",
+					"filename": "ui/btn-undo-down",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 4,
-						"h": 28
+						"w": 142,
+						"h": 48
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 4,
-						"h": 28
+						"w": 142,
+						"h": 48
 					},
 					"frame": {
-						"x": 933,
-						"y": 122,
-						"w": 4,
-						"h": 28
+						"x": 528,
+						"y": 1,
+						"w": 142,
+						"h": 48
 					},
 					"anchor": {
 						"x": 0,
@@ -924,8 +449,8 @@
 						"h": 7
 					},
 					"frame": {
-						"x": 771,
-						"y": 176,
+						"x": 483,
+						"y": 120,
 						"w": 10,
 						"h": 7
 					},
@@ -935,28 +460,28 @@
 					}
 				},
 				{
-					"filename": "hex-markers/circle",
+					"filename": "hex-inner-border-h",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 14,
-						"h": 14
+						"w": 28,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 14,
-						"h": 14
+						"w": 28,
+						"h": 16
 					},
 					"frame": {
-						"x": 365,
-						"y": 145,
-						"w": 14,
-						"h": 14
+						"x": 530,
+						"y": 51,
+						"w": 28,
+						"h": 16
 					},
 					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 0
 					}
 				},
 				{
@@ -974,64 +499,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 290,
-						"y": 155,
+						"x": 560,
+						"y": 51,
 						"w": 12,
 						"h": 16
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.5
-					}
-				},
-				{
-					"filename": "borders/wall-1-gate-v",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 4,
-						"h": 23
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 4,
-						"h": 23
-					},
-					"frame": {
-						"x": 304,
-						"y": 155,
-						"w": 4,
-						"h": 23
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "borders/wall-1-solid-v",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 4,
-						"h": 23
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 4,
-						"h": 23
-					},
-					"frame": {
-						"x": 939,
-						"y": 122,
-						"w": 4,
-						"h": 23
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
@@ -1049,8 +524,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 381,
-						"y": 145,
+						"x": 574,
+						"y": 51,
 						"w": 12,
 						"h": 16
 					},
@@ -1074,8 +549,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 395,
-						"y": 145,
+						"x": 588,
+						"y": 51,
 						"w": 12,
 						"h": 16
 					},
@@ -1099,10 +574,210 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 409,
-						"y": 145,
+						"x": 602,
+						"y": 51,
 						"w": 12,
 						"h": 16
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "borders/wall-2-tower",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 15
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 15
+					},
+					"frame": {
+						"x": 616,
+						"y": 51,
+						"w": 8,
+						"h": 15
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.8
+					}
+				},
+				{
+					"filename": "debug-arrow",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 5
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 5
+					},
+					"frame": {
+						"x": 495,
+						"y": 120,
+						"w": 19,
+						"h": 5
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "hex-markers/circle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 14
+					},
+					"frame": {
+						"x": 626,
+						"y": 51,
+						"w": 14,
+						"h": 14
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "ui/btn-undo",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 48
+					},
+					"frame": {
+						"x": 627,
+						"y": 67,
+						"w": 142,
+						"h": 48
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "borders/plain-h",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 13
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 13
+					},
+					"frame": {
+						"x": 642,
+						"y": 51,
+						"w": 25,
+						"h": 13
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/arrow-icon",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 13
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 13
+					},
+					"frame": {
+						"x": 669,
+						"y": 51,
+						"w": 12,
+						"h": 13
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "ui/desk-tablecloth",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 609,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 609,
+						"h": 46
+					},
+					"frame": {
+						"x": 672,
+						"y": 1,
+						"w": 609,
+						"h": 46
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0
+					}
+				},
+				{
+					"filename": "pawn-shadow",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 36,
+						"h": 8
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 36,
+						"h": 8
+					},
+					"frame": {
+						"x": 627,
+						"y": 117,
+						"w": 36,
+						"h": 8
 					},
 					"anchor": {
 						"x": 0.5,
@@ -1124,8 +799,8 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 862,
-						"y": 170,
+						"x": 683,
+						"y": 49,
 						"w": 12,
 						"h": 12
 					},
@@ -1149,85 +824,10 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 423,
-						"y": 145,
+						"x": 697,
+						"y": 49,
 						"w": 12,
 						"h": 12
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "borders/plain-v",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 1,
-						"h": 25
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 1,
-						"h": 25
-					},
-					"frame": {
-						"x": 635,
-						"y": 47,
-						"w": 1,
-						"h": 25
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "borders/wall-2-tower",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 8,
-						"h": 15
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 8,
-						"h": 15
-					},
-					"frame": {
-						"x": 945,
-						"y": 131,
-						"w": 8,
-						"h": 15
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.8
-					}
-				},
-				{
-					"filename": "borders/wall-2-solid-v",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 4,
-						"h": 23
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 4,
-						"h": 23
-					},
-					"frame": {
-						"x": 933,
-						"y": 152,
-						"w": 4,
-						"h": 23
 					},
 					"anchor": {
 						"x": 0.5,
@@ -1249,14 +849,464 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 437,
-						"y": 145,
+						"x": 711,
+						"y": 49,
 						"w": 6,
 						"h": 12
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.833333
+					}
+				},
+				{
+					"filename": "hex-move-indicator-hover",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 44,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 44,
+						"h": 46
+					},
+					"frame": {
+						"x": 771,
+						"y": 49,
+						"w": 44,
+						"h": 46
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.478261
+					}
+				},
+				{
+					"filename": "hex-collar",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 30
+					},
+					"frame": {
+						"x": 771,
+						"y": 97,
+						"w": 48,
+						"h": 30
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "ui/desk",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 636,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 636,
+						"h": 44
+					},
+					"frame": {
+						"x": 817,
+						"y": 49,
+						"w": 636,
+						"h": 44
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0
+					}
+				},
+				{
+					"filename": "hex-move-indicator",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 30,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 30,
+						"h": 32
+					},
+					"frame": {
+						"x": 821,
+						"y": 95,
+						"w": 30,
+						"h": 32
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.46875
+					}
+				},
+				{
+					"filename": "pawns/hero",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 44
+					},
+					"frame": {
+						"x": 1455,
+						"y": 1,
+						"w": 34,
+						"h": 44
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 1
+					}
+				},
+				{
+					"filename": "pawns/pikeman",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 40,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 44
+					},
+					"frame": {
+						"x": 1283,
+						"y": 1,
+						"w": 40,
+						"h": 44
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 1
+					}
+				},
+				{
+					"filename": "pawns/knight",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 44
+					},
+					"frame": {
+						"x": 1325,
+						"y": 1,
+						"w": 32,
+						"h": 44
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 1
+					}
+				},
+				{
+					"filename": "pawns/militia",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 38
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 38
+					},
+					"frame": {
+						"x": 1455,
+						"y": 47,
+						"w": 32,
+						"h": 38
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 1
+					}
+				},
+				{
+					"filename": "borders/plain-v",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1,
+						"h": 25
+					},
+					"frame": {
+						"x": 1489,
+						"y": 47,
+						"w": 1,
+						"h": 25
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "pawns/bandit",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 28,
+						"h": 38
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 28,
+						"h": 38
+					},
+					"frame": {
+						"x": 1455,
+						"y": 87,
+						"w": 28,
+						"h": 38
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 1
+					}
+				},
+				{
+					"filename": "hex-inner-border-v",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 28
+					},
+					"frame": {
+						"x": 1485,
+						"y": 87,
+						"w": 4,
+						"h": 28
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/btn-new",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 83,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 83,
+						"h": 26
+					},
+					"frame": {
+						"x": 853,
+						"y": 95,
+						"w": 83,
+						"h": 26
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/btn-restart",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 83,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 83,
+						"h": 26
+					},
+					"frame": {
+						"x": 938,
+						"y": 95,
+						"w": 83,
+						"h": 26
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "borders/wall-1-gate-v",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 23
+					},
+					"frame": {
+						"x": 1023,
+						"y": 95,
+						"w": 4,
+						"h": 23
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "borders/wall-1-solid-v",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 23
+					},
+					"frame": {
+						"x": 1029,
+						"y": 95,
+						"w": 4,
+						"h": 23
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "borders/wall-2-solid-v",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 23
+					},
+					"frame": {
+						"x": 1035,
+						"y": 95,
+						"w": 4,
+						"h": 23
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "pawns/stonewall",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 43,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 43,
+						"h": 34
+					},
+					"frame": {
+						"x": 1359,
+						"y": 1,
+						"w": 43,
+						"h": 34
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 1
+					}
+				},
+				{
+					"filename": "hex-underwater",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 33
+					},
+					"frame": {
+						"x": 1404,
+						"y": 1,
+						"w": 48,
+						"h": 33
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
 					}
 				}
 			]
@@ -1265,6 +1315,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:6756aac36a22411e9fa1fe255194f82a:3470637b7202748348991a627e71ad1b:cbce6b53f0f49e0bf15173c25c41f876$"
+		"smartupdate": "$TexturePacker:SmartUpdate:cf73132185c395bd69f2baee4cbec8dd:a24ee46bcaea4109c9459d5df4de7e96:cbce6b53f0f49e0bf15173c25c41f876$"
 	}
 }
