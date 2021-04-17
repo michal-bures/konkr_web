@@ -410,6 +410,31 @@
 					}
 				},
 				{
+					"filename": "ui/btn-theme",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 83,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 83,
+						"h": 26
+					},
+					"frame": {
+						"x": 86,
+						"y": 95,
+						"w": 83,
+						"h": 26
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
 					"filename": "hex-move-indicator-hover",
 					"rotated": false,
 					"trimmed": false,
@@ -449,7 +474,7 @@
 						"h": 32
 					},
 					"frame": {
-						"x": 86,
+						"x": 171,
 						"y": 95,
 						"w": 30,
 						"h": 32
@@ -515,19 +540,19 @@
 					"trimmed": false,
 					"sourceSize": {
 						"w": 48,
-						"h": 51
+						"h": 50
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 48,
-						"h": 51
+						"h": 50
 					},
 					"frame": {
 						"x": 1264,
 						"y": 51,
 						"w": 48,
-						"h": 51
+						"h": 50
 					},
 					"anchor": {
 						"x": 0.5,
@@ -574,7 +599,7 @@
 						"h": 30
 					},
 					"frame": {
-						"x": 118,
+						"x": 203,
 						"y": 95,
 						"w": 48,
 						"h": 30
@@ -660,56 +685,6 @@
 					}
 				},
 				{
-					"filename": "hex-decals/green-v",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 29,
-						"h": 23
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 29,
-						"h": 23
-					},
-					"frame": {
-						"x": 1264,
-						"y": 104,
-						"w": 29,
-						"h": 23
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "hex-decals/green-middle",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 34,
-						"h": 30
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 34,
-						"h": 30
-					},
-					"frame": {
-						"x": 168,
-						"y": 95,
-						"w": 34,
-						"h": 30
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
 					"filename": "ui/frame-test/mc",
 					"rotated": false,
 					"trimmed": false,
@@ -724,7 +699,7 @@
 						"h": 32
 					},
 					"frame": {
-						"x": 204,
+						"x": 253,
 						"y": 95,
 						"w": 16,
 						"h": 32
@@ -749,7 +724,7 @@
 						"h": 32
 					},
 					"frame": {
-						"x": 222,
+						"x": 271,
 						"y": 95,
 						"w": 16,
 						"h": 32
@@ -774,7 +749,7 @@
 						"h": 32
 					},
 					"frame": {
-						"x": 240,
+						"x": 289,
 						"y": 95,
 						"w": 16,
 						"h": 32
@@ -799,7 +774,7 @@
 						"h": 32
 					},
 					"frame": {
-						"x": 258,
+						"x": 307,
 						"y": 95,
 						"w": 16,
 						"h": 32
@@ -824,7 +799,7 @@
 						"h": 32
 					},
 					"frame": {
-						"x": 276,
+						"x": 325,
 						"y": 95,
 						"w": 16,
 						"h": 32
@@ -849,35 +824,10 @@
 						"h": 32
 					},
 					"frame": {
-						"x": 294,
+						"x": 343,
 						"y": 95,
 						"w": 16,
 						"h": 32
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "borders/inner-v",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 32,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 32,
-						"h": 28
-					},
-					"frame": {
-						"x": 312,
-						"y": 95,
-						"w": 32,
-						"h": 28
 					},
 					"anchor": {
 						"x": 0,
@@ -924,7 +874,7 @@
 						"h": 20
 					},
 					"frame": {
-						"x": 346,
+						"x": 361,
 						"y": 95,
 						"w": 40,
 						"h": 20
@@ -999,7 +949,7 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 388,
+						"x": 403,
 						"y": 95,
 						"w": 28,
 						"h": 16
@@ -1024,114 +974,14 @@
 						"h": 8
 					},
 					"frame": {
-						"x": 1214,
-						"y": 112,
+						"x": 361,
+						"y": 117,
 						"w": 36,
 						"h": 8
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.5
-					}
-				},
-				{
-					"filename": "debug-arrow",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 19,
-						"h": 5
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 19,
-						"h": 5
-					},
-					"frame": {
-						"x": 1214,
-						"y": 122,
-						"w": 19,
-						"h": 5
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "hex-decals/green-h",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 15,
-						"h": 26
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 15,
-						"h": 26
-					},
-					"frame": {
-						"x": 1503,
-						"y": 1,
-						"w": 15,
-						"h": 26
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "coinstack",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 10,
-						"h": 55
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 10,
-						"h": 55
-					},
-					"frame": {
-						"x": 1509,
-						"y": 29,
-						"w": 10,
-						"h": 55
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 1
-					}
-				},
-				{
-					"filename": "borders/inner-h",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 22,
-						"h": 24
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 22,
-						"h": 24
-					},
-					"frame": {
-						"x": 418,
-						"y": 95,
-						"w": 22,
-						"h": 24
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
 					}
 				},
 				{
@@ -1149,7 +999,7 @@
 						"h": 13
 					},
 					"frame": {
-						"x": 442,
+						"x": 433,
 						"y": 95,
 						"w": 25,
 						"h": 13
@@ -1174,7 +1024,7 @@
 						"h": 17
 					},
 					"frame": {
-						"x": 442,
+						"x": 433,
 						"y": 110,
 						"w": 21,
 						"h": 17
@@ -1199,7 +1049,7 @@
 						"h": 17
 					},
 					"frame": {
-						"x": 465,
+						"x": 456,
 						"y": 110,
 						"w": 16,
 						"h": 17
@@ -1224,7 +1074,7 @@
 						"h": 13
 					},
 					"frame": {
-						"x": 469,
+						"x": 460,
 						"y": 95,
 						"w": 12,
 						"h": 13
@@ -1249,7 +1099,7 @@
 						"h": 19
 					},
 					"frame": {
-						"x": 483,
+						"x": 474,
 						"y": 95,
 						"w": 18,
 						"h": 19
@@ -1274,85 +1124,10 @@
 						"h": 18
 					},
 					"frame": {
-						"x": 503,
+						"x": 494,
 						"y": 95,
 						"w": 18,
 						"h": 18
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "borders/wall-1-solid-v",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 4,
-						"h": 23
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 4,
-						"h": 23
-					},
-					"frame": {
-						"x": 1295,
-						"y": 104,
-						"w": 4,
-						"h": 23
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "borders/wall-2-solid-v",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 4,
-						"h": 23
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 4,
-						"h": 23
-					},
-					"frame": {
-						"x": 1301,
-						"y": 104,
-						"w": 4,
-						"h": 23
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "borders/inner-corner",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 523,
-						"y": 95,
-						"w": 16,
-						"h": 16
 					},
 					"anchor": {
 						"x": 0.5,
@@ -1374,14 +1149,39 @@
 						"h": 28
 					},
 					"frame": {
-						"x": 1348,
-						"y": 86,
+						"x": 1503,
+						"y": 1,
 						"w": 4,
 						"h": 28
 					},
 					"anchor": {
 						"x": 0,
 						"y": 0
+					}
+				},
+				{
+					"filename": "coinstack",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 55
+					},
+					"frame": {
+						"x": 1509,
+						"y": 1,
+						"w": 10,
+						"h": 55
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 1
 					}
 				},
 				{
@@ -1399,7 +1199,7 @@
 						"h": 14
 					},
 					"frame": {
-						"x": 388,
+						"x": 403,
 						"y": 113,
 						"w": 14,
 						"h": 14
@@ -1424,7 +1224,7 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 404,
+						"x": 419,
 						"y": 113,
 						"w": 12,
 						"h": 12
@@ -1449,7 +1249,7 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 541,
+						"x": 514,
 						"y": 95,
 						"w": 16,
 						"h": 16
@@ -1474,7 +1274,7 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 559,
+						"x": 532,
 						"y": 95,
 						"w": 16,
 						"h": 16
@@ -1499,7 +1299,7 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 577,
+						"x": 550,
 						"y": 95,
 						"w": 16,
 						"h": 16
@@ -1510,28 +1310,78 @@
 					}
 				},
 				{
-					"filename": "hex-markers/defense-1",
+					"filename": "ui/plate/tile-0",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 12,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 12,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
-						"x": 595,
+						"x": 568,
 						"y": 95,
-						"w": 12,
+						"w": 16,
 						"h": 16
 					},
 					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/plate/tile-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 586,
+						"y": 95,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/rounded-plate/tile-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 586,
+						"y": 95,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
 					}
 				},
 				{
@@ -1549,7 +1399,7 @@
 						"h": 15
 					},
 					"frame": {
-						"x": 1252,
+						"x": 1214,
 						"y": 112,
 						"w": 8,
 						"h": 15
@@ -1557,6 +1407,256 @@
 					"anchor": {
 						"x": 0.5,
 						"y": 0.8
+					}
+				},
+				{
+					"filename": "hex-markers/defense-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 16
+					},
+					"frame": {
+						"x": 1348,
+						"y": 86,
+						"w": 12,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "borders/wall-1-solid-v",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 23
+					},
+					"frame": {
+						"x": 1348,
+						"y": 104,
+						"w": 4,
+						"h": 23
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "borders/wall-2-solid-v",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 23
+					},
+					"frame": {
+						"x": 1354,
+						"y": 104,
+						"w": 4,
+						"h": 23
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "ui/plate/tile-2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1362,
+						"y": 87,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/plate/tile-3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1380,
+						"y": 87,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/rounded-plate/tile-3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1380,
+						"y": 87,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/plate/tile-4",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1360,
+						"y": 105,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/rounded-plate/tile-4",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1360,
+						"y": 105,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/plate/tile-5",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1378,
+						"y": 105,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/rounded-plate/tile-5",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1378,
+						"y": 105,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
 					}
 				},
 				{
@@ -1574,7 +1674,7 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 503,
+						"x": 494,
 						"y": 115,
 						"w": 12,
 						"h": 12
@@ -1599,8 +1699,8 @@
 						"h": 12
 					},
 					"frame": {
-						"x": 517,
-						"y": 115,
+						"x": 604,
+						"y": 95,
 						"w": 6,
 						"h": 12
 					},
@@ -1610,253 +1710,28 @@
 					}
 				},
 				{
-					"filename": "ui/plate/tile-0",
+					"filename": "debug-arrow",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 16,
-						"h": 16
+						"w": 19,
+						"h": 5
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 16,
-						"h": 16
+						"w": 19,
+						"h": 5
 					},
 					"frame": {
-						"x": 609,
-						"y": 101,
-						"w": 16,
-						"h": 16
+						"x": 1264,
+						"y": 103,
+						"w": 19,
+						"h": 5
 					},
 					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/plate/tile-1",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 627,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/rounded-plate/tile-1",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 627,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/plate/tile-2",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 645,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/plate/tile-3",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 663,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/rounded-plate/tile-3",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 663,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/plate/tile-4",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 681,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/rounded-plate/tile-4",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 681,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/plate/tile-5",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 699,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/rounded-plate/tile-5",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 16
-					},
-					"frame": {
-						"x": 699,
-						"y": 101,
-						"w": 16,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
+						"x": 0.5,
+						"y": 0.5
 					}
 				},
 				{
@@ -1874,7 +1749,7 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 717,
+						"x": 612,
 						"y": 101,
 						"w": 16,
 						"h": 16
@@ -1899,7 +1774,7 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 735,
+						"x": 630,
 						"y": 101,
 						"w": 16,
 						"h": 16
@@ -1924,7 +1799,7 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 735,
+						"x": 630,
 						"y": 101,
 						"w": 16,
 						"h": 16
@@ -1949,8 +1824,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1354,
-						"y": 87,
+						"x": 648,
+						"y": 101,
 						"w": 16,
 						"h": 16
 					},
@@ -1974,8 +1849,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1372,
-						"y": 87,
+						"x": 666,
+						"y": 101,
 						"w": 16,
 						"h": 16
 					},
@@ -1999,8 +1874,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1390,
-						"y": 87,
+						"x": 684,
+						"y": 101,
 						"w": 16,
 						"h": 16
 					},
@@ -2024,8 +1899,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1354,
-						"y": 105,
+						"x": 702,
+						"y": 101,
 						"w": 16,
 						"h": 16
 					},
@@ -2049,8 +1924,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1372,
-						"y": 105,
+						"x": 720,
+						"y": 101,
 						"w": 16,
 						"h": 16
 					},
@@ -2074,58 +1949,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 1390,
-						"y": 105,
-						"w": 12,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "hex-markers/defense-3",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 12,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 12,
-						"h": 16
-					},
-					"frame": {
-						"x": 1404,
-						"y": 105,
-						"w": 12,
-						"h": 16
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "hex-markers/defense-4",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 12,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 12,
-						"h": 16
-					},
-					"frame": {
-						"x": 1418,
-						"y": 97,
+						"x": 738,
+						"y": 101,
 						"w": 12,
 						"h": 16
 					},
@@ -2149,8 +1974,8 @@
 						"h": 7
 					},
 					"frame": {
-						"x": 483,
-						"y": 116,
+						"x": 1509,
+						"y": 58,
 						"w": 10,
 						"h": 7
 					},
@@ -2160,49 +1985,49 @@
 					}
 				},
 				{
-					"filename": "hex-decals/green-corner",
+					"filename": "hex-markers/defense-3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 10,
-						"h": 7
+						"w": 12,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 10,
-						"h": 7
+						"w": 12,
+						"h": 16
 					},
 					"frame": {
-						"x": 1432,
-						"y": 97,
-						"w": 10,
-						"h": 7
+						"x": 1285,
+						"y": 103,
+						"w": 12,
+						"h": 16
 					},
 					"anchor": {
-						"x": 0,
-						"y": 0
+						"x": 0.5,
+						"y": 0.5
 					}
 				},
 				{
-					"filename": "hex-decals/grass",
+					"filename": "hex-markers/defense-4",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 7,
-						"h": 3
+						"w": 12,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 7,
-						"h": 3
+						"w": 12,
+						"h": 16
 					},
 					"frame": {
-						"x": 1,
-						"y": 123,
-						"w": 7,
-						"h": 3
+						"x": 1299,
+						"y": 103,
+						"w": 12,
+						"h": 16
 					},
 					"anchor": {
 						"x": 0.5,
@@ -2215,6 +2040,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:9e9bbe0e5927d31eda4a0309445f8cea:4a44c9179b786197af4646fdc68e23cc:cbce6b53f0f49e0bf15173c25c41f876$"
+		"smartupdate": "$TexturePacker:SmartUpdate:15439f18d37368d5379819deddd3b602:32269e7024c710bd4539f7fc574138b9:cbce6b53f0f49e0bf15173c25c41f876$"
 	}
 }
