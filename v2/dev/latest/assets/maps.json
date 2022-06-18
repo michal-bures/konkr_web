@@ -5,10 +5,12 @@
             "name": "Introduction campaign",
             "levels": [
                 {
-                    "id": "intro1"
+                    "id": "intro1",
+                    "script": "tutorial1"
                 },
                 {
-                    "id": "intro2"
+                    "id": "intro2",
+                    "script": "deathmatch"
                 },
                 {
                     "id": "Uprising"
@@ -26,7 +28,7 @@
         {
             "id": "intro1",
             "name": "First steps",
-            "data": "konkrmap.v7.eyJtYXAiOnsid2lkdGgiOjE0LCJoZWlnaHTGDHRoZW1lIjoiZGVmYXVsdCIsImxldmVsSWQiOiJpbnRybzEifSwidmVyc2lvbiI6NywicmVnaW9ucyI6W3siaWQiOjQsIm5hxURHcmVlbndvb2QixGR4ZcQkNzA0LDgwMiw4MDMsODA0LDkwNCw3MDNdfSzGPjXJPlRyZWViZWNryz02MDgsNjA5LDcwNSw3MDcsNzA4LDgwNSw4MDYsOTA1LDkwNiw1MDQsNDA5LDUwNSw0MTAsNTA2LDYwMiw1MDcsNjAzLDXFRDQsNTA5LDYwNSw1MTAsNjA2LDcwMiw2MDfpAIk36QCJTWFyYmxlaW5ndG9u6wCNODA4LDnFBDnJNTEwyzZuc3Rocm93yzM5MTDKKzHJK0NyYXdnbGXMXTEwMDJdfV0sImZhY3TtAV/KYm5hdHVyZSLnAbRJbmRleMUfY2/kAahsbGVyxCVvbsQj6gGlNSwxMCwxMeoAiMlQUGxheWVyIDEiz0Nsb2NhbC11c2Vy0mzKWDTJUjLQUjLQUmFpz0oxzEo35QD5cGF36wD2MSwidHlwxFR0b3fnASkiOjcwM8t1xyFmb3Jlc+QCucUjNsojM9kjNMgj5AMB1CM4MDLIIzfJI3ZpbGxhZ+UBFsclyUg4ySVjb2luc8giNzAz5AEKdW7kA20wyC3kAgrVdjnLJPgA4OQCKckl+ADiNTA1yST4AOM1MDjJJDXXJDbLbDbXJDfLJOoBLNBs6QEqMeoBK+wB2jnrAI4510Y06gEfMjD2AXHkA6DrAXFdLCJydWxlU2V07QTiY3VycmVudFBoYXNl5AUbdHVybk51bWLkAqwx6QOD7AKFZ2FtZS1zdGFyxD90YXBwZWRVbml05AKwXX19"
+            "data": "konkrmap.v7.eyJtYXAiOnsid2lkdGgiOjE0LCJoZWlnaHTGDHRoZW1lIjoiZGVmYXVsdCIsImxldmVsSWQiOiJpbnRybzEifSwidmVyc2lvbiI6NywicmVnaW9ucyI6W3siaWQiOjQsIm5hxURHcmVlbndvb2QixGR4ZcQkNzA0LDgwMiw4MDMsODA0LDkwNCw3MDNdfSzGPjXJPlRyZWViZWNryz02MDgsNjA5LDcwNSw3MDcsNzA4LDgwNSw4MDYsOTA1LDkwNiw1MDQsNTA1LDUwNiw2MDIsNTA3LDYwMyw1xTw0LDYwNSw2MDYsNzAyLDYwN8l5N8l5TWFyYmxlaW5ndG9uy304MDgsOcUEOck1MTDLNm5zdGhyb3fLMzkxMMorMckrQ3Jhd2dsZcxdMTAwMsorMskrR29sZGhhbcsqMzA0LDMwNSw0MDMsNDA0LDTlAOzqAUExM8k9SGVhcnRtb3Jhyz80MDksNcQE7ACb6gGzUmlkZ2Vwb29sZcw0xCxdLCJmYWN07QHr6gD+bmF0dXLENOUCQEluZGV4xR9jb+QCNGxsZXLEJW9uxCPqAjE1LDEwLDExLDE06gCMyVNQbGF5ZXIgMSLPRmxvY2FsLXVzZXLSb8pbNCwxMiwx6gEX6gFTx1gy0Fhhac9QMcxQN+UBAnBhd+sA/zIsInR5cMRUZm9yZXPkAy1oxDk2MDPIdzPZIzTII+QCGdUkOTEwySTYa+QCOMkl2G01MDXJJOQD49YkOMkkNdckNstsNtckN8skN9ls6gD9OMkkdG935wMSIjo56wCOOddGNOoBHzIwySRjb2luc8tH5AHldW7kBN3KLuoBTcx0OOoBtjLqAUrNUOQEtdNQ6gFUdmlsbGFn5QKaxTE3MDPkAjdydWxlU2V07QVXY3VycmVudFBoYXNl5AWQdHVybk51bWLkAowx6QNsxQzHXccTLcQq5AKrYXBwZWRVbml05AKSXX19"
         },
         {
             "id": "intro2",

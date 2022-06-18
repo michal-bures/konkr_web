@@ -1,0 +1,123 @@
+<html lang='en'>
+<head>
+  <title>How to play</title>
+  <meta charset='utf-8' />
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap' rel='stylesheet'>
+  <link rel="stylesheet" href="slides/common.css">
+  <link rel="stylesheet" href="slides/slides.css">
+  <script src='slides/slides.js' defer></script>
+</head>
+<body>
+
+
+<div id='slider' class='slider'>
+  <div class='wrapper'>
+    <div id='slides' class='slides'>
+      <div class='slide'>
+        <h1>Goal of the game (1/4)</h1>
+        <div class='slide-content'>
+          <div class='slide-item-1'>
+            <img class='main-image' alt='illustration' src='play_files/illustration1.png' />
+          </div>
+          <ul>
+            <li>Connected tiles of same color form a <b>province</b>, as long as they have at least one <img
+              class='inline-icon' src='icons/town.png'> <b>town</b>.
+            </li>
+            <li>All <b style='color: #008C00'>green</b> provinces are yours
+              to control.
+            </li>
+            <li>Your goal is to expand your territory and <b>destroy all rival <img class='inline-icon'
+                                                                                    src='icons/town.png'> towns</b>.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class='slide'>
+        <h1>Economy (2/4)</h1>
+        <div class='slide-content'>
+          <div class='slide-item-1'>
+            <img class='main-image' alt='illustration' src='play_files/illustration2.png' />
+          </div>
+          <ul>
+            <li>At the <b>start of your turn</b>, each of your provinces:
+              <ul>
+                <li>Earns <img class='inline-icon' src='icons/coin.png' /> <b>one coin</b> for each tile in the
+                  province.
+                </li>
+                <li>Pays its
+                  <img class='inline-icon monochrome' src='icons/villager.png' /> <b>units</b> and
+                  <img class='inline-icon monochrome' src='icons/castle.png' /> <b>castles</b></li>
+                <li>Stores surplus coins in <img class='inline-icon' src='icons/town.png'> towns.</li>
+              </ul>
+            </li>
+            <li>The sum of all <b>coins</b> stored in your <img class='inline-icon' src='icons/town.png'> towns is
+              called
+              <img class='inline-icon' src='icons/treasury.png' />&nbsp;<b>province treasury</b>.
+            </li>
+            <li>Use coins from the treasury to buy new <img class='inline-icon monochrome' src='icons/villager.png' />
+              <b>units</b>
+              and
+              <img class='inline-icon monochrome' src='icons/castle.png' /> <b>castles</b> for the province.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class='slide'>
+        <h1>Conquest (3/4)</h1>
+        <div class='slide-content'>
+          <div class='slide-item-1'>
+            <img class='main-image' alt='illustration' src='play_files/illustration3.png' />
+          </div>
+          <ul>
+            <li>Every building and unit in the game has a <b>strength</b> level (ranging from 0 to 4)</li>
+
+            <li>Strength matters when <b>conquering</b> enemy tiles and also <b>protecting adjacent tiles</b> from enemy
+              conquest.
+            </li>
+            <li>To conquer an enemy tile, the attacking unit must be <b>stronger</b> than each of the defending units and
+              buildings.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class='slide'>
+        <h1>Bandits (4/4)</h1>
+        <div class='slide-content'>
+          <div class='slide-item-1'>
+            <img class='main-image' alt='illustration' src='play_files/illustration4.png' />
+          </div>
+          <ul>
+            <li>Units that didn't get paid turn into <img class='inline-icon' src='icons/bandit.png' /> <b>bandits</b>.
+              This
+              is <b>irreversible</b>, so make sure
+              you are able to pay your units!
+            </li>
+
+            <li>Bandits don't belong to any province and aren't controlled by any player. They move randomly around the
+              map
+              and <b>steal income</b> from any tiles they land on.
+            </li>
+
+            <li>The stolen coins are taken to a nearby <img class='inline-icon' src='icons/bandit-camp.png' />&nbsp;<b>Bandit
+              camp</b>. These camps can spawn new bandits once there are at least 3 <img class='inline-icon'
+                                                                                         src='icons/coins.png' /> coins
+              stored.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a id='prev' class='control prev'></a>
+  <a id='next' class='control next'></a>
+</div>
+<div id='dots' class="dots"></div>
+
+
+</body>
+</html>
