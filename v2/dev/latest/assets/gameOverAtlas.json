@@ -10,6 +10,27 @@
 			"scale": 1,
 			"frames": [
 				{
+					"filename": "gravestone",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 36,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 36,
+						"h": 44
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 36,
+						"h": 44
+					}
+				},
+				{
 					"filename": "trophy",
 					"rotated": false,
 					"trimmed": false,
@@ -24,7 +45,7 @@
 						"h": 86
 					},
 					"frame": {
-						"x": 1,
+						"x": 39,
 						"y": 1,
 						"w": 59,
 						"h": 86
@@ -45,7 +66,7 @@
 						"h": 213
 					},
 					"frame": {
-						"x": 62,
+						"x": 100,
 						"y": 1,
 						"w": 177,
 						"h": 213
@@ -66,7 +87,7 @@
 						"h": 307
 					},
 					"frame": {
-						"x": 241,
+						"x": 279,
 						"y": 1,
 						"w": 273,
 						"h": 307
@@ -87,7 +108,7 @@
 						"h": 380
 					},
 					"frame": {
-						"x": 516,
+						"x": 554,
 						"y": 1,
 						"w": 379,
 						"h": 380
@@ -120,6 +141,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:67f44bea23624c836599b65f575f7fba:c73065fa3b690e59facb66f02b958d2f:6769eb2a70289033a97b96142d3fe305$"
+		"smartupdate": "$TexturePacker:SmartUpdate:183ca6afbeffeaeecd59beaa36b9fbfc:8cf3b43809215189bf0c550c69955868:6769eb2a70289033a97b96142d3fe305$"
 	}
 }

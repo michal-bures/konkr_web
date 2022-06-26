@@ -9,11 +9,17 @@
                     "script": "tutorial1"
                 },
                 {
-                    "id": "l-intro2"
+                    "id": "l-intro-castles",
+                    "script": "tutorial2"
                 },
                 {
-                    "id": "l-intro3"
+                    "id": "l-intro-diplomacy",
+                    "script": "tutorial3"
                 },
+                {
+                    "id": "l-intro2"
+                },
+
                 {
                     "id": "l-small1"
                 },
@@ -25,6 +31,9 @@
                 },
                 {
                     "id": "l-volcano"
+                },
+                {
+                    "id": "l-intro3"
                 },
                 {
                     "id": "megamap"
@@ -43,6 +52,16 @@
             "id": "intro1",
             "name": "First steps",
             "data": "konkrmap.v7.eyJtYXAiOnsid2lkdGgiOjE0LCJoZWlnaHTGDHRoZW1lIjoiZGVmYXVsdCIsImxldmVsSWQiOiJpbnRybzEifSwidmVyc2lvbiI6NywicmVnaW9ucyI6W3siaWQiOjQsIm5hxURHcmVlbndvb2QixGR4ZcQkNzA0LDgwMiw4MDMsODA0LDkwNCw3MDNdfSzGPjXJPlRyZWViZWNryz02MDgsNjA5LDcwNSw3MDcsNzA4LDgwNSw4MDYsOTA1LDkwNiw1MDQsNTA1LDUwNiw2MDIsNTA3LDYwMyw1xTw0LDYwNSw2MDYsNzAyLDYwN8l5N8l5TWFyYmxlaW5ndG9uy304MDgsOcUEOck1MTDLNm5zdGhyb3fLMzkxMMorMckrQ3Jhd2dsZcxdMTAwMsorMskrR29sZGhhbcsqMzA0LDMwNSw0MDMsNDA0LDTlAOzqAUExM8k9SGVhcnRtb3Jhyz80MDksNcQE7ACb6gGzUmlkZ2Vwb29sZcw0xCxdLCJmYWN07QHr6gD+bmF0dXLENOUCQEluZGV4xR9jb+QCNGxsZXLEJW9uxCPqAjE1LDEwLDExLDE06gCMyVNQbGF5ZXIgMSLPRmxvY2FsLXVzZXLSb8pbNCwxMiwx6gEX6gFTx1gy0Fhhac9QMcxQN+UBAnBhd+sA/zIsInR5cMRUZm9yZXPkAy1oxDk2MDPIdzPZIzTII+QCGdUkOTEwySTYa+QCOMkl2G01MDXJJOQD49YkOMkkNdckNstsNtckN8skN9ls6gD9OMkkdG935wMSIjo56wCOOddGNOoBHzIwySRjb2luc8tH5AHldW7kBN3KLuoBTcx0OOoBtjLqAUrNUOQEtdNQ6gFUdmlsbGFn5QKaxTE3MDPkAjdydWxlU2V07QVXY3VycmVudFBoYXNl5AWQdHVybk51bWLkAowx6QNsxQzHXccTLcQq5AKrYXBwZWRVbml05AKSXX19"
+        },
+        {
+            "id": "l-intro-castles",
+            "name": "Castles",
+            "data": "konkrmap.v7.eyJtYXAiOnsid2lkdGgiOjE3LCJoZWlnaHTGDHRoZW1lIjoiZGVmYXVsdCIsImxldmVsSWQiOiJsLWludHJvLWNhc3RsZXMifSwidmVyc2lvbiI6NywicmVnaW9ucyI6W3siaWQiOjEzLCJuYcVOQXJkc3VtbWnEUGhleGXEJTcwOCw4MDYsODA3LDgwOCw5MDcsOcUIOSwxMDA3xAU4XX0sx000yU1NYWludmFuZ3VhcmTLUDgwNCw4MDUsOTA0LDnFCDbEQzTEBTXKSDXJSFNhcHBoaXJlbGVhcMtIMTQwOCwxNeYAhjYsMTEwNcQKOcQKxQ83xAU4xAU5LDEyxBQyxBQzxgU4xAU5LDEzMTAsMTQwN8p6OMl6VHJlZWtyYWlnzHcwxDExxgUxxFQ4xAXEYzEwykU5yUVTdHJvbWZhbGzLRTgxMskrMjDJK09ueXhicmlkZ2XMcTPrARcyMsktRm9ydGJvdXLsAJ02MDgsNjA5LDcwNSw3MDYsNzA3LDfEEDEwLDcxMSw2MDYsNuQA7F0sImZhY3TtAgjqAIhuYXR1cuQAhOUCZkluZGV4xR9jb+QCWGxsZXLEJW9uxCPqAk4xNSwxOSwyMCwy6gDdMclUUGxheWVyIDEiz0dsb2NhbC11c2Vy0nDLXDQsMeoCZeoBBcdWMtBWYWnPTjHMTslJ6gL6x0kz30nFfNNJ6gL2x0k030nFfMpJMTPJS+oC+cdLNd9LxX7KS+UB3XBhd+wD4iwidHlwxFN0b3du5gIwIjo5MDjIdDLJIWZvcmVz5wP/IjrkA1DIJDTYJDHKSDXaJDfIJDbabDbIJDEw1yU3ymwx6gDW0CTJbOQE29ckymz4ANk3MDXJJPgA2TbLSPgA2TbrAJDkBbrWJOoBjPgA/OQEuskl+QGyNMsl+AD+NuoB1jLqAP7uAhzpANgy6gD8zCLkBQPJI+oA++YGdMklMMsl6gD8Y29pbnPLa+QC4HVudOQA/MkuONgu6gEpOfcA3zgxMsgkM/sBTekB3jP4AkrkBjvJJeoBcu0AkeUGC+gAwOoA7jPqARNwaWtlbWHrAVs35AOicnVsZVNldO0Hw2N1cnJlbnRQaGFzZeQH/HR1cm5OdW1i5AP2MekFsuwD0McTLcQq5AQVYXBwZWRVbml05gQKfQ=="
+        },
+        {
+            "id": "l-intro-diplomacy",
+            "name": "Diplomacy",
+            "data": "konkrmap.v7.eyJtYXAiOnsid2lkdGgiOjE3LCJoZWlnaHTGDHRoZW1lIjoiZGVmYXVsdCIsImxldmVsSWQiOiJsLWludHJvLWRpcGxvbWFjeSJ9LCJ2ZXJzaW9uIjo3LCJyZWdpb25zIjpbeyJpZCI6MSwibmHFT1dldGhvbGxvdyLEb3hlxCQxMTA2LDExMDcsMTIwNcQFNsQFNywxM8QPM8QPM8QPNMQPNDA2XX0sxlgyyVhCZWxsc2hhzFc3MDYsNzA3LDgwNSw4MDYsODA3LDkwNSw5MDYsOcRPMMRPMMtPNMlPQWdhdGVwaWVyy1AxMTA4ySs4yitwcGxlZm9yZ2XMLDQwOCwxNcRmNTA4LDjFBDksOTA4LDnECDEwLDkxMcR+5QCIOMQFOSwxMDEw5AEJOSwxMcUKxCMyxB4yxBQyxBQyxBQzxBQzxA8zxA80MDfpAJk56QCZU2FnZXdpbGTrAJc4MTDJKTEzySpIZWF0aGJyZWV67ADENjA4LDcwNCw3MDUsN+UAwcQMOSw2MDUsNjA2LDbLdjHrATtyZHJvY2vLSTE15AFpNeQBxzAwM8QFNOQA5jPEBcUK5QH0MsQFM8QFNOQA4TPEBTTkANw0XX1dLCJmYWN07QJUMMlybmF0dXLkALrlArRJbmRleMUfY2/kAqZsbGVyxCVvbsQj6gKaNCw5LDEzLDE06gDFyVJQbGF5ZXIgMSLPRWxvY2FsLXVz5QIYz27KWjHzAqDHUjLQUmFpz0oxLCJhcHByb3ZhbOQDnjHlAdI0IjotMTAwfcxmMslm6gHJx2Yz32blAJnKSvMDAMdJNN9JxXzKSeoDHzXQSjXfSsV9ykrlAfNwYXfuBER0eXDEU3Rvd27mAl8iOjgwNsh0NMkhZm9yZXPkBLPFI+QCYcgkNdgkMDA0yCQ22kjJJOQFIdUkMsokONpIOMgkOdckODEwyCMxMNgkMDnJJOoBHc4kN8skMvUBQeQEaskj6gFDY29pbnPKajbkAb51bnQiOspQ6gFMzS3EUckuN8ku6gEyzX4z6gHAMuoAxXZpbGxhZ+gFfuQAgclJMjPJJnBpa2VtYcpMMstM9wDKxHDpAJ3KLvgCFzfqAc4y+AGr5ATUyCUz+AGsNuoCgzP4AazkBSfJJeoBrfAA5jQwN+QDHXJ1bGVTZXTtB6JjdXJyZW50UGhhc2XkBD10dXJuTnVtYuQDcTHpBUPsA0vHEy3EKuQDkGFwcGVkVW5pdOYDhX0="
         },
         {
             "id": "l-intro2",
