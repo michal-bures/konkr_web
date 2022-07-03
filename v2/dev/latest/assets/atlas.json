@@ -6535,7 +6535,7 @@
 					}
 				},
 				{
-					"filename": "ui/budget-icons/neutral",
+					"filename": "tile-symbols/crossed-coin",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -6556,32 +6556,7 @@
 					},
 					"anchor": {
 						"x": 0.5,
-						"y": 0.363636
-					}
-				},
-				{
-					"filename": "ui/mini-icons/coins",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 10,
-						"h": 11
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 10,
-						"h": 11
-					},
-					"frame": {
-						"x": 1826,
-						"y": 171,
-						"w": 10,
-						"h": 11
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
+						"y": 0.5
 					}
 				},
 				{
@@ -7060,7 +7035,32 @@
 					}
 				},
 				{
-					"filename": "ui/button-icons/play",
+					"filename": "ui/budget-icons/neutral",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 11
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 11
+					},
+					"frame": {
+						"x": 1841,
+						"y": 213,
+						"w": 10,
+						"h": 11
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.363636
+					}
+				},
+				{
+					"filename": "ui/mini-icons/coins",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7085,6 +7085,31 @@
 					}
 				},
 				{
+					"filename": "ui/button-icons/play",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 11
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 11
+					},
+					"frame": {
+						"x": 1841,
+						"y": 226,
+						"w": 10,
+						"h": 11
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
 					"filename": "ui/mini-icons/heart",
 					"rotated": false,
 					"trimmed": false,
@@ -7099,8 +7124,8 @@
 						"h": 9
 					},
 					"frame": {
-						"x": 1841,
-						"y": 226,
+						"x": 1851,
+						"y": 186,
 						"w": 10,
 						"h": 9
 					},
@@ -7124,8 +7149,8 @@
 						"h": 8
 					},
 					"frame": {
-						"x": 1851,
-						"y": 186,
+						"x": 1863,
+						"y": 171,
 						"w": 8,
 						"h": 8
 					},
@@ -7149,8 +7174,8 @@
 						"h": 8
 					},
 					"frame": {
-						"x": 1851,
-						"y": 196,
+						"x": 1863,
+						"y": 181,
 						"w": 8,
 						"h": 8
 					},
@@ -7174,8 +7199,8 @@
 						"h": 8
 					},
 					"frame": {
-						"x": 1854,
-						"y": 172,
+						"x": 1863,
+						"y": 191,
 						"w": 8,
 						"h": 8
 					},
@@ -7186,6 +7211,56 @@
 				},
 				{
 					"filename": "ui/box/inner-plate/tile-8",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 8
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 8
+					},
+					"frame": {
+						"x": 1851,
+						"y": 197,
+						"w": 8,
+						"h": 8
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/ribbon/slider/tile-0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 8
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 8
+					},
+					"frame": {
+						"x": 1861,
+						"y": 201,
+						"w": 8,
+						"h": 8
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "ui/ribbon/slider/tile-1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7210,7 +7285,7 @@
 					}
 				},
 				{
-					"filename": "ui/ribbon/slider/tile-0",
+					"filename": "ui/ribbon/slider/tile-2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7233,56 +7308,6 @@
 						"x": 0,
 						"y": 0
 					}
-				},
-				{
-					"filename": "ui/ribbon/slider/tile-1",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 8,
-						"h": 8
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 8,
-						"h": 8
-					},
-					"frame": {
-						"x": 1853,
-						"y": 206,
-						"w": 8,
-						"h": 8
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/ribbon/slider/tile-2",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 8,
-						"h": 8
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 8,
-						"h": 8
-					},
-					"frame": {
-						"x": 1853,
-						"y": 216,
-						"w": 8,
-						"h": 8
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
 				}
 			]
 		}
@@ -7290,6 +7315,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:13a83355b307fb64b1867da5b0db1e44:6ffce219f17b008cc931ea5e47a32871:cbce6b53f0f49e0bf15173c25c41f876$"
+		"smartupdate": "$TexturePacker:SmartUpdate:303c1b0fd30709e7d3cea02c8f80760d:0260cbf84c88a8e2e150c9cc32b22bb4:cbce6b53f0f49e0bf15173c25c41f876$"
 	}
 }
