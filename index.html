@@ -1,0 +1,13 @@
+---
+layout: game
+---
+{% for post in site.posts limit:1 %}
+<article>
+    <h3>{{post.title}}</h3>
+    <p class='posted-at'>posted {{ post.date | date: "%b %-d, %Y" }}</p>
+    {{post.content}}
+    <footer>
+        <a href="/news">view older news</a>
+    </footer>
+</article>
+{% endfor %}

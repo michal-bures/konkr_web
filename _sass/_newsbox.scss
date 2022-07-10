@@ -1,0 +1,37 @@
+a {
+    color: #9bd6f2;
+}
+
+a:visited{
+    color: #5bc6fc;
+}
+
+#news-box {
+
+    font-size: 14px;
+    text-align: left;
+    color: #333332;
+
+    h3 {
+        margin-bottom: 0px;
+    }
+
+    a {
+        color: #1756a9;
+        text-decoration: underline;
+    }
+
+    p.posted-at {
+        color: #44444280;
+        font-size: small;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        font-size: small
+    }
+
+}
