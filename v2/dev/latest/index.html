@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><base href="/v2/dev/latest/"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="manifest" href="./manifest.json"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png"><meta name="theme-color" content="#9bd6f2"><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="application-name" content="Konkr"/><meta name="apple-mobile-web-app-title" content="Konkr"/><meta name="msapplication-TileColor" content="#9bd6f2"><meta name="msapplication-starturl" content="./"/><link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/png"/><link rel="apple-touch-icon" href="./icons/icons-192x192.png"><title>Konkr</title><style>html,
+<!doctype html><html lang="en"><head><base href="/v2/dev/latest/"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="manifest" href="./manifest.json"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png"><meta name="theme-color" content="#9bd6f2"><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="application-name" content="Konkr"/><meta name="apple-mobile-web-app-title" content="Konkr"/><meta name="msapplication-TileColor" content="#9bd6f2"><meta name="msapplication-starturl" content="./"/><link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/png"/><link rel="apple-touch-icon" href="./icons/icons-192x192.png"><link rel="stylesheet" href="/css/main.css"><title>Konkr</title><style>html,
       body {
           font-family: Georgia, Arial, Trebuchet;
           margin: 0;
@@ -57,6 +57,15 @@
           text-align: left;
       }
 
+      #status {
+          position: absolute;
+          top: calc(50% + 20px);
+          color: white;
+          font-size: 1em;
+          font-weight: bold;
+          font-style: italic;
+      }
+
       /* news box */
       #news-box {
           position: absolute;
@@ -69,35 +78,59 @@
           transition: all 300ms ease-in-out;
       }
 
-      /* Dat.gui styles */
-      .dg.main { position: absolute; left: 0px}
-
-      /* Animated logo */
-      #splash-logo {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          margin-top: -84px;
-          margin-left: -61px;
-          width: 100px;
-          height: 100px;
-      }
-      @keyframes hvr-pulse-grow {
-          to {
-              transform: scale(1.2);
+      /* hide news box if there's not enough screen estate for it */
+      @media only screen and (max-width: 890px) {
+          #news-box {
+              visibility: hidden;
           }
       }
 
-      .pulse-grow {
-          display: inline-block;
-          vertical-align: middle;
-          -webkit-transform: perspective(1px) translateZ(0);
-          transform: perspective(1px) translateZ(0);
-          animation-name: hvr-pulse-grow;
-          animation-duration: 1s;
-          animation-timing-function: ease-in-out;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
+
+      /* Dat.gui styles */
+      .dg.main { position: absolute; left: 0px}
+
+      /* Loader */
+      #loader {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          display: block;
+          margin:15px auto;
+          position: relative;
+          color: #FFF;
+          left: -100px;
+          box-sizing: border-box;
+          animation: shadowRolling 2s linear infinite;
+      }
+
+      @keyframes shadowRolling {
+          0% {
+              box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+          }
+          12% {
+              box-shadow: 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+          }
+          25% {
+              box-shadow: 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+          }
+          36% {
+              box-shadow: 120px 0 white, 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0);
+          }
+          50% {
+              box-shadow: 130px 0 white, 120px 0 white, 110px 0 white, 100px 0 white;
+          }
+          62% {
+              box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white, 110px 0 white;
+          }
+          75% {
+              box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white;
+          }
+          87% {
+              box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white;
+          }
+          100% {
+              box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+          }
       }</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q92DKK544Q"></script><script>window.dataLayer = window.dataLayer || []
 
     function gtag() {
@@ -112,11 +145,11 @@
       })
     }
 
-    gtag('js', new Date())</script><script defer="defer" src="vendors.099019c75afec500a8df.bundle.js"></script><script defer="defer" src="main.18fdfb5702fe411d5266.bundle.js"></script></head><body class="center-screen"><h1>Konkr.io</h1><h2 id="status"><noscript>Please enable javascript to play this game.</noscript></h2><script>// store current time for timing page load
+    gtag('js', new Date())</script><script defer="defer" src="vendors.3e268012ad5297f5f28e.bundle.js"></script><script defer="defer" src="main.ff41bd6b37382c4068d6.bundle.js"></script></head><body class="center-screen"><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><script>// store current time for timing page load
   window.tStart = performance.now()
   const statusElement = document.getElementById('status')
   window.setLoadingStatus = (status) => {
     statusElement.innerText = status
   }
 
-  setLoadingStatus('is loading...')</script><div id="splash-logo" class="pulse-grow"><svg xmlns="http://www.w3.org/2000/svg" width="123" height="168" viewBox="0 0 32.544 44.45"><path d="M31.75 32.279l-15.346 8.996-15.61-8.996V14.023l15.58-9.047 15.376 9.047z" fill="#28a228" stroke="#000" stroke-width="1.588" stroke-linejoin="round" paint-order="markers stroke fill"/><path d="M16.374 4.976L.793 14.023v18.256l15.61 8.996 15.346-8.996V14.023zm-.163 2.065l13.687 8.305v15.875l-13.494 7.805L2.91 31.221V15.346z" fill="#fff" fill-opacity=".214" paint-order="markers stroke fill"/><path d="M13.758.794v1.058h.794.265V9.79h-1.852-.926v2.381h.926.794v1.455 17.595l2.646 4.233 2.646-4.233V12.965v-.794h1.588V9.79h-2.646V1.852h1.058V.794h-4.498z" stroke="#000" stroke-width="1.588" paint-order="stroke markers fill"/><path d="M16.007 1.72h-1.191v8.731h1.191z" fill="gray" paint-order="stroke markers fill"/><path d="M19.05 12.965l-2.646-.132v22.622l2.646-4.233z" fill="#99a3a3" paint-order="stroke markers fill"/><path d="M17.991 1.72h-2.117v8.07h2.117z" fill="#4c4c4c" paint-order="stroke markers fill"/><path d="M16.404 13.626h-2.646v17.595l2.646 4.233z" fill="#e0e5e5" paint-order="stroke markers fill"/><path d="M13.758 12.039h5.292v1.587h-5.292z" fill="#666" paint-order="stroke markers fill"/><path d="M12.038 9.79h8.599v2.381h-8.599zm1.72-8.996h5.292v1.058h-5.292z" paint-order="stroke markers fill" fill="#a00"/><g fill="#fff"><path d="M12.038 9.79h.926v2.381h-.926zm1.72-8.996h.794v1.058h-.794z" fill-opacity=".284" paint-order="stroke markers fill"/><path d="M16.404 39.026l13.494-23.68v15.875z" fill-opacity=".078"/><path d="M16.404 39.026L2.91 15.214v16.007z" fill-opacity=".078"/></g></svg></div><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div></body></html>
+  setLoadingStatus('loading game...')</script><span id="loader"></span><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div></body></html>
