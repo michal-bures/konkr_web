@@ -2,8 +2,8 @@
 layout: legacy
 comments: true
 includejs:
-- game/legacy/dist/bundle.js
-- game/legacy/dist/vendor.bundle.js
+- game/dist/bundle.js
+- game/dist/vendor.bundle.js
 ---
 
 ## What's this?
