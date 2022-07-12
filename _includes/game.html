@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><base href="/releases/2.0.11/"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="manifest" href="./manifest.json"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png"><meta name="theme-color" content="#9bd6f2"><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="application-name" content="Konkr"/><meta name="apple-mobile-web-app-title" content="Konkr"/><meta name="msapplication-TileColor" content="#9bd6f2"><meta name="msapplication-starturl" content="./"/><link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/png"/><link rel="apple-touch-icon" href="./icons/icons-192x192.png"><link rel="stylesheet" href="/css/main.css"><title>Konkr</title><style>html,
+<!doctype html><html lang="en"><head><base href="/releases/dev/latest/"><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="manifest" href="./manifest.json"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png"><meta name="theme-color" content="#9bd6f2"><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="application-name" content="Konkr"/><meta name="apple-mobile-web-app-title" content="Konkr"/><meta name="msapplication-TileColor" content="#9bd6f2"><meta name="msapplication-starturl" content="./"/><link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/png"/><link rel="apple-touch-icon" href="./icons/icons-192x192.png"><link rel="stylesheet" href="/css/main.css"><title>Konkr</title><style>html,
       body {
           font-family: Georgia, Arial, Trebuchet;
           margin: 0;
@@ -145,11 +145,20 @@
       })
     }
 
-    gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.5e3d31976e0745a92778.bundle.js"></script></head><body class="center-screen"><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><script>// store current time for timing page load
+    gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.269cc527b20454b1ac42.bundle.js"></script></head><body class="center-screen"><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><span id="loader"></span><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.0.11-build-2654257852'
+
+  // store current time for timing page load
   window.tStart = performance.now()
   const statusElement = document.getElementById('status')
   window.setLoadingStatus = (status) => {
     statusElement.innerText = status
   }
+  const newsBox = document.getElementById('news-box')
+  if (newsBox?.innerText === '{{ content }}') {
+    newsBox.innerHTML = `<p></p><b>⚠ Warning:</b> Playing unsupported game version</p><p><code>${BUILD_NUMBER}</code></p>
+                         <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
+                         Or don't, I'm not your boss, but proceed with caution.</p>`
+  }
+  console.log('INNER TEXT', newsBox.innerText)
 
-  setLoadingStatus('loading game...')</script><span id="loader"></span><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div></body></html>
+  setLoadingStatus('loading game...')</script></body></html>

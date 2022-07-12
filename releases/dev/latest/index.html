@@ -145,11 +145,20 @@
       })
     }
 
-    gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.9d861edc8d17293e95bc.bundle.js"></script></head><body class="center-screen"><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><script>// store current time for timing page load
+    gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.269cc527b20454b1ac42.bundle.js"></script></head><body class="center-screen"><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><span id="loader"></span><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.0.11-build-2654257852'
+
+  // store current time for timing page load
   window.tStart = performance.now()
   const statusElement = document.getElementById('status')
   window.setLoadingStatus = (status) => {
     statusElement.innerText = status
   }
+  const newsBox = document.getElementById('news-box')
+  if (newsBox?.innerText === '{{ content }}') {
+    newsBox.innerHTML = `<p></p><b>⚠ Warning:</b> Playing unsupported game version</p><p><code>${BUILD_NUMBER}</code></p>
+                         <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
+                         Or don't, I'm not your boss, but proceed with caution.</p>`
+  }
+  console.log('INNER TEXT', newsBox.innerText)
 
-  setLoadingStatus('loading game...')</script><span id="loader"></span><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div></body></html>
+  setLoadingStatus('loading game...')</script></body></html>
