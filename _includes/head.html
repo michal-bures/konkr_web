@@ -1,14 +1,4 @@
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90276888-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-90276888-1');
-  </script>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,41 +16,4 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-
-  <style>
-    .crop {
-      display:flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 487px;
-      height: 178px;
-      overflow:hidden;
-      margin: -10px;
-      margin-left: -20px;
-    }
-
-    .preview-banner {
-      object-fit: none;
-      width: 447px;
-      height: 138px;
-      border-radius: 20px;
-      filter: opacity(0.8);
-      transition: all 200ms;
-      box-shadow: 0px 0px 0px 0px #FFFFFF;
-    }
-
-    .preview-banner:hover {
-      width: 467px;
-      height: 158px;
-      filter: opacity(1);
-      box-shadow: 0px 0px 10px 0px #FFFFFF50;
-    }
-
-    .preview-banner:active {
-      width: 447px;
-      height: 138px;
-      box-shadow: 0px 0px 15px 0px #FFFFFF;
-    }
-  </style>
 </head>
