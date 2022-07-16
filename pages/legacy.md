@@ -1,6 +1,7 @@
 ---
 layout: legacy
 comments: true
+permalink: /legacy/
 ---
 
 ## What's this?

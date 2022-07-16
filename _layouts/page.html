@@ -11,4 +11,9 @@ layout: default
     {{ content }}
   </article>
 
+  <script>
+    if(self !== top) {
+      document.body.classList.add("framed");
+    }
+  </script>
 </div>

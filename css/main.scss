@@ -3,22 +3,27 @@
 ---
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap');
 
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
+$title-font-family: 'Cinzel', serif;
+
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #cccccc;
-$background-color: #333333;
+$text-color:       #333332;
+$background-color: #9bd6f2;
+$content-background-color: #eef8fd;
+$content-background-color-darker: #dcf0fa;
 $brand-color:      #2a7ae2;
 $loader-color:     #7f919e;
 
-$grey-color:       #cccccc;
+$grey-color: #676766;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -29,10 +34,10 @@ $off-white: rgba($white, 0.2);
 
 
 // Size of the content area
-$content-width:    800px;
+$content-width:    1000px;
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        840px;
 
 $showcase-height:   540px;
 

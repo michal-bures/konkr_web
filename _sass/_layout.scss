@@ -1,35 +1,81 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /**
  * Site header
  */
 .site-header {
-    min-height: 64px;
+    padding: 0;
+    display: flex;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
+    .wrapper {
+        flex: 1;
+        min-height: 231px;
+        padding: $spacing-unit $spacing-unit*1.5;
+        max-width: $content-width;
+        box-sizing: border-box;
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-    text-indent: -9999px;
-    position: absolute;
-    width: 177px;
-    height: 30px;
-    top: 17px;
-    background-image: url(/legacy/logo.png);
+        // flex layout
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: stretch;
+        align-content: stretch;
+        align-items: flex-end;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+
+        // Positioning context for the mobile navigation icon
+        position: relative;
+        background-image: url(/img/header-bg.png);
+        background-repeat: no-repeat;
+        background-color: #68ba33;
+        background-position-x: 70%;
+        background-position-y: 100%;
+    }
+
+
+    .header-content {
+        // flex layout
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: center;
     }
 }
 
-.site-nav {
-    float: right;
+
+
+.title-and-nav {
+    flex: 1 1 auto;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+}
+
+.site-title {
+    font-size: 45px;
     line-height: 56px;
+    margin-bottom: 0;
+
+    &,
+    &:hover,
+    &:visited {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+
+.site-title-muted {
+    color: rgba($text-color, .6);
+    font-size: 70%;
+}
+
+.site-nav {
 
     .menu-icon {
         display: none;
@@ -90,14 +136,44 @@
     }
 }
 
+.play-button {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-family: $title-font-family;
+    text-align: center;
+    display: block;
+    color: $text-color;
+    border-radius: 16px;
+    border: 2px solid black;
+    background: rgb(211,162,99);
+    background: linear-gradient(0deg,  #98653f 0%, #d3a263 10%, #ddb684 90%, #e9cfaf 100%);
 
+    &:active {
+        margin-top: 2px;
+        background: linear-gradient(180deg,  #98653f 0%, #ddb684 10%, #d3a263 90%);
+    }
+
+    &,
+    &:active,
+    &:visited,
+    &:hover {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
 
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    margin-top: auto;
+
+    .wrapper {
+        padding: $spacing-unit $spacing-unit;
+        background-color: $content-background-color-darker;
+    }
 }
 
 .footer-heading {
@@ -205,11 +281,14 @@ div#konkr_loading_placeholder {
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
 }
-
-.page-heading {
-    font-size: 20px;
+.page-content .wrapper {
+    padding: $spacing-unit $spacing-unit ;
+    background-color: $content-background-color;
+    flex: 1;
 }
 
 .post-list {
@@ -241,9 +320,9 @@ div#konkr_loading_placeholder {
 }
 
 .post-title {
-    font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    font-size: 36px;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -254,26 +333,14 @@ div#konkr_loading_placeholder {
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+        font-size: 28px;
     }
 
     h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+        font-size: 22px;
     }
 
     h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+        font-size: 18px;
     }
 }

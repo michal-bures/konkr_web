@@ -16,4 +16,18 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  {% if page.css %}
+  <link rel="stylesheet" href="/css/{{ page.css }}.css"></link>
+  {% endif %}
+
+  {% if page.include_css %}
+    <style>{% include css/{{ page.include_css }}.css %}</style>
+  {% endif %}
+  {% if page.include_js %}
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+         {% include js/{{ page.include_js }}.js %}
+      })
+    </script>
+  {% endif %}
 </head>
