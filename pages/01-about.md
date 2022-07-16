@@ -24,7 +24,7 @@ The strategy in Konkr is all about:
 **When is the next update coming?** 
  
 Hopefully soon 😉. This is a one-man hobby project, so I work on it when I have the spare time and motivation.
-If you want to help with the motivation part, [join the discord server]({{ site.discord_link }}) and tell me how much you're looking fow. 
+You can [join the discord server]({{ site.discord_link }}) to chat and find out what I'm working on at the moment.
 
 **Will it always remain free?**
 
