@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  "New website!"
-date:   2022-07-15
+date:   2022-07-16
 categories: update
 ---
 
-I hope you'll enjoy it!
+A shiny new version of Konkr calls for a shiny new website, so I took some time to update the web.
 
-If you have any feedback, don't hesitate to <a href="mailto:dev@konkr.io" target="_blank">email me</a>
-or<br/> <a href="https://discord.com/invite/C9HucB9arH" target="_blank">join the Konkr.io discord server</a>.
+It includes a standalone version of the in-game [How to Play](/how-to-play) guide and a new [About](/about) page.
 
-And just in case you want none of this new fanciness, you can still play the old konkr [here](/legacy) 😉.
+You can now also keep a closer eye on any changes to the game by following the [Changelog](/changelog).
