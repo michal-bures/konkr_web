@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About the game
+short_title: About
 permalink: /about/
 ---
 
@@ -22,7 +23,8 @@ The strategy in Konkr is all about:
 
 **When is the next update coming?** 
  
-Hopefully soon 😉. This is a one-man hobby project, so I work on it when I have the spare time and feel like it.
+Hopefully soon 😉. This is a one-man hobby project, so I work on it when I have the spare time and motivation.
+If you want to help with the motivation part, [join the discord server]({{ site.discord_link }}) and tell me how much you're looking fow. 
 
 **Will it always remain free?**
 
@@ -30,8 +32,6 @@ The currently available features will always remain free.
 
 I don't have any monetization plans at the moment and I'm allergic to ads and predatory monetization practices.
 But if the game ever gets popular enough, I might consider adding some extra paid features to support development and maintenance. 
-
- 
 
 **How was it made?**
 
