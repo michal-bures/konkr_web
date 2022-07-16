@@ -1,13 +1,14 @@
 ---
 layout: game
+permalink: /
 ---
 {% for post in site.posts limit:1 %}
 <article>
     <h3>{{post.title}}</h3>
     <p class='posted-at'>posted {{ post.date | date: "%b %-d, %Y" }}</p>
-    {{post.content}}
+    {{post.excerpt}}
     <footer>
-        <a href="/news">view older news</a>
+        <a href="/news">view older news</a> | <a href="/changelog">changelog</a> | <a href="/legacy">play old version</a>
     </footer>
 </article>
 {% endfor %}

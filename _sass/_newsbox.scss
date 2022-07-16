@@ -1,11 +1,3 @@
-a {
-    color: #9bd6f2;
-}
-
-a:visited{
-    color: #5bc6fc;
-}
-
 #news-box {
 
     font-size: 14px;
@@ -14,6 +6,9 @@ a:visited{
 
     h3 {
         margin-bottom: 0px;
+        font-family: $base-font-family;
+        font-weight: bold;
+
     }
 
     a {

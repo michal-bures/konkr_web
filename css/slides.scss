@@ -1,0 +1,218 @@
+---
+# Styles for slider layout
+---
+
+
+:root {
+  --slider-width: min(100vw, 720px);
+  --slider-height: min(100vh, 720px);
+  --primary-color: #583922;
+  --slides-spacing: 10px;
+}
+
+.slide {
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+/* SLIDES */
+.slide .main-image {
+    width: 360px;
+    height: 300px;
+}
+
+.slide ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 10px;
+    flex-grow: 1
+}
+
+.slide li {
+    padding-left: 20px;
+    text-indent: -20px
+}
+
+.slide li::before {
+    content: "❖";
+    padding-right: 5px;
+}
+
+.slide-content > ul > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.slide-content {
+    row-gap: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%
+}
+
+
+.slide:nth-child(even) .slide-item-1 {
+    order: 1
+}
+.slide-item-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #9bd6f2;
+    flex-grow: 1
+}
+
+.slide-content > ul {
+    margin: 0;
+    padding: 10px 10px 10px 20px;
+    width: 360px;
+}
+
+@media (min-width: 719px) {
+    .slide .main-image {
+        border-radius: 20px;
+        filter: drop-shadow(2px 2px 2px #00000040);
+    }
+
+    .slide-item-1 {
+        background: none
+    }
+}
+
+.inline-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/** Prev/Next buttons **/
+.control {
+    display: none;
+}
+/** Dots **/
+.dots {
+    display: none;
+}
+
+
+/** Extra styles when displayed in-game **/
+framed {
+    body {
+        overflow: hidden;
+        min-width: 360px;
+        max-width: 720px;
+        margin: 0 auto;
+        color: var(--primary-color);
+    }
+
+    .slider {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: var(--slider-width);
+        height: var(--slider-height);
+        /*box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);*/
+    }
+
+    .slides-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: var(--slider-width);
+        height: var(--slider-height);
+        z-index: 1;
+    }
+
+    .slides {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 10000px;
+    }
+
+    .slides.shifting {
+        transition: left .2s ease-out;
+    }
+
+    .slide {
+        width: var(--slider-width);
+        cursor: pointer;
+        transition: all 1s;
+        position: relative;
+        border-radius: 2px;
+        margin-right: var(--slides-spacing);
+    }
+
+    /** Prev/Next buttons **/
+    .control {
+        display: block;
+        position: absolute;
+        background-color: #D9AD7630;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-top: -20px;
+        z-index: -1;
+    }
+
+    .prev,
+    .next {
+        background-size: 22px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .prev {
+        background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+        left: -40px;
+    }
+
+    .next {
+        background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+        right: -40px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: #D9AD7680;
+        /*border: 1px solid var(--primary-color);*/
+    }
+
+    .prev:active,
+    .next:active {
+        transform: scale(.9);
+    }
+
+    /** Dots **/
+    .dots {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        background: #58392240;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .active-dot {
+        background: #583922;
+        cursor: default;
+    }
+}
