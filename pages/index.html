@@ -8,7 +8,7 @@ permalink: /
     <p class='posted-at'>posted {{ post.date | date: "%b %-d, %Y" }}</p>
     {{post.excerpt}}
     <footer>
-        <a href="/news">view older news</a> | <a href="/changelog">changelog</a> | <a href="/legacy">play old version</a>
+        <a href="/news">view older news</a> | <a href="{{ site.discord_link }}">discuss on Discord</a>  | <a href="/changelog">changelog</a> | <a href="/legacy">konkr v1</a>
     </footer>
 </article>
 {% endfor %}
