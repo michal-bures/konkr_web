@@ -1,3 +1,8 @@
 [[redirects]]
   from = "/v2/dev/*"
   to = "/"
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"

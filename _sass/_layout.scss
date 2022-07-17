@@ -382,3 +382,21 @@ div#konkr_loading_placeholder {
         font-size: 18px;
     }
 }
+
+/**
+* CSS overrides used when running in iframe (when displayed in-game)
+*/
+
+body.framed {
+    background: none;
+}
+
+.framed .site-header,
+.framed .site-footer,
+.framed .post-header {
+    display:none
+}
+
+.framed .page-content .wrapper {
+    background: none
+}
