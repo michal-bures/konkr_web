@@ -3,6 +3,8 @@ layout: page
 title: About the game
 short_title: About
 permalink: /about/
+seo_priority: 0.8
+seo_frequency: monthly
 ---
 
 Konkr is a turn-based strategy game by <a href='mailto:dev@konkr.io' target='_blank'>Michal Bureš</a>.

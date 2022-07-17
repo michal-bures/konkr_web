@@ -2,6 +2,8 @@
 layout: legacy
 comments: true
 permalink: /legacy/
+seo_priority: 0.1
+seo_frequency: yearly
 ---
 
 ## What's this?

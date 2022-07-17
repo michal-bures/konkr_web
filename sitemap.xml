@@ -1,0 +1,13 @@
+---
+layout: null
+---
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for page in site.html_pages %}
+    <url>
+        <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+        {% if page.date %}<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>{% endif %}
+        {% if page.seo_frequency %}<changefreq>{{ page.seo_frequency }}</changefreq>{% endif %}
+        <priority>{{ page.seo_priority | default: 0.5 }}</priority>
+    </url>
+{% endfor %}
+</urlset>
