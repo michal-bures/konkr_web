@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #583922;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+}
+
+p.subtitle {
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Cinzel', serif;
+}
+
+a {
+    color: var(--primary-color)
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    padding-left: 40px;
+    text-indent: -20px
+}
+
+li::before {
+    content: "❖";
+    padding-right: 5px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
