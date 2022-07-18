@@ -1,6 +1,10 @@
 
 
 ---
+v2.0.16 <small>released 2022-06-18</small>
+- caching overhaul: game is fully playable offline again, but also detects updates on startup and applies them automatically (no more green "update available" prompts) 
+
+---
 v2.0.15 <small>released 2022-06-17</small>
 - integration of in-game "about" and "how to play pages" with the new website
 - bugfix: make sure to always hide news-box outside of title page
