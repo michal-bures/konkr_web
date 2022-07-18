@@ -148,7 +148,8 @@
             })
         }
 
-        gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.afece23850bb89523c0d.bundle.js"></script></head><body class="center-screen"><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><span id="loader"></span><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.0.15-build-2692692863'
+        gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.e0f1274072293207afcc.bundle.js"></script></head><body class="center-screen"><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><span id="loader"></span><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.0.15-build-2692740408'
+    const SW_ENABLE = 'true'
 
     // store current time for timing page load
     window.tStart = performance.now()
@@ -165,7 +166,7 @@
                          Or don't, I'm not your boss, but proceed with caution.</p>`
     }
 
-    setLoadingStatus('checking for updates...')
+    setLoadingStatus('loading game...')
 
     window.addEventListener('load', () => {
 
@@ -173,6 +174,7 @@
             const cachedBuild = window.localStorage?.getItem('konkr.cached_build')
             window.localStorage.setItem('konkr.cached_build', BUILD_NUMBER)
             if (cachedBuild && cachedBuild !== BUILD_NUMBER) {
+                setLoadingStatus('downloading update...')
                 //new version detected => purge cache and any old service workers and reload
                 console.warn(`New version is available! (installed = ${cachedBuild}, available = ${BUILD_NUMBER}), updating!`)
                 window.caches?.keys()
@@ -201,7 +203,7 @@
                 console.info('new service worker activated')
             })
 
-            navigator.serviceWorker.register('./sw.js', { scope: window.location.href })
+            if (SW_ENABLE) navigator.serviceWorker.register('./sw.js', { scope: window.location.href })
         } else {
             setLoadingStatus('loading game...')
             window.launchGame()
