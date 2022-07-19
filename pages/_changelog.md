@@ -1,6 +1,11 @@
 
 
 ---
+v2.0.18 <small>released 2022-06-19</small>
+- discord button added to title screen
+- title screen cleanup and improved layout on small display
+
+---
 v2.0.16 <small>released 2022-06-18</small>
 - caching overhaul: game is fully playable offline again, but also detects updates on startup and applies them automatically (no more green "update available" prompts) 
 
