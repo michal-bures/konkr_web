@@ -48,6 +48,9 @@
         @include media-query($on-palm) {
             transform: scale(0.6, 0.6);
         }
+        @include media-query($on-tiny) {
+            display: none;
+        }
     }
 
     .header-content {
