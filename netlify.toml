@@ -3,6 +3,6 @@
   to = "/"
 [[headers]]
   for = "/*"
-
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
+    Service-Worker-Allowed = "/"
