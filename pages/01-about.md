@@ -2,6 +2,7 @@
 layout: page
 title: About the game
 short_title: About
+description: Inspired by the brilliant simplicity of Sean O'Connor's Slay, this game aspires to be a love letter to the concept of 'easy to learn, hard to master'.
 permalink: /about/
 seo_priority: 0.8
 seo_frequency: monthly
