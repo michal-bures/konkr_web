@@ -1,6 +1,11 @@
 
 
 ---
+v2.0.19 <small>released 2022-06-21</small>
+- popup notifications appear only for major news, not when you just lose a few tiles 
+- bugfix: "region fractured" notification no longer appears when the split off region is not alive
+
+---
 v2.0.18 <small>released 2022-06-19</small>
 - discord button added to title screen
 - title screen cleanup and improved layout on small display
