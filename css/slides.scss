@@ -70,9 +70,6 @@
 }
 
 
-.slide:nth-child(even) .slide-item-1 {
-    order: 1
-}
 .slide-item-1 {
     display: flex;
     flex-direction: row;
@@ -96,6 +93,10 @@
     .slide-item-1 {
         background: none;
         flex-grow: unset;
+    }
+
+    .slide:nth-child(even) .slide-item-1 {
+        order: 1
     }
 }
 
