@@ -10,8 +10,19 @@
   --slides-spacing: 10px;
 }
 
+.page-content .wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+
 .slide {
-    min-width: 360px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +33,9 @@
 /* SLIDES */
 .slide .main-image {
     width: 360px;
+    min-width: 200px;
     height: 300px;
+    object-fit: contain;
 }
 
 .slide ul {
@@ -51,7 +64,7 @@
     row-gap: 20px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: stretch;
+    justify-content: center;
     align-items: center;
     width: 100%
 }
@@ -65,13 +78,13 @@
     flex-direction: row;
     justify-content: center;
     background-color: #9bd6f2;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .slide-content > ul {
     margin: 0;
     padding: 10px 10px 10px 20px;
-    width: 360px;
+    max-width: 360px;
 }
 
 @media (min-width: 719px) {
@@ -81,7 +94,8 @@
     }
 
     .slide-item-1 {
-        background: none
+        background: none;
+        flex-grow: unset;
     }
 }
 
@@ -102,6 +116,8 @@
 
 /** Extra styles when displayed in-game **/
 .framed {
+
+
     body {
         overflow: hidden;
         min-width: 360px;
@@ -147,6 +163,10 @@
         position: relative;
         border-radius: 2px;
         margin-right: var(--slides-spacing);
+    }
+
+    .slide-item-1 {
+        order: 0 !important;
     }
 
     /** Prev/Next buttons **/

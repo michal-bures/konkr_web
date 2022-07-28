@@ -151,5 +151,6 @@ function slide(wrapper, items, prev, next, dots) {
   }
 }
 
-slide(slider, sliderItems, prev, next, dots)
-
+if(self !== top) {
+  slide(slider, sliderItems, prev, next, dots)
+}
