@@ -3,25 +3,40 @@
   "name": "Konkr.io",
   "icons": [
     {
-      "src": "./icons/icons-128x128.png",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "maskable any"
+      "src": "./icons/regular.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
     },
     {
-      "src": "./icons/icons-192x192.png",
+      "src": "./icons/regular-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./icons/regular-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./icons/maskable.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/maskable-192.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
-      "src": "./icons/icons-512x512.png",
+      "src": "./icons/maskable-512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "./",
   "background_color": "#9bd6f2",
   "display": "fullscreen",
   "orientation": "any",
