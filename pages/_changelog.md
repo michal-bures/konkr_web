@@ -1,6 +1,28 @@
 
 
 ---
+v2.1.0 <small>released 2022-06-29</small>
+- modal dialogs resize to fit small screen
+- mobile-friendly friendly layouts for number of screens: level select, level detail, defeat
+- new UI effects for moving and buying units, mostly for touch devices
+- multitouch support - you can now zoom in/out on touch screen using two-finger gesture
+- you can now drag-scroll the map while moving or buying unit 
+- improved behavior for tooltips - summon tooltip instantly by clicking on things on the map or in the UI
+- new "hamburger menu" for returning to menu, restarting map and rewinding turn on mobile
+- hide "toggle fullscreen" button if webapp is running in browser-less mode
+- you can now use the back button on your phone to navigate within the app
+- bugfix: fixed usability issues of how-to-play screen on mobile
+- bugfix: auto camera pan during enemy turn no longer pans to incorrect location on non-default zoom levels
+- bugfix: delayed tooltips no longer triggered by touch interactions
+- bugfix: mobile UI: skip turn button no longer remains shown after end of opponents turn
+- bugfix: mobile UI: region income popup tooltip properly hidden on startup
+- bugfix: buying castles no longer highlights conquerable tiles in hostile territory
+- bugfix: fix glitchy transition when merging existing pawn with new pawn in shop
+- bugfix: auto-attacker indicator arrow now hides properly after defeating bandit inside province  
+- bugfix: fixed wonky click detection on the shop area after switching between compact and full UI (after viewport resize)
+- bugfix: mobile UI: fix loading indicator alignment
+
+---
 v2.0.19 <small>released 2022-06-21</small>
 - popup notifications appear only for major news, not when you just lose a few tiles 
 - bugfix: "region fractured" notification no longer appears when the split off region is not alive
