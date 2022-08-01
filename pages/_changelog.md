@@ -1,6 +1,19 @@
 
 
 ---
+v2.1.1 <small>released 2022-07-01</small>
+- new and updated campaign maps!
+- AI is a bit more eager to capture bandit lairs
+- AI attitude emojis remain visible during enemy turn
+- island is not marked "in progress" unless player made at least one move since starting it
+- modal dialogs now have cancel button in top right corner
+- bugfix: fixed camera panning to incorrect position when focusing on large enemy province during their turn   
+- bugfix: right-clicking outside the map to cancel buying unit works again 
+- bugfix: hide news box when opening modal window
+- bugfix: fix glitches in modal dialog positioning & sizing
+- bugfix: removed extra empty space from some campaign levels
+
+---
 v2.1.0 <small>released 2022-06-29</small>
 - modal dialogs resize to fit small screen
 - mobile-friendly friendly layouts for number of screens: level select, level detail, defeat
