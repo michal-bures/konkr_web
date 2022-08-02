@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.3 <small>released 2022-07-02</small>
+- made levels 3 and 5 a bit easier
+
+---
 v2.1.2 <small>released 2022-07-02</small>
 - bugfix: UI should no longer end up in inconsistent state after skipping turn at the wrong moment
 - bugfix: fixed an error that broke automated error reporting 🤦 
