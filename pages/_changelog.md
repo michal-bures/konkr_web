@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.5 <small>released 2022-07-03</small>
+- bugfix: if you rewind, end turn, and rewind again, it will now work instead of doing nothing
+
+---
 v2.1.4 <small>released 2022-07-03</small>
 - bugfix: submitting feedback could fail on some larger maps
 - bugfix: cleaned up some invisible forests from campaign maps 4, 16 and 17
