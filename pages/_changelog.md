@@ -1,6 +1,11 @@
 
 
 ---
+v2.1.4 <small>released 2022-07-03</small>
+- bugfix: submitting feedback could fail on some larger maps
+- bugfix: cleaned up some invisible forests from campaign maps 4, 16 and 17
+
+---
 v2.1.3 <small>released 2022-07-02</small>
 - made levels 3 and 5 a bit easier
 
