@@ -1,6 +1,17 @@
 
 
 ---
+v2.1.6 <small>released 2022-07-05</small>
+- when using rewind you can now choose whether to rewind to start or end of turn
+- auto-camera during enemy turn now zooms out if enemy province won't fit screen
+- camera position and zoom at end of turn is remembered and automatically restored after turn end
+- bugfix: fixed unit sprites occasionally randomly disappearing based on camera position
+- bugfix: fixed occasional freezes during enemy turn (race condition when oponnent was simultaneously destroying another unit and buying a new unit)
+- bugfix: town levels now update correctly (to reflect what level of unit the enemy can afford)
+- bugfix: AI now evaluates the strength of hostile provinces more accurately, leading to slightly better decision making
+- bugfix: mobile UI: fixed undo button not shown as disabled at start of turn
+
+---
 v2.1.5 <small>released 2022-07-03</small>
 - bugfix: if you rewind, end turn, and rewind again, it will now work instead of doing nothing
 
