@@ -18,7 +18,7 @@ Massive thank you to everyone that gave me feedback on this or the earlier versi
 This is also the first time that Konkr feels to me like a complete, finished game. There's no longer a laundry list of things I still *need to do* before It's truly fun and playable, and that feels awesome.
 
 Of course, this does not mean I'm done! In fact I'm more excited than ever to keep expanding the game and bring it to the next level of greatness! But how does the next level of greatness look like is a somewhat open question now. I will share my thoughts below, but I would also love to know what *you* think. So if you didn't yet,
-please do me a favor and fill out this <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSce99wG3nUVDI5WbqqvLCXgBGUVFJolhqvTwJOWmyWDDjoTNg/viewform?usp=sf_link">short survey</a></b>!
+please do me a favor and <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSce99wG3nUVDI5WbqqvLCXgBGUVFJolhqvTwJOWmyWDDjoTNg/viewform?usp=sf_link">take this short survey</a></b>!
 
 ### The Paths Ahead
 
@@ -48,4 +48,4 @@ All that said, the results of the survey posted above might still shake up thing
 I hope this cleared things up a bit. Going forward I would like to be more transparent about my plans, rather than just dropping random 
 updates on you folks out of the blue 😉.
 
-Thanks for reading all the way through this! As always, I'm happy to chat about any of this with you [on Discord]({{ site.discord_link }}).
+Thanks for reading all the way through this! As always, I'm happy to chat about any of this with you [on the Discord server]({{ site.discord_link }}).
