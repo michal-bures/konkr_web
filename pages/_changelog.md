@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.9 <small>released 2022-07-07</small>
+- bugfix: prevent the news box from covering part of the how to play modal window
+
+---
 v2.1.8 <small>released 2022-07-07</small>
 - bugfix: prevent a rare issue in map generator where player gets no starting region on unfair difficulty
 
