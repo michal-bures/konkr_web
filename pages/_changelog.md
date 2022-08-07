@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.8 <small>released 2022-07-07</small>
+- bugfix: prevent a rare issue in map generator where player gets no starting region on unfair difficulty
+
+---
 v2.1.7 <small>released 2022-07-07</small>
 - bugfix: error reporter should no longer fail to log error details
 
