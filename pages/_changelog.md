@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.10 <small>released 2022-07-07</small>
+- bugfix: hero-on-hero combat no longer causing an en error
+
+---
 v2.1.9 <small>released 2022-07-07</small>
 - bugfix: prevent the news box from covering part of the how to play modal window
 
