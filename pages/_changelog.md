@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.7 <small>released 2022-07-07</small>
+- bugfix: error reporter should no longer fail to log error details
+
+---
 v2.1.6 <small>released 2022-07-05</small>
 - when using rewind you can now choose whether to rewind to start or end of turn
 - auto-camera during enemy turn now zooms out if enemy province won't fit screen
