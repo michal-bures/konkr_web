@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.11 <small>released 2022-07-08</small>
+- improve fullscreen mode availability detection
+
+---
 v2.1.10 <small>released 2022-07-07</small>
 - bugfix: hero-on-hero combat no longer causing an en error
 
