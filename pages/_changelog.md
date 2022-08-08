@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.12 <small>released 2022-07-08</small>
+- increase number of factions generated for "crowded" maps
+
+---
 v2.1.11 <small>released 2022-07-08</small>
 - improve fullscreen mode availability detection
 
