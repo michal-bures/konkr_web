@@ -4,5 +4,5 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "frame-ancestors 'self' https://www.itch.io http://localhost:63342"
+    Content-Security-Policy = "frame-ancestors 'self' https://embair.itch.io http://localhost:63342"
     Service-Worker-Allowed = "/"
