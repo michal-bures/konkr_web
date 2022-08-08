@@ -4,5 +4,5 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "frame-ancestors 'self' https://*.itch.io https://v6p9d9t4.ssl.hwcdn.net;"
+    Content-Security-Policy = "frame-ancestors 'self' https://*.itch.io https://v6p9d9t4.ssl.hwcdn.net; https://uploads.ungrounded.net;"
     Service-Worker-Allowed = "/"
