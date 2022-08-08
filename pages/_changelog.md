@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.13 <small>released 2022-07-08</small>
+- tweak level 3 to be easier
+
+---
 v2.1.12 <small>released 2022-07-08</small>
 - increase number of factions generated for "crowded" maps
 
