@@ -148,7 +148,7 @@
             })
         }
 
-        gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.63ff3670818e04962f9e.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.1.12-build-2818981639'
+        gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.8036c5d85958e5c085db.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.1.13-build-2823045969'
     const SW_ENABLE = true
 
     // store current time for timing page load
@@ -158,7 +158,7 @@
     window.setLoadingStatus = (status, isLoading) => {
         statusElement.innerText = status
 
-        if (isLoading===false) {
+        if (isLoading === false) {
             loaderElement.remove()
         }
     }
@@ -173,8 +173,9 @@
 
     setLoadingStatus('loading game...')
 
-    window.addEventListener('load', () => {
+    window.addEventListener('load', boot)
 
+    function boot() {
         if (window.localStorage && navigator.serviceWorker) {
             const cachedBuild = window.localStorage?.getItem('konkr.cached_build')
             window.localStorage.setItem('konkr.cached_build', BUILD_NUMBER)
@@ -204,7 +205,11 @@
             })
 
             if (SW_ENABLE) {
-                navigator.serviceWorker.register('./sw.js', { scope: window.location.href })
+                try {
+                    navigator.serviceWorker.register('./sw.js', { scope: window.location.href })
+                } catch (error) {
+                    console.error('Failed to register service worker', error)
+                }
             } else {
                 purgeServiceWorkers()
             }
@@ -212,8 +217,7 @@
             setLoadingStatus('loading game...')
             window.launchGame()
         }
-
-    })
+    }
 
     function purgeServiceWorkers() {
         return navigator.serviceWorker.getRegistrations()
