@@ -1,6 +1,15 @@
 
 
 ---
+v2.1.14 <small>released 2022-07-11</small>
+- warning icons on the map now have two levels based on severity - yellow and red
+- replaced start of turn news notifications with warning icons on the map with tooltips
+- on invalid move attempt a taunt speech bubble brings extra attention to the defending unit
+- added left/right buttons on level details screen
+- confirmation dialog when ending turn without doing anything
+- improved the treasury icon
+
+---
 v2.1.13 <small>released 2022-07-08</small>
 - tweak level 3 to be easier
 
