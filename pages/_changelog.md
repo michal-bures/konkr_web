@@ -1,12 +1,21 @@
 
 
 ---
+v2.1.17 <small>released 2022-07-12</small>
+- ending turn with the "E" hotkey is now never subject to the confirmation dialog and "E" now also doubles as the "Skip enemy turn" hotkey  
+- confirmation dialogs can now also be confirmed with enter and spacebar 
+- bugfix: fixed province boundaries not updated when you're clicking faster than the game can process it (thanks @Duke Garland) 
+- bugfix: fixed occasionally glitchy transition (originating at wrong hex) when picking up or dropping pawn
+- bugfix: fixed freeze after unexpected action in tutorial (thanks @Capp)
+- bugfix: fixed hovering a unit sometime showing an empty tooltip with an arrow icon
+- bugfix: AI attitude emojis should no longer continue to hang around after a town is razed
+
+---
 v2.1.16 <small>released 2022-07-12</small>
-- bugfix: clicking "next" on level detail screen no longer skips over islands in "defeated" state
-- bugfix: don't allow selecting different region while holding a pawn
-- bugfix: fix occasional janky scrolling behavior after camera drag on map and level detail screens
-- bugfix: improve janky mousewheel scrolling on level detail screen
-- special thanks to @Capp for reporting all of these :)
+- bugfix: clicking "next" on level detail screen no longer skips over islands in "defeated" state (thanks @Capp)
+- bugfix: don't allow selecting different region while holding a pawn (thanks @Capp)
+- bugfix: fix occasional janky scrolling behavior after camera drag on map and level detail screens (thanks @Capp)
+- bugfix: improve janky mousewheel scrolling on level detail screen (thanks @Capp)
 
 ---
 v2.1.14 <small>released 2022-07-11</small>
