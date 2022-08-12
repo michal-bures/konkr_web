@@ -1,6 +1,14 @@
 
 
 ---
+v2.1.16 <small>released 2022-07-12</small>
+- bugfix: clicking "next" on level detail screen no longer skips over islands in "defeated" state
+- bugfix: don't allow selecting different region while holding a pawn
+- bugfix: fix occasional janky scrolling behavior after camera drag on map and level detail screens
+- bugfix: improve janky mousewheel scrolling on level detail screen
+- special thanks to @Capp for reporting all of these :)
+
+---
 v2.1.14 <small>released 2022-07-11</small>
 - warning icons on the map now have two levels based on severity - yellow and red
 - replaced start of turn news notifications with warning icons on the map with tooltips
