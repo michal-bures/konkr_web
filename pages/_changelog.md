@@ -2,10 +2,10 @@
 
 ---
 v2.1.18 <small>released 2022-07-13</small>
-- bugfix: rewind to first move no longer takes you to the start of the current turn when used in the middle of a turn 
-- bugfix: prev/next province buttons presence often not updating correctly after merging provinces or undo  
-- bugfix: don't show the end turn confirmation dialog if you aren't able to end turn anyway (due to holding a pawn for example)
-- bugfix: prevent unit sprites sometimes remaining on screen indefinitely when picking up and dropping units rapidly  
+- bugfix: rewind to first move no longer takes you to the start of the current turn when used in the middle of a turn (thanks @Capp) 
+- bugfix: prev/next province buttons presence often not updating correctly after merging provinces or undo (thanks @Capp) 
+- bugfix: don't show the end turn confirmation dialog if you aren't able to end turn anyway (due to holding a pawn for example) (thanks @Capp)
+- bugfix: prevent unit sprites sometimes remaining on screen indefinitely when picking up and dropping units rapidly (thanks @Capp)  
 
 ---
 v2.1.17 <small>released 2022-07-12</small>
