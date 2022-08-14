@@ -7,7 +7,7 @@ categories: update
 
 Hey everyone, I would hate to keep you starved for content while
 I'm working on the bigger improvements. So starting today, I'll be
-at **adding 3 new handcrafted levels** to the campaign every week!
+ **adding 3 new handcrafted levels** to the campaign every week!
 
 Today's batch includes new levels 8,9 and 10 as well as rebalancing of some existing ones. There's also a bunch of bugfixes and little improvements, more in the [changelog](/changelog). 
 
