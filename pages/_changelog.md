@@ -1,6 +1,16 @@
 
 
 ---
+v2.1.20 <small>released 2022-07-14</small>
+- if you have no game in progress the "continue" button on title screen points you to the next unfinished campaign level  
+- 3 new campaign levels (8,9,10)
+- replaced "give up" button with "restart" on level detail screen
+- redesign of campaign level 5 (Scramble)
+- friendly AI factions are now a little less eager to backstab you when they start worrying that you're growing too large
+- ban AI from building knights in the first two tutorial levels
+- bugfix: alert symbols should no longer hang around after restart/rewind
+
+---
 v2.1.18 <small>released 2022-07-13</small>
 - bugfix: rewind to first move no longer takes you to the start of the current turn when used in the middle of a turn (thanks @Capp) 
 - bugfix: prev/next province buttons presence often not updating correctly after merging provinces or undo (thanks @Capp) 
