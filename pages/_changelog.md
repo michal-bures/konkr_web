@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.24 <small>released 2022-07-15</small>
+- bugfix: fix rare race case of game failing to start due to campaign data not loaded in time
+
+---
 v2.1.23 <small>released 2022-07-15</small>
 - made the AI less likely to spam castles out of boredom, especially if it doesn't have any other military units
 - bugfix: ensured AI's with small provinces can't get permanently stuck never buying a unit out a fear of budget deficit  
