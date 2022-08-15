@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.22 <small>released 2022-07-15</small>
+- bugfix: failing a level while playing it again could sometimes overwrite your previous victory
+
+---
 v2.1.20 <small>released 2022-07-14</small>
 - if you have no game in progress the "continue" button on title screen points you to the next unfinished campaign level  
 - 3 new campaign levels (8,9,10)
