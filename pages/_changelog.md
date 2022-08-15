@@ -2,7 +2,7 @@
 
 ---
 v2.1.24 <small>released 2022-07-15</small>
-- bugfix: fix rare race case of game failing to start due to campaign data not loaded in time
+- bugfix: fix rare case of game failing to start due to campaign data not loaded in time
 
 ---
 v2.1.23 <small>released 2022-07-15</small>
