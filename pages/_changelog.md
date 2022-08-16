@@ -2,7 +2,7 @@
 
 ---
 v2.1.26 <small>released 2022-07-16</small>
-- bugfix: closing shop with the "x" button while holding a bought unit no longer crashes the game 
+- bugfix: closing shop with the "x" button while holding a bought unit no longer crashes the game (thanks @deathbanesravenhaft) 
 
 
 ---
