@@ -1,6 +1,11 @@
 
 
 ---
+v2.1.26 <small>released 2022-07-16</small>
+- bugfix: closing shop with the "x" button while holding a bought unit no longer crashes the game 
+
+
+---
 v2.1.24 <small>released 2022-07-15</small>
 - bugfix: fix rare case of game failing to start due to campaign data not loaded in time
 
