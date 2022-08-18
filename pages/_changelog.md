@@ -1,8 +1,13 @@
 
 
 ---
+v2.1.27 <small>released 2022-07-18</small>
+- disabled right-click context menu only on screens that actually make use of the right mouse button
+- bugfix: don't ask for level feedback while offline (thanks @deathbanesravenhaft)
+
+---
 v2.1.26 <small>released 2022-07-16</small>
-- bugfix: closing shop with the "x" button while holding a bought unit no longer crashes the game (thanks @deathbanesravenhaft) 
+- bugfix: closing shop with the "x" button while holding a bought unit no longer crashes the game (thanks @deathbanesravenhaft)
 
 
 ---
