@@ -148,7 +148,7 @@
             })
         }
 
-        gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.91603a57495778ffae18.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.1.27-build-2880267261'
+        gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.4b702e6c8ad5ce566268.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.1.27-build-2887728725'
     const SW_ENABLE = true
 
     // store current time for timing page load
@@ -175,42 +175,54 @@
 
     window.addEventListener('load', boot)
 
-    function boot() {
-        if (window.localStorage && navigator.serviceWorker) {
-            const cachedBuild = window.localStorage?.getItem('konkr.cached_build')
-            window.localStorage.setItem('konkr.cached_build', BUILD_NUMBER)
-            if (cachedBuild && cachedBuild !== BUILD_NUMBER) {
-                setLoadingStatus('downloading update...')
-                //new version detected => purge cache and any old service workers and reload
-                console.warn(`New version is available! (installed = ${cachedBuild}, available = ${BUILD_NUMBER}), updating!`)
-                window.caches?.keys()
-                    .then(cacheNames => {
-                        cacheNames.forEach(cacheName => {
-                            caches.delete(cacheName)
+    async function boot(safeMode = false) {
+        if (!safeMode && window.localStorage && navigator.serviceWorker) {
+            try {
+                const cachedBuild = window.localStorage?.getItem('konkr.cached_build')
+                window.localStorage.setItem('konkr.cached_build', BUILD_NUMBER)
+                if (cachedBuild && cachedBuild !== BUILD_NUMBER) {
+                    setLoadingStatus('downloading update...')
+                    //new version detected => purge cache and any old service workers and reload
+                    console.warn(`New version is available! (installed = ${cachedBuild}, available = ${BUILD_NUMBER}), updating!`)
+                    window.caches?.keys()
+                        .then(cacheNames => {
+                            cacheNames.forEach(cacheName => {
+                                caches.delete(cacheName)
+                            })
                         })
-                    })
-                    .then(purgeServiceWorkers)
-                    .then(() => {
-                        window.location.reload()
-                    })
-            } else {
-                //version recognized, everything is most likely already cached by SW
-                setLoadingStatus('loading game...')
-                window.launchGame()
-            }
+                        .then(purgeServiceWorkers)
+                        .then(() => {
+                            window.location.reload()
+                        })
+                } else {
+                    //version recognized, everything is most likely already cached by SW
+                    setLoadingStatus('loading game...')
+                    window.launchGame()
+                }
 
-            navigator.serviceWorker.addEventListener('controllerchange', () => {
-                //reload if new service worker takes control of running app
-                console.info('new service worker activated')
-            })
-
-            if (SW_ENABLE) {
-                navigator.serviceWorker.register('./sw.js', { scope: window.location.href }).catch(err=> {
-                    console.error('Failed to register service worker', err)
+                navigator.serviceWorker.addEventListener('controllerchange', () => {
+                    //reload if new service worker takes control of running app
+                    console.info('new service worker activated')
                 })
-            } else {
-                purgeServiceWorkers()
+
+                if (SW_ENABLE) {
+                    navigator.serviceWorker.register('./sw.js', { scope: window.location.href }).catch(err=> {
+                        console.error('Failed to register service worker', err)
+                    })
+                } else {
+                    await purgeServiceWorkers()
+                }
+            } catch (error) {
+                console.error('error updating game, restarting in safe mode')
+
+                try {
+                    await purgeServiceWorkers()
+                } catch(error) {
+                    console.error('failed to purge service workers')
+                }
+                await boot(true)
             }
+
         } else {
             setLoadingStatus('loading game...')
             window.launchGame()
