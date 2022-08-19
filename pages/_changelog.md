@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.28 <small>released 2022-07-19</small>
+- allow the game to run even when localStorage is unavailable
+
+---
 v2.1.27 <small>released 2022-07-18</small>
 - disabled right-click context menu only on screens that actually make use of the right mouse button
 - bugfix: don't ask for level feedback while offline (thanks @deathbanesravenhaft)
