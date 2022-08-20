@@ -1,0 +1,239 @@
+<!doctype html><html lang="en"><head><base href="/releases/dev/test-huge-maps/"><meta charset="UTF-8"><meta name="description" content="A free turn-based strategy game that runs in you browser. Expand your kingdom, build up your economy and crush your enemies!"><meta name="keywords" content="konkr, konkr.io, game, strategy, turn-based, web game, online game, html5, fun, phaser"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="canonical" href="https://www.konkr.io/"><link rel="icon" type="image/png" sizes="16x16" href="./icons/regular-16.png"><link rel="apple-touch-icon" href="./icons/regular-192.png"><link rel="manifest" href="./manifest.json"><meta name="theme-color" content="#9bd6f2"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="application-name" content="Konkr"><meta name="apple-mobile-web-app-title" content="Konkr"><meta name="msapplication-TileColor" content="#9bd6f2"><meta name="msapplication-starturl" content="./"><link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/png"><link rel="apple-touch-icon" href="./icons/icons-192x192.png"><link rel="stylesheet" href="/css/main.css"><title>Konkr.io</title><style>html,
+        body {
+            font-family: Georgia, Arial, Trebuchet;
+            margin: 0;
+            background-color: #9bd6f2;
+            overflow: hidden
+        }
+
+        h1 {
+            text-align: center;
+            position: fixed;
+            font-size: 2em;
+            font-weight: normal;
+            top: calc(50vh + 120px);
+            left: 0;
+            margin: 0 auto;
+            width: 100%;
+            color: #161632;
+        }
+
+        h2 {
+            text-align: center;
+            position: fixed;
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+            top: calc(50% + 170px);
+            left: 0;
+            margin: 0 auto;
+            width: 100%;
+            color: #161632;
+        }
+
+
+        .center-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        #phaser-game {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .hidden {
+            visibility: hidden
+        }
+
+        li {
+            text-align: left;
+        }
+
+        #status {
+            margin: 15px auto;
+            position: relative;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* news box */
+        #news-box {
+            position: absolute;
+            padding: 14px;
+            background-color: #aedcf2f2;
+            border-radius: 14px;
+            width: 400px;
+            left: calc(50% - 200px);
+            bottom: 40px;
+            transition: all 300ms ease-in-out;
+        }
+
+        /* hide news box if there's not enough screen estate for it */
+        @media only screen and (max-width: 890px) {
+            #news-box {
+                visibility: hidden;
+            }
+        }
+
+
+        /* Dat.gui styles */
+        .dg.main {
+            position: absolute;
+            left: 0px
+        }
+
+        /* Loader */
+        #loader {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: block;
+            margin: 15px auto;
+            position: relative;
+            color: #FFF;
+            left: -100px;
+            box-sizing: border-box;
+            animation: shadowRolling 2s linear infinite;
+        }
+
+        @keyframes shadowRolling {
+            0% {
+                box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+            }
+            12% {
+                box-shadow: 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+            }
+            25% {
+                box-shadow: 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+            }
+            36% {
+                box-shadow: 120px 0 white, 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0);
+            }
+            50% {
+                box-shadow: 130px 0 white, 120px 0 white, 110px 0 white, 100px 0 white;
+            }
+            62% {
+                box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white, 110px 0 white;
+            }
+            75% {
+                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white;
+            }
+            87% {
+                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white;
+            }
+            100% {
+                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+            }
+        }</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q92DKK544Q"></script><script>window.dataLayer = window.dataLayer || []
+
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+
+        function gtagConfig(settings) {
+            gtag('config', 'G-Q92DKK544Q', {
+                client_storage: 'none',
+                send_page_view: false,
+                ...settings
+            })
+        }
+
+        gtag('js', new Date())</script><script defer="defer" src="vendors.45e3140e1145feb775b9.bundle.js"></script><script defer="defer" src="main.7b4c0241c3d12fa3d3d5.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.1.29-build-2895342715'
+    const SW_ENABLE = true
+
+    // store current time for timing page load
+    window.tStart = performance.now()
+    const statusElement = document.getElementById('status')
+    const loaderElement = document.getElementById('loader')
+    window.setLoadingStatus = (status, isLoading) => {
+        statusElement.innerText = status
+
+        if (isLoading === false) {
+            loaderElement.remove()
+        }
+    }
+
+    // if news-box has no content, inject warning
+    const newsBox = document.getElementById('news-box')
+    if (newsBox?.innerText === '{{ ' + 'content }}') {
+        newsBox.innerHTML = `<p></p><b>⚠ Warning:</b> Playing unsupported game version</p><p><code>${BUILD_NUMBER}</code></p>
+                         <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
+                         Or don't, I'm not your boss, but proceed with caution.</p>`
+    }
+
+    setLoadingStatus('loading game...')
+
+    window.addEventListener('load', boot)
+
+    async function boot(safeMode = false) {
+        if (!safeMode && window.localStorage && navigator.serviceWorker) {
+            try {
+                const cachedBuild = window.localStorage?.getItem('konkr.cached_build')
+                window.localStorage.setItem('konkr.cached_build', BUILD_NUMBER)
+                if (cachedBuild && cachedBuild !== BUILD_NUMBER) {
+                    setLoadingStatus('downloading update...')
+                    //new version detected => purge cache and any old service workers and reload
+                    console.warn(`New version is available! (installed = ${cachedBuild}, available = ${BUILD_NUMBER}), updating!`)
+                    window.caches?.keys()
+                        .then(cacheNames => {
+                            cacheNames.forEach(cacheName => {
+                                caches.delete(cacheName)
+                            })
+                        })
+                        .then(purgeServiceWorkers)
+                        .then(() => {
+                            window.location.reload()
+                        })
+                } else {
+                    //version recognized, everything is most likely already cached by SW
+                    setLoadingStatus('loading game...')
+                    window.launchGame()
+                }
+
+                navigator.serviceWorker.addEventListener('controllerchange', () => {
+                    //reload if new service worker takes control of running app
+                    console.info('new service worker activated')
+                })
+
+                if (SW_ENABLE) {
+                    navigator.serviceWorker.register('./sw.js', { scope: window.location.href }).catch(err=> {
+                        console.error('Failed to register service worker', err)
+                    })
+                } else {
+                    await purgeServiceWorkers()
+                }
+            } catch (error) {
+                console.error('error updating game, restarting in safe mode')
+
+                try {
+                    await purgeServiceWorkers()
+                } catch(error) {
+                    console.error('failed to purge service workers')
+                }
+                await boot(true)
+            }
+
+        } else {
+            setLoadingStatus('loading game...')
+            window.launchGame()
+        }
+    }
+
+    function purgeServiceWorkers() {
+        return navigator.serviceWorker.getRegistrations()
+            .then(registrations => {
+                for (let registration of registrations) {
+                    registration.unregister()
+                }
+            })
+    }</script></body></html>
