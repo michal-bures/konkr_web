@@ -1,6 +1,21 @@
 
 
 ---
+v2.1.30 <small>released 2022-07-21</small>
+- RULES CHANGE: All cut off units turn into bandits at the end of EACH players turn (previously this happened at the start of the unit owners turn).
+- display current level name on play and victory screens 
+- add restart button to victory screen
+- minor tweak to 2nd tutorial level
+- bugfix: don't show next button on victory screen if all campaign levels were completed 
+- bugfix: should be no longer possible to crash the game by using buy unit or other hotkeys rapidly
+- bugfix: should be no longer able to get the shop into visually broken state by picking up and dropping pawns too fast clicking
+- bugfix: fix race condition in coins animation that could sometimes cause a ghost coin to remain on a tile after it was captured
+- bugfix: fix campaign level buttons sometimes disappearing from the campaign overview due to animation glitch
+- bugfix: ending camera drag with cursor on top of a button no longer activates it
+- bugfix: fix incorrect level preview sometimes displayed after returning from play mode to level detail screen
+- bugfix: fix ghost movement highlights staying on map preview
+
+---
 v2.1.28 <small>released 2022-07-19</small>
 - allow the game to run even when localStorage is unavailable
 
