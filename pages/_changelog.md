@@ -1,6 +1,11 @@
 
 
 ---
+v2.1.31 <small>released 2022-07-21</small>
+- undo hotkey expands the rewind menu if no more actions can be undone in the turn
+- allow switching from buying one unit to another with numeric hotkeys 
+
+---
 v2.1.30 <small>released 2022-07-21</small>
 - RULES CHANGE: All cut off units turn into bandits at the end of EACH players turn (previously this happened at the start of the unit owners turn).
 - display current level name on play and victory screens 
