@@ -1,6 +1,11 @@
 
 
 ---
+v2.1.36 <small>released 2022-07-21</small>
+- added new levels 5, 17, 18, removed level 11 (Gorith)
+- bugfix: fixed a few visual bugs related to the bandit rule change   
+
+---
 v2.1.31 <small>released 2022-07-21</small>
 - undo hotkey expands the rewind menu if no more actions can be undone in the turn
 - allow switching from buying one unit to another with numeric hotkeys 
