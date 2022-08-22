@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.38 <small>released 2022-07-22</small>
+- bugfix: clicking the wrong spot on the screen no longer randomly triggers google login
+
+---
 v2.1.37 <small>released 2022-07-22</small>
 - bugfix: prevent rare incorrect tile updates resulting from concurrent move transitions on enemy turn
 - bugfix: don't start player turn before bandit actions completed animating
