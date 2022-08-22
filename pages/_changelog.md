@@ -1,6 +1,12 @@
 
 
 ---
+v2.1.37 <small>released 2022-07-22</small>
+- bugfix: prevent rare incorrect tile updates resulting from concurrent move transitions on enemy turn
+- bugfix: don't start player turn before bandit actions completed animating
+- autosave progress at the start of conquest level, even before first player action
+
+---
 v2.1.36 <small>released 2022-07-21</small>
 - added new levels 5, 17, 18, removed level 11 (Gorith)
 - bugfix: fixed a few visual bugs related to the bandit rule change   
