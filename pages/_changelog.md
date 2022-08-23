@@ -1,6 +1,10 @@
 
 
 ---
+v2.1.39 <small>released 2022-07-23</small>
+- error reporting improvements
+
+---
 v2.1.38 <small>released 2022-07-22</small>
 - bugfix: clicking the wrong spot on the screen no longer randomly triggers google login
 
