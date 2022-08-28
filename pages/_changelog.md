@@ -1,6 +1,12 @@
 
 
 ---
+v2.1.41 <small>released 2022-07-28</small>
+- new levels 8,13,26
+- removed level 12 (Onslaught)
+- bugfix: fix campaign maps loading redundantly for a second time during boot
+
+---
 v2.1.39 <small>released 2022-07-23</small>
 - error reporting improvements
 
