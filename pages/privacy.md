@@ -39,7 +39,7 @@ seo_frequency: monthly
  
 ### 2. Why is it collected
 
-2.2 **Email address** is collected for the following purposes:
+2.1 **Email address** is collected for the following purposes:
  
  * When you provide your email address while signing-up or when you sign-up through a third party provider (such as Google or Facebook),
      your email address is used in the sign-in process and stored at the user database.
@@ -49,10 +49,11 @@ seo_frequency: monthly
  If you opt into this service, announcements about major updates of the game may be sent to your email address.
  * Your email address will not be used for any other purposes than the ones listed above.
 
-2.3 **Anonymized usage metrics** are collected, because they offer valuable insight into the way real users interact
+2.2 **Anonymized usage metrics** are collected, because they offer valuable insight into the way real users interact
      with the game. This in turns allows me to improve the user experience, balance game difficulty and in general make more informed
      design decisions when improving the game.
-   * **Crash logs** are sent automatically when an unexpected error is encountered and you see a red error notification popup. 
+
+2.3 **Crash logs** are sent automatically when an unexpected error is encountered and you see a red error notification popup. 
      This helps me detect, reproduce, analyze and hopefully fix bugs in the game.
 
 ### 3. Disclosure to third parties
@@ -69,7 +70,7 @@ seo_frequency: monthly
 
 ### Data deletion request
 
-If you signed in with your email address on [konkr.io](https://www.konkr.io) and you'd like to have your email adress and all your data removed from the database,
+If you signed in with your email address on [konkr.io](https://www.konkr.io) and you'd like to have your email address and all your data removed from the database,
 email me on [dev@konkr.io](mailto:{{site.email}}) and I will get that sorted.
 
 To remove any information stored by the game from your web browser, follow the instructions 
