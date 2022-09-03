@@ -1,6 +1,18 @@
 
 
 ---
+v2.2.0 <small>released 2022-08-03</small>
+- ability to sign in via email/google/facebook and automatically sync progress in background
+- new sidebar UI for How to play and Feedback form
+- color palette choice is now a global preference and persist across levels and sessions
+- new toggle fullscreen prompt on mobile
+- allow to import a game from string by hitting F8
+- mute and fullscreen toggle buttons moved to bottom right corner on desktop
+- completed capmaign maps show the starting state (for reaply) instead of the winning state
+- bugfix: added preloading for certain sprites on victory screen so that they won't fail to show while offline
+- bugfix: fixed feedback dialog input box not visible on android/iOS in fullscreen mode 
+
+---
 v2.1.41 <small>released 2022-07-28</small>
 - new levels 8,13,26
 - removed level 12 (Onslaught)
