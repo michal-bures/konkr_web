@@ -22,9 +22,10 @@ html {
 
 :root {
     --main-text-color: #535351;
-    --widget-background-color: #9fd1e8;
+    --widget-background-color: rgba(159, 209, 232, 0.5);
     --button-highlight-color: #dbebf2;
     --link-color: #295d77;
+    --main-background-color: #b1ddf2;
 }
 
 body {
@@ -78,7 +79,15 @@ a:visited {
 /**
  * Layout
  */
+#navigator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 #navigator nav {
+    background: var(--main-background-color);
     user-select: none;
     display: flex;
     flex-direction: row;
@@ -98,6 +107,10 @@ a:visited {
     display: block;
 }
 
+#content {
+    margin-top: 54px;
+}
+
 #currentPage {
     display: flex;
     flex-grow: 1;
@@ -113,11 +126,6 @@ a:visited {
     font-size: 16px;
     align-self: center;
     text-align: center;
-}
-
-.page {
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 .page ul {
@@ -155,7 +163,7 @@ a:visited {
 }
 
 h1 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -164,6 +172,17 @@ h1 {
     vertical-align: middle;
 }
 
+.page {
+    padding: 16px;
+}
+
 .page#index {
-    padding: 20px
+    margin-top: -60px;
+}
+
+.widget {
+    padding: 16px;
+    background-color: var(--widget-background-color);
+    border-radius: 16px;
+    margin-bottom: 16px;
 }
