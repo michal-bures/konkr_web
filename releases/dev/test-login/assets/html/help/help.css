@@ -1,0 +1,169 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/**
+ * Basic styling
+ */
+
+:root {
+    --main-text-color: #535351;
+    --widget-background-color: #9fd1e8;
+    --button-highlight-color: #dbebf2;
+    --link-color: #295d77;
+}
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--main-text-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+a:visited {
+    color: var(--link-color);
+}
+
+/**
+ * SVG Icons
+ */
+.svg-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: var(--main-text-color);
+}
+
+.svg-icon:hover path,
+.svg-icon:hover polygon,
+.svg-icon:hover rect {
+    fill: var(--main-text-color);
+}
+
+
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
+
+/**
+ * Layout
+ */
+#navigator nav {
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav-button {
+    display: block;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+.nav-button:hover {
+    background: var(--button-highlight-color);
+    display: block;
+}
+
+#currentPage {
+    display: flex;
+    flex-grow: 1;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--widget-background-color);
+    margin: 2px
+}
+
+#currentPageText {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 16px;
+    align-self: center;
+    text-align: center;
+}
+
+.page {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.page ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 10px;
+    flex-grow: 1
+}
+
+.page li {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-indent: -20px;
+}
+
+.page li::before {
+    content: "❖";
+    padding-right: 5px;
+}
+
+.figure {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 360px;
+    min-width: 200px;
+    object-fit: contain;
+    margin: auto;
+
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.inline-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page#index {
+    padding: 20px
+}
