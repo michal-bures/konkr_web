@@ -64,13 +64,6 @@ a:visited {
     fill: var(--main-text-color);
 }
 
-.svg-icon:hover path,
-.svg-icon:hover polygon,
-.svg-icon:hover rect {
-    fill: var(--main-text-color);
-}
-
-
 .svg-icon circle {
     stroke: #4691f6;
     stroke-width: 1;
@@ -102,9 +95,11 @@ a:visited {
     border-radius: 8px;
 }
 
-.nav-button:hover {
-    background: var(--button-highlight-color);
-    display: block;
+@media (hover: hover) {
+    .nav-button:hover {
+        background: var(--button-highlight-color);
+        display: block;
+    }
 }
 
 #content {
