@@ -1,6 +1,12 @@
 
 
 ---
+v2.2.2 <small>released 2022-08-04</small>
+- highlight new levels on the level select screen
+- 3 new levels
+- bugfix: fix sign-in buttons showing up even when sidebar closed after unexpected disconnect
+
+---
 v2.2.0 <small>released 2022-08-03</small>
 - ability to sign in via email/google/facebook and automatically sync progress in background
 - new sidebar UI for How to play and Feedback form
