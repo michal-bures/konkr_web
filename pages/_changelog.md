@@ -1,6 +1,12 @@
 
 
 ---
+v2.2.3 <small>released 2022-08-11</small>
+- 3 new campaign levels
+- Campaign level 22 ("Politics") removed
+- Bankruptcy markers on units take precedence over exclamation mark markers
+
+---
 v2.2.2 <small>released 2022-08-04</small>
 - highlight new levels on the level select screen
 - 3 new levels
