@@ -1,6 +1,19 @@
 
 
 ---
+v2.2.4 <small>released 2022-08-18</small>
+- 3 new campaign levels
+- ability to copy and reuse a link to the current level (buttons added to conquest setup, play and victory screens)
+- level name now more prominently visible on play and victory screens
+- conquest islands now have randomly generated names (no more boring "Unknown island")
+- in conquest mode you can now also generate a new island by entering a custom name 
+- you can now close modal dialogs with escape key
+- bugfix: fix UI tooltips sometimes appearing even when element is no longer under mouse pointer
+- bugfix: improve victory screen buttons layout on small screens
+- bugfix: fixed missing modal window header decoration and occasional bad sizing 
+- bugfix: fix level feedback form not showing
+
+---
 v2.2.3 <small>released 2022-08-11</small>
 - 3 new campaign levels
 - Campaign level 22 ("Politics") removed
