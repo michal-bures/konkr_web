@@ -5,10 +5,115 @@
 			"format": "RGBA8888",
 			"size": {
 				"w": 950,
-				"h": 1323
+				"h": 1512
 			},
 			"scale": 1,
 			"frames": [
+				{
+					"filename": "victoryRays",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 952,
+						"h": 952
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 11,
+						"w": 948,
+						"h": 939
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 948,
+						"h": 939
+					}
+				},
+				{
+					"filename": "victoryHalo",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 391,
+						"h": 391
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 5,
+						"w": 379,
+						"h": 380
+					},
+					"frame": {
+						"x": 1,
+						"y": 942,
+						"w": 379,
+						"h": 380
+					}
+				},
+				{
+					"filename": "levelPanel",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 615,
+						"h": 291
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 615,
+						"h": 187
+					},
+					"frame": {
+						"x": 1,
+						"y": 1324,
+						"w": 615,
+						"h": 187
+					}
+				},
+				{
+					"filename": "shieldOutline",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 273,
+						"h": 307
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 273,
+						"h": 307
+					},
+					"frame": {
+						"x": 382,
+						"y": 942,
+						"w": 273,
+						"h": 307
+					}
+				},
+				{
+					"filename": "shield",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 177,
+						"h": 213
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 177,
+						"h": 213
+					},
+					"frame": {
+						"x": 618,
+						"y": 1251,
+						"w": 177,
+						"h": 213
+					}
+				},
 				{
 					"filename": "gravestone",
 					"rotated": false,
@@ -24,8 +129,8 @@
 						"h": 44
 					},
 					"frame": {
-						"x": 1,
-						"y": 1,
+						"x": 382,
+						"y": 1251,
 						"w": 36,
 						"h": 44
 					}
@@ -45,94 +150,10 @@
 						"h": 86
 					},
 					"frame": {
-						"x": 39,
-						"y": 1,
+						"x": 657,
+						"y": 942,
 						"w": 59,
 						"h": 86
-					}
-				},
-				{
-					"filename": "shield",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 177,
-						"h": 213
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 177,
-						"h": 213
-					},
-					"frame": {
-						"x": 100,
-						"y": 1,
-						"w": 177,
-						"h": 213
-					}
-				},
-				{
-					"filename": "shieldOutline",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 273,
-						"h": 307
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 273,
-						"h": 307
-					},
-					"frame": {
-						"x": 279,
-						"y": 1,
-						"w": 273,
-						"h": 307
-					}
-				},
-				{
-					"filename": "victoryHalo",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 391,
-						"h": 391
-					},
-					"spriteSourceSize": {
-						"x": 6,
-						"y": 5,
-						"w": 379,
-						"h": 380
-					},
-					"frame": {
-						"x": 554,
-						"y": 1,
-						"w": 379,
-						"h": 380
-					}
-				},
-				{
-					"filename": "victoryRays",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 952,
-						"h": 952
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 11,
-						"w": 948,
-						"h": 939
-					},
-					"frame": {
-						"x": 1,
-						"y": 383,
-						"w": 948,
-						"h": 939
 					}
 				}
 			]
@@ -141,6 +162,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:183ca6afbeffeaeecd59beaa36b9fbfc:8cf3b43809215189bf0c550c69955868:6769eb2a70289033a97b96142d3fe305$"
+		"smartupdate": "$TexturePacker:SmartUpdate:029a5041cff519ab0f8bdd4ecbbd9145:e1e178ff9b50584f7166a44305b4bf04:6769eb2a70289033a97b96142d3fe305$"
 	}
 }

@@ -7185,7 +7185,7 @@
 					}
 				},
 				{
-					"filename": "ui/frame-test/bc",
+					"filename": "ui/button-icons/link",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7210,7 +7210,7 @@
 					}
 				},
 				{
-					"filename": "ui/frame-test/bl",
+					"filename": "ui/frame-test/bc",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7235,7 +7235,7 @@
 					}
 				},
 				{
-					"filename": "ui/frame-test/br",
+					"filename": "ui/frame-test/bl",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7260,7 +7260,7 @@
 					}
 				},
 				{
-					"filename": "ui/mini-close-button-hover",
+					"filename": "ui/frame-test/br",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7285,7 +7285,7 @@
 					}
 				},
 				{
-					"filename": "ui/mini-close-button",
+					"filename": "ui/mini-close-button-hover",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7310,6 +7310,31 @@
 					}
 				},
 				{
+					"filename": "ui/mini-close-button",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 1056,
+						"y": 480,
+						"w": 16,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
 					"filename": "ui/box/inner-plate/tile-1",
 					"rotated": false,
 					"trimmed": false,
@@ -7325,31 +7350,6 @@
 					},
 					"frame": {
 						"x": 1038,
-						"y": 488,
-						"w": 8,
-						"h": 8
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/box/inner-plate/tile-2",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 8,
-						"h": 8
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 8,
-						"h": 8
-					},
-					"frame": {
-						"x": 1048,
 						"y": 488,
 						"w": 8,
 						"h": 8
@@ -7385,7 +7385,7 @@
 					}
 				},
 				{
-					"filename": "ui/box/inner-plate/tile-3",
+					"filename": "ui/box/inner-plate/tile-2",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7410,7 +7410,7 @@
 					}
 				},
 				{
-					"filename": "ui/box/inner-plate/tile-4",
+					"filename": "ui/box/inner-plate/tile-3",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7435,7 +7435,7 @@
 					}
 				},
 				{
-					"filename": "ui/box/inner-plate/tile-5",
+					"filename": "ui/box/inner-plate/tile-4",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7460,7 +7460,7 @@
 					}
 				},
 				{
-					"filename": "ui/box/inner-plate/tile-6",
+					"filename": "ui/box/inner-plate/tile-5",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7485,7 +7485,7 @@
 					}
 				},
 				{
-					"filename": "ui/box/inner-plate/tile-7",
+					"filename": "ui/box/inner-plate/tile-6",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7510,7 +7510,7 @@
 					}
 				},
 				{
-					"filename": "ui/box/inner-plate/tile-8",
+					"filename": "ui/box/inner-plate/tile-7",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7760,7 +7760,7 @@
 					}
 				},
 				{
-					"filename": "ui/ribbon/slider/tile-0",
+					"filename": "ui/box/inner-plate/tile-8",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7785,7 +7785,7 @@
 					}
 				},
 				{
-					"filename": "ui/ribbon/slider/tile-1",
+					"filename": "ui/ribbon/slider/tile-0",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7810,7 +7810,7 @@
 					}
 				},
 				{
-					"filename": "ui/ribbon/slider/tile-2",
+					"filename": "ui/ribbon/slider/tile-1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -7833,6 +7833,31 @@
 						"x": 0,
 						"y": 0
 					}
+				},
+				{
+					"filename": "ui/ribbon/slider/tile-2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 8
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 8
+					},
+					"frame": {
+						"x": 1089,
+						"y": 476,
+						"w": 8,
+						"h": 8
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
 				}
 			]
 		}
@@ -7840,6 +7865,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:cc435ad1d3c823b40eba7608ce23f656:12af2e74c669076aef8bf790f9e4c24b:cbce6b53f0f49e0bf15173c25c41f876$"
+		"smartupdate": "$TexturePacker:SmartUpdate:c173948037116e760465b6e39db5a354:4e8d442c5f1ee2370cdf824c712ca75e:cbce6b53f0f49e0bf15173c25c41f876$"
 	}
 }
