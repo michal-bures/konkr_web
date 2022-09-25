@@ -1,0 +1,40 @@
+---
+layout: post
+title:  Rivals now 35% more satisfying to crush!
+date:   2022-09-25
+categories: update
+---
+
+Your rivals just became a fair bit more expressive! Watch them react to your actions! Be it with love, awe or despair 🙂.
+
+Some tweaks to the AI behavior have landed as well. You should see a bit less suicidal aggression 
+from the AI and fewer facepalm-inducingly stupid moves. 
+If you'd like to know more about the changes and what's coming next, [continue reading here](/update/2022/09/25/ai-update.html).
+
+<!-- excerpt-end -->
+
+The most significant AI changes include:
+- AI may now choose to wait and conserve coins when there is no good expansion opportunity; it's less likely to attack allies just because it has no better attack opportunity.
+- AI no longer has the habit to use knights as town guards.
+- AI acts less unhinged when losing badly, still pays some attention to defense and economy.
+- AI no longer completely ignores rich bandit camps in some situations.
+
+(for exhaustive list see [changelog](/changelog))
+
+## What's next?
+
+I have some fairly ambitious plans for the campaign(s) redesign, but I think I'm going to take some more time to focus on the AI first. 
+Since the AI behavior can have a big impact on level balance, I'd like to make sure I'm really happy with it before adding a bunch more hand-crafted islands.
+
+There are a few main areas that still need attention in my opinion:
+- Defensive tactics 
+  - AI should organize its defenses better in late game, it should not be leaving its entire army blatantly prone to being cut off
+  - AI should be able to better recognize and defend choke points instead of falling back to towns
+- Strategic expansion: AI should actively expand in the direction that gets it closer to valuable objectives.
+- Player feedback: The feedback animations are a nice first step, but I have more plans to make
+ the diplomatic layer of the game more readable to the player
+
+I realize I'm messing with the very core of what makes the game fun here, so I definitely won't make any major changes lightly,
+and I'll be attentively listening to all feedback along the way! Don't hesitate to use the in-game feedback button!
+
+And just in case you *really* dislike the newest AI changes, you can still play with the old AI on [https://www.konkr.io/releases/2.2.3/](https://www.konkr.io/releases/2.2.3/).
