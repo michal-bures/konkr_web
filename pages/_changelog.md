@@ -1,20 +1,25 @@
 
 
 ---
+v2.3.2 <small>released 2022-10-02</small>
+- restored the AI to be a little more suspecting against dominant faction
+- AI less likely to just sit around and defend in a losing situation
+
+---
 v2.3.0 <small>released 2022-09-25</small>
 - 3 new campaign levels
 - rival attitude emojis now animate, giving you instant feedback on the diplomatic effect of your actions
 - defense strength indicators are now always visible when province is selected (both own and rival province)
-- ai may now choose to wait and conserve coins when there is no good expansion opportunity
-- ai bugfix: no longer has the habit to use knights as town guards
-- ai tuning: ai acts less unhinged in desperate situations, still pays some attention to defense and economy 
-- ai tuning: ai is a bit less envious of dominant faction in early game
-- ai tuning: more nuanced calculation on approval impact on allies and enemies of attacked player
-- ai bugfix: ai no longer completely ignores rich bandit camps when focusing on war
-- ai bugfix: faction power estimate is no longer blind to units that didn't attack in the preceding turn
-- ai bugfix: fixed a bug that made a dominant faction quickly begin to like everyone else
-- ai bugfix: attacking an already bankrupt province no longer incurs the same approval penalty as did bankrupting it in the first place 
-- campaign island 31 (Hold the Tide) rebalanced to compensate for AI improvements
+- AI may now choose to wait and conserve coins when there is no good expansion opportunity
+- AI bugfix: no longer has the habit to use knights as town guards
+- AI tuning: AI acts less unhinged in desperate situations, still pays some attention to defense and economy 
+- AI tuning: AI is a bit less envious of dominant faction in early game
+- AI tuning: more nuanced calculation on approval impact on allies and enemies of attacked player
+- AI bugfix: AI no longer completely ignores rich bandit camps when focusing on war
+- AI bugfix: faction power estimate is no longer blind to units that didn't attack in the preceding turn
+- AI bugfix: fixed a bug that made a dominant faction quickly begin to like everyone else
+- AI bugfix: attacking an already bankrupt province no longer incurs the same approval penalty as did bankrupting it in the first place 
+- campaign island 34 (Hold the Tide) rebalanced to compensate for AI improvements
 - bugfix: missing defense marker on the tile a pawn was picked up from   
 - bugfix: attitude emojis now update immediately after end of player turn
 - bugfix: rewind now works correctly when used during enemy turn playback  
