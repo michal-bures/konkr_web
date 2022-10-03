@@ -1,6 +1,10 @@
 
 
 ---
+v2.3.3 <small>released 2022-10-03</small>
+- bugfix: fixed player missing their starting villager in Island 25 ("Scorching Heat") 
+
+---
 v2.3.2 <small>released 2022-10-02</small>
 - restored the AI to be a little more suspecting against dominant faction
 - AI less likely to just sit around and defend in a losing situation
