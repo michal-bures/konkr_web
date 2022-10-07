@@ -1,6 +1,10 @@
 
 
 ---
+v2.3.4 <small>released 2022-10-07</small>
+- fixed typo in tutorial (thanks @XanderStuff)
+
+---
 v2.3.3 <small>released 2022-10-03</small>
 - bugfix: fixed player missing their starting villager in Island 25 ("Scorching Heat") 
 
