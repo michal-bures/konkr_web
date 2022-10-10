@@ -166,9 +166,11 @@
     // if news-box has no content, inject warning
     const newsBox = document.getElementById('news-box')
     if (newsBox?.innerText === '{{ ' + 'content }}') {
-        newsBox.innerHTML = `<p></p><b>⚠ Warning:</b> Playing unsupported game version</p><p><code>${BUILD_NUMBER}</code></p>
-                         <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
-                         Or don't, I'm not your boss, but proceed with caution.</p>`
+        newsBox.innerHTML = `<p></p><b>♥ Thanks for trying out the new AI!</b></p>
+
+<p>After you're done playing, it would be great if you find a moment to <b><a href="https://forms.gle/4ZscAvCdDzmrZJif8">fill out this tiny feedback survey</a></b>!</p>
+ <hr/>
+                         <p><a href='https://www.konkr.io'>Go back to www.konkr.io</a>.</p>`
     }
 
     setLoadingStatus('loading game...')
