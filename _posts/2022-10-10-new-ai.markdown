@@ -1,0 +1,83 @@
+---
+layout: post
+title:  🤖 "I'm sorry Dave, I'm afraid I can't do that."
+date:   2022-10-10
+categories: update
+---
+The AI is getting feisty! You can test a beta version of a **major AI overhaul at [www.konkr.io/releases/dev/test-ai-defense](https://www.konkr.io/releases/dev/test-ai-defense/)**.
+I'm very much looking for feedback, so give it a go! It's where you can also find this weeks new levels (they will arrive into the main game later, together with the update).
+
+[Continue reading here](/update/2022/10/10/new-ai.html) for more details!
+<!-- excerpt-end -->
+
+## Changes to the AI
+
+The hero of this update is a brand new algorithm for AI defense planning. The AI now analyses its provinces 
+ in terms of potential defense lines, much like a human player tends to. It recognizes choke points
+and blocks key tiles near the frontlines, instead of just defending towns.
+
+Previously, trying to make the AI play more defensively would lead to the game becoming a cakewalk, 
+because the AI didn't really know how to mount an effective defense, so it's best defense was offense. Now it's a different story! 
+The AI in this update balances offense with defense a lot more evenly, making it on one hand slower to expand and less unpredictable, 
+but on the other hand a lot more challenging to take down, especially when it gets a big province going.
+
+In a nutshell, the main effect I'm aiming for with this is to make the game feel less like this:
+
+<img src="/img/blog/whac-a-mole.gif" style="width: 300px"/>
+
+And more like this:
+
+<img src="/img/blog/war-council.jpg" style="width: 300px"/>
+
+Less chaos, less freebies and cheap victories, more strategy and epic decisions!
+
+Additionally, there's a subtle but impactful change to the way AI approval changes based on others being peaceful with them.
+Basically it's making it quite a bit easier to be friendly with the AI.
+Combined with the toned down aggression, it should give most games a more interesting "political landscape", with 
+allies and enemies rising either naturally, or more often through your deliberate actions. It's no longer so often a case of 
+"doesn't matter who I attack first since they are all going to hate me soon enough anyway".
+
+<img src="/img/blog/feedback-button.png" style="float: right; margin-left: 40px"/>
+
+So **go play with it [over here](https://www.konkr.io/releases/dev/test-ai-defense/)** and let me know how I'm doing with these
+goals and how you like the new AI overall! Easiest way is to use the feedback/bug report in the top right corner.
+
+## Next steps
+
+The next step is obviously to finish tuning this update and get it merged to the main game.
+There's a *lot* of new numbers to tweak so that the AI decision-making feels just right.
+
+After that there's one more major overhaul I'm planning for the AI, and that is in the attack planning department. 
+
+Right now, there's a simple but mostly effective algorithm leading the AI to attack tiles which:
+- it is likely to be able to hold
+- cause maximum loss for the enemy
+
+It can react pretty well to what's in its immediate surroundings, but that's it. For example on this map:
+
+<img src="/img/blog/ai-awareness.png"/>
+
+The AI will have no idea that it should expand to the left to revive a juicy chunk of dormant territory, or that there's a 
+very juicy bandit camp ripe for the taking just a few tiles to the north.
+
+What the AI is missing is the ability to **recognize strategic objectives on the map** and **direct its attacks so that
+ it gets closer to reaching them**. I have a lot of groundwork already set up to allow the AI to do this kind of planning, 
+so I'm looking forward with confidence to try and add this layer to the AI!
+
+Alongside that I'll keep focusing on the diplomatic/political layer, looking for some more subtle ways to give player
+better feedback on what's going on in the AI opponents heads :).
+
+## Why I'm focusing on the AI
+
+I didn't really plan to focus this much on the AI in the near term, but doing a lot of level design and play testing 
+in the past weeks reminded me how foundational it is to all other aspects of the game.
+
+- It obviously affects the level design, what kind of levels are fun, what types of islands the AI is capable to play on competently and provide interesting challenge.
+- It's also a big limiting factor for my ability to add new elements to the game; I've read a *lot* of suggestions for new features 
+  from the community (keep them coming!) and one of the first questions I always have to ask myself is "would the AI know how to use this"?
+  Having the AI aware of valuable targets to capture and/or defend will be a big step towards unlocking some simple but fun feature additions to the game.
+- In a way it's also a blocker for the map editor, because it would suck to let people make a bunch of maps and then break their balance once the AI starts playing differently.
+
+In general, I think it will pay off to get this aspect of the game into a really good shape now, so that it can remain stable afterwards, and I can avoid further dramatic changes on this front in the future.   
+
+So please bear with me while I get this sorted, more juicy content is planned to come after that 😉. 
