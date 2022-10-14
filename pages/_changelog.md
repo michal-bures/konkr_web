@@ -1,6 +1,11 @@
 
 
 ---
+v2.3.6 <small>released 2022-10-14</small>
+- bugfix: When enemy takes a hex that had a bandit, the alert tooltip no longer says "They killed our bandit!"
+- bugfix: Fix bought pawn not reappearing in shopping tray after being returned to town.
+
+---
 v2.3.4 <small>released 2022-10-07</small>
 - fixed typo in tutorial (thanks @XanderStuff)
 
