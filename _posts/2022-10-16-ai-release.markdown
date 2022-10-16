@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The game has changed!
-date:   2022-10-17
+date:   2022-10-16
 categories: update
 ---
 **A major upgrade of AI defense capabilities is now released!** You should find your rivals to be less
