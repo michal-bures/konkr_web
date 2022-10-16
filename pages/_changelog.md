@@ -1,9 +1,24 @@
 
 
 ---
+v2.4.0 <small>released 2022-10-17</small>
+- AI is better at defending and plays balances attack and defense more evenly especially in late game
+- AI makes better army composition decisions (in particular doesn't get expensive units until it really needs them)
+- AI gives more attention to defending against attacks from provinces which were attacking it the previous turn
+- AI should never stay completely passive
+- in a 1v1 late game scenario, AI no longer holds back when attacking, even if it really likes the remaining opponent 
+- overhaul of truce approval bonus calculation - it is a lot easier to make friends by playing peacefully
+- balance changes in campaign levels "Hold The Tide", "Promised land", "Natives", "Incursion" and "Sedition"
+- many campaign levels changed their position in the campaign based on shift in their difficulty with the new AI
+- added 6 new levels
+- bugfix: fixed AI doing nothing in various specific situations
+- bugfix: fix "unit not paid" symbols over units not updating properly during enemy turn
+- bugfix: AI should no longer be wasting expensive units to weed out bandits on its own territory
+
+---
 v2.3.6 <small>released 2022-10-14</small>
 - bugfix: When enemy takes a hex that had a bandit, the alert tooltip no longer says "They killed our bandit!"
-- bugfix: Fix bought pawn not reappearing in shopping tray after being returned to town.
+- bugfix: Fix bought pawn not reappearing in shopping tray after being returned to town. (thanks @Deathbanesravenhaft)
 
 ---
 v2.3.4 <small>released 2022-10-07</small>
