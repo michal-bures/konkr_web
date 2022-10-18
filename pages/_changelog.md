@@ -1,6 +1,10 @@
 
 
 ---
+v2.4.1 <small>released 2022-10-18</small>
+- "Incursion" level difficulty nerf
+
+---
 v2.4.0 <small>released 2022-10-17</small>
 - AI is better at defending and plays balances attack and defense more evenly especially in late game
 - AI makes better army composition decisions (in particular doesn't get expensive units until it really needs them)
