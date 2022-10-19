@@ -1,6 +1,10 @@
 
 
 ---
+v2.4.2 <small>released 2022-10-19</small>
+- bugfix: fix a bug that would cause the AI to freeze for an extended period
+
+---
 v2.4.1 <small>released 2022-10-18</small>
 - "Incursion" level difficulty nerf
 
