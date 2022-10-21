@@ -1,6 +1,15 @@
 
 
 ---
+v2.5.0 <small>released 2022-10-21</small>
+- performance optimization of player actions (reduced lag when moving/buying unit)
+- option to adjust enemy turn playback speed in options menu
+- bandit moves are deterministic (you will always see the same moves after rewind)
+- game waits for UI transitions to finish before start of AI calculations (prevents choppy UX feel after hitting end turn)
+- bugfix: properly cleanup past conquest levels from user data
+- bugfix: fix a rare crash during AI frontline defense calculation
+
+---
 v2.4.2 <small>released 2022-10-19</small>
 - bugfix: fix a bug that would cause the AI to freeze for an extended period
 
