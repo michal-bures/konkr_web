@@ -1,6 +1,15 @@
 
 
 ---
+v2.5.1 <small>released 2022-10-23</small>
+- three new levels added
+- campaign level "Quagmire" removed
+- campaign levels "Red River" (#27) and "Fjords" (#30) tweaked to be more interesting
+- rivals no longer smile at you after a backstab
+- AI tweak: AI less confrontational and eager to buy expensive units in 1v1 lategame situations
+- bugfix: avoid crash when loading game that was saved during AI turn
+
+---
 v2.5.0 <small>released 2022-10-21</small>
 - performance optimization of player actions (reduced lag when moving/buying unit)
 - option to adjust enemy turn playback speed in options menu
