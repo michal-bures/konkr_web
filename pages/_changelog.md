@@ -1,6 +1,13 @@
 
 
 ---
+v2.5.2 <small>released 2022-10-30</small>
+- a few additional tips in "how to play"
+- 3 new campaign levels
+- campaing level 48 "Incursion" removed
+- zombies?...
+
+---
 v2.5.1 <small>released 2022-10-23</small>
 - three new levels added
 - campaign level "Quagmire" removed
