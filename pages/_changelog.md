@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.3 <small>released 2022-11-01</small>
+- bugfix: check win conditions on start of player turn
+
+---
 v2.5.2 <small>released 2022-10-30</small>
 - a few additional tips in "how to play"
 - 3 new campaign levels
