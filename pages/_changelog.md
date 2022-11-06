@@ -1,6 +1,16 @@
 
 
 ---
+v2.5.4 <small>released 2022-11-06</small>
+- bandits are now unable to pass through walls
+- smarter detection which regions are actionable - if there's nothing you can do in a given region, it will be skipped when you clicking "next"
+- shift-click to buy another unit of the same type
+- ctrl-click to bypass most confirmation windows
+- 3 new campaign levels
+- removed Halloween level "They are dozens" from campaign
+- bugfix: using rewind on defeat screen no longer gives you back all lives in certain situations
+
+---
 v2.5.3 <small>released 2022-11-01</small>
 - bugfix: check win conditions on start of player turn
 
