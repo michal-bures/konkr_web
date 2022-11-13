@@ -1,6 +1,12 @@
 
 
 ---
+v2.5.5 <small>released 2022-11-13</small>
+- add author credit to community-submitted levels  
+- 3 new levels
+- "Bay of salt" moved later in the campaign
+
+---
 v2.5.4 <small>released 2022-11-06</small>
 - bandits are now unable to pass through walls
 - smarter detection which regions are actionable - if there's nothing you can do in a given region, it will be skipped when you clicking "next"
