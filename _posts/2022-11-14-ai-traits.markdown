@@ -1,0 +1,84 @@
+---
+layout: post
+title:  AI Playstyles
+date:   2022-11-14
+categories: update
+---
+
+No exciting changes this week, so instead I'll share a peek into the ongoing work on the next AI update.
+[Continue reading](/update/2022/11/14/ai-traits.html) if that sounds interesting to you!
+<!-- excerpt-end -->
+
+In the most recent AI update, you could witness a shift of the AI playstyle from recklessly aggressive into more measured and defensive.
+The overall feedback on this was very positive and I'm proud that I finally got to the point where the AI *can* play defensively with some degree of competence... But.
+
+I know some of you also miss the more chaotic and punishable AI from before and frankly, 
+the current rivals can sometimes feel quite boring and passive. Especially when it comes to fighting back against a stronger foe. 
+
+To improve this and lay a good foundation for other planned features, I'm aiming to make the AI playstyle more customizable:
+- it should allow me to define different AI personalities with different playstyles
+- the AI should be able to shift it's playstyle based on circumstances
+- the playstyle should be adjustable based on difficulty level, type of map or game mode
+- the AI code must remain easy to maintain and extend when I need to adjust it for new game mechanics or game modes
+
+## AI traits
+
+I think that the best way to get there might be to make the AI configurable in a similar fashion as the map generator. What do I mean by that?
+In the conquest UI, you have three types of conquest maps, but under the hood there is just one core algorithm which takes a bunch of input parameters and generates maps that look a certain way based on those inputs.
+The three kinds available to the player are just some particular presets for the generator which happen to produce cool results.
+(for a more hands on demonstration [see this demo of the map generator](https://www.youtube.com/watch?v=0ldqQJMPjMo))
+
+Similarly, I don't want to code separate AI modules for different situations or AI personalities. I've done a bit of that in the past, and it becomes such a pain to maintain and extend. 
+Instead, I want just one algorithm which can be parametrized with a set of inputs to produce different playstyles. 
+
+The values of those inputs could then be predetermined by the AI personality, affected by difficulty level, affected by situation on the map, or even customized in level editor.
+
+You can picture those inputs as sliders that you can move to adjust how the AI will play. 
+Currently I call them "traits". In this post I'd like to highlight two of the most impactful ones:
+
+**Disruptive (vs cooperative)**
+- a disruptive player tries to expand in a way that cripples their rivals. All else being equal, they would rather conquer *your* tile than a neutral one.
+- a cooperative player tries to avoid attacking others, hoping to be left alone in return - they will avoid conflict and try to expand peacefully into uncontested territory for as long as possible (usually until they are attacked).
+
+**Expansive (vs defensive)**
+- expansive player will use most of their units to attack or expand their territory, hoping the gains will outpace any losses of undefended territory; a high risk high reward playstyle
+- defensive player will try to protect their current territory with towers and units, expanding more slowly and sustainably 
+
+## Traits adjustment based on situation
+
+<img src="/img/blog/do-something.png" style="width:300px"/>
+
+An interesting feature of these two traits in particular is that while in general each approach can be considered a viable playstyle,
+in *some* situations, there is an obviously "correct" choice. For example:
+- if you have two knights and no villagers, you must be disruptive - peaceful expansion is useless because others will expand much faster then you
+- if the game is not going well for you, you must take risks while attacking/expanding - if you don't try to shake things up, you're just waiting for your inevitable defeat
+
+I think teaching the AI such common sense playstyle adjustments should help a lot to make it feel less boring and brain dead in some situations. 
+
+After a few design iterations, I came up with a way to express this with a delightfully simple model. When deciding how to play, the AI will first look at two indicators computed from the game state:
+* **power** is basically the thing you as the player can already see at the bottom of the control panel - it answers the question "how strong am I compared to the other players?"
+  * it's derived from the current size of your territory and your military might
+* **forecast** is a new indicator, which looks more into the future - "Is time on my side? How is my ability to grow compared to other players?"
+  * the way this is computed will probably be refined over time, but the things to take into account include:
+    * how is my income compared to other players?
+    * do I have enough villagers compared to other players?
+    * how much space for peaceful expansion do I have compared to other players?
+    * how defensible is my current territory?
+
+Basically *power* tells you how much you're dominating the game right now, while *forecast* tells you how promising your current position is in the long run.
+
+Based on these two indicators, the AI traits will be shifted roughly according to this table:
+
+<img src="/img/blog/ai-traits.png" style="width:400px">
+
+This simple relation between the indicators and the traits adjustment encapsulates a bunch of common sense advice:
+ - if you are weak and stuck with low income, be expansive, try to do something to shake things up
+ - if you are vulnerable right now, but have great income, avoid antagonizing other players and play defensively 
+ - if you are strong and have a great income, play defensively to protect your advantage
+ - if you are strong but have poor income and/or not enough villagers, be disruptive - cripple other players before they can catch up with you
+
+So far most of this is only "on paper" so we'll see if this actually works out as well as I'm imagining. But I have a good feeling about it!
+
+It would be interesting to talk more about the other traits as well, but this post is already way too long. Maybe next week 😉. For now let me leave you with this thought: Where do *you* as a player fall on the disruptive/cooperative and expansive/defensive spectrum? 
+Maybe next time when you're struggling with some level try to switch up your playstyle, the results might surprise you! 
+
