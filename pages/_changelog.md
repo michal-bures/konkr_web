@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.6 <small>released 2022-11-20</small>
+- 3 new levels
+
+---
 v2.5.5 <small>released 2022-11-13</small>
 - add author credit to community-submitted levels  
 - 3 new levels
