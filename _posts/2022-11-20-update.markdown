@@ -1,0 +1,28 @@
+---
+layout: post
+title:  AI update progress
+date:   2022-11-20
+categories: update
+---
+
+As it often happens when I start digging in the AI code, the scope of the update grew a lot larger than I originally expected, with major changes in three of the AI pillars (attack planning, 
+high level strategy and diplomacy). But at this point it's starting to all come together pretty nicely! 
+Aiming for public beta next week if everything goes smoothly. For another small sneak peak at the progress [continue here](/update/2022/11/20/update.html).
+
+<!-- excerpt-end -->
+
+Last weeks theory is this weeks practice! Here's little showcase of the configurable AI playstyle as discussed in [the last blog post](/update/2022/11/14/ai-traits.html).
+Lots of kinks still need to be ironed out, but most of the time it already works pretty well!
+
+<img src="/img/blog/playstyles.gif"/>
+
+Just in case you're curious, I'll also add a little info about the remaining AI traits shown in the gif - these are planned, but not yet wired up at the moment.
+(for the meaning of **expansion** and **disruption** see the previous blog post.)
+
+* **honor** will control how much the AI pays attention to the approval towards each faction - honorable AI will never backstab you (how boring!)
+* **income** will control how much the AI tries to maintain a healthy income
+* **hoarding** will make the AI make the AI keep more unspent gold in reserve
+* **winning** affects how much the AI worries about the overall balance of power - how eager it is to turn against players that begin to dominate the map  
+
+There will most likely also be at least one trait that more directly controls the AI difficulty level. If you have any suggestions on what other 
+aspects of the AI behavior would be nice to have configurable, I'll be happy if you let me know with discord/email/twitter or the ingame feedback button. 
