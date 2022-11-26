@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.7 <small>released 2022-11-26</small>
+- fix offline mode
+
+---
 v2.5.6 <small>released 2022-11-20</small>
 - 3 new levels
 
