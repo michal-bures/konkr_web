@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.10 <small>released 2022-11-28</small>
+- tweak to level 56 (Containment) to prevent cheap victory
+
+---
 v2.5.9 <small>released 2022-11-27</small>
 - 3 new levels
 - bugfix: haunted Towns produce zombies properly again
