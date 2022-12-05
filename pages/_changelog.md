@@ -1,6 +1,11 @@
 
 
 ---
+v2.5.11 <small>released 2022-12-05</small>
+- 3 new levels
+- level 56 (Containment) removed
+
+---
 v2.5.10 <small>released 2022-11-28</small>
 - tweak to level 56 (Containment) to prevent cheap victory
 
