@@ -148,7 +148,7 @@
             })
         }
 
-        gtag('js', new Date())</script><script defer="defer" src="vendors.8d751250783d57251ff0.bundle.js"></script><script defer="defer" src="main.4668b733cce3b35e1ff1.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.5.8-build-3610438883'
+        gtag('js', new Date())</script><script defer="defer" src="vendors.45a9a50f6b2b6e1275d8.bundle.js"></script><script defer="defer" src="main.7f522d83965f129f26d3.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.5.10-build-3617717003'
     const SW_ENABLE = true
 
     // store current time for timing page load
@@ -176,6 +176,7 @@
     window.addEventListener('load', () => boot())
 
     async function boot(safeMode = false) {
+        console.log('BOOT')
         if (!safeMode && window.localStorage && navigator.serviceWorker) {
             try {
                 const cachedBuild = window.localStorage?.getItem('konkr.cached_build')
