@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.12 <small>released 2022-12-09</small>
+- bugfix: fix occasional freeze when cornered AI is planning next move
+
+---
 v2.5.11 <small>released 2022-12-05</small>
 - 3 new levels
 - level 56 (Containment) removed
