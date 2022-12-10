@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.13 <small>released 2022-12-10</small>
+- bugfix: fixed various cases of the game breaking or controls disappearing when exiting level or opening a menu during enemy turn
+
+---
 v2.5.12 <small>released 2022-12-09</small>
 - bugfix: fix occasional freeze when cornered AI is planning next move
 
