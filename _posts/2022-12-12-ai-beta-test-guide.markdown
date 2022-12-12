@@ -12,7 +12,7 @@ so you can keep track of which levels you tried (and/or beaten) with the new AI.
 
 **There are cheats!** I'm letting you cheat a bit in this branch so that you can experiment with various situations and AI settings:
    * you have unlimited rewinds (you can rewind even with no lives left)
-   * you can use middle mouse button to make your units that moved this turn movable again
+   * you can use middle mouse button to make your units movable again, even if they already acted this turn
 
 
 You have a **Faction customization panel** at your disposal, which allows you to adjust the AI playstyle. Here's a quick summary of all its options:
