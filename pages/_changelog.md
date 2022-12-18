@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.14 <small>released 2022-12-19</small>
+- 3 new campaign levels
+
+---
 v2.5.13 <small>released 2022-12-10</small>
 - bugfix: fixed various cases of the game breaking or controls disappearing when exiting level or opening a menu during enemy turn
 
