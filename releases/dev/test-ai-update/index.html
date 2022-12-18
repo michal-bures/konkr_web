@@ -166,11 +166,14 @@
     // if news-box has no content, inject warning
     const newsBox = document.getElementById('news-box')
     if (newsBox?.innerText === '{{ ' + 'content }}') {
-        newsBox.innerHTML = `<p></p><b>⚠ Warning:</b> Playing unsupported game version</p><p><code>${BUILD_NUMBER}</code></p>
-                         <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
-                         Or don't, I'm not your boss, but proceed with caution.</p>`
+        newsBox.innerHTML = `<p></p><b>Thanks for helping me test the new AI!</b> Couple of things to know:</p>
+    <ul>
+      <li>Campaign progress is stored separately from the main game in this branch. It won't interfere with your progress in the main game.</li>
+      <li>The campaign levels were <b>not</b> yet rebalanced for the new AI. Expect many of them being hard or even impossible!</li>
+      <li>For more info on some new tools available to you here, <b><a href="/update/2022/12/05/ai-beta-test-guide.html">see this guide</a></b>.</li>
+    </ul>
+                            <p><a href="https://www.konkr.io">Take me back to the main game.</a></p>`
     }
-
     setLoadingStatus('loading game...')
 
     window.addEventListener('load', () => boot())
