@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  About the AI personality presets
-date:   2022-12-19 19:00
+date:   2022-12-19 18:00
 categories: update
 ---
 
