@@ -19,7 +19,8 @@ The short version is:
 For a slightly deeper explanation see the section below.
 
 I don't think there is necessarily a single "right" answer here,
-rather I suspect it might be a thing of personal preference. Which makes me very curious which of these personalities sounds most fun to **YOU**. It's one of the questions in the **[feedback survey](https://forms.gle/W7xgbGW5Q6UFLR7Z8)**! Or does your idea of an ideal AI rival behavior not fit any of these? In that case I'd really like to hear about it!
+rather I suspect it might be a thing of personal preference. Which makes me very curious which of these personalities 
+sounds most fun to **YOU**. It's one of the questions in the **[feedback survey](https://forms.gle/W7xgbGW5Q6UFLR7Z8)**! Or does your idea of an ideal AI rival behavior not fit any of these? In that case I'd really like to hear about it!
 
 More detailed info on each personality preset bellow. Please note that this describes the *goal* I have in mind for each 
 personality type, the current implementation might not be the most accurate reflection of it yet ☺. So far I was mainly
