@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  AI beta test guide
-date:   2022-12-05 21:00
+date:   2022-12-12 21:00
 categories: update
 ---
 
@@ -66,5 +66,3 @@ You can use this to limit the range at which the AI "sees" attack opportunities.
 ### Defense Skill
 Getting tired of the AI always placing just enough defenders to prevent any juicy cut? This can be used to introduce
 some extra gaps into the AI defenses. It makes the AI slightly underestimate the forces at your disposal.
-
-
