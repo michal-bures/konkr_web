@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.15 <small>released 2022-12-24</small>
+- Christmas update! Give and receive presents!
+
+---
 v2.5.14 <small>released 2022-12-19</small>
 - 3 new campaign levels
 
