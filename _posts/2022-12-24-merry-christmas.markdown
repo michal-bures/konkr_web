@@ -10,7 +10,7 @@ you make making this game worth it! ❤️
 
 You may notice the game got some cute little 
 wholesome additions for the holiday season.
-Don't worry, this is strictly temporary!
+Rest assured this is strictly temporary!
 
 
 
