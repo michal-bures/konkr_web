@@ -1,6 +1,10 @@
 
 
 ---
+v2.5.16 <small>released 2023-01-01</small>
+- Ended Christmas theme.
+
+---
 v2.5.15 <small>released 2022-12-24</small>
 - Christmas update! Give and receive presents!
 
