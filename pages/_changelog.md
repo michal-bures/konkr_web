@@ -1,16 +1,12 @@
 
 
 ---
-v2.5.16 <small>released 2023-01-01</small>
-- Ended Christmas theme.
-
----
-v2.5.15 <small>released 2022-12-24</small>
-- Christmas update! Give and receive presents!
-
----
-v2.5.14 <small>released 2022-12-19</small>
-- 3 new campaign levels
+v2.6.0 <small>released 2023-01-23</small>
+- major AI update released - AI rivals have greatly improved offensive and defensive capabilities and should exhibit a lot more "common sense" 
+- number of campaign levels moved and/or patched for the updated AI
+- 6 new levels added and 3 levels removed from the campaign
+- fixed a bug in the map generator that led to regions of same colour being placed too close together, often leading to severely imbalanced maps; 
+  this unfortunately makes older conquest map links incompatible with the current version  
 
 ---
 v2.5.13 <small>released 2022-12-10</small>
