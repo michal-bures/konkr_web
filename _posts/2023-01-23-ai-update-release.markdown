@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  🔥 The AI update is out of the oven! 
-date:   2023-01-08 18:00
+date:   2023-01-23 18:00
 categories: update
 ---
 
