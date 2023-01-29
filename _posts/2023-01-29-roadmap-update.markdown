@@ -2,6 +2,7 @@
 layout: post
 title:  "🚀 2023 Roadmap!"
 date:   2023-01-29 6:00:00
+categories: update
 ---
 
 Hey everyone, I think it's about time for a new update on where Konkr is heading next! Get comfortable and  
