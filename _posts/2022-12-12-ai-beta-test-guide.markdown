@@ -7,6 +7,8 @@ categories: update
 
 Here are some tips for messing with the new AI available at [www.konkr.io/releases/dev/test-ai-update/](https://www.konkr.io/releases/dev/test-ai-update/):
 
+<!-- excerpt-end -->
+
 **Your progress is tracked separately in this branch** (cloud sync is disabled), 
 so you can keep track of which levels you tried (and/or beaten) with the new AI.
 

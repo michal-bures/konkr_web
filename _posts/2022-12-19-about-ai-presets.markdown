@@ -8,6 +8,8 @@ categories: update
 Currently, you can find four AI personality presets in the customization console in the [test branch](https://www.konkr.io/releases/dev/test-ai-update/).
 These represent a few different answers to the crucial question: **How should the AI rivals behave in order to be fun to play against?**
 
+<!-- excerpt-end -->
+
 <img src="/img/blog/presets.png"/>
 
 The short version is:
