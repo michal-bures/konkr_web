@@ -1,6 +1,11 @@
 
 
 ---
+v2.6.2 <small>released 2023-01-29</small>
+- bugfix: fixed a massive bug in AI move evaluation which have caused the AI rivals to make totally reckless moves from time to time.
+- 2 new campaign levels
+
+---
 v2.6.0 <small>released 2023-01-23</small>
 - major AI update released - AI rivals have greatly improved offensive and defensive capabilities and should exhibit a lot more "common sense" 
 - number of campaign levels moved and/or patched for the updated AI
