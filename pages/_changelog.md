@@ -1,6 +1,13 @@
 
 
 ---
+v2.6.4 <small>released 2023-02-12</small>
+- AI performance improvements (especially on large maps) thanks to improved caching and heuristics
+- AI got slightly better at evaluating attack options
+- bugfix: fixed main source of occasional very long delay during AI turn
+- 2 new campaign levels
+
+---
 v2.6.3 <small>released 2023-02-06</small>
 - 2 new campaign levels
 
