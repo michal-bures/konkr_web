@@ -1,6 +1,15 @@
 
 
 ---
+v2.6.5 <small>released 2023-02-19</small>
+- overhaul of the way AI balances offensive and defensive moves - greedier expansion, less turtling, restored will to make desperate attacks in desperate cirumstances 
+- minor AI performance improvements (better use of caching in some helper data structures)
+- rebalanced campaign maps:
+  - parched empire (#57, made easier)
+  - let the winter come (#61, made easier)
+  - hold the tide (#72, made harder)
+
+---
 v2.6.4 <small>released 2023-02-12</small>
 - AI performance improvements (especially on large maps) thanks to improved caching and heuristics
 - AI got slightly better at evaluating attack options
