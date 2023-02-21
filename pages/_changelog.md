@@ -1,6 +1,10 @@
 
 
 ---
+v2.6.6 <small>released 2023-02-21</small>
+- 2 new campaign levels
+
+---
 v2.6.5 <small>released 2023-02-19</small>
 - overhaul of the way AI balances offensive and defensive moves - greedier expansion, less turtling, restored will to make desperate attacks in desperate cirumstances 
 - minor AI performance improvements (better use of caching in some helper data structures)
