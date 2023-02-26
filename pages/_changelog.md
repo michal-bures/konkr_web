@@ -1,6 +1,13 @@
 
 
 ---
+v2.6.7 <small>released 2023-02-26</small>
+- the power balance bar proportions now reflecting purely the size of each factions territory (previously included other factors used by the AI to estimate faction strength) 
+- rivals now offer surrender when hopelessly overpowered
+- bugfix: tooltips no longer appear during rival turn after player ends the turn by pressing 'E' while hovering a unit 
+- 2 new campaign levels
+
+---
 v2.6.6 <small>released 2023-02-21</small>
 - 2 new campaign levels
 
@@ -29,7 +36,7 @@ v2.6.2 <small>released 2023-01-29</small>
 - bugfix: fixed a massive bug in AI move evaluation which have caused the AI rivals to make totally reckless moves from time to time.
 - 2 new campaign levels
 
----d
+---
 v2.6.0 <small>released 2023-01-23</small>
 - major AI update released - AI rivals have greatly improved offensive and defensive capabilities and should exhibit a lot more "common sense" 
 - number of campaign levels moved and/or patched for the updated AI
