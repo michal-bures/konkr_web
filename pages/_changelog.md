@@ -1,6 +1,10 @@
 
 
 ---
+v2.6.8 <small>released 2023-03-05</small>
+- campaign maps rotation: Wolfpaw nad Hold the Tide swapped with two new levels
+
+---
 v2.6.7 <small>released 2023-02-26</small>
 - the power balance bar proportions now reflecting purely the size of each factions territory (previously included other factors used by the AI to estimate faction strength) 
 - rivals now offer surrender when hopelessly overpowered
