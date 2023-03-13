@@ -1,6 +1,18 @@
 
 
 ---
+v2.7.0 <small>released 2023-03-13</small>
+- ability to view replay of latest rival turn
+- enemy region summary tooltip now also shows their net income
+- number of improvements to rival turn playback on all spectating speeds - less jank and pointless waiting
+- fast and very fast speeds no longer skip unit merging and moves within rivals own territory
+- defeat screen appears instantly - you no longer have to wait for the end of all rivals turns
+- fastest playback speed now even faster (no artificial delay after focusing next faction)
+- bugfix: heroes can attack each other again
+- bugfix: coin consumption animation shows up properly again
+- 1 new campaign level (swapped for "Boiling Pot")
+
+---
 v2.6.8 <small>released 2023-03-05</small>
 - campaign maps rotation: Wolfpaw nad Hold the Tide swapped with two new levels
 
@@ -17,7 +29,7 @@ v2.6.6 <small>released 2023-02-21</small>
 
 ---
 v2.6.5 <small>released 2023-02-19</small>
-- overhaul of the way AI balances offensive and defensive moves - greedier expansion, less turtling, restored will to make desperate attacks in desperate cirumstances 
+- overhaul of the way AI balances offensive and defensive moves - greedier expansion, less turtling, restored will to make desperate attacks in desperate circumstances 
 - minor AI performance improvements (better use of caching in some helper data structures)
 - rebalanced campaign maps:
   - parched empire (#57, made easier)
