@@ -1,6 +1,10 @@
 
 
 ---
+v2.7.1 <small>released 2023-03-13</small>
+- bugfix: fixed ghost villager after buying and merging unit 
+
+---
 v2.7.0 <small>released 2023-03-13</small>
 - ability to view replay of latest rival turn
 - enemy region summary tooltip now also shows their net income
