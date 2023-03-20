@@ -1,6 +1,12 @@
 
 
 ---
+v2.7.3 <small>released 2023-03-20</small>
+- bugfix: fix cut-off symbols not showing up on start of player turn
+- new levels "Canyonero" (by @Graggle) and "Decadence" swapped for "Pilgrims" and "Kiawa" in the campaign
+- level "Stronghold" moved later in the campaign
+
+---
 v2.7.1 <small>released 2023-03-13</small>
 - bugfix: fixed ghost villager after buying and merging unit 
 
