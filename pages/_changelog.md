@@ -1,6 +1,12 @@
 
 
 ---
+v2.7.5 <small>released 2023-03-25</small>
+- bugfix: you no longer get stuck in replay mode after you start it with no province selected
+- bugfix: fix spectating mode failing on fast speed when unit retreated multiple times in one turn
+- bugfix: fix glitches in spectating mode when tabbing in and out of the game
+
+---
 v2.7.3 <small>released 2023-03-20</small>
 - bugfix: fix cut-off symbols not showing up on start of player turn
 - new levels "Canyonero" (by @Graggle) and "Decadence" swapped for "Pilgrims" and "Kiawa" in the campaign
