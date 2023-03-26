@@ -1,6 +1,10 @@
 
 
 ---
+v2.7.9 <small>released 2023-03-26</small>
+- 2 new campaign levels swapped for levels "Afuru" and "Treasure Hunt"
+
+---
 v2.7.8 <small>released 2023-03-26</small>
 - bugfix: rewind no longer broken on the defeat screen or when rewinding in the middle of enemy turn
 
