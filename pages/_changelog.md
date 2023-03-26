@@ -1,6 +1,10 @@
 
 
 ---
+v2.7.8 <small>released 2023-03-26</small>
+- bugfix: rewind no longer broken on the defeat screen or when rewinding in the middle of enemy turn
+
+---
 v2.7.5 <small>released 2023-03-25</small>
 - bugfix: you no longer get stuck in replay mode after you start it with no province selected
 - bugfix: fix spectating mode failing on fast speed when unit retreated multiple times in one turn
