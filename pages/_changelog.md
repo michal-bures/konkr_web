@@ -1,6 +1,10 @@
 
 
 ---
+v2.7.10 <small>released 2023-04-03</small>
+- new campaign level swapped for "Outbreak"
+
+---
 v2.7.9 <small>released 2023-03-26</small>
 - 2 new campaign levels swapped for levels "Afuru" and "Treasure Hunt"
 
