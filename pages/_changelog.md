@@ -1,6 +1,10 @@
 
 
 ---
+v2.7.12 <small>released 2023-04-10</small>
+- new campaign level swapped for "Black forest"
+
+---
 v2.7.11 <small>released 2023-04-07</small>
 - surrender disabled in zombie mode
 - fixed cases where player could not attack hero
