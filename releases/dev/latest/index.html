@@ -92,6 +92,30 @@
             left: 0px
         }
 
+        /* File dropzone */
+        #file-drop-zone {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff60;
+            padding: 40px;
+        }
+
+        #file-drop-zone > div {
+            display: flex;
+            box-sizing: border-box;
+            color: #3b5998;
+            border: 4px dashed #3b5998;
+            margin: 20px;
+            padding: 20px;
+            font-size: 4rem;
+            flex-grow: 1;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         /* Loader */
         #loader {
             width: 10px;
@@ -148,7 +172,7 @@
             })
         }
 
-        gtag('js', new Date())</script><script defer="defer" src="vendors.c4e16ab5f07ec158e8da.bundle.js"></script><script defer="defer" src="main.347dba842429a26f773f.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><script>const BUILD_NUMBER = '2.7.12-build-4660369815'
+        gtag('js', new Date())</script><script defer="defer" src="vendors.45f9bc65fc289791ea63.bundle.js"></script><script defer="defer" src="main.4dbe83a2988aec89cab0.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.7.12-build-4714131792'
     const SW_ENABLE = true
 
     // store current time for timing page load
