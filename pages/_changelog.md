@@ -1,6 +1,20 @@
 
 
 ---
+v2.8.0 <small>released 2023-04-23</small>
+- new campaign levels swapped in for "Mount Blanik" and "Three Towers"
+- added option to view replay of the entire game, not just the last turn
+- added option to save the game replay to a file and load it by dragging the file into the game window
+- option to view replay added to victory screen
+- it's now possible to import custom maps by dragging the map file into the browser window
+- saved games now include history => you can undo, rewind and view replay after resuming a saved game
+- bugfix: "Skip spectating" button now works when pressed while playback is paused.
+- bugfix: prevent scrolling off screen on map selection
+- bugfix: incorrect metadata after merging a freshly bought unit could corrupt replay data
+- diplomacy AI tweak: AI rivals are slightly less envious 
+- automatically remove old autosaves when running out of local storage space
+
+---
 v2.7.12 <small>released 2023-04-10</small>
 - new campaign level swapped for "Black forest"
 
