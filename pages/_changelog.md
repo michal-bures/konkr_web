@@ -1,6 +1,10 @@
 
 
 ---
+v2.8.1 <small>released 2023-04-24</small>
+- fix zombies mode
+
+---
 v2.8.0 <small>released 2023-04-23</small>
 - new campaign levels swapped in for "Mount Blanik" and "Three Towers"
 - added option to view replay of the entire game, not just the last turn
