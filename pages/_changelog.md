@@ -1,6 +1,20 @@
 
 
 ---
+v2.8.2 <small>released 2023-04-30</small>
+- new campaign level swapped in for "Scramble"
+- new rewind UI allows rewinding more than one turn back
+- rewind to first turn refunds all lives, rewind within the current turn is free 
+- explicit error message when dropping a link instead of file into the dropzone
+- game UI panel transitions cleanup and robustness improvements (fixes some minor UI bugs)
+- turn counter added to victory screen
+- option to view replay added to defeat screen when out of rewinds
+- bugfix: update map preview correctly when exiting to manu while viewing replay or rewinding 
+- bugfix: no more ghost tile highlights when going back/forward a turn in replay mode
+- bugfix: fixed error when loading level on mobile safari
+- bugfix: fixed incorrect town variant showing on the region budget panel   
+
+---
 v2.8.1 <small>released 2023-04-24</small>
 - fix zombies mode
 
