@@ -1,6 +1,11 @@
 
 
 ---
+v2.8.6 <small>released 2023-05-01</small>
+- tweaks for better kongregate and itch.io integration
+- level header panel made less transparent
+
+---
 v2.8.5 <small>released 2023-05-01</small>
 - fix mute button overlap with fullscreen button when hosted on itch.io
 
