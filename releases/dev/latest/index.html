@@ -162,7 +162,7 @@
             100% {
                 box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
             }
-        }</style><script defer="defer" src="vendors.2137927449e57c1963d4.bundle.js"></script><script defer="defer" src="main.19cfe0c319e6a0342830.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.8.4-build-4848862093'
+        }</style><script defer="defer" src="vendors.62dd09af0f528a2ddbdb.bundle.js"></script><script defer="defer" src="main.92beaeb786d11b38cb03.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.8.4-build-4849698012'
     const SW_ENABLE = true
 
     // store current time for timing page load
@@ -187,10 +187,18 @@
 
     setLoadingStatus('loading game...')
 
-    window.addEventListener('load', () => boot())
+    window.addEventListener('DOMContentLoaded', () => boot())
+
+    function supportsServiceWorker()  {
+        try {
+            return !!(window.localStorage && window.serviceWorker);
+        } catch (e) {
+            return false;
+        }
+    }
 
     async function boot(safeMode = false) {
-        if (!safeMode && window.localStorage && navigator.serviceWorker) {
+        if (!safeMode && supportsServiceWorker()) {
             try {
                 const cachedBuild = window.localStorage?.getItem('konkr.cached_build')
                 window.localStorage.setItem('konkr.cached_build', BUILD_NUMBER)
