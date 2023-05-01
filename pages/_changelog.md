@@ -1,6 +1,11 @@
 
 
 ---
+v2.8.4 <small>released 2023-05-01</small>
+- more robust copy to clipboard functionality
+- analytics setup tweaks
+
+---
 v2.8.2 <small>released 2023-04-30</small>
 - new campaign level swapped in for "Scramble"
 - new rewind UI allows rewinding more than one turn back
