@@ -1,6 +1,10 @@
 
 
 ---
+v2.8.5 <small>released 2023-05-01</small>
+- fix mute button overlap with fullscreen button when hosted on itch.io
+
+---
 v2.8.4 <small>released 2023-05-01</small>
 - more robust copy to clipboard functionality
 - analytics setup tweaks
