@@ -1,6 +1,10 @@
 
 
 ---
+v2.8.7 <small>released 2023-05-01</small>
+- copy to clipboard robustness improvements
+
+---
 v2.8.6 <small>released 2023-05-01</small>
 - tweaks for better kongregate and itch.io integration
 - level header panel made less transparent
