@@ -1,6 +1,11 @@
 
 
 ---
+v2.8.9 <small>released 2023-05-08</small>
+- new campaign level "Triage" replaced "Kingmaker"
+- level "Zeal" moved later in the campaign
+
+---
 v2.8.7 <small>released 2023-05-01</small>
 - copy to clipboard robustness improvements
 
