@@ -1,6 +1,10 @@
 
 
 ---
+v2.8.10 <small>released 2023-05-09</small>
+- bugfix: fix "continue" button not working on the main screen
+
+---
 v2.8.9 <small>released 2023-05-08</small>
 - new campaign level "Triage" replaced "Kingmaker"
 - level "Zeal" moved later in the campaign
