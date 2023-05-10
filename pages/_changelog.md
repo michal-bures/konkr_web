@@ -1,6 +1,11 @@
 
 
 ---
+v2.8.13 <small>released 2023-05-10</small>
+- bugfix: dont't crash game in case of analytics initialization error
+- improve copy to clipboard robustness
+
+---
 v2.8.10 <small>released 2023-05-09</small>
 - bugfix: fix "continue" button not working on the main screen
 
