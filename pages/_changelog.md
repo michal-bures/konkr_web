@@ -1,6 +1,24 @@
 
 
 ---
+v2.9.0 <small>released 2023-05-14</small>
+- new campaign level "Zanahary" swapped for "Kirkstall"
+- automatic camera pan is less aggressive and less eager to mess with your zoom level
+- automatic camera pan and zoom-out behavior can be customized in settings
+- improved UI scaling on high DPI screens (avoids tiny UI elements, improves performance, lowers battery usage)
+- clicking the end-turn button while holding a pawn will cause it to be returned instead of doing nothing
+- zombie mode: levels must be won by eradicating all zombies
+- zombie mode: zombies can no longer infect units through walls, not even when they have nowehere else to move
+- zombie mode: AI rivals are a little less eager to let zombies overrun their towns 
+- bugfix: fix subtle visual glitches in pawns move transitions
+- bugfix: automatic camera focus takes into account space taken by control penel
+- bugfix: fix spectating camera jumping around for no reason at the start of player turn 
+- bugfix: fixed rare crash after undo while hostile region is selected
+- bugfix: fixed level autosave not getting deleted after defeat
+- bugfix: fix incorrect screen pan when requesting next conquest island
+- internal: gameplay stats collection rework, error and event logging improvements
+
+---
 v2.8.13 <small>released 2023-05-10</small>
 - bugfix: dont't crash game in case of analytics initialization error
 - improve copy to clipboard robustness
