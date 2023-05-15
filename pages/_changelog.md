@@ -1,6 +1,17 @@
 
 
 ---
+v2.9.2 <small>released 2023-05-15</small>
+- bugfix: prevent crashes or unpredictable behavior when leaving a map while the AI is calculating its moves  
+- bugfix: disable UI interactions while transitioning between screens, fixing a whole class of UI glitches 
+- bugfix: fix crash on firefox mobile due to lack of access to screen orientation lock API 
+
+---
+v2.9.1 <small>released 2023-05-15</small>
+- bugfix: fix error after exiting conquest menu while a map is being generated
+- bugfix: fix glitchy map transition to/from conquest menu
+
+---
 v2.9.0 <small>released 2023-05-14</small>
 - new campaign level "Zanahary" swapped for "Kirkstall"
 - automatic camera pan is less aggressive and less eager to mess with your zoom level
