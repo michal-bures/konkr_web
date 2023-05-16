@@ -1,6 +1,10 @@
 
 
 ---
+v2.9.4 <small>released 2023-05-16</small>
+- another tweak to automatic UI scaling
+
+---
 v2.9.3 <small>released 2023-05-16</small>
 - bugfix: 3rd attempt to make screen orientation lock attempt not crash the game on mobile firefox (ﾉಠдಠ)ﾉ︵ ┻━┻
 - bugfix: fixed broken behavior when returning to menu after rewinding from the defeat screen
