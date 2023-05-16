@@ -1,6 +1,11 @@
 
 
 ---
+v2.9.3 <small>released 2023-05-16</small>
+- bugfix: 3rd attempt to make screen orientation lock attempt not crash the game on mobile firefox (ﾉಠдಠ)ﾉ︵ ┻━┻
+- bugfix: fixed broken behavior when returning to menu after rewinding from the defeat screen
+
+---
 v2.9.2 <small>released 2023-05-15</small>
 - bugfix: prevent crashes or unpredictable behavior when leaving a map while the AI is calculating its moves  
 - bugfix: disable UI interactions while transitioning between screens, fixing a whole class of UI glitches 
