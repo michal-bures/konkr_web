@@ -1,6 +1,12 @@
 
 
 ---
+v2.9.5 <small>released 2023-05-21</small>
+- limit FPS to 60 (to reduce CPU usage and battery drain)
+- bugfix: fix screen transition bugs mostly in mobile UI introduced by the screen transition changes in v2.9.2
+- bugfix: fix play time measurement
+
+---
 v2.9.4 <small>released 2023-05-16</small>
 - another tweak to automatic UI scaling
 
