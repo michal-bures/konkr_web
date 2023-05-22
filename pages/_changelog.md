@@ -1,6 +1,10 @@
 
 
 ---
+v2.9.6 <small>released 2023-05-22</small>
+- new campaign level "Midas" swapped for "Caldera"
+
+---
 v2.9.5 <small>released 2023-05-21</small>
 - limit FPS to 60 (to reduce CPU usage and battery drain)
 - bugfix: fix screen transition bugs mostly in mobile UI introduced by the screen transition changes in v2.9.2
