@@ -1,6 +1,13 @@
 
 
 ---
+v2.9.7 <small>released 2023-05-24</small>
+- bugfix: fix service worker not starting (offline mode should work again)
+- experiment with serving latest level data directly from github
+- improve performance tracking and error detection during game load 
+- slightly raise FPS limit to avoid needless dips under 60 FPS
+
+---
 v2.9.6 <small>released 2023-05-22</small>
 - new campaign level "Midas" swapped for "Caldera"
 
