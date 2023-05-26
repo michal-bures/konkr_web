@@ -1,6 +1,19 @@
 
 
 ---
+v2.9.8 <small>released 2023-05-26</small>
+- less assertive feedback prompts - don't ask for level feedback unless user spent at least a minute in the level in the current session
+- bugfix: going back during rewind no longer skips two turns at a time 
+- bugfix: unit animations no longer randomly skipped during rival turn playback & replay
+- bugfix: fixed animations not always parallelized properly at faster playback speeds
+- bugfix: fix attitude emojis display glitches during replay (no more ghost emojis etc.) 
+- bugfix: fix occasional crash when going to start of replay
+- bugfix: fix towns backlight not deactivating on end of replay
+- bugfix: fix town backlight not always appearing during player turn
+- replays compression improvements
+- internal: collecting replay and feedback data as part of level stats, improved error tracking
+
+---
 v2.9.7 <small>released 2023-05-24</small>
 - bugfix: fix service worker not starting (offline mode should work again)
 - experiment with serving latest level data directly from github
