@@ -1,6 +1,10 @@
 
 
 ---
+v2.9.11 <small>released 2023-05-27</small>
+- bugfix: fix misaligned/invisible DOM elements (buttons and text inputs) on Safari 
+
+---
 v2.9.10 <small>released 2023-05-27</small>
 - level 2 (Hold the line): ban rivals from using knights
 - avoid showing the error popup for various minor non-fatal issues
