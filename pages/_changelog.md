@@ -1,6 +1,14 @@
 
 
 ---
+v2.9.10 <small>released 2023-05-27</small>
+- level 2 (Hold the line): ban rivals from using knights
+- avoid showing the error popup for various minor non-fatal issues
+- show proper error message if the game fails to load textures instead of running it in a broken state
+- bugfix: prevent rare crash when switching level
+- bugfix: proper transition for bandit move => bandit replaced by camp sequence on faster replay speeds  
+
+---
 v2.9.8 <small>released 2023-05-26</small>
 - less assertive feedback prompts - don't ask for level feedback unless user spent at least a minute in the level in the current session
 - bugfix: going back during rewind no longer skips two turns at a time 
