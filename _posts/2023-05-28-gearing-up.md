@@ -73,8 +73,7 @@ that lets you explore player created maps. But more on that later!
 
 ## II. Putting my finger on the pulse
 
-While I am infinitely grateful for every one of your feedback messages and level ratings, the constant
-frequent in-game nagging for explicit feedback is both a bit obnoxious and not nearly accurate enough to help me
+While I am infinitely grateful for every one of your feedback messages and level ratings, the constant in-game nagging for explicit feedback is both a bit obnoxious and not nearly accurate enough to help me
 evaluate things like minor AI and level balance changes.
 
 In a perfect world I would be able to make small tweaks like changing some AI parameters, and then after a few days see that aha,
@@ -105,7 +104,7 @@ For example for the latest new level **<a href="https://www.konkr.io/#campaign/l
 <img class="mockup" src="/img/blog/stats/midas.png"/>
 
 The new system also greatly improved my ability to track down the root cause of various bugs and crashes, which is why you
-could notice a lot of bugfixes in the [changelog](/changelog) lately ;).
+could notice a lot of bugfixes in the [changelog](/changelog) lately 😉.
 
 And finally, needless to say this will be instrumental in designing and balancing all the new content I'm planning, 
 including a heavily improved tutorial!
@@ -114,13 +113,13 @@ including a heavily improved tutorial!
 
 More frequent updates for one! I've been a bit more silent lately while taking care of various technical improvements 
 and high-level planning, but now there will be a lot of stuff to talk about! In fact, I've had to radically cut down 
-the number of things I wanted to discuss today just to keep the size of this post at least somewhat sensible :).
+the number of things I wanted to discuss today just to keep the size of this post at least somewhat sensible 🙂.
 
 I should also have more time to work on the game in the coming weeks than I had in the past few months combined,
 so things are really bound to get interesting! 
 
 Just please keep in mind what I said at the start of this post, this will always be a project that's all about  
 striving for perfection, not necessarily speed, so be ready to cut me some slack if I lose myself in tinkering with some
- minor detail in my grand plans :).
+ minor details of my grand plans 🙂.
 
 
