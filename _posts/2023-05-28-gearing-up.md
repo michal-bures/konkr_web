@@ -41,11 +41,11 @@ That also means any feedback and suggestions from yours truly are more than welc
 </p>
 
 **Expeditions** replace the current campaign mode, featuring an overworld view where you travel between islands, but also a lot more than that:
- - classic expeditions will be similar in style to the current campaign, except with more branching paths.
- - themed expeditions will explore alternative game modes and rule sets, such as the zombie mode.
- - want more "puzzle" maps like Foccacia? There will be an expedition for that!
- - weekly expeditions will string together a few maps into a time-limited event, where you only have one shot to make it to the end!
- - and if you get bored with all of that, you can always let the game create new procedurally generated expeditions for you!
+ - Classic expeditions will be similar in style to the current campaign, except with more branching paths.
+ - Themed expeditions will explore alternative game modes and rule sets, such as the zombie mode.
+ - Want more "puzzle" maps like Foccacia? There will be an expedition for that!
+ - Weekly expeditions will string together a few maps into a time-limited event, where you only have one shot to make it to the end!
+ - And if you get bored with all of that, you can always let the game create new procedurally generated expeditions for you!
 
 You get an expedition, you get an expedition, everyone gets an expedition! I like that the concept is open and flexible 
 enough so that if I come up with any new ideas on how to combine multiple levels into an interesting game mode, 
