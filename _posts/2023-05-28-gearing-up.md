@@ -68,7 +68,7 @@ I just mentioned are supposed to fit together.
 
 <img class="mockup" src="/img/blog/mockups/progression.png"/>
 
-Last but not leas I'm also fleshing out the plans for **Island forge** (aka map editor) and the **Uncharted seas** mode 
+Last but not least, I'm also fleshing out the plans for **Island forge** (aka map editor) and the **Uncharted seas** mode 
 that lets you explore player created maps. But more on that later!
 
 ## II. Putting my finger on the pulse
