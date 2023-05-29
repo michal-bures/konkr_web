@@ -39,9 +39,6 @@
           "id": "l-breakthrough"
         },
         {
-          "id": "l-bohemia"
-        },
-        {
           "id": "l-heritage"
         },
         {
@@ -60,22 +57,13 @@
           "id": "l-golden-lake"
         },
         {
-          "id": "l-port-royale"
-        },
-        {
           "id": "l-ten-paces"
-        },
-        {
-          "id": "l-yang"
         },
         {
           "id": "l-crusade"
         },
         {
-          "id": "l-wotje"
-        },
-        {
-          "id": "l-orchard"
+          "id": "l-bohemia"
         },
         {
           "id": "l-chalki"
@@ -84,8 +72,7 @@
           "id": "l-hideouts"
         },
         {
-          "id": "l-midas",
-          "isNew": true
+          "id": "l-midas"
         },
         {
           "id": "l-maze"
@@ -100,13 +87,19 @@
           "id": "l-canyonero"
         },
         {
-          "id": "l-scorching-heat"
+          "id": "l-yang"
+        },
+        {
+          "id": "l-port-royale"
         },
         {
           "id": "l-great-lakes"
         },
         {
           "id": "l-dansui"
+        },
+        {
+          "id": "l-orchard"
         },
         {
           "id": "l-swordclash"
@@ -121,9 +114,6 @@
           "id": "l-strife"
         },
         {
-          "id": "l-jotunheim-v2"
-        },
-        {
           "id": "l-overcrest"
         },
         {
@@ -134,6 +124,9 @@
         },
         {
           "id": "megamap"
+        },
+        {
+          "id": "l-wotje"
         },
         {
           "id": "l-unrest"
@@ -172,9 +165,6 @@
           "id": "l-triage"
         },
         {
-          "id": "l-parched-empire"
-        },
-        {
           "id": "l-ride-out"
         },
         {
@@ -187,7 +177,7 @@
           "id": "l-underdog"
         },
         {
-          "id": "l-zeal"
+          "id": "l-jotunheim-v2"
         },
         {
           "id": "l-graggle"
@@ -203,6 +193,9 @@
         },
         {
           "id": "l-new-world"
+        },
+        {
+          "id": "l-parched-empire"
         },
         {
           "id": "l-orchid"
@@ -226,7 +219,7 @@
           "id": "l-desert"
         },
         {
-          "id": "l-silkroad"
+          "id": "l-zeal"
         },
         {
           "id": "l-badlands"
@@ -239,6 +232,9 @@
         },
         {
           "id": "l-decadence"
+        },
+        {
+          "id": "l-silkroad"
         },
         {
           "id": "l-strongholds"
@@ -438,11 +434,6 @@
       "id": "l-silkroad",
       "name": "Silk Road",
       "data": "konkrmap.v7.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"
-    },
-    {
-      "id": "l-scorching-heat",
-      "name": "Scorching Heat",
-      "data": "konkrmap.v7.eyJtYXAiOnsid2lkdGgiOjE3LCJoZWlnaHQiOjIxLCJsZXZlbElkIjoibC1zY29yY2hpbmctaGVhdCIsInBsdWdpbnMiOltdfSwidmVyc2lvbiI6NywicmVnaW/FGnsiaWQiOjQsIm5hbWUiOiJTdHJhdGhndWlsZCLEa3hlxCY4MDYsODA3LDnFBDhdfSzGODbJOExpdHRsZXR1Y2tlxHvIOTUwMiw2MDEsNjAyLDcwMsk5OMs55ACZcXVhcmXLODEyMDksMTIxMMQFMSwxMzEwyTw5yTxGYWlyc3Rvbs06OMQ6OMQ6OcQKOcs6MTHJO1dpbnRlcmdyYewA5zEwxDcxxgUxyjcyyTdIYXdrZ3Jhc3PNNjA3LDExxAUyMDfKNusBVXBpbmVnYXLNbDXEMTUwOMQFOSwxNcR2NsQUNsQUNsQUNsQUN8QPN8QPN8QPOOsBfzE1yWNMb3dlcm1vcmHMYzMxMiwxNOQBQDTECjXEBTbsANnqAYdFYm9ucm937QFKNsQwN8Q/N8QKOMw66gGFQmVhcnF1aW5uzDs05ACwNDEwLOUAuTUxMSw4MDgs5AGb5AGVOTEwLDnEWDAwOCw5MTPECTksMTDEEzHkAO8wxHAxxBQxxAoyxBQxxCgyxA8zxBkz6wCO5AMK6AHYaGl0bW9y7QEI5AD45AFVNzA0LOQBWOQBVzcwNiw2MTEsNzA3LOQA6OQBZuQBYOQA7+QA7jcxMyw3MTQs5AJJMjDEDDUsODEzLDgxNCwzMDMs5ACTMzDEDDUsMzA2LDQwMiw5xRw3LDQwMywzMDgsNMUgOSw0MDUsNMUkxBw4LDUwNCzkASE1xBgxMCw1xBwxMSzkAhI2MDMs5AIVNjA0LOQCGDYwNSzkAhs2MDYs5AFHNusCYjLqAf9EYXJrd2F0Y2jrAPfkA0PkA0IzxQTqAS4z6gEu5ALPd2Vh7gPs5AGtMeQAzuoDrzPKak1pbmVyde0DczUwM8oq6gQTQm9nY29ybmVyyys3MDUsODA0LDgwNSw5xQQ2yjs3yTtTcHJpbmd3b3J07ADROTA0yi3qAoFFYWdsZWtyYWlnyywx5AFpMeQBhjE06wEzNDDJN1d5bmd17gOUODAyLDgwMyw56wDRNOoBLk15dGhyaWx0aG9y7ALtN8wu6gQrTXVya2hhbcspMTA1LDEwNiwyMDQsMjA1yjXqAV5XaWxscG9vbM02MTNdfV0sImZhY3TtBbbqAMxuYXR15QVAdGhlbWVJbmRleMUfY29udHJvbGxlcsQl5gUp6gX8M+QEtywxMiwz6wPZyVRQbGF5ZXIgMd9WbG9jYWwtdXPlAefKXDQsM+QC+Sw0NSwx6gDq6gEex14yz14xz15hac1WMTQsMusCydBOM89OMt5OMzUsM+QDeiw05ATeLDE5yVrqBbvHWjTPWjPeWjksMuoA9eoB3sdNNc9NNN5N6gMi6gNcx0o2z0o13ko45QJIcGF36wJFMSwidHlwxFRmb3Jlc+cHveQHLDEwyHgy2iQxyCQz2CQwykg02UgwN8gkNdlIyiQ22CQyyiQ31yQ4MTLIIzjXIznKIznJI3Rvd+cD9SI6OcpnMTDVIjLqAPXkCHXTIjYw6QE75Ahg0yLkCP/JI+oBX80jOcsj+AFeOTA0ySTqAV7NRzA1ySLqARVjYW1wyCI46gHp5Af7yCJv5ApfyiPkAn51bnTEaMguMuoBrM0u5AUMyC7KLeoBtc0t5AbG0i3rAKrMLeQKb9It9wC15ArRyC3pAdQz6gHUzS3lCpDRW+QHT9Uu5Ajm0i7qAex2aWxsYWfoBx/ESekBzDPqAe/QJjLqAawz6gHy0CY2MOkCw+QHvNcm5AsnySfqAanRJ+wAmuoBo9AnODA35ARfcnVsZVNldCI6ImRlZmF1bOQCiGN1cnJlbnRQaGFzZeQMznR1cm5OdW1i5ASlMekG2u0EjcYTLcQq5ATlYXBwZWRVbml05gzPfQ=="
     },
     {
       "id": "l-trinity",
