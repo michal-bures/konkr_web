@@ -1,6 +1,10 @@
 
 
 ---
+v2.9.12 <small>released 2023-05-29</small>
+- bugfix: don't show emoji over player towns
+
+---
 v2.9.11 <small>released 2023-05-27</small>
 - bugfix: fix misaligned/invisible DOM elements (buttons and text inputs) on Safari 
 
