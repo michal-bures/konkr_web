@@ -1,6 +1,13 @@
 
 
 ---
+v2.9.13 <small>released 2023-05-29</small>
+- bugfix: fix rival emoji reactions not showing on player turn
+- greatly improved fixed performance on the level index screen
+- new map "Hourglass" swapped in for "Scorching Heat"
+- a number of campaign maps have been moved to achieve a smoother difficulty curve in the campaign
+
+---
 v2.9.12 <small>released 2023-05-29</small>
 - bugfix: don't show emoji over player towns
 
