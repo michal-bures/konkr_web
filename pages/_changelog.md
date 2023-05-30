@@ -1,6 +1,10 @@
 
 
 ---
+v2.9.14 <small>released 2023-05-30</small>
+- Balance tweak: "Hourglass" level made a little harder.  
+
+---
 v2.9.13 <small>released 2023-05-29</small>
 - bugfix: fix rival emoji reactions not showing on player turn
 - greatly improved fixed performance on the level index screen
