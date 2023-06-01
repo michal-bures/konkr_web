@@ -1,6 +1,11 @@
 
 
 ---
+v2.10.1 <small>released 2023-06-01</small>
+- bugfix: fix freeze when right-clicking immediately after picking up pawn
+- bugfix: fix province popover elements being visible on title screen
+
+---
 v2.10.0 <small>released 2023-06-01</small>
 - improved performance thanks to migration to Phaser 3.60
 - new UI for displaying rival province stats
@@ -11,7 +16,7 @@ v2.10.0 <small>released 2023-06-01</small>
 - bugfix: fixed pawn camera drag sometimes incorrectly triggering while dragging a unit
 - bugfix: attitude emojis now updating properly during replay
 - bugfix: no more ghost emojis after loading replay
-- bugfix: fixed rare crash when wiping out rival factions last town 
+- bugfix: fixed rare crash when wiping out rival factions last town
 
 ---
 v2.9.14 <small>released 2023-05-30</small>
