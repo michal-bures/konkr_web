@@ -1,6 +1,11 @@
 
 
 ---
+v2.10.3 <small>released 2023-06-01</small>
+- AI bugfix: fixed bug in move score calculation that could cause AI to sometimes stop defending 
+- bugfix: prevent a rare crash when clicking really fast while buying a unit
+
+---
 v2.10.2 <small>released 2023-06-01</small>
 - bugfix: fix misaligned "right" button on level detail screen on first load 
 
