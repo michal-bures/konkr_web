@@ -1,6 +1,10 @@
 
 
 ---
+v2.10.2 <small>released 2023-06-01</small>
+- bugfix: fix misaligned "right" button on level detail screen on first load 
+
+---
 v2.10.1 <small>released 2023-06-01</small>
 - bugfix: fix freeze when right-clicking immediately after picking up pawn
 - bugfix: fix province popover elements being visible on title screen
