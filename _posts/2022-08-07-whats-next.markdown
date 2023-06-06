@@ -10,6 +10,8 @@ so ever since v2 was released about a month ago, I've been trying to collect as 
 
 And it's been kind of amazing.
 
+<!-- excerpt-end -->
+
 ### Sentimental rambling
 
 After about a year of hacking away at this thing, seeing that I'm clearly not the only one who is utterly in love with the concept of this game is beyond rewarding.
