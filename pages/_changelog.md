@@ -1,6 +1,20 @@
 
 
 ---
+v2.11.0 <small>released 2023-06-06</small>
+- 3 new campaign maps.
+- AI chatter messages!
+- complete overhaul of the AI diplomacy/politics layer
+- improvements to the way AI assesses the likelyhood of getting attacked from a particular province
+- smarter playback on faster specatating speeds - only moves that don't affect the player are paralelized
+- bugfix: patched a few campaign levels that accidentally started you with fake history of past aggression between provinces
+- bugfix: diplomatic AI no longer forgets about damage inflicted to regions that were completely destroyed
+- bugfix: emoji not updating correctly after undo
+- bugfix: power by faction calculation no longer incorrectly takes into account dead tiles
+- bugfix: power by faction calculation now correctly takes into account whether the player already collected income this turn
+- bugfix: retreated units no longer count as killed for the purpose of calculating AI relations impact
+
+---
 v2.10.3 <small>released 2023-06-01</small>
 - AI bugfix: fixed bug in move score calculation that could cause AI to sometimes stop defending 
 - bugfix: prevent a rare crash when clicking really fast while buying a unit
