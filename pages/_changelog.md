@@ -1,6 +1,11 @@
 
 
 ---
+v2.12.0 <small>released 2023-06-08</small>
+- bugfix: fix overly eager paralelizing of plays in fastest spectating mode
+- bugfix: fix rare failures to simplify complicated sequences of moves while spectating on fast speed, leading to visual errors 
+
+---
 v2.11.0 <small>released 2023-06-06</small>
 - 3 new campaign maps.
 - AI chatter messages!
