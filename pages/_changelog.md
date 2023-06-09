@@ -1,6 +1,13 @@
 
 
 ---
+v2.12.1 <small>released 2023-06-09</small>
+- bugfix: ensure the generated province names are not too long for the UI
+- bugfix: fix auto-attacker selection highlight incorrectly disappearing when issuing multiple moves in quick succession 
+- auto-dismiss success notifications when leaving/changing level
+- bugfix: fix map alert symbols not cleared after restart or rewind
+
+---
 v2.12.0 <small>released 2023-06-08</small>
 - bugfix: fix overly eager paralelizing of plays in fastest spectating mode
 - bugfix: fix rare failures to simplify complicated sequences of moves while spectating on fast speed, leading to visual errors 
