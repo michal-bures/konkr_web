@@ -1,11 +1,17 @@
 
 
 ---
+v2.12.3 <small>released 2023-06-10</small>
+- rivals sometimes proactively comment on major events in the game
+- bugfix: fixed AI sometimes treating major damage as minor for the purpose of generating chatter
+- bugfix: added missing chatter reaction when AI counter-attacks after suffering losses by the player 
+
+---
 v2.12.1 <small>released 2023-06-09</small>
-- bugfix: ensure the generated province names are not too long for the UI
-- bugfix: fix auto-attacker selection highlight incorrectly disappearing when issuing multiple moves in quick succession 
+- bugfix: ensured the generated province names are not too long for the UI
+- bugfix: fixed auto-attacker selection highlight incorrectly disappearing when issuing multiple moves in quick succession 
 - auto-dismiss success notifications when leaving/changing level
-- bugfix: fix map alert symbols not cleared after restart or rewind
+- bugfix: fixed map alert symbols not cleared after restart or rewind
 
 ---
 v2.12.0 <small>released 2023-06-08</small>
@@ -18,7 +24,7 @@ v2.11.0 <small>released 2023-06-06</small>
 - AI chatter messages!
 - complete overhaul of the AI diplomacy/politics layer
 - improvements to the way AI assesses the likelyhood of getting attacked from a particular province
-- smarter playback on faster specatating speeds - only moves that don't affect the player are paralelized
+- smarter playback on faster spectating speeds - only moves that don't affect the player are paralelized
 - bugfix: patched a few campaign levels that accidentally started you with fake history of past aggression between provinces
 - bugfix: diplomatic AI no longer forgets about damage inflicted to regions that were completely destroyed
 - bugfix: emoji not updating correctly after undo
