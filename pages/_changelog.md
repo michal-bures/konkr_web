@@ -1,6 +1,13 @@
 
 
 ---
+v2.12.4 <small>released 2023-06-11</small>
+- support for import custom AI chatter files
+- clean up chatter messages on undo/rewind
+- more AI chatter: on player defeat
+- more AI chatter: praising player's contribution against common enemy
+
+---
 v2.12.3 <small>released 2023-06-10</small>
 - rivals sometimes proactively comment on major events in the game
 - bugfix: fixed AI sometimes treating major damage as minor for the purpose of generating chatter
