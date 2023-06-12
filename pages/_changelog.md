@@ -1,6 +1,12 @@
 
 
 ---
+v2.12.5 <small>released 2023-06-12</small>
+- levels "Riverlands" and "Meadows" shifted later in the campaign to avoid a difficulty spike 
+- bugfix: AI factions no longer tend to compliment themselves after attacking
+- bugfix: fix rare case where move option indicator would fail to disappear after clearing a bandit inside your own territory
+
+---
 v2.12.4 <small>released 2023-06-11</small>
 - support for import custom AI chatter files
 - clean up chatter messages on undo/rewind
