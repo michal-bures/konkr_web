@@ -1,6 +1,11 @@
 
 
 ---
+v2.12.6 <small>released 2023-06-13</small>
+- bugfix: fixed a major bug with saving AI moves to replay. It could cause corrupted replay data after a game was saved during AI turn or after a replay was cropped due to being too long. 
+- bugfix: fix a display error on fast playback speed when a bandit camp is spawned and immediately produces a bandit
+
+---
 v2.12.5 <small>released 2023-06-12</small>
 - levels "Riverlands" and "Meadows" shifted later in the campaign to avoid a difficulty spike 
 - bugfix: AI factions no longer tend to compliment themselves after attacking
