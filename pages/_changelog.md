@@ -1,6 +1,11 @@
 
 
 ---
+v2.12.7 <small>released 2023-06-14</small>
+- bugfix: don't trigger AI chatter during replay
+- more fitting and more timely AI chatter response when the rival appreciates you ending your turn without attacking them  
+
+---
 v2.12.6 <small>released 2023-06-13</small>
 - bugfix: fixed a major bug with saving AI moves to replay. It could cause corrupted replay data after a game was saved during AI turn or after a replay was cropped due to being too long. 
 - bugfix: fix a display error on fast playback speed when a bandit camp is spawned and immediately produces a bandit
