@@ -1,6 +1,10 @@
 
 
 ---
+v2.12.8 <small>released 2023-06-15</small>
+- bugfix: prevent crash when a bandit camp is created and immediately destroyed while spectating on fast speed 
+
+---
 v2.12.7 <small>released 2023-06-14</small>
 - bugfix: don't trigger AI chatter during replay
 - more fitting and more timely AI chatter response when the rival appreciates you ending your turn without attacking them  
