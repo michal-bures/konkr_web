@@ -1,6 +1,15 @@
 
 
 ---
+v2.12.9 <small>released 2023-06-16</small>
+- AI rivals now less likely to defend their town with a knight outside of truly desperate situations
+- rivals tactical AI tuned to be a little less suicidally aggressive when desperate
+- fix tactical AI being blind to the value of defending with villagers in late game   
+- bugfix: fix error in move score calculation causing AI to sometimes overvalue being proactive to the point of very clearly suicidal moves
+- "Enclaves" moved later in campaign
+- "Zeal" level moved later in campaign and made a bit easier
+
+---
 v2.12.8 <small>released 2023-06-15</small>
 - bugfix: prevent crash when a bandit camp is created and immediately destroyed while spectating on fast speed 
 
