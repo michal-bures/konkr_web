@@ -1,6 +1,15 @@
 
 
 ---
+v2.12.10 <small>released 2023-06-21</small>
+- new level "Riposte"
+- alert icons now show instantly at start of player turn (prevents some race condition bugs)
+- land display tweak - connected local player land now shows "alive" color instantly after capture (to avoid confusing new players)
+- bugfix: appropriate AI chatter after rival received major damage but is still friendly
+- bugfix: fixed tile defense markers not updating after move aborted with right-click
+- bugfix: restored tile defense markers animation after dropping unit on a tile
+
+---
 v2.12.9 <small>released 2023-06-16</small>
 - AI rivals now less likely to defend their town with a knight outside of truly desperate situations
 - rivals tactical AI tuned to be a little less suicidally aggressive when desperate
