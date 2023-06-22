@@ -1,6 +1,10 @@
 
 
 ---
+v2.12.11 <small>released 2023-06-22</small>
+- bugfix: conquerable tiles indicators now update instantly on player turn, fixing a whole class of visual glitches and crashes when clicking to capture a number of tiles in rapid sequence
+
+---
 v2.12.10 <small>released 2023-06-21</small>
 - new level "Riposte"
 - alert icons now show instantly at start of player turn (prevents some race condition bugs)
