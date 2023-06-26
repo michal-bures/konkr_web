@@ -1,6 +1,21 @@
 
 
 ---
+v2.12.12 <small>released 2023-06-26</small>
+- new UI for restart/rewind/view replay saves you a click
+- new panel for inspecting province economy
+- new "R" hotkey for rewind
+- new impending rebellion indicators
+- new campaign level
+- work in progress on tutorial overhaul (mostly complete for level 1, but only in desktop mode)
+- hitting Escape in rewind mode now aborts the rewind instead of exiting to menu
+- "How to play" sidebar improvements (less confusing layout, next page button)
+- upscaled resolution for unit indicators
+- bugfix: rivals no longer grateful after you attack their bankrupt unit behind a wall.
+- going to next/previous level in the level detail screen using the left/right arrow buttons is now instant
+- bugfix: don't show plus icons on top of heroes
+
+---
 v2.12.11 <small>released 2023-06-22</small>
 - bugfix: conquerable tiles indicators now update instantly on player turn, fixing a whole class of visual glitches and crashes when clicking to capture a number of tiles in rapid sequence
 
