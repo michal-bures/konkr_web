@@ -25,6 +25,7 @@ html {
     --widget-background-color: rgba(159, 209, 232, 0.5);
     --button-highlight-color: #dbebf2;
     --link-color: #295d77;
+    --button-color: #ffffff4a;
     --main-background-color: #b1ddf2;
 }
 
@@ -85,7 +86,7 @@ a:visited {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 10px;
+    padding: 16px 16px 12px 16px;
 }
 
 .nav-button {
@@ -111,7 +112,7 @@ a:visited {
     flex-grow: 1;
     align-self: stretch;
     border-radius: 8px;
-    background: var(--widget-background-color);
+    /*background: var(--widget-background-color);*/
     margin: 2px
 }
 
@@ -119,8 +120,9 @@ a:visited {
     flex-grow: 1;
     font-weight: bold;
     font-size: 16px;
+    padding-left: 4px;
     align-self: center;
-    text-align: center;
+    text-align: left;
 }
 
 .page ul {
@@ -180,4 +182,26 @@ h1 {
     background-color: var(--widget-background-color);
     border-radius: 16px;
     margin-bottom: 16px;
+}
+
+#nextPageButton {
+    background-color: var(--button-color);
+    border-radius: 8px;
+    border: none;
+    color: var(--main-text-color);
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    margin: auto;
+}
+
+#nextPageButton:hover {
+    background-color: var(--button-highlight-color);
+}
+
+a[target="_blank"]:after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 3px 0 5px;
 }

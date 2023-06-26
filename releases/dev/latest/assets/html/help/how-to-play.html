@@ -16,6 +16,7 @@ const pages = [
 let eNavigator
 let ePrev
 let eNext
+let eNextPageButton
 let eCurrentPageTitle
 let currentPage
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', function() {
     eNavigator = document.getElementById('navigator')
     ePrev = document.getElementById('prev')
     eNext = document.getElementById('next')
+    eNextPageButton = document.getElementById('nextPageButton')
     eCurrentPageTitle = document.getElementById('currentPageText')
 
     ePrev.addEventListener('click', function() {
@@ -50,6 +52,9 @@ function showPage(pageKey) {
     if (pageIndex!== -1) {
         eCurrentPageTitle.innerText = (pageIndex +1) + '. ' + pages[pageIndex].title
     }
+
+    const hasNextPage = (pageIndex !==-1 && pageIndex < pages.length - 1)
+    setVisible(eNextPageButton, hasNextPage)
 
     const pageElements = document.getElementsByClassName('page')
     let found = false
@@ -86,12 +91,12 @@ function setVisible(element, visible) {
 
 <header id='navigator'>
 <nav>
-    <a href='#index' class='nav-button'><svg class='svg-icon' width="17" height="17" version="1.1" viewBox="0 0 4.4979 4.4979" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-97.231 -62.155)" fill="#636b6e"><path d="m97.959 64.03v2.623h1.078v-1.3229h0.81009v1.3229h1.078v-2.623z" stop-color="#000000" stroke-width=".28265" style="-inkscape-stroke:none;paint-order:stroke markers fill"/><path transform="matrix(.32946 0 0 .21753 97.238 61.632)" d="m13.624 14.214c-0.27271 0.47235-13.363 0.47235-13.636 0-0.27271-0.47235 6.2724-11.809 6.8178-11.809s7.0905 11.336 6.8178 11.809z" stop-color="#000000" stroke-width=".26458" style="-inkscape-stroke:none;paint-order:stroke markers fill"/></g></svg></a>
-
-    <a id='prev' class='nav-button'><svg class='svg-icon' width="17.016" height="19.648" version="1.1" viewBox="0 0 4.502 5.1987" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-97.231 -61.89)"><path d="m101.73 61.89v1.2222l-2.3854 1.3772 2.3854 1.3772v1.2222l-4.502-2.5993z" fill="#636b6e" stop-color="#000000"/></g></svg></a>
     <div id='currentPage'>
         <h1 id='currentPageText'></h1>
     </div>
+    <a href='#index' class='nav-button'><svg class='svg-icon' width="17" height="17" version="1.1" viewBox="0 0 4.4979 4.4979" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-97.231 -62.155)" fill="#636b6e"><path d="m97.959 64.03v2.623h1.078v-1.3229h0.81009v1.3229h1.078v-2.623z" stop-color="#000000" stroke-width=".28265" style="-inkscape-stroke:none;paint-order:stroke markers fill"/><path transform="matrix(.32946 0 0 .21753 97.238 61.632)" d="m13.624 14.214c-0.27271 0.47235-13.363 0.47235-13.636 0-0.27271-0.47235 6.2724-11.809 6.8178-11.809s7.0905 11.336 6.8178 11.809z" stop-color="#000000" stroke-width=".26458" style="-inkscape-stroke:none;paint-order:stroke markers fill"/></g></svg></a>
+
+    <a id='prev' class='nav-button'><svg class='svg-icon' width="17.016" height="19.648" version="1.1" viewBox="0 0 4.502 5.1987" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-97.231 -61.89)"><path d="m101.73 61.89v1.2222l-2.3854 1.3772 2.3854 1.3772v1.2222l-4.502-2.5993z" fill="#636b6e" stop-color="#000000"/></g></svg></a>
 
     <a id='next' class='nav-button'><svg class='svg-icon' width="17.016" height="19.648" version="1.1" viewBox="0 0 4.502 5.1987" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-97.231 -61.89)"><path d="m97.231 61.89v1.2222l2.3854 1.3772-2.3854 1.3772v1.2222l4.502-2.5993z" fill="#636b6e" stop-color="#000000"/></g></svg></a>
 </nav>
@@ -149,7 +154,7 @@ function setVisible(element, visible) {
             <ul>
                 <li>At the <b>start of your turn</b>, each of your provinces:
                     <ul>
-                        <li>Earns <img class='inline-icon' src='img/icons/coin.png' /> <b>one coin</b> for each tile in the
+                        <li>Earns <img class='inline-icon' src='img/icons/coin.png' /> <b>a coin for each tile</b> in the
                             province.
                         </li>
                         <li>Pays its
@@ -273,6 +278,8 @@ function setVisible(element, visible) {
             </ul>
         </div>
     </div>
+
+    <a onclick='navigate(+1)' id='nextPageButton'>Next</a>
 </div>
 
 </body>
