@@ -1,6 +1,11 @@
 
 
 ---
+v2.12.15 <small>released 2023-06-27</small>
+- fix typo in tutorial text
+- add a subtle sound effect to text reveal transitions
+
+---
 v2.12.14 <small>released 2023-06-27</small>
 - bugfix: fixed a common source of visual glitches after skipping an enemy turn 
 
