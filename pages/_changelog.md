@@ -1,6 +1,10 @@
 
 
 ---
+v2.12.13 <small>released 2023-06-27</small>
+- new tutorial messages now supported also in mobile layout
+
+---
 v2.12.12 <small>released 2023-06-26</small>
 - new UI for restart/rewind/view replay saves you a click
 - new panel for inspecting province economy
