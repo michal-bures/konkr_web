@@ -1,6 +1,10 @@
 
 
 ---
+v2.12.14 <small>released 2023-06-27</small>
+- bugfix: fixed a common source of visual glitches after skipping an enemy turn 
+
+---
 v2.12.13 <small>released 2023-06-27</small>
 - new tutorial messages now supported also in mobile layout
 
