@@ -1,6 +1,10 @@
 
 
 ---
+v2.12.16 <small>released 2023-06-28</small>
+- second tutorial level ("Hold the line") replaced with new one
+
+---
 v2.12.15 <small>released 2023-06-27</small>
 - fix typo in tutorial text
 - add a subtle sound effect to text reveal transitions
