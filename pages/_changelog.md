@@ -1,6 +1,11 @@
 
 
 ---
+v2.13.0 <small>released 2023-06-30</small>
+- new final tutorial level ("Reckoning") added as replacement for levels "Dark Age", "Diplomacy", "Robber Baron"
+- new AI Persona "Godfrey the Gooose", for now used only in the tutorial levels
+
+---
 v2.12.16 <small>released 2023-06-28</small>
 - second tutorial level ("Hold the line") replaced with new one
 
