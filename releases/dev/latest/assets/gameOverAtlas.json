@@ -136,7 +136,7 @@
 					}
 				},
 				{
-					"filename": "trophy",
+					"filename": "gold-trophy",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -155,6 +155,27 @@
 						"w": 59,
 						"h": 86
 					}
+				},
+				{
+					"filename": "silver-trophy",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 59,
+						"h": 86
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 59,
+						"h": 86
+					},
+					"frame": {
+						"x": 718,
+						"y": 942,
+						"w": 59,
+						"h": 86
+					}
 				}
 			]
 		}
@@ -162,6 +183,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:029a5041cff519ab0f8bdd4ecbbd9145:e1e178ff9b50584f7166a44305b4bf04:6769eb2a70289033a97b96142d3fe305$"
+		"smartupdate": "$TexturePacker:SmartUpdate:ce087091593e05fe3aa33ed6705e7cd0:066bd8ff6052c7a6028765c25b73ce79:6769eb2a70289033a97b96142d3fe305$"
 	}
 }

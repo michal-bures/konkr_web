@@ -6,16 +6,19 @@
       "levels": [
         {
           "id": "intro1",
-          "script": "tutorial1"
+          "script": "tutorial1",
+          "fixedAIDifficulty": "hard"
         },
         {
           "id": "l-tutorial2",
           "script": "tutorial2",
+          "fixedAIDifficulty": "hard",
           "isNew": true
         },
         {
           "id": "l-tutorial3",
           "script": "tutorial3",
+          "fixedAIDifficulty": "hard",
           "isNew": true
         },
         {
