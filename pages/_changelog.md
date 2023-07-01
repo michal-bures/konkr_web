@@ -1,6 +1,10 @@
 
 
 ---
+v2.13.1 <small>released 2023-07-01</small>
+- option to dismiss tutorial prompts in phone layout 
+
+---
 v2.13.0 <small>released 2023-06-30</small>
 - new final tutorial level ("Reckoning") added as replacement for levels "Dark Age", "Diplomacy", "Robber Baron"
 - new AI Persona "Godfrey the Gooose", for now used only in the tutorial levels
