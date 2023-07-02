@@ -1,6 +1,12 @@
 
 
 ---
+v2.14.1 <small>released 2023-07-02</small>
+- tweaked tutorial dialog background and positioning mainly to avoid hard to read text at the bottom when overlayed over the island
+- bugfix: improve advisor messages and fix broken "more info" button in tutorial 1 when it comes to warning about buying expensive unit
+- bugfix: properly center camera when dropping player into the first tutorial 
+
+---
 v2.14.0 <small>released 2023-07-01</small>
 - Campaign: levels now have two AI difficulty settings - normal (opponents are less envious of player and not quite as cunning) and hard (same as before); winning on normal grants you a silver trophy
 - Conquest: difficulty level "Normal" - same as "Challenging" but with the easier AI rivals
@@ -8,7 +14,7 @@ v2.14.0 <small>released 2023-07-01</small>
 - added cap on how much a smaller faction can appreciate you defeating a common enemy to prevent absurd levels of gratefulness in some edge cases
 - bugfix: prevent invalid link being copied to clipboard on conquest screen before a level was generated
 
----
+
 v2.13.1 <small>released 2023-07-01</small>
 - option to dismiss tutorial prompts in phone layout 
 
