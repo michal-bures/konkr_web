@@ -1,6 +1,10 @@
 
 
 ---
+v2.14.3 <small>released 2023-07-02</small>
+- Kongregate account login integration
+
+---
 v2.14.2 <small>released 2023-07-02</small>
 - improved resolution of tiles and palisades
 - difficulty selection prompt after the 3rd tutorial level
