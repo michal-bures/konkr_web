@@ -1,6 +1,12 @@
 
 
 ---
+v2.14.2 <small>released 2023-07-02</small>
+- improved resolution of tiles and palisades
+- difficulty selection prompt after the 3rd tutorial level
+- make sure the Roboto font is loaded for rendering dialog texts
+
+---
 v2.14.1 <small>released 2023-07-02</small>
 - tweaked tutorial dialog background and positioning mainly to avoid hard to read text at the bottom when overlayed over the island
 - bugfix: improve advisor messages and fix broken "more info" button in tutorial 1 when it comes to warning about buying expensive unit
