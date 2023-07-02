@@ -62,5 +62,5 @@ I have a few more items on my "new player experience" to-do list:
 * Based on early feedback it seems like one more tutorial level between #2 and #3 would be helpful. Something half-way between the completely straightforward first two levels and the large and challenging third one.
 * It's time to upgrade and expand the "How to play" section, which I didn't touch in probably more than a year!
 
-After that we'll se, I might go all in on the UI and content overhaul implementation, or take care of some other smaller issues first.
+After that we'll see, I might go all in on the UI and content overhaul implementation, or take care of some other smaller issues first.
 
