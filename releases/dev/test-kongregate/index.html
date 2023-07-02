@@ -162,7 +162,7 @@
             100% {
                 box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
             }
-        }</style><script defer="defer" src="vendors.1a724136953c6cc9dee5.bundle.js"></script><script defer="defer" src="main.66fb643c66b72b6dface.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.14.1-build-5437849105'
+        }</style><script defer="defer" src="vendors.8fdb478b349331338c6c.bundle.js"></script><script defer="defer" src="main.ec43f6a31ee2b3f0b748.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.14.1-build-5437879092'
     const SW_ENABLE = true
 
     // store current time for timing page load
@@ -187,22 +187,9 @@
 
     setLoadingStatus('loading game...')
 
-    //if running on Kongregate, inject their API script
-    if (new URLSearchParams(window.location.search).has('kongregate')) {
-       injectKongregateAPIScript()
-    }
-
     window.addEventListener('DOMContentLoaded', () => boot())
 
-    function injectKongregateAPIScript() {
-        console.info('Kongregate platform detected, downloading Kongregate API library...')
-        const kongregateScript = document.createElement('script')
-        kongregateScript.src = 'https://www.kongregate.com/javascripts/kongregate_api.js'
-        kongregateScript.onload = () => {
-            window.KongregateFacade.initialize()
-        }
-        document.head.appendChild(kongregateScript)
-    }
+
 
     function supportsServiceWorker()  {
         try {
