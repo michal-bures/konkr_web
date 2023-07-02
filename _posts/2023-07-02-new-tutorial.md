@@ -6,7 +6,7 @@ categories: update
 ---
 
 Now you can choose from two difficulty levels in the campaign! **Hard** mode is the same old evil Konkr AI you know and love to hate,
-while the new **Normal** mode make your rivals quite a bit less ruthless and backstabby. You will also find some brand new tutorial levels at the start of the campaign!
+while the new **Normal** mode makes your rivals quite a bit less ruthless and backstabby. You will also find some brand new tutorial levels at the start of the campaign!
 
 [Continue reading here](/update/2023/07/02/new-tutorial.html) for more details including how this applies to Conquest mode.
 
