@@ -1,6 +1,16 @@
 
 
 ---
+v2.14.7 <small>released 2023-07-04</small>
+- new campaign map "Valor"
+
+---
+v2.14.6 <small>released 2023-07-04</small>
+- ban Godfrey the Goose from building castles
+- the NEXT button in level detail screen takes now takes you to the next adjacent level (rather than next *unfinished one*)
+- How to Play document improvements
+
+---
 v2.14.5 <small>released 2023-07-04</small>
 - bugfix: fixed a rare issue where an outdated version of user data could be loaded by the game, leading to seeming loss of campaign progress
 - bugfix: fixed an issue where a victory on normal mode could override a victory on hard mode when syncing level progress 
