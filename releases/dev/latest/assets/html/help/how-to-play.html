@@ -11,7 +11,7 @@ const pages = [
     {key: 'tutorial-bandits', title: 'Stranded units'},
     {key: 'tutorial-rebellion', title: 'Rebellion'},
     {key: 'tutorial-rivals', title: 'Rivals'},
-    {key: 'tutorial-rewind', title: 'Time travel!'},
+    {key: 'tutorial-rewind', title: 'Time travel'},
     {key: 'tutorial-summary', title: 'Summary'},
 
 ]
@@ -122,7 +122,7 @@ function setVisible(element, visible) {
                 <li><a href='#tutorial-bandits'>5. Stranded units</a></li>
                 <li><a href='#tutorial-rebellion'>6. Rebellion</a></li>
                 <li><a href='#tutorial-rivals'>7. Rivals</a></li>
-                <li><a href='#tutorial-time-travel'>8. Time travel!</a></li>
+                <li><a href='#tutorial-rewind'>8. Time travel</a></li>
                 <li><a href='#tutorial-summary'>9. Summary</a></li>
             </ul>
         </div>
@@ -181,7 +181,7 @@ function setVisible(element, visible) {
             <ul>
                     <li>Notice that more advanced units have a much, <b>MUCH</b> higher upkeep cost!</li>
                     <li>That means buying a <b>knight</b> too early is an easy way to destroy your economy and promptly lose the game! Especially since there's <b>no way to dismiss units</b>.</li>
-                    <li>In general, stick to villagers at first to quickly expand your province. Get the more advanced units only once you really need their hitting power!</li>
+                    <li>In general, stick to villagers at first to quickly expand your province. Get pikemen and knights only once you really need their hitting power!</li>
 
             </ul>
         </div>
@@ -193,7 +193,7 @@ function setVisible(element, visible) {
                 <img class='main-image' alt='illustration' src='./img/panel-combat.png' />
             </div>
             <ul>
-                <li>You can move units anywhere within your province (there's no movement range!) and use them to conquer tiles adjacent to the province.</li>
+                <li>You can move units anywhere within your province (there's no movement range limit!) and use them to conquer tiles adjacent to the province.</li>
                 <li>But you can't conquer tiles <b>protected by an enemy unit of equal of greater strength</b>! For example a <img class='inline-icon' src='img/icons/pikeman.png' />pikeman cannot conquer a tile protected by another pikeman.</li>
                 <li>Every unit protects its adjacent tiles. Use that to prevent the enemy from invading your province!</li>
                 <li><img class='inline-icon' src='img/icons/town.png' /> Towns have the same strength as a <img class='inline-icon' src='img/icons/villager.png' /> villager and <img class='inline-icon' src='img/icons/castle.png' /> castles have the same strength as <img class='inline-icon' src='img/icons/pikeman.png' /> pikemen.</li>
@@ -227,7 +227,7 @@ function setVisible(element, visible) {
                 <img class='main-image' alt='illustration' src='./img/bandits.gif' />
             </div>
             <ul>
-                <li>Units with no access to town are marked as <img class='inline-icon' src='img/icons/stranded.png' /> <b>stranded</b> and become <img class='inline-icon' src='img/icons/bandit.png' /> <b>bandits</b> next turn.
+                <li>Units that <b>lost access to town</b> are marked as <img class='inline-icon' src='img/icons/stranded.png' /> <b>stranded</b> and become <img class='inline-icon' src='img/icons/bandit.png' /> <b>bandits</b> next turn.
                     This is <b>irreversible</b>, so make sure not to leave your units open to be cut off like that!
                 </li>
 
@@ -256,7 +256,7 @@ function setVisible(element, visible) {
         </div>
     </div>
 
-    <div class='page' id='tutorial-time-travel'>
+    <div class='page' id='tutorial-rewind'>
         <div class='figure'>
             <img class='main-image' alt='illustration' src='./img/panel-rewind.png' />
         </div>
@@ -264,8 +264,8 @@ function setVisible(element, visible) {
             In Konkr even small mistakes are often fatal, which is why you are given a few extra tools to help you out:
             <ul>
                 <li>Until you finish your turn, you can freely <b>undo</b> any moves you made. Feel free to experiment!</li>
-                <li>Three times per level, you can use <b>rewind</b> to go as far back in time as you want!</li>
-                <li>You can also <b>view replay</b> to get a better understanding of what in tarnation just happened during rival turn.</li>
+                <li>Three times per level, you can use <b>rewind</b> to go back further than that, even multiple turns!</li>
+                <li>You can also <b>view replay</b> to get a better understanding of what the heck just happened to your province during the rivals turn.</li>
             </ul>
         </div>
     </div>
@@ -281,7 +281,7 @@ function setVisible(element, visible) {
                         <a href='#tutorial-rebellion'><b>ruin their economy to trigger a rebellion</b></a>.</li>
                 <li>Think about what your rivals might do next and <b><a href='#tutorial-combat'>defend your weakspots</a></b>.</li>
                 <li><a href='#tutorial-rivals'/><b>Don't antagonize everyone</b></a>. Chose carefully who to fight and who to leave alone.</li>
-                <li>Learn from the rivals tactics!</li>
+                <li>Learn from your rivals! Remember that every dirty trick they use against you can also be used against them!</li>
             </ul>
         </div>
 
