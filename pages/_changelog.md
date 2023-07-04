@@ -1,6 +1,12 @@
 
 
 ---
+v2.14.5 <small>released 2023-07-04</small>
+- bugfix: fixed a rare issue where an outdated version of user data could be loaded by the game, leading to seeming loss of campaign progress
+- bugfix: fixed an issue where a victory on normal mode could override a victory on hard mode when syncing level progress 
+- first part of "How to play" section overhaul
+
+---
 v2.14.3 <small>released 2023-07-02</small>
 - Kongregate account login integration
 
