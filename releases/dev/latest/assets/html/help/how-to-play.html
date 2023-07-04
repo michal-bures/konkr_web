@@ -5,8 +5,9 @@
 
 const pages = [
     {key: 'tutorial-goal', title: 'Goal of the game'},
-    {key: 'tutorial-economy', title: 'Economy'},
-    {key: 'tutorial-conquest', title: 'Conquest'},
+    {key: 'tutorial-economy', title: 'Coin economy'},
+    {key: 'tutorial-units', title: 'Unit upkeep'},
+    {key: 'tutorial-combat', title: 'Combat rules'},
     {key: 'tutorial-politics', title: 'Politics'},
     {key: 'tutorial-bandits', title: 'Bandits'},
     {key: 'tutorial-strategy-tips', title: 'Strategy tips'},
@@ -108,12 +109,13 @@ function setVisible(element, visible) {
             <h1>How to play</h1>
             <ul>
                 <li><a href='#tutorial-goal'>1. Goal of the game</a></li>
-                <li><a href='#tutorial-economy'>2. Economy</a></li>
-                <li><a href='#tutorial-conquest'>3. Conquest</a></li>
-                <li><a href='#tutorial-politics'>4. Politics</a></li>
-                <li><a href='#tutorial-bandits'>5. Bandits</a></li>
-                <li><a href='#tutorial-strategy-tips'>6. Strategy tips</a></li>
-                <li><a href='#tutorial-advanced-controls'>7. Advanced controls</a></li>
+                <li><a href='#tutorial-economy'>2. Coin economy</a></li>
+                <li><a href='#tutorial-units'>3. Unit upkeep</a></li>
+                <li><a href='#tutorial-combat'>4. Combat rules</a></li>
+                <li><a href='#tutorial-politics'>5. Politics</a></li>
+                <li><a href='#tutorial-bandits'>6. Bandits</a></li>
+                <li><a href='#tutorial-strategy-tips'>7. Strategy tips</a></li>
+                <li><a href='#tutorial-advanced-controls'>8. Advanced controls</a></li>
             </ul>
         </div>
         <div class='widget'>
@@ -133,15 +135,18 @@ function setVisible(element, visible) {
                 <img class='main-image' alt='illustration' src='./img/illustration1.png' />
             </div>
             <ul>
-                <li>Connected tiles of same color form a <b>province</b>, as long as they have at least one <img
+                <li>You control the <b style='color: #008C00'>green province</b> on the map.
+                </li>
+                <li>A province is a group of same-colored <b>tiles</b> with at least one <img
                     class='inline-icon' src='img/icons/town.png'> <b>town</b>.
                 </li>
-                <li>All <b style='color: #008C00'>green</b> provinces are yours
-                    to control.
-                </li>
-                <li>Your goal is to expand your territory and <b>destroy all rival <img class='inline-icon'
+                <li>Your goal is to expand your province and <b>destroy all rival <img class='inline-icon'
                                                                                         src='img/icons/town.png'> towns</b>.
                 </li>
+                <li>A province won't survive without a town <img
+                    class='inline-icon' src='img/icons/town.png'>, so make sure to protect yours!
+                </li>
+
             </ul>
         </div>
     </div>
@@ -152,46 +157,43 @@ function setVisible(element, visible) {
                 <img class='main-image' alt='illustration' src='./img/illustration2.png' />
             </div>
             <ul>
-                <li>At the <b>start of your turn</b>, each of your provinces:
-                    <ul>
-                        <li>Earns <img class='inline-icon' src='img/icons/coin.png' /> <b>a coin for each tile</b> in the
-                            province.
-                        </li>
-                        <li>Pays its
-                            <img class='inline-icon monochrome' src='img/icons/villager.png' /> <b>units</b> and
-                            <img class='inline-icon monochrome' src='img/icons/castle.png' /> <b>castles</b></li>
-                        <li>Stores surplus coins in <img class='inline-icon' src='img/icons/town.png'> towns.</li>
-                    </ul>
+                <li>Each turn you gain <b>one <img class='inline-icon' src='img/icons/coin.png' /> coin</b> for <b>each tile</b> in your
+                    province.
                 </li>
-                <li>All the <b>coins</b> in your <img class='inline-icon' src='img/icons/town.png'> towns make up
-                    the
-                    <img class='inline-icon' src='img/icons/treasury.png' />&nbsp;<b>province treasury</b>.
-                </li>
-                <li>Use coins from the treasury to buy new <img class='inline-icon' src='img/icons/villager.png' />
-                    <b>units</b>
-                    and
-                    <img class='inline-icon' src='img/icons/castle.png' /> <b>castles</b> for the province.
+                <li>But you have to also <b>pay the upkeep cost</b> for every <img class='inline-icon monochrome' src='img/icons/villager.png' /> <b>unit</b> you own!</li>
+                <li>Any surplus coins go to the <img class='inline-icon' src='img/icons/treasury.png' /> <b>treasury</b> in the nearest <img class='inline-icon' src='img/icons/town.png'> town and you
+                    can use them to buy more <img class='inline-icon' src='img/icons/villager.png' /> <b>units</b>.
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class='page' id='tutorial-conquest'>
+    <div class='page' id='tutorial-units'>
         <div class='slide-content'>
             <div class='figure'>
-                <img class='main-image' alt='illustration' src='./img/illustration3.png' />
+                <img class='main-image' alt='illustration' src='./img/panel-units.png' />
             </div>
             <ul>
-                <li>Every building and unit in the game has a <b>strength</b> level (ranging from 0 to 4)</li>
+                    <li>Notice that more advanced units have a much, <b>MUCH</b> larger upkeep cost!</li>
+                    <li>That means buying a <b>knight</b> too early is an easy way to destroy your economy and promptly lose the game!</li>
+                    <li>In general, villagers are the best unit for quickly expanding your province. Get the more advanced units only once you really need their hitting power!</li>
 
-                <li>Strength matters when <b>conquering</b> enemy tiles and also <b>protecting adjacent tiles</b> from enemy
-                    conquest.
-                </li>
-                <li>To conquer an enemy tile, the attacking unit must be <b>stronger</b> than each of the defending units and
-                    buildings.
-                </li>
-                <li>Units of equal strength cannot attack each other, with one exception: Heroes can attack other heroes!</li>
             </ul>
+        </div>
+    </div>
+
+    <div class='page' id='tutorial-combat'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/panel-combat.png' />
+            </div>
+            <ul>
+                <li>Units can move freely within their province (no range limit!) and used to conquer any tile adjacent to the province.</li>
+                <li>But any tile <b>protected by an enemy unit of equal of greater strength is off limits</b>! For example a pikeman cannot conquer a tile protected by another pikeman.</li>
+                <li>Every unit protects its adjacent tiles. Use that to prevent the enemy from invading your province!</li>
+                <li><img class='inline-icon' src='img/icons/town.png' /> Towns have the same strength as a <img class='inline-icon' src='img/icons/villager.png' /> villager and <img class='inline-icon' src='img/icons/castle.png' /> castles have the same strength as <img class='inline-icon' src='img/icons/pikeman.png' /> pikemen.</li>
+            </ul>
+
         </div>
     </div>
 

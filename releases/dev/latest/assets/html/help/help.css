@@ -141,7 +141,7 @@ a:visited {
 
 .page li::before {
     content: "❖";
-    padding-right: 5px;
+    padding-right: 7px;
 }
 
 .figure {
@@ -151,10 +151,10 @@ a:visited {
 
 .main-image {
     width: 100%;
+    margin:auto;
     max-width: 360px;
     min-width: 200px;
     object-fit: contain;
-    margin: auto;
 
     border-radius: 20px;
 }
