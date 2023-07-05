@@ -1,6 +1,13 @@
 
 
 ---
+v2.14.9 <small>released 2023-07-05</small>
+- made the income label text a little darker
+- tutorial level 3 tweaked to be a little easier 
+- bugfix: fixed Godfrey the Goose not actually being sufficiently dumb
+- AI bugfix: fixed attack planning bug which would in rare cases sometimes cause the rival to do nothing at all instead of chosing a weak attack option
+
+---
 v2.14.7 <small>released 2023-07-04</small>
 - new campaign map "Valor"
 
