@@ -1,6 +1,12 @@
 
 
 ---
+v2.14.10 <small>released 2023-07-05</small>
+- fixed defense icon for hero to be the same as for knight
+- you can now dismiss tutorial messages with an "x" button
+- made som messages in tutorial #3 less spammy
+
+---
 v2.14.9 <small>released 2023-07-05</small>
 - made the income label text a little darker
 - tutorial level 3 tweaked to be a little easier 
