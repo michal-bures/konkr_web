@@ -1,116 +1,12 @@
 <html>
 <head>
-    <link rel="stylesheet" href="./help.css">
-<script>
-
-const pages = [
-    {key: 'tutorial-goal', title: 'Goal of the game'},
-    {key: 'tutorial-economy', title: 'Coin economy'},
-    {key: 'tutorial-units', title: 'Unit upkeep'},
-    {key: 'tutorial-combat', title: 'Attacking and Defending'},
-    {key: 'tutorial-bandits', title: 'Stranded units'},
-    {key: 'tutorial-rebellion', title: 'Rebellion'},
-    {key: 'tutorial-rivals', title: 'Rivals'},
-    {key: 'tutorial-rewind', title: 'Time travel'},
-    {key: 'tutorial-summary', title: 'Summary'},
-
-]
-
-const standalonePages = {
-    'tutorial-hotkeys': 'Advanced controls'
-}
-
-let eNavigator
-let ePrev
-let eNext
-let eNextPageButton
-let eCurrentPageTitle
-let currentPage
-
-window.addEventListener('DOMContentLoaded', function() {
-    eNavigator = document.getElementById('navigator')
-    ePrev = document.getElementById('prev')
-    eNext = document.getElementById('next')
-    eNextPageButton = document.getElementById('nextPageButton')
-    eCurrentPageTitle = document.getElementById('currentPageText')
-
-    ePrev.addEventListener('click', function() {
-        navigate(-1)
-    })
-    eNext.addEventListener('click', function() {
-        navigate(+1)
-    })
-    showPageBasedOnCurrentHash()
-})
-
-window.addEventListener('hashchange', showPageBasedOnCurrentHash)
-
-function showPageBasedOnCurrentHash() {
-    currentPage = location.hash.slice(1)
-    showPage(currentPage)
-}
-
-function showPage(pageKey) {
-    currentPage = pageKey
-    const pageIndex = pages.findIndex(p=>p.key===pageKey)
-    if (pageIndex!== -1) {
-        eCurrentPageTitle.innerText = (pageIndex +1) + '. ' + pages[pageIndex].title
-    } else {
-        eCurrentPageTitle.innerText = standalonePages[pageKey] ?? ''
-    }
-
-    const hasNextPage = (pageIndex !==-1 && pageIndex < pages.length - 1)
-    setVisible(eNextPageButton, hasNextPage)
-    setVisible(eNext, pageIndex!==-1)
-    setVisible(ePrev, pageIndex!==-1)
-
-    const pageElements = document.getElementsByClassName('page')
-    let found = false
-    for (let page of pageElements) {
-        if (page.id === pageKey) {
-            setVisible(page, true)
-            found = true
-        } else {
-            setVisible(page, false)
-        }
-    }
-    setVisible(eNavigator, pageKey !== 'index')
-
-    if (!found) showPage('index')
-}
-
-function navigate(delta) {
-    let currentPageIndex = pages.findIndex(page => page.key === currentPage)
-    if (currentPageIndex === -1) currentPageIndex = 0
-    currentPageIndex += delta
-    if (currentPageIndex < 0) currentPageIndex = 0
-    if (currentPageIndex >= pages.length) currentPageIndex = pages.length - 1
-
-    showPage(pages[currentPageIndex].key)
-}
-
-function setVisible(element, visible) {
-    element.style.display = visible ? 'block' : 'none'
-}
-
-</script>
+    <link rel='stylesheet' href='./help.css'>
+    <script src='help-section.js'></script>
 </head>
 <body>
-
-<header id='navigator'>
-<nav>
-    <div id='currentPage'>
-        <h1 id='currentPageText'></h1>
-    </div>
-    <a href='./' class='nav-button'><svg class='svg-icon' width="17" height="17" version="1.1" viewBox="0 0 4.4979 4.4979" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-97.231 -62.155)" fill="#636b6e"><path d="m97.959 64.03v2.623h1.078v-1.3229h0.81009v1.3229h1.078v-2.623z" stop-color="#000000" stroke-width=".28265" style="-inkscape-stroke:none;paint-order:stroke markers fill"/><path transform="matrix(.32946 0 0 .21753 97.238 61.632)" d="m13.624 14.214c-0.27271 0.47235-13.363 0.47235-13.636 0-0.27271-0.47235 6.2724-11.809 6.8178-11.809s7.0905 11.336 6.8178 11.809z" stop-color="#000000" stroke-width=".26458" style="-inkscape-stroke:none;paint-order:stroke markers fill"/></g></svg></a>
-    <a id='prev' class='nav-button'><svg class='svg-icon' width="17.016" height="19.648" version="1.1" viewBox="0 0 4.502 5.1987" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-97.231 -61.89)"><path d="m101.73 61.89v1.2222l-2.3854 1.3772 2.3854 1.3772v1.2222l-4.502-2.5993z" fill="#636b6e" stop-color="#000000"/></g></svg></a>
-    <a id='next' class='nav-button'><svg class='svg-icon' width="17.016" height="19.648" version="1.1" viewBox="0 0 4.502 5.1987" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-97.231 -61.89)"><path d="m97.231 61.89v1.2222l2.3854 1.3772-2.3854 1.3772v1.2222l4.502-2.5993z" fill="#636b6e" stop-color="#000000"/></g></svg></a>
-</nav>
-</header>
-
+<header id='navigator'></header>
 <div id='content' class='content'>
-
-    <div class='page' id='tutorial-goal'>
+    <div class='page hidden' id='goal' data-title='Your Goal'>
         <div class='slide-content'>
             <div class='figure'>
                 <img class='main-image' alt='illustration' src='./img/illustration1.png' />
@@ -119,87 +15,109 @@ function setVisible(element, visible) {
                 <li>You control the <b style='color: #008C00'>green province</b> on the map.
                 </li>
                 <li>Your goal is to expand your province and <b>destroy all rival <img class='inline-icon'
-                                                                                        src='img/icons/town.png'> towns</b>.
+                                                                                       src='img/icons/town.png'>towns</b>.
                 </li>
                 <li>A province won't survive without a <img
-                    class='inline-icon' src='img/icons/town.png'> <b>town</b>, so make sure to protect yours!
+                    class='inline-icon' src='img/icons/town.png'><b>town</b>, so make sure to protect yours!
                 </li>
 
             </ul>
         </div>
     </div>
 
-    <div class='page' id='tutorial-economy'>
+    <div class='page hidden' id='economy' data-title='Coin Economy'>
         <div class='slide-content'>
             <div class='figure'>
                 <img class='main-image' alt='illustration' src='./img/illustration2.png' />
             </div>
             <ul>
-                <li>Each turn you gain <b>one <img class='inline-icon' src='img/icons/coin.png' /> coin</b> for <b>each tile</b> in your
+                <li>Each turn you gain <b>one <img class='inline-icon' src='img/icons/coin.png' />coin</b> for <b>each
+                    tile</b> in your
                     province.
                 </li>
-                <li>But you also <b>pay the upkeep cost</b> for every <img class='inline-icon monochrome' src='img/icons/villager.png' /> <b>unit</b> you own!</li>
-                <li>Surplus coins go to <img class='inline-icon' src='img/icons/treasury.png' /> <b>treasury</b> in the <img class='inline-icon' src='img/icons/town.png'> town. Use them to buy more <img class='inline-icon' src='img/icons/villager.png' /> <b>units</b>.
+                <li>But you also <b>pay the upkeep cost</b> for every <img class='inline-icon monochrome'
+                                                                           src='img/icons/villager.png' /><b>unit</b>
+                    you own!
+                </li>
+                <li>Surplus coins go to <img class='inline-icon' src='img/icons/treasury.png' /><b>treasury</b> in the
+                    <img class='inline-icon' src='img/icons/town.png'/>town. Use them to buy more <img
+                        class='inline-icon' src='img/icons/villager.png' /><b>units</b>.
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class='page' id='tutorial-units'>
+    <div class='page hidden' id='units' data-title='Unit Upkeep'>
         <div class='slide-content'>
             <div class='figure'>
                 <img class='main-image' alt='illustration' src='./img/panel-units.png' />
             </div>
             <ul>
-                    <li>Notice that more advanced units have a much, <b>MUCH</b> higher upkeep cost!</li>
-                    <li>That means buying a <b>knight</b> too early is an easy way to destroy your economy and promptly lose the game! Especially since there's <b>no way to dismiss units</b>.</li>
-                    <li>In general, stick to villagers at first to quickly expand your province. Get pikemen and knights only once you really need their hitting power!</li>
+                <li>Notice that more advanced units have a much, <b>MUCH</b> higher upkeep cost!</li>
+                <li>That means buying a <b>knight</b> too early is an easy way to destroy your economy and promptly lose
+                    the game! Especially since there's <b>no way to dismiss units</b>.
+                </li>
+                <li>In general, stick to villagers at first to quickly expand your province. Get pikemen and knights
+                    only once you really need their hitting power!
+                </li>
 
             </ul>
         </div>
     </div>
 
-    <div class='page' id='tutorial-combat'>
+    <div class='page hidden' id='combat' data-title='Attacking and Defending'>
         <div class='slide-content'>
             <div class='figure'>
                 <img class='main-image' alt='illustration' src='./img/panel-combat.png' />
             </div>
             <ul>
-                <li>You can move units anywhere within your province (there's no movement range limit!) and use them to conquer tiles adjacent to the province.</li>
-                <li>But you can't conquer tiles <b>protected by an enemy unit of equal of greater strength</b>! For example a <img class='inline-icon' src='img/icons/pikeman.png' />pikeman cannot conquer a tile protected by another pikeman.</li>
-                <li>Every unit protects its adjacent tiles. Use that to prevent the enemy from invading your province!</li>
-                <li><img class='inline-icon' src='img/icons/town.png' /> Towns have the same strength as a <img class='inline-icon' src='img/icons/villager.png' /> villager and <img class='inline-icon' src='img/icons/castle.png' /> castles have the same strength as <img class='inline-icon' src='img/icons/pikeman.png' /> pikemen.</li>
+                <li>You can move units anywhere within your province (there's no movement range limit!) and use them to
+                    conquer tiles adjacent to the province.
+                </li>
+                <li>But you can't conquer tiles <b>protected by an enemy unit of equal of greater strength</b>! For
+                    example a <img class='inline-icon' src='img/icons/pikeman.png' />pikeman cannot conquer a tile
+                    protected by another pikeman.
+                </li>
+                <li>Every unit protects its adjacent tiles. Use that to prevent the enemy from invading your province!
+                </li>
+                <li><img class='inline-icon' src='img/icons/town.png' />Towns have the same strength as a <img
+                    class='inline-icon' src='img/icons/villager.png' />villager and
+                    <img class='inline-icon' src='img/icons/castle.png' />castles
+                    have the same strength as <img class='inline-icon' src='img/icons/pikeman.png' />pikemen.
+                </li>
+                <li><img class='inline-icon' src='img/icons/hero.png' /><b>Heroes</b> are an exception, they can attack
+                    each other!
+                </li>
             </ul>
 
         </div>
     </div>
 
-    <div class='page' id='tutorial-rivals'>
+
+    <div class='page' id='merging' data-title='Merging units'>
         <div class='slide-content'>
             <div class='figure'>
-                <img class='main-image' alt='illustration' src='./img/illustration5.png' />
+                <img class='main-image' alt='illustration' src='./img/panel-merging.png' />
             </div>
             <ul>
-                <li>In Konkr, your opponents play a lot like real humans:
-                    <ul>
-                        <li>They always <b>play to win</b>, don't expect them to settle for second place!</li>
-                        <li>They are <b>vindictive and eager to retaliate</b>, so think twice before provoking them.</li>
-                        <li>They <b>join forces against a dominant player</b> (on <b style='color:#c83737'>hard</b> difficulty, that means even against you!).</li>
-                    </ul>
+                <li>Moving two units of the same type on top of each other will merge them into the next stronger
+                    unit.
                 </li>
-                <li>The <img class='inline-icon' src='img/icons/face.png'/> <b>emoji</b> over enemy <img class='inline-icon' src='img/icons/town.png'/> towns tells you how the rival thinks about you.</li>
-                <li>But remember, there are <b>no permanent alliances</b> and every ruler looks after their own interests first, no matter how much they like you!</li>
+                <li><b>Merging your villagers</b> is usually the fastest way to get a <img class='inline-icon' src='img/icons/pikeman.png'/>pikeman or a <img class='inline-icon' src='img/icons/knight.png'/>knight!</li>
             </ul>
         </div>
     </div>
 
-    <div class='page' id='tutorial-bandits'>
+    <div class='page hidden' id='bandits' data-title='Stranded Units'>
         <div class='slide-content'>
             <div class='figure'>
                 <img class='main-image' alt='illustration' src='./img/bandits.gif' />
             </div>
             <ul>
-                <li>Units that <b>lost access to town</b> are marked as <img class='inline-icon' src='img/icons/stranded.png' /> <b>stranded</b> and become <img class='inline-icon' src='img/icons/bandit.png' /> <b>bandits</b> next turn.
+                <li>Units that <b>lost access to town</b> are marked as <img class='inline-icon'
+                                                                             src='img/icons/stranded.png' />
+                    <b>stranded</b> and become <img class='inline-icon' src='img/icons/bandit.png' /><b>bandits</b>
+                    next turn.
                     This is <b>irreversible</b>, so make sure not to leave your units open to be cut off like that!
                 </li>
 
@@ -209,75 +127,102 @@ function setVisible(element, visible) {
 
                 <li>The stolen coins are taken to a nearby <img class='inline-icon' src='img/icons/bandit-camp.png' />&nbsp;<b>Bandit
                     camp</b>. These camps can spawn new bandits once there are at least 3 <img class='inline-icon'
-                                                                                               src='img/icons/coins.png' /> coins
+                                                                                               src='img/icons/coins.png' />coins
                     stored.
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class='page' id='tutorial-rebellion'>
+    <div class='page hidden' id='rebellion' data-title='Rebellion'>
         <div class='slide-content'>
             <div class='figure'>
                 <img class='main-image' alt='illustration' src='./img/rebellion.gif' />
             </div>
             <ul>
-                <li>When a province doesn't have enough coins left to pay the upkeep of its units, <b>ALL units in the province will rebel</b> and become bandits!</li>
-                <li>This is a huge disaster when you let it happen to you, and an utterly <b>crushing blow</b> if you can use it against your rivals!</li>
+                <li>When a province doesn't have enough coins left to pay the upkeep of its units, <b>ALL units in the
+                    province will rebel</b> and become bandits!
+                </li>
+                <li>This is a huge disaster when you let it happen to you, and an utterly <b>crushing blow</b> if you
+                    can use it against your rivals!
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class='page hidden' id='rivals' data-title='Rivals'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/illustration5.png' />
+            </div>
+            <ul>
+                <li>In Konkr, your opponents play a lot like real humans:
+                    <ul>
+                        <li>They always <b>play to win</b>, don't expect them to settle for second place!</li>
+                        <li>They are <b>vindictive and eager to retaliate</b>, so think twice before provoking them.
+                        </li>
+                        <li>They <b>join forces against a dominant player</b> (on <b style='color:#c83737'>hard</b>
+                            difficulty, that means even against you!).
+                        </li>
+                    </ul>
+                </li>
+                <li>The <img class='inline-icon' src='img/icons/face.png' /><b>emoji</b> over enemy <img
+                    class='inline-icon' src='img/icons/town.png' />towns tells you how the rival thinks about you.
+                </li>
+                <li>But remember, there are <b>no permanent alliances</b> and every rival looks after their own
+                    interests first, no matter how much they like you!
+                </li>
             </ul>
         </div>
     </div>
 
-    <div class='page' id='tutorial-rewind'>
+    <div class='page hidden' id='rewind' data-title='Time Travel'>
         <div class='figure'>
             <img class='main-image' alt='illustration' src='./img/panel-rewind.png' />
         </div>
         <div class='slide-content'>
             In Konkr even small mistakes are often fatal, which is why you are given a few extra tools to help you out:
             <ul>
-                <li>Until you finish your turn, you can freely <b>undo</b> any moves you made. Feel free to experiment!</li>
-                <li>Three times per level, you can use <b>rewind</b> to go back further than that, even multiple turns!</li>
-                <li>You can also <b>view replay</b> to get a better understanding of what the heck just happened to your province during the rivals turn.</li>
+                <li>Until you finish your turn, you can freely <b>undo</b> any moves you made. Feel free to experiment!
+                </li>
+                <li>Three times per level, you can use <b>rewind</b> to go back further than that, even multiple turns!
+                </li>
+                <li>You can also <b>view replay</b> to get a better understanding of what the heck just happened to your
+                    province during the rivals turn.
+                </li>
             </ul>
         </div>
     </div>
 
-    <div class='page' id='tutorial-summary'>
+    <div class='page hidden' id='summary' data-title='Summary'>
         <div class='slide-content'>
             <b><i>Long story short</i></b>:
             <ul>
-                <li><b><a href='#tutorial-economy'>Keeps an eye on your coin income.</a></b></li>
-                <li><b><a href='#tutorial-units'>Don't waste coins on expensive units</a></b> until it's truly worth it.</li>
-                <li>Strike at the rival province, not the defending units. Flank the enemy defenders and
-                    <b><a href='#tutorial-bandits'>cut them off from their town</a></b> or
-                        <a href='#tutorial-rebellion'><b>ruin their economy to trigger a rebellion</b></a>.</li>
-                <li>Think about what your rivals might do next and <b><a href='#tutorial-combat'>defend your weakspots</a></b>.</li>
-                <li><a href='#tutorial-rivals'/><b>Don't antagonize everyone</b></a>. Chose carefully who to fight and who to leave alone.</li>
-                <li>Learn from your rivals! Remember that every dirty trick they use against you can also be used against them!</li>
+                <li><b><a href='#economy'>Keeps an eye on your coin income.</a></b></li>
+                <li><b><a href='#units'>Don't waste coins on expensive units</a></b> until it's truly worth it.
+                </li>
+                <li>Don't forget that you can <b><a href='#merging'>merge two units</a></b> to get a stronger one!
+                </li>
+                <li>Strike at the rival province, not the defending units. Go around the enemy defenders and
+                    <b><a href='#bandits'>cut them off from their town</a></b> or
+                    <a href='#rebellion'><b>ruin their economy to trigger a rebellion</b></a>.
+                </li>
+                <li>Think about what your rivals might do next and <b><a href='#combat'>defend your
+                    weakspots</a></b>.
+                </li>
+                <li><a href='#rivals' /><b>Don't antagonize everyone</b></a>. Chose carefully who to fight and
+                    who to leave alone.
+                </li>
+                <li>Learn from your rivals! Remember that every dirty trick they use against you can also be used
+                    against them!
+                </li>
             </ul>
         </div>
 
-        <p><b><i>The rules of Konkr are quite simple, but it takes a while to get used to them! Learn, adapt and prevail!</i></b></p>
+        <p><b><i>The rules of Konkr are quite simple, but it takes a while to get used to them! Learn, adapt and
+            prevail!</i></b></p>
     </div>
 
-    <div class='page' id='tutorial-hotkeys'>
-        <div class='slide-content'>
-            <div class='figure'>
-                <img class='main-image' alt='illustration' src='./img/illustration6.png' />
-            </div>
-            <ul>
-                <li>You can issue many actions in Konkr with keyboard!</li>
-
-                <li>When you click the <b>Undo</b> button on the start of the turn, you have options to
-                    <b>Rewind</b> time to the start of previous turn (you can do this only 3 times per game), or <b>restart</b> the current map.</li>
-
-                <li><b>shift-click</b> to buy multiple units in a row.</li>
-                <li><b>ctrl-click</b> buttons to bypass confirmation prompts.</li>
-            </ul>
-        </div>
-    </div>
-
-    <a onclick='navigate(+1)' id='nextPageButton'>Next</a>
+    <footer id='footer-navigator'></footer>
 </div>
 
 </body>
