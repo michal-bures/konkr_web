@@ -1,4 +1,4 @@
-export type HelpPageKey =
+export type HowToPlayPageKey =
     | 'tutorial-goal'
     | 'tutorial-economy'
     | 'tutorial-units'
