@@ -1,6 +1,13 @@
 
 
 ---
+v2.14.13 <small>released 2023-07-06</small>
+- improved navigation controls in help sidebar
+- chapter on merging units added to "How to Play" section
+- a whole new "Advanced topics" section added to the help sidebar
+- various small tweaks to the "How to Play" section content
+
+---
 v2.14.12 <small>released 2023-07-06</small>
 - bugfix: fixed graphical bug when moving around a hero
 
