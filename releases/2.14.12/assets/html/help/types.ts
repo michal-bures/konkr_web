@@ -1,0 +1,10 @@
+export type HowToPlayPageKey =
+    | 'tutorial-goal'
+    | 'tutorial-economy'
+    | 'tutorial-units'
+    | 'tutorial-combat'
+    | 'tutorial-rivals'
+    | 'tutorial-bandits'
+    | 'tutorial-rebellion'
+    | 'tutorial-summary'
+    | 'tutorial-rewind'

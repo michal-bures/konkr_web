@@ -1,10 +1,19 @@
 
 
 ---
+v2.14.12 <small>released 2023-07-06</small>
+- bugfix: fixed graphical bug when moving around a hero
+
+---
+v2.14.11 <small>released 2023-07-06</small>
+- tweaked tutorial #3 to be easier
+- AI rivals on normal difficulty now never ally with each other
+
+---
 v2.14.10 <small>released 2023-07-05</small>
 - fixed defense icon for hero to be the same as for knight
 - you can now dismiss tutorial messages with an "x" button
-- made som messages in tutorial #3 less spammy
+- made some messages in tutorial #3 less spammy
 
 ---
 v2.14.9 <small>released 2023-07-05</small>
