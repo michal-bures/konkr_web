@@ -1,6 +1,11 @@
 
 
 ---
+v2.15.0 <small>released 2023-07-07</small>
+- all remaining low-res graphics and fonts upscaled for non-blurry 2x zoom
+- bandit camps now fly black flag when they have enough coins to produce new bandit
+
+---
 v2.14.13 <small>released 2023-07-06</small>
 - improved navigation controls in help sidebar
 - chapter on merging units added to "How to Play" section
