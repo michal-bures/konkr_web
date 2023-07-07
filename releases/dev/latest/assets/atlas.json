@@ -5710,6 +5710,31 @@
 					}
 				},
 				{
+					"filename": "ui/mini-icons/arrow-right",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 10
+					},
+					"frame": {
+						"x": 439,
+						"y": 500,
+						"w": 16,
+						"h": 10
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
 					"filename": "ui/icons/chevron-down",
 					"rotated": false,
 					"trimmed": false,
@@ -5724,7 +5749,7 @@
 						"h": 9
 					},
 					"frame": {
-						"x": 439,
+						"x": 457,
 						"y": 500,
 						"w": 16,
 						"h": 9
@@ -5778,31 +5803,6 @@
 						"y": 446,
 						"w": 12,
 						"h": 9
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/mini-icons/arrow-right",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 8,
-						"h": 5
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 8,
-						"h": 5
-					},
-					"frame": {
-						"x": 596,
-						"y": 506,
-						"w": 8,
-						"h": 5
 					},
 					"anchor": {
 						"x": 0,
@@ -6449,7 +6449,7 @@
 						"h": 10
 					},
 					"frame": {
-						"x": 457,
+						"x": 475,
 						"y": 500,
 						"w": 12,
 						"h": 10
@@ -6824,7 +6824,7 @@
 						"h": 9
 					},
 					"frame": {
-						"x": 471,
+						"x": 489,
 						"y": 500,
 						"w": 8,
 						"h": 9
@@ -6849,7 +6849,7 @@
 						"h": 7
 					},
 					"frame": {
-						"x": 481,
+						"x": 499,
 						"y": 500,
 						"w": 10,
 						"h": 7
@@ -6924,7 +6924,7 @@
 						"h": 7
 					},
 					"frame": {
-						"x": 493,
+						"x": 511,
 						"y": 500,
 						"w": 8,
 						"h": 7
@@ -7024,31 +7024,6 @@
 						"h": 7
 					},
 					"frame": {
-						"x": 503,
-						"y": 500,
-						"w": 6,
-						"h": 7
-					},
-					"anchor": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				{
-					"filename": "ui/mini-icons/prev-turn",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 6,
-						"h": 7
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 6,
-						"h": 7
-					},
-					"frame": {
 						"x": 1477,
 						"y": 436,
 						"w": 6,
@@ -7133,6 +7108,31 @@
 						"x": 0,
 						"y": 0
 					}
+				},
+				{
+					"filename": "ui/mini-icons/prev-turn",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 6,
+						"h": 7
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 6,
+						"h": 7
+					},
+					"frame": {
+						"x": 1588,
+						"y": 487,
+						"w": 6,
+						"h": 7
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
 				}
 			]
 		}
@@ -7140,6 +7140,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:cc177846b406efe86ac0802f95d4a46b:c8ff8a2deb5b9e89cad1a17ba9a39874:cbce6b53f0f49e0bf15173c25c41f876$"
+		"smartupdate": "$TexturePacker:SmartUpdate:6865a906cae342673c7e93abe3d636a6:59e707895c988a37486fa37da2ea3714:cbce6b53f0f49e0bf15173c25c41f876$"
 	}
 }
