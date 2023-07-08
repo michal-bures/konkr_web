@@ -1,6 +1,12 @@
 
 
 ---
+v2.15.1 <small>released 2023-07-08</small>
+- major optimization of map rendering (up to 2x framerate boost!)
+- small tweaks to shoreline and province selection outline graphics
+- bugfix: fixed a rare visual glitch where conquerable hex highlight would incorrectly display semi-transparently after a unit was bought
+
+---
 v2.15.0 <small>released 2023-07-07</small>
 - all remaining low-res graphics and fonts upscaled for non-blurry 2x zoom
 - bandit camps now fly black flag when they have enough coins to produce new bandit
