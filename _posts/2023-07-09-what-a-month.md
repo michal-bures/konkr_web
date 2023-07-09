@@ -17,6 +17,7 @@ But the main milestones can be summarized as:
 - pretty much rewrote the AI diplomacy layer and added the AI chatter system
 - created new tutorial levels, and added alternate AI difficulty mode
 - bunch of polish, UI and performance improvements
+
 I've also started working towards the UI and content overhaul I've been hinting at since january, but that will still take a lot of work.
 
 The player base has been slowly but steadily growing in 2023, with a huge bump in the last week thanks to a promotion by 
@@ -34,7 +35,6 @@ The main focus in the coming months will be on the plan that I already outlined 
  - new multi-campaign structure with overworld map
  - better replacement for conquest mode (with no more unwinnable maps and more sense of progresion)
  - map editor and map sharing
-
 I think these three things together can really lift the game to a whole another level, but they are also all pretty significant undertakings, so my best guestimate still stands at "hopefully by the end of 2023"! 
 
 
