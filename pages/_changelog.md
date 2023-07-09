@@ -1,6 +1,15 @@
 
 
 ---
+v2.15.3 <small>released 2023-07-09</small>
+- improved feedback dialog
+- tweaked victory screen layout on smaller display size so that feedback dialog doesn't block the Next button
+- reverted to simpler shoreline rendering
+- bugfix: fixed lag after conquering a tile
+- bugfix: fix other tiles in region sometimes not updating correctly after a tile was taken
+- bugfix: fix problems with tile updates during replay
+
+---
 v2.15.2 <small>released 2023-07-09</small>
 - bugfix: fix graphical glitch when generating new map
 
