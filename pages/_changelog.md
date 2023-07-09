@@ -1,6 +1,10 @@
 
 
 ---
+v2.15.2 <small>released 2023-07-09</small>
+- bugfix: fix graphical glitch when generating new map
+
+---
 v2.15.1 <small>released 2023-07-08</small>
 - major optimization of map rendering (up to 2x framerate boost!)
 - small tweaks to shoreline and province selection outline graphics
