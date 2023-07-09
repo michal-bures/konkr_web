@@ -31,7 +31,7 @@ First of all, I'm *taking a break* for a week or two to focus on my new job and 
 So if you got used to the almost daily updates on discord, don't be alarmed by the sudden lull in activity. 
 I'll be back with steady progress soon enough, even if not at quite the pace you could see this month. 
 
-The main focus in the coming months will be on the plan that I already outlined back in January the [2023 roadmap](/update/2023/01/29/roadmap-update.html), with the major highlights being:
+The main focus in the coming months will be on the plan that I already outlined back in January in the [2023 roadmap](/update/2023/01/29/roadmap-update.html), with the major highlights being:
  - new multi-campaign structure with overworld map
  - better replacement for conquest mode (with no more unwinnable maps and more sense of progresion)
  - map editor and map sharing
