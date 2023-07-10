@@ -35,6 +35,7 @@ The main focus in the coming months will be on the plan that I already outlined 
  - new multi-campaign structure with overworld map
  - better replacement for conquest mode (with no more unwinnable maps and more sense of progresion)
  - map editor and map sharing
+
 I think these three things together can really lift the game to a whole another level, but they are also all pretty significant undertakings, so my best guestimate still stands at "hopefully by the end of 2023"! 
 
 
