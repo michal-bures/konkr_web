@@ -1,6 +1,18 @@
 
 
 ---
+v2.15.6 <small>released 2023-07-10</small>
+- new campaign level "Gladius"
+
+---
+v2.15.5 <small>released 2023-07-10</small>
+- bugfix: AI rivals build castles again
+
+---
+v2.15.4 <small>released 2023-07-10</small>
+- bugfix: fix conquest map generator often producing the same maps again 
+
+---
 v2.15.3 <small>released 2023-07-09</small>
 - improved feedback dialog
 - tweaked victory screen layout on smaller display size so that feedback dialog doesn't block the Next button
