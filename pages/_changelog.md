@@ -1,6 +1,10 @@
 
 
 ---
+v2.15.7 <small>released 2023-07-14</small>
+- bugfix: another fix to random map generation not being random enough
+
+---
 v2.15.6 <small>released 2023-07-10</small>
 - new campaign level "Gladius"
 
