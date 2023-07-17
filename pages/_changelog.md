@@ -1,6 +1,11 @@
 
 
 ---
+v2.15.9 <small>released 2023-07-17</small>
+- bugfix: fix inconsistent coloring of conquerable hex highlight after stopped hovering over a tile
+- bugfix: scrolling on level select screen now works past level 85
+
+---
 v2.15.8 <small>released 2023-07-17</small>
 - revert rendering optimization changes as they are actually tanking performance on devices without hardware accelerated graphics  
 
