@@ -1,6 +1,10 @@
 
 
 ---
+v2.15.8 <small>released 2023-07-17</small>
+- revert rendering optimization changes as they are actually tanking performance on devices without hardware accelerated graphics  
+
+---
 v2.15.7 <small>released 2023-07-14</small>
 - bugfix: another fix to random map generation not being random enough
 
