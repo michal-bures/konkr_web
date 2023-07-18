@@ -1,6 +1,10 @@
 
 
 ---
+v2.15.10 <small>released 2023-07-17</small>
+- bugfix: fix missing grass on tiles
+
+---
 v2.15.9 <small>released 2023-07-17</small>
 - bugfix: fix inconsistent coloring of conquerable hex highlight after stopped hovering over a tile
 - bugfix: scrolling on level select screen now works past level 85
