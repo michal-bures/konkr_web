@@ -1,6 +1,10 @@
 
 
 ---
+v2.15.12 <small>released 2023-07-22</small>
+- rendering performance optimization
+
+---
 v2.15.11 <small>released 2023-07-21</small>
 - bugfix: fix trophies getting converted from silver to gold in the background when syncing through kongregate account
 
