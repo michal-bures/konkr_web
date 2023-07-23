@@ -1,6 +1,10 @@
 
 
 ---
+v2.15.13 <small>released 2023-07-23</small>
+- performance optimizations mainly affecting undo and rewind
+
+---
 v2.15.12 <small>released 2023-07-22</small>
 - rendering performance optimization
 
