@@ -1,6 +1,13 @@
 
 
 ---
+v2.16.0 <small>released 2023-07-24</small>
+- long press of undo button undos all moves in the current turn
+- option to increase difficulty when hitting "play again" on the victory screen 
+- new campaign level
+- improved error reporting and error message for boot-time errors
+
+---
 v2.15.13 <small>released 2023-07-23</small>
 - performance optimizations mainly affecting undo and rewind
 
