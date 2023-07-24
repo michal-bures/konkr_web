@@ -6,6 +6,10 @@
             overflow: hidden
         }
 
+        a {
+            color: #3b5998;
+        }
+
         h1 {
             text-align: center;
             position: fixed;
@@ -162,7 +166,7 @@
             100% {
                 box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
             }
-        }</style><script defer="defer" src="vendors.33f0e4a33917d205c233.bundle.js"></script><script defer="defer" src="main.28f7bc527f738072fcb4.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.15.13-build-5638236511'
+        }</style><script defer="defer" src="vendors.34a9287b95e8595e6427.bundle.js"></script><script defer="defer" src="main.42ee61a37cc26010ad6c.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden" style="pointer-events: auto"></div><div id="news-box">{{ content }}</div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.15.13-build-5641085804'
     const SW_ENABLE = true
 
     // store current time for timing page load
@@ -170,7 +174,7 @@
     const statusElement = document.getElementById('status')
     const loaderElement = document.getElementById('loader')
     window.setLoadingStatus = (status, isLoading) => {
-        statusElement.innerText = status
+        statusElement.innerHTML = status
 
         if (isLoading === false) {
             loaderElement.remove()
