@@ -1,6 +1,23 @@
 
 
 ---
+v2.17.0 <small>released 2023-07-30</small>
+- option to wipe campaign progress (found at the bottom of the campaign overview screen)
+- smarter auto-attack pawn selection (will now avoid using already defensively placed pawns) 
+- when you decline surrender, it still counts as victory for the purpose of tracking your lowest turn count for the level (only after you actually win though!)
+- AI chatter: no longer showing reaction messages from off-screen rivals
+- AI chatter: many new messages, fixed some spelling mistakes
+- AI chatter: avoid multiple rivals making identical comments in the same turn as much as possible
+- AI chatter: rival comment doesn't change when selecting the same region repeatedly
+- new advanced help pages: "Visual Cues" and "Difficulty Modes" 
+- new campaign level "Debt Spiral"
+- bugfix: fixed rare issue with best turn count not updating for tutorial levels
+- bugfix: fixed level being saved as in progress after viewing replay from victory screen
+- bugfix: fixed minor visual artifacts in tile background
+- bugfix: fixed animation glitches when updating tile defense markers
+- added rate limits to cloud sync and error reporting to avoid spamming the server
+
+---
 v2.16.0 <small>released 2023-07-24</small>
 - long press of undo button undos all moves in the current turn
 - option to increase difficulty when hitting "play again" on the victory screen 
