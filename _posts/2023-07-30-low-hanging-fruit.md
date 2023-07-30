@@ -44,6 +44,6 @@ You still have to finish the game for it to count, but you no longer have to dec
 There's about one more weekend worth of little improvements on my list, before I fully dive into the next big undertaking, which would be:
 
 - The big content overhaul I've already wrote a lot about for example [here](/update/2023/05/28/gearing-up.html).
-- Tactical AI overhaul - this is always a huge time sink, but now I am just one more iteration from *really* nailing, I can feel it ☺.
+- Tactical AI overhaul - this is always a huge time sink, but now I am just one more iteration from *really* nailing it, I can feel it ☺.
 
 Expect more details on these big plans soon!
