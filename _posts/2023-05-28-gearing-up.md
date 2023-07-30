@@ -33,7 +33,7 @@ beginning to dive into it! The ideas have evolved quite a bit in the meantime, s
 along with some very early UI mockups! Just keep in mind **none of this is final** as I'm actively iterating on all
 these ideas as we speak! 
 
-That also means any feedback and suggestions from yours truly are more than welcome (hit me up on [discord](https://discord.com/invite/C9HucB9arH) or [dev@konkr.io](mailto:dev@konkr.io))!
+That also means any feedback and suggestions from yours truly are more than welcome (hit me up on [discord](https://discord.com/invite/C9HucB9arH) or [mike@konkr.io](mailto:mike@konkr.io))!
 
 <p style="display:flex">
 <img class="mockup" src="/img/blog/mockups/expeditions1.png"/>

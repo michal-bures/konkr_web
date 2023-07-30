@@ -71,7 +71,7 @@ seo_frequency: monthly
 ### Data deletion request
 
 If you signed in with your email address on [konkr.io](https://www.konkr.io) and you'd like to have your email address and all your data removed from the database,
-email me on [dev@konkr.io](mailto:{{site.email}}) and I will get that sorted.
+email me on [mike@konkr.io](mailto:{{site.email}}) and I will get that sorted.
 
 To remove any information stored by the game from your web browser, follow the instructions 
 to "Clear Local Storage" applicable to your browser .
