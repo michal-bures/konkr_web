@@ -1,6 +1,10 @@
 
 
 ---
+v2.17.2 <small>released 2023-07-31</small>
+- bugfix: fix town levels not updating properly after rival faction turn
+
+---
 v2.17.0 <small>released 2023-07-30</small>
 - option to wipe campaign progress (found at the bottom of the campaign overview screen)
 - smarter auto-attack pawn selection (will now avoid using already defensively placed pawns) 
