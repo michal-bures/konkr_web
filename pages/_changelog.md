@@ -1,6 +1,11 @@
 
 
 ---
+v2.17.4 <small>released 2023-08-02</small>
+- kongregate statistics API integration
+- bugfix: fix incorrect date when saving replay
+
+---
 v2.17.2 <small>released 2023-07-31</small>
 - bugfix: fix town levels not updating properly after rival faction turn
 
