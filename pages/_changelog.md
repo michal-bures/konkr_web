@@ -1,6 +1,19 @@
 
 
 ---
+v2.18.0 <small>released 2023-08-06</small>
+- news alerts (exclamation marks) now appear instantly over the course of enemy turn and no longer disappear after undo
+- skipping enemy turn now displays progress indicator while rival moves are calculated
+- new campaign level
+- campaign levels tweaked to be slightly easier: Maze, Sherwood
+- bugfix: fixed game glitching out after leaving to main menu while enemy turn is in progress and restarting the level
+- bugfix: fix rival tiles background not updating properly when spectating on slowest playback speed
+- bugfix: fixed shield indicator not appearing on a protected tile from which a unit was just picked up
+- bugfix: fixed the Control modifier key getting stuck in "down" state after leaving the game window while holding it down 
+- bugfix: prevent recurrent reset warning messages after syncing local progress both with kongregate and another login method
+- bugfix: no longer able to make feedback emojis in feedback dialog fly off-screen by spam-clicking them 
+
+---
 v2.17.4 <small>released 2023-08-02</small>
 - kongregate statistics API integration
 - bugfix: fix incorrect date when saving replay
