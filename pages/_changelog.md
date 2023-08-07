@@ -1,6 +1,10 @@
 
 
 ---
+v2.18.1 <small>released 2023-08-07</small>
+- bugfix: fast forward overlay breaking the game when hitting "skip" while watching replay
+
+---
 v2.18.0 <small>released 2023-08-06</small>
 - news alerts (exclamation marks) now appear instantly over the course of enemy turn and no longer disappear after undo
 - skipping enemy turn now displays progress indicator while rival moves are calculated
