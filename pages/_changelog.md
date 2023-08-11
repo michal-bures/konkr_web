@@ -1,6 +1,15 @@
 
 
 ---
+v2.18.2 <small>released 2023-08-11</small>
+- added hotkey "C" to build castle
+- if all campaign levels are completed, display the total turn count on level select screen
+- clicking "next level" on victory screen no longer skips over levels that were completed on lower than the current
+  difficulty (making replaying campaign levels on higher difficulty easier)
+- fast-forward overlay tweaks - less aggressive darkening, not shown when estimated time left is very low 
+- bugfix: fixed a rare boot sequence race condition causing a crash on startup    
+
+---
 v2.18.1 <small>released 2023-08-07</small>
 - bugfix: fast forward overlay breaking the game when hitting "skip" while watching replay
 
