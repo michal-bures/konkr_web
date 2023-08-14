@@ -1,6 +1,10 @@
 
 
 ---
+v2.18.4 <small>released 2023-08-14</small>
+- new campaign level
+
+---
 v2.18.3 <small>released 2023-08-13</small>
 - minor tile rendering optimization
 - bugfix: attempt to fix rare race condition crash on startup after progress reset when using kongregate login
