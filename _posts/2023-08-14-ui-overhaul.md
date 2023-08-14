@@ -28,7 +28,7 @@ making it performant enough to show dozens of islands at once, but early results
 For the style of the UI elements, I definitely want to get rid of the cold, sterile blue/white UI aesthetic entirely.
 I've been experimenting with a few different ideas, and I'm going to really dive into that next weekend. This is not just
 about the level select screen, but about establishing a new style for all the existing and upcoming menu screens
-across the game. Which is to say this may take some time. I'll be really trying to get this right and try upgrade my UI design 
+across the game. Which is to say this may take some time. I'll be really trying to get this right and upgrade my UI design 
 skills a little bit in the process.
 
 Expect some detailed UI mockups (possibly with an opinion poll attached) soon!
