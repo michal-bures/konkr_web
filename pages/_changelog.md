@@ -1,6 +1,11 @@
 
 
 ---
+v2.18.3 <small>released 2023-08-13</small>
+- minor tile rendering optimization
+- bugfix: attempt to fix rare race condition crash on startup after progress reset when using kongregate login
+
+---
 v2.18.2 <small>released 2023-08-11</small>
 - added hotkey "C" to build castle
 - if all campaign levels are completed, display the total turn count on level select screen
