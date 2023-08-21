@@ -1,6 +1,10 @@
 
 
 ---
+v2.18.6 <small>released 2023-08-21</small>
+- new campaign level
+
+---
 v2.18.5 <small>released 2023-08-14</small>
 - bugfix: "continue" button on title screen no longer recommending already completed tutorial levels
 - bugfix: uploaded correct version of the new campaign level (Furor)
