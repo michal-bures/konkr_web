@@ -8,7 +8,7 @@ With the upcoming user interface overhaul, the base ocean color will become cust
 You can already try this out in this [experimental branch](https://www.konkr.io/releases/dev/test-colors).
 Coming to the main game soon!
 
-Also, [continue reading](/update/2023/08/20/ui-overhaul-update.html) for a sneak peak at my work on the new menu UI!
+Also, [continue reading](/update/2023/08/20/ui-overhaul-update.html) for a sneak peek at my work on the new menu UI!
 
 <!-- excerpt-end -->
 
@@ -32,7 +32,7 @@ The current design is still very much a work in progress, but a sense of clear d
 
 ## Bye Bye, Bleak Blue!
 
-Once nice think about the new UI is that it should automatically adapt to any primary background color, which means the color of the ocean can and
+One nice thing about the new UI is that it should automatically adapt to any primary background color, which means the color of the ocean can and
 **will** be totally customizable (or at least that's the plan at the moment)!
 
 <img src="/img/blog/ocean-colors.png"/>
