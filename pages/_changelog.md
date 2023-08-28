@@ -1,6 +1,13 @@
 
 
 ---
+v2.18.7 <small>released 2023-08-28</small>
+- new campaign level
+- bugfix: fixed typo in level select UI
+- bugfix: remove broken difficulty selector when restarting conquest map
+- bugfix: prevent canceling rewind when entered from the defeat screen 
+
+---
 v2.18.6 <small>released 2023-08-21</small>
 - new campaign level
 
