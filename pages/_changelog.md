@@ -1,6 +1,10 @@
 
 
 ---
+v2.18.8 <small>released 2023-08-30</small>
+- bugfix: fix incorrect image shown on the "Unit Upkeep" help page.
+
+---
 v2.18.7 <small>released 2023-08-28</small>
 - new campaign level
 - bugfix: fixed typo in level select UI
