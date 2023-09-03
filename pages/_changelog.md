@@ -1,6 +1,19 @@
 
 
 ---
+v2.19.0 <small>released 2023-09-03</small>
+- new campaign level
+- the latest level replay is saved automatically and can be opened from the title screen
+- new ocean graphics
+- adjustable ocean color (either as part of overall theme or separately)
+- improved positioning and layout of tutorial panel on large maps
+- live transition between compact and large UI now smoother and without a memory leak
+- bugfix: fixed a source of occasional crash after loading a replay
+- bugfix: fixed the "One rival down, one more to go" down message showing up at the wrong time on Island 4: Reckoning
+- bugfix: fixed zombie forest leaking into regulary-themed maps and vice versa
+- bugfix: fixed icons on twitter/discord buttons alignment on the feedback sidebar
+
+---
 v2.18.8 <small>released 2023-08-30</small>
 - bugfix: fix incorrect image shown on the "Unit Upkeep" help page.
 
