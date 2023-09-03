@@ -1,6 +1,10 @@
 
 
 ---
+v2.19.2 <small>released 2023-09-03</small>
+- bugfix: fix rare crash when loading the color theme setting 
+
+---
 v2.19.0 <small>released 2023-09-03</small>
 - new campaign level
 - the latest level replay is saved automatically and can be opened from the title screen
