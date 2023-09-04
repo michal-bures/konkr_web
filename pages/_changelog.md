@@ -1,6 +1,10 @@
 
 
 ---
+v2.19.3 <small>released 2023-09-04</small>
+- bugfix: fix crash when color setting in user data no longer matches any known preset
+
+---
 v2.19.2 <small>released 2023-09-03</small>
 - bugfix: fix rare crash when loading the color theme setting 
 
