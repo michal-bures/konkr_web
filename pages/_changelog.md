@@ -1,6 +1,10 @@
 
 
 ---
+v2.19.5 <small>released 2023-09-04</small>
+- bugfix: fix for major performance issue when loading a level with hardware acceleration disabled  
+
+---
 v2.19.3 <small>released 2023-09-04</small>
 - bugfix: fix crash when color setting in user data no longer matches any known preset
 
