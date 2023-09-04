@@ -1,6 +1,10 @@
 
 
 ---
+v2.19.6 <small>released 2023-09-04</small>
+- bugfix: fix a graphical glitch causing tile to not fully change color in rare cases 
+
+---
 v2.19.5 <small>released 2023-09-04</small>
 - bugfix: fix for major performance issue when loading a level with hardware acceleration disabled  
 
