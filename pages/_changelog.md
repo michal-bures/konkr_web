@@ -1,6 +1,12 @@
 
 
 ---
+v2.19.7 <small>released 2023-09-10</small>
+- new campaign level
+- bugfix: coins from chests on friendly territory can be no longer used for buying units
+- UI color tweaks in rewind mode and in restart/rewind menu
+
+---
 v2.19.6 <small>released 2023-09-04</small>
 - bugfix: fix a graphical glitch causing tile to not fully change color in rare cases 
 
