@@ -1,6 +1,15 @@
 
 
 ---
+v2.19.8 <small>released 2023-09-16</small>
+- conquest mode now lets you cycle between 10 starting location variations
+- conquest mode layout tweaked to give better overview of the map
+- performance optimization: faster AI on devices without hardware accelerated graphics (better balance CPU resources between AI calculations and rendering) 
+- improved UI contrast for dark ocean colors and other color palette tweaks
+- bugfix: fix non-deterministic town placement in conquest mode, conquest level links should be reliable again
+- bugfix: get rid of occasional horizontal and vertical seams between island chunks
+
+---
 v2.19.7 <small>released 2023-09-10</small>
 - new campaign level
 - bugfix: coins from chests on friendly territory can be no longer used for buying units
