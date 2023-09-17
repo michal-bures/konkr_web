@@ -1,6 +1,12 @@
 
 
 ---
+v2.19.10 <small>released 2023-09-17</small>
+- new campaign level
+- water reflections rendering optimization
+- further refinement of rendering vs AI calculations balance
+
+---
 v2.19.8 <small>released 2023-09-16</small>
 - conquest mode now lets you cycle between 10 starting location variations
 - conquest mode layout tweaked to give better overview of the map
