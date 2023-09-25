@@ -1,6 +1,10 @@
 
 
 ---
+v2.19.11 <small>released 2023-09-25</small>
+- new campaign level
+
+---
 v2.19.10 <small>released 2023-09-17</small>
 - new campaign level
 - water reflections rendering optimization
