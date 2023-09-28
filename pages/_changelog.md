@@ -1,6 +1,14 @@
 
 
 ---
+v2.20.0 <small>released 2023-09-28</small>
+- better small-screen support - conquest settings and other side panels now scroll when content doesn't fit on screen 
+- scrollable views no longer allow you to scroll way past the end of the content
+- reset map zoom level when entering conquest menu
+- bugfix: fixed sidebar panel content not adjusting after window resize
+- bugfix: fixed random forest placement deviations when recreating conquest map (invalidates old conquest map links) 
+
+---
 v2.19.11 <small>released 2023-09-25</small>
 - new campaign level
 
