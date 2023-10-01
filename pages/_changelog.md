@@ -1,6 +1,16 @@
 
 
 ---
+v2.21.0 <small>released 2023-10-01</small>
+- rivals now slightly less eager to feed their units to zombies
+- zombie mode now available in Conquest!
+- zombie mode no longer overrides color theme (but if you miss the gloomy aesthetic, you can still switch to the "Muted" theme manually in the options sidebar)
+- conquest maps now include bandit camps (or haunted towns in zombie mode)
+- new campaign level
+- bugfix: changing the color theme now applies immediately on title and conquest screens  
+- bugfix: fixed major memory leak related to ocean highlights rendering (slowing the game down the longer you play)
+
+---
 v2.20.0 <small>released 2023-09-28</small>
 - better small-screen support - conquest settings and other side panels now scroll when content doesn't fit on screen 
 - scrollable views no longer allow you to scroll way past the end of the content
