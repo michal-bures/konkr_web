@@ -1,6 +1,11 @@
 
 
 ---
+v2.21.2 <small>released 2023-10-08</small>
+- new campaign level
+- bugfix: clear alert symbols when entering replay
+
+---
 v2.21.0 <small>released 2023-10-01</small>
 - rivals now slightly less eager to feed their units to zombies
 - zombie mode now available in Conquest!
