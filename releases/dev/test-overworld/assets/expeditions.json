@@ -28,7 +28,10 @@
                         "w": 11,
                         "h": 12
                     },
-                    "links": []
+                    "links": [
+                        "intro1",
+                        "l-double-trouble"
+                    ]
                 },
                 {
                     "id": "l-double-trouble",
@@ -46,30 +49,36 @@
                 {
                     "id": "l-tutorial3",
                     "shape": {
-                        "x": 14,
-                        "y": 59,
+                        "x": 16,
+                        "y": 60,
                         "w": 17,
                         "h": 16
                     },
-                    "links": []
+                    "links": [
+                        "l-double-trouble",
+                        "l-intro2",
+                        "l-heritage"
+                    ]
                 },
                 {
                     "id": "l-intro2",
                     "shape": {
-                        "x": 2,
-                        "y": 43,
+                        "x": 3,
+                        "y": 47,
                         "w": 12,
                         "h": 13
                     },
                     "links": [
-                        "l-tutorial3"
+                        "l-tutorial3",
+                        "l-bottleneck",
+                        "l-heritage"
                     ]
                 },
                 {
                     "id": "l-bottleneck",
                     "shape": {
                         "x": -4,
-                        "y": 22,
+                        "y": 21,
                         "w": 14,
                         "h": 18
                     },
@@ -82,129 +91,157 @@
                 {
                     "id": "l-breakthrough",
                     "shape": {
-                        "x": 38,
+                        "x": 36,
                         "y": 34,
                         "w": 18,
                         "h": 15
                     },
                     "links": [
-                        "l-heritage"
+                        "l-heritage",
+                        "l-khiro"
                     ]
                 },
                 {
                     "id": "l-heritage",
                     "shape": {
-                        "x": 14,
-                        "y": 36,
+                        "x": 15,
+                        "y": 37,
                         "w": 20,
                         "h": 19
                     },
                     "links": [
                         "l-tutorial3",
                         "l-hinterlands",
-                        "l-khiro"
+                        "l-khiro",
+                        "l-intro2",
+                        "l-breakthrough"
                     ]
                 },
                 {
                     "id": "l-khiro",
                     "shape": {
                         "x": 35,
-                        "y": 17,
+                        "y": 10,
                         "w": 21,
                         "h": 14
                     },
                     "links": [
                         "l-rising-sun",
-                        "l-natives"
+                        "l-natives",
+                        "l-breakthrough",
+                        "l-heritage",
+                        "l-hinterlands"
                     ]
                 },
                 {
                     "id": "l-hinterlands",
                     "shape": {
-                        "x": 12,
+                        "x": 8,
                         "y": 8,
                         "w": 20,
                         "h": 19
                     },
                     "links": [
-                        "l-riverlands"
+                        "l-riverlands",
+                        "l-khiro",
+                        "l-ten-paces",
+                        "l-bottleneck",
+                        "l-heritage"
                     ]
                 },
                 {
                     "id": "l-rising-sun",
                     "shape": {
                         "x": 51,
-                        "y": 0,
+                        "y": -5,
                         "w": 24,
                         "h": 31
                     },
-                    "links": []
+                    "links": [
+                        "l-khiro",
+                        "l-natives"
+                    ]
                 },
                 {
                     "id": "l-natives",
                     "shape": {
-                        "x": 36,
-                        "y": -10,
+                        "x": 41,
+                        "y": -9,
                         "w": 20,
                         "h": 17
                     },
                     "links": [
-                        "l-rising-sun"
+                        "l-rising-sun",
+                        "l-khiro",
+                        "l-golden-lake",
+                        "l-chalki"
                     ]
                 },
                 {
                     "id": "l-golden-lake",
                     "shape": {
-                        "x": 24,
-                        "y": -34,
+                        "x": 20,
+                        "y": -35,
                         "w": 20,
                         "h": 15
                     },
                     "links": [
                         "l-riverlands",
-                        "l-natives"
+                        "l-natives",
+                        "l-bohemia",
+                        "l-chalki"
                     ]
                 },
                 {
                     "id": "l-riverlands",
                     "shape": {
                         "x": 8,
-                        "y": -19,
+                        "y": -24,
                         "w": 21,
                         "h": 19
                     },
                     "links": [
-                        "l-ten-paces"
+                        "l-ten-paces",
+                        "l-hinterlands",
+                        "l-golden-lake",
+                        "l-crusade"
                     ]
                 },
                 {
                     "id": "l-ten-paces",
                     "shape": {
-                        "x": -9,
-                        "y": -10,
+                        "x": -3,
+                        "y": -14,
                         "w": 13,
                         "h": 14
                     },
-                    "links": []
+                    "links": [
+                        "l-bottleneck",
+                        "l-hinterlands",
+                        "l-riverlands",
+                        "l-crusade"
+                    ]
                 },
                 {
                     "id": "l-crusade",
                     "shape": {
-                        "x": -9,
-                        "y": -42,
+                        "x": -11,
+                        "y": -50,
                         "w": 20,
                         "h": 21
                     },
                     "links": [
                         "l-ten-paces",
-                        "l-hideouts"
+                        "l-hideouts",
+                        "l-riverlands",
+                        "l-bohemia"
                     ]
                 },
                 {
                     "id": "l-bohemia",
                     "shape": {
-                        "x": 10,
-                        "y": -56,
+                        "x": 14,
+                        "y": -61,
                         "w": 24,
                         "h": 17
                     },
@@ -220,36 +257,45 @@
                     "id": "l-chalki",
                     "shape": {
                         "x": 46,
-                        "y": -51,
+                        "y": -43,
                         "w": 22,
                         "h": 15
                     },
                     "links": [
                         "l-natives",
-                        "l-meadows"
+                        "l-meadows",
+                        "l-golden-lake",
+                        "l-bohemia"
                     ]
                 },
                 {
                     "id": "l-meadows",
                     "shape": {
-                        "x": 26,
-                        "y": -81,
+                        "x": 32,
+                        "y": -80,
                         "w": 24,
                         "h": 23
                     },
-                    "links": []
+                    "links": [
+                        "l-bohemia",
+                        "l-chalki",
+                        "l-hideouts",
+                        "l-maze"
+                    ]
                 },
                 {
                     "id": "l-hideouts",
                     "shape": {
-                        "x": 2,
-                        "y": -81,
+                        "x": -6,
+                        "y": -82,
                         "w": 20,
                         "h": 18
                     },
                     "links": [
                         "l-meadows",
-                        "l-midas"
+                        "l-midas",
+                        "l-crusade",
+                        "l-bohemia"
                     ]
                 },
                 {
@@ -261,14 +307,17 @@
                         "h": 20
                     },
                     "links": [
-                        "l-soleada"
+                        "l-soleada",
+                        "l-hideouts",
+                        "l-maze",
+                        "l-divide-and-konkr"
                     ]
                 },
                 {
                     "id": "l-maze",
                     "shape": {
-                        "x": 36,
-                        "y": -101,
+                        "x": 40,
+                        "y": -102,
                         "w": 19,
                         "h": 16
                     },
@@ -287,7 +336,10 @@
                         "h": 17
                     },
                     "links": [
-                        "l-yang"
+                        "l-yang",
+                        "l-midas",
+                        "l-rekonkrista",
+                        "l-geryon"
                     ]
                 },
                 {
@@ -300,7 +352,8 @@
                     },
                     "links": [
                         "l-midas",
-                        "l-rekonkrista"
+                        "l-rekonkrista",
+                        "l-canyonero"
                     ]
                 },
                 {
@@ -313,7 +366,9 @@
                     },
                     "links": [
                         "l-soleada",
-                        "l-tricero"
+                        "l-tricero",
+                        "l-divide-and-konkr",
+                        "l-canyonero"
                     ]
                 },
                 {
@@ -347,12 +402,16 @@
                 {
                     "id": "l-yang",
                     "shape": {
-                        "x": 51,
-                        "y": -124,
+                        "x": 54,
+                        "y": -119,
                         "w": 16,
                         "h": 20
                     },
-                    "links": []
+                    "links": [
+                        "l-maze",
+                        "l-soleada",
+                        "l-port-royale"
+                    ]
                 },
                 {
                     "id": "l-tricero",
@@ -362,7 +421,15 @@
                         "w": 22,
                         "h": 21
                     },
-                    "links": []
+                    "links": [
+                        "l-rekonkrista",
+                        "l-geryon",
+                        "l-port-royale",
+                        "l-great-lakes",
+                        "l-dansui",
+                        "l-orchard",
+                        "l-furor"
+                    ]
                 },
                 {
                     "id": "l-port-royale",
@@ -374,7 +441,9 @@
                     },
                     "links": [
                         "l-tricero",
-                        "l-yang"
+                        "l-yang",
+                        "l-geryon",
+                        "l-great-lakes"
                     ]
                 },
                 {
@@ -387,7 +456,8 @@
                     },
                     "links": [
                         "l-port-royale",
-                        "l-tricero"
+                        "l-tricero",
+                        "l-furor"
                     ]
                 },
                 {
@@ -401,7 +471,8 @@
                     "links": [
                         "l-tricero",
                         "l-gladius",
-                        "l-orchard"
+                        "l-orchard",
+                        "l-canyonero"
                     ]
                 },
                 {
@@ -413,7 +484,8 @@
                         "h": 19
                     },
                     "links": [
-                        "l-orchard"
+                        "l-orchard",
+                        "l-dansui"
                     ]
                 },
                 {
@@ -426,7 +498,10 @@
                     },
                     "links": [
                         "l-tricero",
-                        "l-swordclash"
+                        "l-swordclash",
+                        "l-dansui",
+                        "l-gladius",
+                        "l-furor"
                     ]
                 },
                 {
@@ -442,7 +517,8 @@
                         "l-tricero",
                         "l-great-lakes",
                         "l-swordclash",
-                        "l-sherwood"
+                        "l-sherwood",
+                        "l-elvenpath"
                     ]
                 },
                 {
@@ -454,7 +530,10 @@
                         "h": 20
                     },
                     "links": [
-                        "l-wandering-knight"
+                        "l-wandering-knight",
+                        "l-orchard",
+                        "l-furor",
+                        "l-sherwood"
                     ]
                 },
                 {
@@ -482,7 +561,10 @@
                     "links": [
                         "l-swordclash",
                         "l-strife",
-                        "l-wandering-knight"
+                        "l-wandering-knight",
+                        "l-furor",
+                        "l-elvenpath",
+                        "l-overcrest"
                     ]
                 },
                 {
@@ -493,7 +575,11 @@
                         "w": 22,
                         "h": 22
                     },
-                    "links": []
+                    "links": [
+                        "l-elvenpath",
+                        "l-sherwood",
+                        "l-hard-landing"
+                    ]
                 },
                 {
                     "id": "l-wandering-knight",
@@ -503,7 +589,11 @@
                         "w": 14,
                         "h": 14
                     },
-                    "links": []
+                    "links": [
+                        "l-swordclash",
+                        "l-sherwood",
+                        "l-overcrest"
+                    ]
                 },
                 {
                     "id": "l-overcrest",
@@ -516,7 +606,8 @@
                     "links": [
                         "l-wandering-knight",
                         "l-takiko",
-                        "l-sherwood"
+                        "l-sherwood",
+                        "l-hard-landing"
                     ]
                 },
                 {
@@ -543,7 +634,10 @@
                         "h": 15
                     },
                     "links": [
-                        "megamap"
+                        "megamap",
+                        "l-overcrest",
+                        "l-hard-landing",
+                        "l-ashes"
                     ]
                 },
                 {
@@ -567,7 +661,11 @@
                         "w": 25,
                         "h": 25
                     },
-                    "links": []
+                    "links": [
+                        "l-hard-landing",
+                        "l-takiko",
+                        "l-wotje"
+                    ]
                 },
                 {
                     "id": "l-outreach",
@@ -577,7 +675,10 @@
                         "w": 18,
                         "h": 16
                     },
-                    "links": []
+                    "links": [
+                        "l-ashes",
+                        "l-hourglass"
+                    ]
                 },
                 {
                     "id": "l-hourglass",
@@ -602,7 +703,9 @@
                         "h": 16
                     },
                     "links": [
-                        "megamap"
+                        "megamap",
+                        "l-unrest",
+                        "l-kippi"
                     ]
                 },
                 {
@@ -615,7 +718,10 @@
                     },
                     "links": [
                         "l-wotje",
-                        "l-uprising2"
+                        "l-uprising2",
+                        "l-hourglass",
+                        "l-humbridge",
+                        "l-fjords"
                     ]
                 },
                 {
@@ -627,7 +733,8 @@
                         "h": 18
                     },
                     "links": [
-                        "l-uprising2"
+                        "l-uprising2",
+                        "l-hourglass"
                     ]
                 },
                 {
@@ -640,7 +747,8 @@
                     },
                     "links": [
                         "l-wotje",
-                        "l-zanahary"
+                        "l-zanahary",
+                        "l-humbridge"
                     ]
                 },
                 {
@@ -651,7 +759,11 @@
                         "w": 20,
                         "h": 22
                     },
-                    "links": []
+                    "links": [
+                        "l-unrest",
+                        "l-red-river",
+                        "l-fjords"
+                    ]
                 },
                 {
                     "id": "l-humbridge",
@@ -665,7 +777,8 @@
                         "l-kippi",
                         "l-volcano",
                         "l-zanahary",
-                        "l-unrest"
+                        "l-unrest",
+                        "l-fjords"
                     ]
                 },
                 {
@@ -691,7 +804,11 @@
                         "w": 14,
                         "h": 29
                     },
-                    "links": []
+                    "links": [
+                        "l-kippi",
+                        "l-humbridge",
+                        "l-romula"
+                    ]
                 },
                 {
                     "id": "l-romula",
@@ -703,7 +820,8 @@
                     },
                     "links": [
                         "l-zanahary",
-                        "l-volcano"
+                        "l-volcano",
+                        "l-entrenchment"
                     ]
                 },
                 {
@@ -732,7 +850,8 @@
                     "links": [
                         "l-volcano",
                         "l-ride-out",
-                        "l-triage"
+                        "l-triage",
+                        "l-entrenchment"
                     ]
                 },
                 {
@@ -743,7 +862,13 @@
                         "w": 18,
                         "h": 16
                     },
-                    "links": []
+                    "links": [
+                        "l-humbridge",
+                        "l-romula",
+                        "l-entrenchment",
+                        "l-resistance",
+                        "l-triage"
+                    ]
                 },
                 {
                     "id": "l-triage",
@@ -754,7 +879,9 @@
                         "h": 20
                     },
                     "links": [
-                        "l-volcano"
+                        "l-volcano",
+                        "l-fjords",
+                        "l-resistance"
                     ]
                 },
                 {
@@ -766,7 +893,9 @@
                         "h": 18
                     },
                     "links": [
-                        "l-snail"
+                        "l-snail",
+                        "l-resistance",
+                        "l-expansion"
                     ]
                 },
                 {
@@ -781,7 +910,8 @@
                         "l-ride-out",
                         "l-underdog",
                         "l-jotunheim-v2",
-                        "l-supression"
+                        "l-supression",
+                        "l-entrenchment"
                     ]
                 },
                 {
@@ -793,7 +923,8 @@
                         "h": 21
                     },
                     "links": [
-                        "l-underdog"
+                        "l-underdog",
+                        "l-ride-out"
                     ]
                 },
                 {
@@ -804,7 +935,12 @@
                         "w": 18,
                         "h": 18
                     },
-                    "links": []
+                    "links": [
+                        "l-expansion",
+                        "l-snail",
+                        "l-jotunheim-v2",
+                        "l-graggle"
+                    ]
                 },
                 {
                     "id": "l-jotunheim-v2",
@@ -817,7 +953,10 @@
                     "links": [
                         "l-underdog",
                         "l-supression",
-                        "l-new-world"
+                        "l-new-world",
+                        "l-expansion",
+                        "l-graggle",
+                        "l-fiefdoms"
                     ]
                 },
                 {
@@ -832,7 +971,8 @@
                         "l-jotunheim-v2",
                         "l-winter-is-coming",
                         "l-underdog",
-                        "l-spiral"
+                        "l-spiral",
+                        "l-fiefdoms"
                     ]
                 },
                 {
@@ -843,7 +983,12 @@
                         "w": 14,
                         "h": 22
                     },
-                    "links": []
+                    "links": [
+                        "l-graggle",
+                        "l-spiral",
+                        "l-orchid",
+                        "l-end-times"
+                    ]
                 },
                 {
                     "id": "l-fiefdoms",
@@ -868,7 +1013,11 @@
                         "w": 24,
                         "h": 21
                     },
-                    "links": []
+                    "links": [
+                        "l-expansion",
+                        "l-jotunheim-v2",
+                        "l-new-world"
+                    ]
                 },
                 {
                     "id": "l-spiral",
@@ -880,7 +1029,11 @@
                     },
                     "links": [
                         "l-spoils-of-war",
-                        "l-winter-is-coming"
+                        "l-winter-is-coming",
+                        "l-graggle",
+                        "l-fiefdoms",
+                        "l-orchid",
+                        "l-pelleas"
                     ]
                 },
                 {
@@ -894,7 +1047,8 @@
                     "links": [
                         "l-parched-empire",
                         "l-supression",
-                        "l-pelleas"
+                        "l-pelleas",
+                        "l-jotunheim-v2"
                     ]
                 },
                 {
@@ -907,7 +1061,9 @@
                     },
                     "links": [
                         "l-sedition",
-                        "l-pelleas"
+                        "l-pelleas",
+                        "l-new-world",
+                        "l-enclaves"
                     ]
                 },
                 {
@@ -921,7 +1077,8 @@
                     "links": [
                         "l-spiral",
                         "l-spoils-of-war",
-                        "l-winter-is-coming"
+                        "l-winter-is-coming",
+                        "l-jailbreak"
                     ]
                 },
                 {
@@ -932,7 +1089,9 @@
                         "w": 16,
                         "h": 18
                     },
-                    "links": []
+                    "links": [
+                        "l-parched-empire"
+                    ]
                 },
                 {
                     "id": "l-spoils-of-war",
@@ -942,7 +1101,13 @@
                         "w": 14,
                         "h": 14
                     },
-                    "links": []
+                    "links": [
+                        "l-spiral",
+                        "l-orchid",
+                        "l-pelleas",
+                        "l-jailbreak",
+                        "l-hillfort-v2"
+                    ]
                 },
                 {
                     "id": "l-pelleas",
@@ -954,7 +1119,11 @@
                     },
                     "links": [
                         "l-spoils-of-war",
-                        "l-spiral"
+                        "l-spiral",
+                        "l-fiefdoms",
+                        "l-new-world",
+                        "l-parched-empire",
+                        "l-enclaves"
                     ]
                 },
                 {
@@ -994,7 +1163,8 @@
                         "l-hillfort-v2",
                         "l-trinity",
                         "l-pelleas",
-                        "l-parched-empire"
+                        "l-parched-empire",
+                        "l-desert"
                     ]
                 },
                 {
@@ -1007,7 +1177,9 @@
                     },
                     "links": [
                         "l-riposte",
-                        "l-spoils-of-war"
+                        "l-spoils-of-war",
+                        "l-enclaves",
+                        "l-desert"
                     ]
                 },
                 {
@@ -1033,7 +1205,9 @@
                     "links": [
                         "l-enclaves",
                         "l-hillfort-v2",
-                        "l-trinity"
+                        "l-trinity",
+                        "l-badlands",
+                        "l-decadence"
                     ]
                 },
                 {
@@ -1044,7 +1218,9 @@
                         "w": 22,
                         "h": 24
                     },
-                    "links": []
+                    "links": [
+                        "l-hillfort-v2"
+                    ]
                 },
                 {
                     "id": "l-badlands",
@@ -1068,7 +1244,9 @@
                         "w": 19,
                         "h": 25
                     },
-                    "links": []
+                    "links": [
+                        "l-badlands"
+                    ]
                 },
                 {
                     "id": "l-trinity",
@@ -1078,7 +1256,12 @@
                         "w": 17,
                         "h": 19
                     },
-                    "links": []
+                    "links": [
+                        "l-enclaves",
+                        "l-borrowed-time",
+                        "l-desert",
+                        "l-decadence"
+                    ]
                 },
                 {
                     "id": "l-promised-land",
@@ -1091,7 +1274,9 @@
                     "links": [
                         "l-zeal",
                         "l-strongholds",
-                        "l-valhalla"
+                        "l-valhalla",
+                        "l-badlands",
+                        "l-decadence"
                     ]
                 },
                 {
@@ -1119,7 +1304,8 @@
                         "h": 20
                     },
                     "links": [
-                        "l-strongholds"
+                        "l-strongholds",
+                        "l-decadence"
                     ]
                 },
                 {
@@ -1130,7 +1316,9 @@
                         "w": 20,
                         "h": 22
                     },
-                    "links": []
+                    "links": [
+                        "l-promised-land"
+                    ]
                 },
                 {
                     "id": "l-strongholds",
@@ -1142,7 +1330,10 @@
                     },
                     "links": [
                         "l-wildfire",
-                        "l-valhalla"
+                        "l-valhalla",
+                        "l-promised-land",
+                        "l-decadence",
+                        "l-silkroad"
                     ]
                 },
                 {
@@ -1154,7 +1345,10 @@
                         "h": 21
                     },
                     "links": [
-                        "l-valor"
+                        "l-valor",
+                        "l-promised-land",
+                        "l-strongholds",
+                        "l-foccacia"
                     ]
                 },
                 {
@@ -1166,7 +1360,8 @@
                         "h": 23
                     },
                     "links": [
-                        "l-wildfire"
+                        "l-wildfire",
+                        "l-valhalla"
                     ]
                 },
                 {
@@ -1177,7 +1372,10 @@
                         "w": 24,
                         "h": 22
                     },
-                    "links": []
+                    "links": [
+                        "l-strongholds",
+                        "l-valor"
+                    ]
                 },
                 {
                     "id": "l-foccacia",
