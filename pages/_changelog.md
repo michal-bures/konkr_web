@@ -1,6 +1,10 @@
 
 
 ---
+v2.22.1 <small>released 2023-10-15</small>
+- bugfix: prevent crash when latest conquest settings in user profile contain invalid data
+
+---
 v2.22.0 <small>released 2023-10-15</small>
 - "First Landing" mode added to the conquest
 - new campaign level swapped in for "Zeal"
