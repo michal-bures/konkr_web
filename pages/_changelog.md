@@ -1,6 +1,13 @@
 
 
 ---
+v2.22.0 <small>released 2023-10-15</small>
+- "First Landing" mode added to the conquest
+- new campaign level swapped in for "Zeal"
+- bugfix: fixed a rare conquest map generator bug leading to player faction getting no starting town 
+- bugfix: restarting conquest map no longer switches rivals AI to the currently selected campaign difficulty 
+
+---
 v2.21.2 <small>released 2023-10-08</small>
 - new campaign level
 - bugfix: clear alert symbols when entering replay
