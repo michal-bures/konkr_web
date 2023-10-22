@@ -1,6 +1,13 @@
 
 
 ---
+v2.23.0 <small>released 2023-10-22</small>
+- updated zombie mechanics (experimental): zombie movement is more aggressive towards towns, but they need a turn to build a ladder before they can cross walls
+- new campaign map
+- bugfix: fixed visual glitches when toggling unit tooltip by clicking
+- bugfix: better variety of coastal forests distribution on large maps and prevent completely forest-surrounded maps (invalidates previous conquest map links!)
+
+---
 v2.22.1 <small>released 2023-10-15</small>
 - bugfix: prevent crash when latest conquest settings in user profile contain invalid data
 
