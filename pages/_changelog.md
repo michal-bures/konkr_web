@@ -1,6 +1,10 @@
 
 
 ---
+v2.23.1 <small>released 2023-10-23</small>
+- bugfix: fixed pawns jumping in replays
+
+---
 v2.23.0 <small>released 2023-10-22</small>
 - updated zombie mechanics (experimental): zombie movement is more aggressive towards towns, but they need a turn to build a ladder before they can cross walls
 - new campaign map
