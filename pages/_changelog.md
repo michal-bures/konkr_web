@@ -1,6 +1,10 @@
 
 
 ---
+v2.23.2 <small>released 2023-10-24</small>
+- bugfix: fixed rivals maintaining a stoic expression no matter what
+
+---
 v2.23.1 <small>released 2023-10-23</small>
 - bugfix: fixed pawns jumping in replays
 
