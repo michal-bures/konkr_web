@@ -1,6 +1,12 @@
 
 
 ---
+v2.24.0 <small>released 2023-10-29</small>
+- The Dead Islands Expedition!
+- bugfix: fixed animation of zombies crossing walls glitching out on slow playback speed
+- bugfix: fixed coin piles sometimes getting out of sync when hitting undo during coin animations
+
+---
 v2.23.2 <small>released 2023-10-24</small>
 - bugfix: fixed rivals maintaining a stoic expression no matter what
 
