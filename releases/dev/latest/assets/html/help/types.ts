@@ -14,3 +14,4 @@ export type HelpPageKey =
     | 'advanced/multi-town-provinces'
     | 'advanced/bandits'
     | 'advanced/zombies'
+    | 'advanced/necromancers'
