@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.2 <small>released 2023-10-30</small>
+- bugfix: fixed levels won before difficulty selection was introduced showing up as silver instead of gold medal
+
+---
 v2.24.0 <small>released 2023-10-29</small>
 - The Dead Islands Expedition!
 - bugfix: fixed animation of zombies crossing walls glitching out on slow playback speed
