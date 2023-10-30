@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.3 <small>released 2023-10-30</small>
+- bugfix: rivals can surrender again
+
+---
 v2.24.2 <small>released 2023-10-30</small>
 - bugfix: fixed levels won before difficulty selection was introduced showing up as silver instead of gold medal
 
