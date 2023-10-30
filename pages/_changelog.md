@@ -1,6 +1,11 @@
 
 
 ---
+v2.24.4 <small>released 2023-10-30</small>
+- improved background contrast of guidance messages when shown over land
+- show victory turn count in level detail panel on the expedition map
+
+---
 v2.24.3 <small>released 2023-10-30</small>
 - bugfix: rivals can surrender again
 
