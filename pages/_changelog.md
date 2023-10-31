@@ -1,6 +1,15 @@
 
 
 ---
+v2.24.8 <small>released 2023-10-31</small>
+- bugfix: fixed progress not auto-saved when replaying an already completed level
+
+---
+v2.24.7 <small>released 2023-10-31</small>
+- bugfix: campaign maps clickable on mobile again
+- bugfix: fixed campaign map progress not saving
+
+---
 v2.24.4 <small>released 2023-10-30</small>
 - improved background contrast of guidance messages when shown over land
 - show victory turn count in level detail panel on the expedition map
