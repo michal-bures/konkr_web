@@ -1,6 +1,15 @@
 
 
 ---
+v2.24.9 <small>released 2023-10-31</small>
+- scrolling with WASD or arrow keys now works on expedition overview screen
+- improved responsiveness of keyboard scrolling
+- bugfix: fix "play again" displayed instead of "continue" on old level detail screen when replaying completed campaign level
+- bugfix: fixed an issue responsible for a whole class of coins-related glitches (stray coins staying on the map or coin transaction suddenly no longer animating)
+- bugfix: fixed crash when exiting a Dead Islands level entered from the title screen
+
+
+---
 v2.24.8 <small>released 2023-10-31</small>
 - bugfix: fixed progress not auto-saved when replaying an already completed level
 
