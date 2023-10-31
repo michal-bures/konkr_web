@@ -7,7 +7,7 @@ v2.24.9 <small>released 2023-10-31</small>
 - bugfix: fix "play again" displayed instead of "continue" on old level detail screen when replaying completed campaign level
 - bugfix: fixed an issue responsible for a whole class of coins-related glitches (stray coins staying on the map or coin transaction suddenly no longer animating)
 - bugfix: fixed crash when exiting a Dead Islands level entered from the title screen
-
+- bugfix: mana from crowded haunted town or Lair now actually goes to the closest Lair as opposed to a random one
 
 ---
 v2.24.8 <small>released 2023-10-31</small>
