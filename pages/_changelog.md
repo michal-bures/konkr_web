@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.12 <small>released 2023-11-02</small>
+- bugfix: fixed unable to resume replayed campaign level 
+
+---
 v2.24.11 <small>released 2023-11-02</small>
 - bugfix: keyboard scroll sensitivity fix
 
