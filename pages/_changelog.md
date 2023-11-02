@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.11 <small>released 2023-11-02</small>
+- bugfix: keyboard scroll sensitivity fix
+
+---
 v2.24.9 <small>released 2023-10-31</small>
 - scrolling with WASD or arrow keys now works on expedition overview screen
 - improved responsiveness of keyboard scrolling
