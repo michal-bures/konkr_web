@@ -25,7 +25,7 @@ You can [join the discord server]({{ site.discord_link }}) to chat and find out 
 
 Some kind of local or peer-to-peer multiplayer might be a thing in the not so far future, perhaps even a co-op campaign.
 
-An online multiplayer against random players is not something I consider worth pursuing at the moment. I used to play [http://www.kdice.com/](kdice.com)
+An online multiplayer against random players is not something I consider worth pursuing at the moment. I used to play [kdice.com](https://www.kdice.com/)
 a lot back in the day, and it taught me that once you have multiple strangers around the table in a game like this, 
 the game mechanics become largely irrelevant, and it just becomes a fairly toxic game of risk. All about politics, silent aliances, social dynamics and backstabbing.
 Which can be pretty engaging too I guess, but I don't think I want to deal with that, plus there's already enough games like this. If you still think that's a shame,
