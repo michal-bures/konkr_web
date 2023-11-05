@@ -1,6 +1,19 @@
 
 
 ---
+v2.24.13 <small>released 2023-11-05</small>
+- added "campaign progress" section to the settings panel, with buttons to wipe your progress or export it to a file 
+- tweaked the gloomy color scheme to use light color for text/icons for better contrast
+- alert tooltips in zombie mode are now more accurate (no longer say a unit turned to bandit, when it's in fact a zombie)  
+- smoother transitions from and to the expedition screen
+- bugfix: fix various visual jank related to new placement of fullscreen and mute buttons, especially on mobile
+- bugfix: fixed "typewriter" sound effect stuck in the on state when leaving level while it's playing
+- bugfix: fixed bug where under some conditions a Dread Knight could be spawned using mana from an already destroyed lair.
+- bugfix: fixed alert symbols stranded over empty tiles when player units turn to zombies and move to a new tile
+- bugfix: fixed broken level detail panel layout after entering expedition overview screen for the first time from the play screen 
+- bugfix: fixed another cause of coin animations getting stuck
+
+---
 v2.24.12 <small>released 2023-11-02</small>
 - bugfix: fixed unable to resume replayed campaign level 
 
