@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.14 <small>released 2023-11-06</small>
+- bugfix: fix dead islands and zombie conquest maps not counting towards the "Not Quite The End Of The World" badge on Kongregate
+
+---
 v2.24.13 <small>released 2023-11-05</small>
 - added "campaign progress" section to the settings panel, with buttons to wipe your progress or export it to a file 
 - tweaked the gloomy color scheme to use light color for text/icons for better contrast
