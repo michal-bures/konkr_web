@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.15 <small>released 2023-11-09</small>
+- bugfix: fix occasionally inaccurate/glitchy faction size ribbon
+ 
+---
 v2.24.14 <small>released 2023-11-06</small>
 - bugfix: fix dead islands and zombie conquest maps not counting towards the "Not Quite The End Of The World" badge on Kongregate
 
