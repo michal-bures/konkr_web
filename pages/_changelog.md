@@ -1,6 +1,15 @@
 
 
 ---
+v2.24.16 <small>released 2023-11-12</small>
+- added flags to rival towns that are projected to have enough coins for a new villager
+- level tweak: Arrival (dead islands #1) made easier
+- level tweak: Guardia made sligthly easier and more interesting
+- AI tweak: on hard difficulty, avoid very grateful rivals becoming naively trusting even in endgame 1v1 situations
+- bugfix: fixed zombie survival badge unlocking even on defeat in conquest zombie mode
+- bugfix: fixed crash when hitting escape while watching a replay after defeat
+
+---
 v2.24.15 <small>released 2023-11-09</small>
 - bugfix: fix occasionally inaccurate/glitchy faction size ribbon
  
