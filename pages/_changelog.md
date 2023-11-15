@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.17 <small>released 2023-11-15</small>
+- bugfix: reset list of regions pending for selection after rewind
+
+---
 v2.24.16 <small>released 2023-11-12</small>
 - added flags to rival towns that are projected to have enough coins for a new villager
 - level tweak: Arrival (dead islands #1) made easier
