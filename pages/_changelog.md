@@ -1,6 +1,18 @@
 
 
 ---
+v2.24.18 <small>released 2023-11-19</small>
+- option to continue watching the game play out after defeat screen
+- unit hotkeys don't trigger when Control or Alt is held down
+- simplified surplus/deficit icon
+- new campaign level
+- bugfix: fixed source of glitches after exiting an imported replay and starting/continuing another level
+- bugfix: fixed income drain from zombies not showing up in region budget ledger
+- bugfix: fixed custom chatter file import not working
+- bugfix: fixed one more cause of pending regions selection incorrect after rewind
+- bugfix: fixed tooltip and prevented flag showing for Necromancers Lair
+
+---
 v2.24.17 <small>released 2023-11-15</small>
 - bugfix: reset list of regions pending for selection after rewind
 
