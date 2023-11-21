@@ -1,6 +1,15 @@
 
 
 ---
+v2.24.19 <small>released 2023-11-21</small>
+- renamed spectating button on defeat screen
+- don't play the defeat sound effect when returning to defeat screen from spectating
+- updated default replay filename (removed island number and extra space, added turn count) 
+- experiment with serving help files directly from https://github.com/michal-bures/konkr_data/tree/master/help
+- level tweak: Thrakia starting position made a bit harder
+- bugfix: don't skip the next AI rival turn after starting spectating
+
+---
 v2.24.18 <small>released 2023-11-19</small>
 - option to continue watching the game play out after defeat screen
 - unit hotkeys don't trigger when Control or Alt is held down
