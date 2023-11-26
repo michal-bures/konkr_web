@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.20 <small>released 2023-11-26</small>
+- new campaign level
+
+---
 v2.24.19 <small>released 2023-11-21</small>
 - renamed spectating button on defeat screen
 - don't play the defeat sound effect when returning to defeat screen from spectating

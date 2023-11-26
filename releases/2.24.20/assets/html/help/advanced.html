@@ -1,0 +1,179 @@
+<html>
+<head>
+    <link rel='stylesheet' href='./help.css'>
+    <script src='help-section.js'></script>
+</head>
+<body>
+<header id='navigator'></header>
+<div id='content' class='content'>
+    <div class='page' id='walls' data-title='Walls and Retreat'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/retreat.gif' />
+            </div>
+            <ul>
+                <li><img class='inline-icon' src='./img/icons/town.png'> Towns and <img class='inline-icon'
+                                                                                        src='./img/icons/castle.png'>
+                    castles create a <b>walled area</b> around the surrounding tiles.
+                </li>
+                <li>When a unit within the walled area is overpowered, it will <b>retreat to an adjacent tile</b>
+                    instead of perishing!
+                </li>
+                <li>Destroying the town or castle destroys the protective wall as well.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class='page' id='multi-town-provinces' data-title='Multi-Town Provinces'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/panel-multi-town.png' />
+            </div>
+            <ul>
+                <li>When a province has more than one town, the <b>coins in all towns are pooled together</b> for
+                    purchasing units, but the coins are still stored in the individual towns.
+                </li>
+                <li>When collecting income, new coins produced by each tile first go to the closest unit that wasn't paid
+                    yet, then to the closest town.
+                </li>
+                <li>When you recruit a new unit, its cost is paid from the closest towns coin stack first (based on
+                    where you placed the unit). This means that you can control which town will pay for a new unit by
+                    choosing where to place it!
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class='page' id='bandits' data-title='Bandits and Bandit Camps'>
+        <div class='slide-content'>
+            <p><i><b>This is an in-depth guide to bandit mechanics.
+                For a basic introduction see <a href='how-to-play.html#bandits' />Stranded units</a>.</b></i></p>
+
+            <p>Bandits act at the end of each turn (after all other factions made their move).</p>
+            <ul>
+                <li>If standing on a colored tile that doesn't belong to any province, they will loot 1 coin from the tile
+                    and turn the tile neutral.
+                </li>
+                <li>Otherwise they will randomly move to an adjacent tile, preferring colored tiles.</li>
+            </ul>
+            <p>Other useful things to know about bandits:</p>
+            <ul>
+                <li>They are weaker than villagers and do not defend tiles.</li>
+                <li>They cannot cross walls</li>
+                <li>When standing on colored tile inside a province with town, they siphon the income from the tile to
+                    the nearest camp, denying it to the province. Having many bandits in your province can <b>severely
+                        undercut your economy!</b></li>
+            </ul>
+
+            <p>Any coins looted by bandits are <b>deposited in the nearest bandit camp</b>.</p>
+            <ul>
+                <li>If there's no bandit camp in a 5 tile radius and there's a neutral tile available somewhere on the
+                    map, a new camp is spawned there.
+                </li>
+                <li>A bandit camp has the same defense as town or villager, but it does not protect adjacent tiles.</li>
+                <li>If at least 3 coins are stored in the bandit camp, it will consume them produce a new bandit once per turn.</li>
+                <li>You can destroy the camp with a pikeman or a stronger unit to claim any coins currently stored there!</li>
+            </ul>
+        </div>
+    </div>
+    <div class='page' id='hotkeys' data-title='Advanced Controls'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/illustration6.png' />
+            </div>
+            <ul>
+                <li>You can issue many actions in Konkr with keyboard!</li>
+
+                <li><b>Shift-click</b> to buy multiple units in a row.</li>
+                <li><b>Ctrl-click</b> buttons to bypass confirmation prompts.</li>
+                <li><b>Long press</b> the undo button to undo all moves.</li>
+            </ul>
+        </div>
+    </div>
+    <div class='page' id='visual-cues' data-title='Visual Cues'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/panel-visual-cues.png' />
+            </div>
+            <p>The game has a number of subtle visual cues that can help your read the map faster:</p>
+            <ul>
+                <li>Wonder if a particular rival can afford a pikeman next turn? Look at the size of their town - each town level corresponds to the strongest unit tier predicted to be obtainable in the province on the next turn. For example if there's just a <img class='inline-icon' src='./img/icons/town.png'>tiny house, they should only be able to afford a villager.</li>
+                <li>Notice the semi-transparent shield icons around the units you place - they give you an overview of the current defense for every tile in the selected province.</li>
+                <li>A green flag in front of a town signals that you have enough gold in treasury to recruit another villager.</li>
+                <li>A red flag in front of a town signals negative income.</li>
+                <li>A black flag in front of a town signals an impending rebellion.</li>
+                <li>A black flag in front of a bandit camp signals that it is about to spawn a new bandit.</li>
+            </ul>
+        </div>
+    </div>
+    <div class='page' id='difficulty-modes' data-title='Difficulty modes'>
+        <div class='slide-content'>
+            <p>In most <b>campaign</b> levels you can select from two difficulty modes which affect the rival rulers behavior:</p>
+            <ul>
+                <li>On the <b style='color: darkred'>Hard</b> difficulty, rivals behave towards you exactly the same as to each other.</li>
+                <li>On the <b style='color: darkgreen'>Normal</b> difficulty, you are given a few advantages to make the game less brutal:
+                    <ul>
+                        <li>Rivals won't start to dislike you just because you've grown too large.</li>
+                        <li>Rivals are less likely to figure out elaborate attacks deep into your territory.</li>
+                        <li>Rivals will never become allies with each other.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>In the <b>conquest</b> mode, there are four difficulty modes which affect both map layout and the rival behavior:</p>
+            <ul>
+                <li><b>Casual</b> = easier starting position + normal rivals</li>
+                <li><b>Normal</b> = normal starting position + normal rivals</li>
+                <li><b>Challenging</b> = normal starting position + hard rivals</li>
+                <li><b>Unfair</b> = worse starting position + hard rivals</li>
+            </ul>
+        </div>
+    </div>
+    <div class='page' id='zombies' data-title='Zombies'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/panel-zombies.png' />
+            </div>
+            <p>Zombies operate similar to bandits, but:</p>
+            <ul>
+                <li>If there's an adjacent unit, the zombie will turn it into another zombie!</li>
+                <li>Normal zombies can't move or infect units through walls.</li>
+                <li><b>But</b> when a zombie has nowhere else to go, it may build itself a ladder and cross over unmanned walls on the next turn!</li>
+                <li>Zombies can never infect <img class='inline-icon' src='./img/icons/castle.png'>castles.</li>
+            </ul>
+            <p>Haunted towns produce a new zombie every turn. To win a map with zombies, you need to not only defeat
+                your rivals, but also <b>clear all haunted towns!</b></p>
+        </div>
+    </div>
+    <div class='page' id='necromancers' data-title='Necromancers'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/panel-necromancers.png' />
+            </div>
+            <p><b>Necromancers</b> are very different from traditional rivals:</p>
+            <ul>
+                <li>They rely on <a href='#zombies'>zombies</a> to expand their territory.</li>
+                <li>Eventually, they can spawn powerful <b>Dread Knights</b>.</li>
+                <li>They are vicious but predictable. They always blindly attack the most obvious target and have no diplomatic relations with anyone.</li>
+            </ul>
+            <p><b>Necromancer Lairs</b> are somewhat similar to <img class='inline-icon' src='./img/icons/town.png'>towns, but with some major differences:</p>
+            <ul>
+                <li>They don't gather coins, instead they collect <b>mana</b>.</li>
+                <li>When a <b>zombie is destroyed on Necromancer's territory</b>, the closest connected Lair <b>gains 1 mana</b>.
+                <li>If a Lair or a Haunted Town cannot spawn a zombie, it also generates 1 mana for the nearest Lair.</li>
+                <li>Once a Lair has accumulated 6 mana, it will spawn a <b>Dread Knight</b> on the Necromancers turn. The mana is then allocated to maintaining the Dread Knight until it's destroyed.</li>
+            </ul>
+            <p><b>Dread Knights</b> are elite undead soldiers:</p>
+            <ul>
+                <li>They are as strong as regular <img class='inline-icon' src='./img/icons/knight.png'>Knights and can move freely across the Necromancers province.</li>
+                <li>They need no coin upkeep, but they require a Necromancers Lair with a full mana reserve to maintain their existence.</li>
+                <li>Cutting them off from the Lair <b>instantly turns them into a regular zombie</b>.</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <footer id='footer-navigator'></footer>
+</div>
+
+</body>
+</html>
