@@ -4,5 +4,5 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "frame-ancestors 'self' https://*.kongregate.com https://*.itch.io https://v6p9d9t4.ssl.hwcdn.net https://uploads.ungrounded.net https://www.newgrounds.com https://igre.games https://webgamer.io"
+    Content-Security-Policy = "frame-ancestors 'self' https://*.kongregate.com https://*.itch.io https://*.itch.zone https://v6p9d9t4.ssl.hwcdn.net https://uploads.ungrounded.net https://www.newgrounds.com https://igre.games https://webgamer.io"
     Service-Worker-Allowed = "/"
