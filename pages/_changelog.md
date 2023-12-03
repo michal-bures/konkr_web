@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.21 <small>released 2023-12-03</small>
+- new campaign level
+
+---
 v2.24.20 <small>released 2023-11-26</small>
 - new campaign level
 
