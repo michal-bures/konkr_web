@@ -1,0 +1,85 @@
+{
+    "expeditions": [
+        {
+            "id": "x-first-steps",
+            "metadata": {
+                "name": "Tutorial",
+                "description": "Learn the basics of the game."
+            },
+            "config": {},
+            "objects": [
+                {
+                    "type": "island",
+                    "id": "intro1",
+                    "script": "tutorial1",
+                    "alwaysUnlocked": true,
+                    "shape": {
+                        "x": 0,
+                        "y": 105,
+                        "w": 11,
+                        "h": 10
+                    },
+                    "links": [
+                        "l-tutorial2"
+                    ]
+                },
+                {
+                    "type": "island",
+                    "id": "l-tutorial2",
+                    "script": "tutorial2",
+                    "shape": {
+                        "x": 9,
+                        "y": 96,
+                        "w": 11,
+                        "h": 12
+                    },
+                    "links": [
+                        "intro1",
+                        "l-double-trouble"
+                    ]
+                },
+                {
+                    "type": "island",
+                    "id": "l-double-trouble",
+                    "script": "tutorialDoubleTrouble",
+                    "shape": {
+                        "x": 20,
+                        "y": 86,
+                        "w": 11,
+                        "h": 13
+                    },
+                    "links": [
+                        "l-tutorial2",
+                        "l-tutorial3"
+                    ]
+                },
+                {
+                    "type": "island",
+                    "id": "l-tutorial3",
+                    "script": "tutorial3",
+                    "shape": {
+                        "x": 1,
+                        "y": 75,
+                        "w": 17,
+                        "h": 16
+                    },
+                    "links": [
+                        "x-old-world",
+                        "l-double-trouble"
+                    ]
+                },
+                {
+                    "type": "expedition-portal",
+                    "id": "x-old-world",
+                    "shape": {
+                        "x": 10,
+                        "y": 60
+                    },
+                    "links": [
+                        "l-tutorial3"
+                    ]
+                }
+            ]
+        }
+    ]
+}
