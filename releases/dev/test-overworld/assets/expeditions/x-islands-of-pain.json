@@ -391,7 +391,8 @@
                     },
                     "links": [
                         "l-mortis",
-                        "l-wildfire"
+                        "l-wildfire",
+                        "l-salmo"
                     ]
                 },
                 {
@@ -499,34 +500,42 @@
                     "type": "island",
                     "id": "l-gloria",
                     "shape": {
-                        "x": -2,
-                        "y": -459,
+                        "x": 68,
+                        "y": -199,
                         "w": 19,
                         "h": 23
                     },
-                    "links": []
+                    "links": [
+                        "l-salmo",
+                        "l-guardia"
+                    ]
                 },
                 {
                     "type": "island",
                     "id": "l-guardia",
                     "shape": {
-                        "x": -2,
-                        "y": -480,
+                        "x": 55,
+                        "y": -218,
                         "w": 21,
                         "h": 20
                     },
-                    "links": []
+                    "links": [
+                        "l-gloria"
+                    ]
                 },
                 {
                     "type": "island",
                     "id": "l-salmo",
                     "shape": {
-                        "x": -2,
-                        "y": -500,
+                        "x": 55,
+                        "y": -181,
                         "w": 19,
                         "h": 19
                     },
-                    "links": []
+                    "links": [
+                        "l-kippi",
+                        "l-gloria"
+                    ]
                 },
                 {
                     "type": "island",
