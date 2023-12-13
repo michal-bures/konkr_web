@@ -1,6 +1,10 @@
 
 
 ---
+v2.24.23 <small>released 2023-12-13</small>
+- new hotkey: use spacebar to reset back to default zoom level
+
+---
 v2.24.21 <small>released 2023-12-03</small>
 - new campaign level
 
