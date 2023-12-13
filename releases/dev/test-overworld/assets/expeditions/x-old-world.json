@@ -23,7 +23,7 @@
                 },
                 {
                     "id": "l-intro2",
-                    "alwaysUnlocked": true,
+                    "entrypoint": true,
                     "type": "island",
                     "shape": {
                         "x": 30,
@@ -40,7 +40,7 @@
                 {
                     "id": "l-bottleneck",
                     "type": "island",
-                    "alwaysUnlocked": true,
+                    "entrypoint": true,
                     "shape": {
                         "x": 15,
                         "y": 61,
@@ -55,7 +55,7 @@
                 },
                 {
                     "id": "l-heritage",
-                    "alwaysUnlocked": true,
+                    "entrypoint": true,
                     "type": "island",
                     "shape": {
                         "x": 41,
