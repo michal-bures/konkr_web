@@ -1,1018 +1,1009 @@
 {
-    "expeditions": [
+  "expeditions": [
+    {
+      "id": "x-old-world",
+      "metadata": {
+        "name": "Old World",
+        "description": "Conquer the shattered seas!"
+      },
+      "config": {},
+      "objects": [
         {
-            "id": "x-old-world",
-            "metadata": {
-                "name": "Old World",
-                "description": "Conquer the shattered seas!"
-            },
-            "config": {},
-            "objects": [
-                {
-                    "type": "expedition-portal",
-                    "id": "x-first-steps",
-                    "shape": {
-                        "x": 30,
-                        "y": 90
-                    },
-                    "links": [
-                        "l-intro2",
-                        "l-heritage",
-                        "l-bottleneck"
-                    ]
-                },
-                {
-                    "id": "l-intro2",
-                    "entrypoint": true,
-                    "type": "island",
-                    "shape": {
-                        "x": 30,
-                        "y": 66,
-                        "w": 12,
-                        "h": 13
-                    },
-                    "links": [
-                        "l-tutorial3",
-                        "x-first-steps",
-                        "l-golden-lake"
-                    ]
-                },
-                {
-                    "id": "l-bottleneck",
-                    "type": "island",
-                    "entrypoint": true,
-                    "shape": {
-                        "x": 15,
-                        "y": 61,
-                        "w": 14,
-                        "h": 18
-                    },
-                    "links": [
-                        "l-ten-paces",
-                        "l-golden-lake",
-                        "x-first-steps"
-                    ]
-                },
-                {
-                    "id": "l-heritage",
-                    "entrypoint": true,
-                    "type": "island",
-                    "shape": {
-                        "x": 41,
-                        "y": 58,
-                        "w": 20,
-                        "h": 19
-                    },
-                    "links": [
-                        "l-tutorial3",
-                        "l-golden-lake",
-                        "x-first-steps"
-                    ]
-                },
-                {
-                    "id": "l-breakthrough",
-                    "type": "island",
-                    "shape": {
-                        "x": -3,
-                        "y": -72,
-                        "w": 18,
-                        "h": 15
-                    },
-                    "links": [
-                        "l-crusade",
-                        "l-midas",
-                        "l-hideouts",
-                        "l-bohemia"
-                    ]
-                },
-                {
-                    "id": "l-khiro",
-                    "type": "island",
-                    "shape": {
-                        "x": 35,
-                        "y": 13,
-                        "w": 21,
-                        "h": 14
-                    },
-                    "links": [
-                        "l-natives",
-                        "l-golden-lake"
-                    ]
-                },
-                {
-                    "id": "l-hinterlands",
-                    "type": "island",
-                    "shape": {
-                        "x": 25,
-                        "y": -29,
-                        "w": 20,
-                        "h": 19
-                    },
-                    "links": [
-                        "l-bohemia",
-                        "l-chalki",
-                        "l-natives",
-                        "l-riverlands"
-                    ]
-                },
-                {
-                    "id": "l-rising-sun",
-                    "type": "island",
-                    "shape": {
-                        "x": 48,
-                        "y": 4,
-                        "w": 24,
-                        "h": 31
-                    },
-                    "links": [
-                        "l-natives",
-                        "l-golden-lake"
-                    ]
-                },
-                {
-                    "id": "l-natives",
-                    "type": "island",
-                    "shape": {
-                        "x": 42,
-                        "y": -7,
-                        "w": 20,
-                        "h": 17
-                    },
-                    "links": [
-                        "l-rising-sun",
-                        "l-khiro",
-                        "l-chalki",
-                        "l-hinterlands"
-                    ]
-                },
-                {
-                    "id": "l-golden-lake",
-                    "type": "island",
-                    "shape": {
-                        "x": 25,
-                        "y": 45,
-                        "w": 20,
-                        "h": 15
-                    },
-                    "links": [
-                        "l-heritage",
-                        "l-bottleneck",
-                        "l-khiro",
-                        "l-rising-sun",
-                        "l-ten-paces",
-                        "l-intro2"
-                    ]
-                },
-                {
-                    "id": "l-riverlands",
-                    "type": "island",
-                    "shape": {
-                        "x": 3,
-                        "y": -5,
-                        "w": 21,
-                        "h": 19
-                    },
-                    "links": [
-                        "l-ten-paces",
-                        "l-crusade",
-                        "l-hinterlands"
-                    ]
-                },
-                {
-                    "id": "l-ten-paces",
-                    "type": "island",
-                    "shape": {
-                        "x": 11,
-                        "y": 26,
-                        "w": 13,
-                        "h": 14
-                    },
-                    "links": [
-                        "l-bottleneck",
-                        "l-riverlands",
-                        "l-golden-lake"
-                    ]
-                },
-                {
-                    "id": "l-crusade",
-                    "type": "island",
-                    "shape": {
-                        "x": -10,
-                        "y": -40,
-                        "w": 20,
-                        "h": 21
-                    },
-                    "links": [
-                        "l-riverlands",
-                        "l-bohemia",
-                        "l-breakthrough"
-                    ]
-                },
-                {
-                    "id": "l-bohemia",
-                    "type": "island",
-                    "shape": {
-                        "x": 12,
-                        "y": -48,
-                        "w": 24,
-                        "h": 17
-                    },
-                    "links": [
-                        "l-crusade",
-                        "l-hideouts",
-                        "l-hinterlands",
-                        "l-breakthrough"
-                    ]
-                },
-                {
-                    "id": "l-chalki",
-                    "type": "island",
-                    "shape": {
-                        "x": 49,
-                        "y": -44,
-                        "w": 22,
-                        "h": 15
-                    },
-                    "links": [
-                        "l-natives",
-                        "l-meadows",
-                        "l-hinterlands"
-                    ]
-                },
-                {
-                    "id": "l-meadows",
-                    "type": "island",
-                    "shape": {
-                        "x": 33,
-                        "y": -80,
-                        "w": 24,
-                        "h": 23
-                    },
-                    "links": [
-                        "l-chalki",
-                        "l-hideouts",
-                        "l-maze"
-                    ]
-                },
-                {
-                    "id": "l-hideouts",
-                    "type": "island",
-                    "shape": {
-                        "x": 16,
-                        "y": -67,
-                        "w": 20,
-                        "h": 18
-                    },
-                    "links": [
-                        "l-meadows",
-                        "l-midas",
-                        "l-bohemia",
-                        "l-breakthrough"
-                    ]
-                },
-                {
-                    "id": "l-midas",
-                    "type": "island",
-                    "shape": {
-                        "x": 3,
-                        "y": -104,
-                        "w": 21,
-                        "h": 20
-                    },
-                    "links": [
-                        "l-hideouts",
-                        "l-geryon",
-                        "l-divide-and-konkr",
-                        "l-breakthrough"
-                    ]
-                },
-                {
-                    "id": "l-maze",
-                    "type": "island",
-                    "shape": {
-                        "x": 44,
-                        "y": -109,
-                        "w": 19,
-                        "h": 16
-                    },
-                    "links": [
-                        "l-meadows",
-                        "l-yang",
-                        "l-soleada"
-                    ]
-                },
-                {
-                    "id": "l-soleada",
-                    "type": "island",
-                    "shape": {
-                        "x": 39,
-                        "y": -127,
-                        "w": 18,
-                        "h": 17
-                    },
-                    "links": [
-                        "l-maze",
-                        "l-port-royale"
-                    ]
-                },
-                {
-                    "id": "l-divide-and-konkr",
-                    "type": "island",
-                    "shape": {
-                        "x": 7,
-                        "y": -138,
-                        "w": 17,
-                        "h": 28
-                    },
-                    "links": [
-                        "l-midas",
-                        "l-rekonkrista"
-                    ]
-                },
-                {
-                    "id": "l-rekonkrista",
-                    "type": "island",
-                    "shape": {
-                        "x": 1,
-                        "y": -155,
-                        "w": 15,
-                        "h": 17
-                    },
-                    "links": [
-                        "l-tricero",
-                        "l-canyonero",
-                        "l-divide-and-konkr",
-                        "l-geryon",
-                        "l-dansui"
-                    ]
-                },
-                {
-                    "id": "l-geryon",
-                    "type": "island",
-                    "shape": {
-                        "x": -10,
-                        "y": -128,
-                        "w": 18,
-                        "h": 26
-                    },
-                    "links": [
-                        "l-midas",
-                        "l-rekonkrista"
-                    ]
-                },
-                {
-                    "id": "l-canyonero",
-                    "type": "island",
-                    "shape": {
-                        "x": -13,
-                        "y": -172,
-                        "w": 18,
-                        "h": 16
-                    },
-                    "links": [
-                        "l-rekonkrista",
-                        "l-dansui"
-                    ]
-                },
-                {
-                    "id": "l-yang",
-                    "type": "island",
-                    "shape": {
-                        "x": 58,
-                        "y": -122,
-                        "w": 16,
-                        "h": 20
-                    },
-                    "links": [
-                        "l-maze",
-                        "l-port-royale"
-                    ]
-                },
-                {
-                    "id": "l-tricero",
-                    "type": "island",
-                    "shape": {
-                        "x": 21,
-                        "y": -181,
-                        "w": 22,
-                        "h": 21
-                    },
-                    "links": [
-                        "l-rekonkrista",
-                        "l-port-royale",
-                        "l-great-lakes",
-                        "l-dansui"
-                    ]
-                },
-                {
-                    "id": "l-port-royale",
-                    "type": "island",
-                    "shape": {
-                        "x": 47,
-                        "y": -147,
-                        "w": 17,
-                        "h": 17
-                    },
-                    "links": [
-                        "l-tricero",
-                        "l-yang",
-                        "l-great-lakes",
-                        "l-soleada"
-                    ]
-                },
-                {
-                    "id": "l-great-lakes",
-                    "type": "island",
-                    "shape": {
-                        "x": 54,
-                        "y": -173,
-                        "w": 20,
-                        "h": 22
-                    },
-                    "links": [
-                        "l-port-royale",
-                        "l-tricero",
-                        "l-furor"
-                    ]
-                },
-                {
-                    "id": "l-dansui",
-                    "type": "island",
-                    "shape": {
-                        "x": 1,
-                        "y": -185,
-                        "w": 22,
-                        "h": 17
-                    },
-                    "links": [
-                        "l-tricero",
-                        "l-gladius",
-                        "l-orchard",
-                        "l-canyonero",
-                        "l-rekonkrista"
-                    ]
-                },
-                {
-                    "id": "l-gladius",
-                    "type": "island",
-                    "shape": {
-                        "x": 14,
-                        "y": -215,
-                        "w": 17,
-                        "h": 19
-                    },
-                    "links": [
-                        "l-dansui",
-                        "l-swordclash"
-                    ]
-                },
-                {
-                    "id": "l-orchard",
-                    "type": "island",
-                    "shape": {
-                        "x": -11,
-                        "y": -219,
-                        "w": 22,
-                        "h": 19
-                    },
-                    "links": [
-                        "l-swordclash",
-                        "l-dansui"
-                    ]
-                },
-                {
-                    "id": "l-furor",
-                    "type": "island",
-                    "shape": {
-                        "x": 66,
-                        "y": -195,
-                        "w": 19,
-                        "h": 23
-                    },
-                    "links": [
-                        "l-great-lakes",
-                        "l-strife",
-                        "l-elvenpath"
-                    ]
-                },
-                {
-                    "id": "l-swordclash",
-                    "type": "island",
-                    "shape": {
-                        "x": 6,
-                        "y": -241,
-                        "w": 24,
-                        "h": 20
-                    },
-                    "links": [
-                        "l-wandering-knight",
-                        "l-orchard",
-                        "l-sherwood",
-                        "l-gladius"
-                    ]
-                },
-                {
-                    "id": "l-elvenpath",
-                    "type": "island",
-                    "shape": {
-                        "x": 47,
-                        "y": -223,
-                        "w": 19,
-                        "h": 20
-                    },
-                    "links": [
-                        "l-sherwood",
-                        "l-furor"
-                    ]
-                },
-                {
-                    "id": "l-sherwood",
-                    "type": "island",
-                    "shape": {
-                        "x": 22,
-                        "y": -257,
-                        "w": 26,
-                        "h": 20
-                    },
-                    "links": [
-                        "l-swordclash",
-                        "l-wandering-knight",
-                        "l-elvenpath",
-                        "l-overcrest",
-                        "l-hard-landing"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-strife",
-                    "shape": {
-                        "x": 77,
-                        "y": -215,
-                        "w": 22,
-                        "h": 22
-                    },
-                    "links": [
-                        "l-furor",
-                        "x-islands-of-pain"
-                    ]
-                },
-                {
-                    "type": "expedition-portal",
-                    "id": "x-islands-of-pain",
-                    "shape": {
-                        "x": 90,
-                        "y": -230
-                    },
-                    "links": [
-                        "l-strife"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-wandering-knight",
-                    "shape": {
-                        "x": 3,
-                        "y": -263,
-                        "w": 14,
-                        "h": 14
-                    },
-                    "links": [
-                        "l-swordclash",
-                        "l-sherwood",
-                        "l-hard-landing",
-                        "l-fjords"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-hard-landing",
-                    "shape": {
-                        "x": 17,
-                        "y": -286,
-                        "w": 17,
-                        "h": 16
-                    },
-                    "links": [
-                        "l-wandering-knight",
-                        "l-takiko",
-                        "l-ashes",
-                        "l-sherwood"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-takiko",
-                    "shape": {
-                        "x": 17,
-                        "y": -302,
-                        "w": 22,
-                        "h": 15
-                    },
-                    "links": [
-                        "l-continental",
-                        "megamap",
-                        "l-hard-landing",
-                        "l-ashes",
-                        "l-desert"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-ashes",
-                    "shape": {
-                        "x": -2,
-                        "y": -295,
-                        "w": 21,
-                        "h": 16
-                    },
-                    "links": [
-                        "l-hard-landing",
-                        "l-fjords",
-                        "l-takiko",
-                        "l-desert"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "megamap",
-                    "shape": {
-                        "x": 32,
-                        "y": -338,
-                        "w": 25,
-                        "h": 25
-                    },
-                    "links": [
-                        "l-takiko",
-                        "l-entrenchment",
-                        "l-outreach"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-outreach",
-                    "shape": {
-                        "x": 28,
-                        "y": -356,
-                        "w": 18,
-                        "h": 16
-                    },
-                    "links": [
-                        "l-fiefdoms",
-                        "megamap"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-hourglass",
-                    "shape": {
-                        "x": -9,
-                        "y": -345,
-                        "w": 15,
-                        "h": 20
-                    },
-                    "links": [
-                        "l-desert",
-                        "l-unrest"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-wotje",
-                    "shape": {
-                        "x": -41,
-                        "y": -400,
-                        "w": 18,
-                        "h": 16
-                    },
-                    "links": [
-                        "l-red-river",
-                        "l-ride-out",
-                        "l-humbridge"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-unrest",
-                    "shape": {
-                        "x": -15,
-                        "y": -368,
-                        "w": 20,
-                        "h": 22
-                    },
-                    "links": [
-                        "l-hourglass",
-                        "l-triage",
-                        "l-red-river"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-red-river",
-                    "shape": {
-                        "x": -27,
-                        "y": -385,
-                        "w": 16,
-                        "h": 18
-                    },
-                    "links": [
-                        "l-unrest",
-                        "l-wotje"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-humbridge",
-                    "shape": {
-                        "x": -54,
-                        "y": -419,
-                        "w": 23,
-                        "h": 19
-                    },
-                    "links": [
-                        "l-romula",
-                        "l-jotunheim",
-                        "l-wotje"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-fjords",
-                    "shape": {
-                        "x": -14,
-                        "y": -288,
-                        "w": 12,
-                        "h": 22
-                    },
-                    "links": [
-                        "l-wandering-knight",
-                        "l-ashes",
-                        "l-winter-is-coming"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-entrenchment",
-                    "shape": {
-                        "x": 49,
-                        "y": -352,
-                        "w": 16,
-                        "h": 19
-                    },
-                    "links": [
-                        "megamap",
-                        "l-resistance",
-                        "l-fiefdoms"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-triage",
-                    "shape": {
-                        "x": 4,
-                        "y": -373,
-                        "w": 15,
-                        "h": 20
-                    },
-                    "links": [
-                        "l-orissia",
-                        "l-unrest"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-orissia",
-                    "shape": {
-                        "x": 7,
-                        "y": -397,
-                        "w": 22,
-                        "h": 22
-                    },
-                    "links": [
-                        "l-fiefdoms",
-                        "l-triage",
-                        "l-enclaves"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-ride-out",
-                    "shape": {
-                        "x": -29,
-                        "y": -417,
-                        "w": 20,
-                        "h": 18
-                    },
-                    "links": [
-                        "l-wotje",
-                        "l-pelleas"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-expansion",
-                    "shape": {
-                        "x": 32,
-                        "y": -416,
-                        "w": 21,
-                        "h": 24
-                    },
-                    "links": [
-                        "l-enclaves",
-                        "l-spoils-of-war"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-jotunheim-v2",
-                    "shape": {
-                        "x": 4,
-                        "y": -465,
-                        "w": 17,
-                        "h": 24
-                    },
-                    "links": [
-                        "l-silk-road",
-                        "l-promised-land",
-                        "l-hillfort-v2",
-                        "l-graggle",
-                        "l-pelleas"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-graggle",
-                    "shape": {
-                        "x": 22,
-                        "y": -475,
-                        "w": 24,
-                        "h": 23
-                    },
-                    "links": [
-                        "l-jotunheim-v2",
-                        "l-silkroad",
-                        "l-promised-land"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-winter-is-coming",
-                    "shape": {
-                        "x": -34,
-                        "y": -307,
-                        "w": 14,
-                        "h": 22
-                    },
-                    "links": [
-                        "l-fjords",
-                        "l-end-times"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-fiefdoms",
-                    "shape": {
-                        "x": 35,
-                        "y": -377,
-                        "w": 18,
-                        "h": 14
-                    },
-                    "links": [
-                        "l-orissia",
-                        "l-spoils-of-war",
-                        "l-entrenchment",
-                        "l-outreach"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-spoils-of-war",
-                    "shape": {
-                        "x": 41,
-                        "y": -392,
-                        "w": 14,
-                        "h": 14
-                    },
-                    "links": [
-                        "l-fiefdoms",
-                        "l-expansion"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-pelleas",
-                    "shape": {
-                        "x": -15,
-                        "y": -441,
-                        "w": 22,
-                        "h": 21
-                    },
-                    "links": [
-                        "l-ride-out",
-                        "l-jotunheim-v2",
-                        "l-enclaves"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-end-times",
-                    "shape": {
-                        "x": -54,
-                        "y": -317,
-                        "w": 19,
-                        "h": 19
-                    },
-                    "links": [
-                        "l-winter-is-coming",
-                        "x-dead-islands"
-                    ]
-                },
-                {
-                    "type": "expedition-portal",
-                    "id": "x-dead-islands",
-                    "shape": {
-                        "x": -65,
-                        "y": -330
-                    },
-                    "links": [
-                        "l-end-times"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-enclaves",
-                    "shape": {
-                        "x": 5,
-                        "y": -418,
-                        "w": 23,
-                        "h": 18
-                    },
-                    "links": [
-                        "l-hillfort",
-                        "l-hillfort-v2",
-                        "l-expansion",
-                        "l-orissia",
-                        "l-pelleas"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-hillfort-v2",
-                    "shape": {
-                        "x": 12,
-                        "y": -440,
-                        "w": 23,
-                        "h": 24
-                    },
-                    "links": [
-                        "l-enclaves",
-                        "l-silkroad",
-                        "l-jotunheim-v2"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-desert",
-                    "shape": {
-                        "x": 1,
-                        "y": -320,
-                        "w": 16,
-                        "h": 14
-                    },
-                    "links": [
-                        "l-ashes",
-                        "l-takiko",
-                        "l-hourglass"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-promised-land",
-                    "shape": {
-                        "x": 9,
-                        "y": -498,
-                        "w": 19,
-                        "h": 24
-                    },
-                    "links": [
-                        "l-jotunheim-v2",
-                        "l-graggle"
-                    ]
-                },
-                {
-                    "type": "island",
-                    "id": "l-silkroad",
-                    "shape": {
-                        "x": 40,
-                        "y": -453,
-                        "w": 22,
-                        "h": 20
-                    },
-                    "links": [
-                        "l-hillfort-v2",
-                        "l-graggle"
-                    ]
-                }
-            ]
+          "type": "expedition-portal",
+          "id": "x-first-steps",
+          "shape": {
+            "x": 30,
+            "y": 90
+          },
+          "links": [
+            "l-intro2",
+            "l-heritage",
+            "l-bottleneck"
+          ]
+        },
+        {
+          "id": "l-intro2",
+          "entrypoint": true,
+          "type": "island",
+          "shape": {
+            "x": 30,
+            "y": 66,
+            "w": 12,
+            "h": 13
+          },
+          "links": [
+            "x-first-steps",
+            "l-golden-lake"
+          ]
+        },
+        {
+          "id": "l-bottleneck",
+          "type": "island",
+          "entrypoint": true,
+          "shape": {
+            "x": 15,
+            "y": 61,
+            "w": 14,
+            "h": 18
+          },
+          "links": [
+            "l-ten-paces",
+            "l-golden-lake",
+            "x-first-steps"
+          ]
+        },
+        {
+          "id": "l-heritage",
+          "entrypoint": true,
+          "type": "island",
+          "shape": {
+            "x": 41,
+            "y": 58,
+            "w": 20,
+            "h": 19
+          },
+          "links": [
+            "l-golden-lake",
+            "x-first-steps"
+          ]
+        },
+        {
+          "id": "l-breakthrough",
+          "type": "island",
+          "shape": {
+            "x": -3,
+            "y": -72,
+            "w": 18,
+            "h": 15
+          },
+          "links": [
+            "l-crusade",
+            "l-midas",
+            "l-hideouts",
+            "l-bohemia"
+          ]
+        },
+        {
+          "id": "l-khiro",
+          "type": "island",
+          "shape": {
+            "x": 35,
+            "y": 13,
+            "w": 21,
+            "h": 14
+          },
+          "links": [
+            "l-natives",
+            "l-golden-lake"
+          ]
+        },
+        {
+          "id": "l-hinterlands",
+          "type": "island",
+          "shape": {
+            "x": 25,
+            "y": -29,
+            "w": 20,
+            "h": 19
+          },
+          "links": [
+            "l-bohemia",
+            "l-chalki",
+            "l-natives",
+            "l-riverlands"
+          ]
+        },
+        {
+          "id": "l-rising-sun",
+          "type": "island",
+          "shape": {
+            "x": 48,
+            "y": 4,
+            "w": 24,
+            "h": 31
+          },
+          "links": [
+            "l-natives",
+            "l-golden-lake"
+          ]
+        },
+        {
+          "id": "l-natives",
+          "type": "island",
+          "shape": {
+            "x": 42,
+            "y": -7,
+            "w": 20,
+            "h": 17
+          },
+          "links": [
+            "l-rising-sun",
+            "l-khiro",
+            "l-chalki",
+            "l-hinterlands"
+          ]
+        },
+        {
+          "id": "l-golden-lake",
+          "type": "island",
+          "shape": {
+            "x": 25,
+            "y": 45,
+            "w": 20,
+            "h": 15
+          },
+          "links": [
+            "l-heritage",
+            "l-bottleneck",
+            "l-khiro",
+            "l-rising-sun",
+            "l-ten-paces",
+            "l-intro2"
+          ]
+        },
+        {
+          "id": "l-riverlands",
+          "type": "island",
+          "shape": {
+            "x": 3,
+            "y": -5,
+            "w": 21,
+            "h": 19
+          },
+          "links": [
+            "l-ten-paces",
+            "l-crusade",
+            "l-hinterlands"
+          ]
+        },
+        {
+          "id": "l-ten-paces",
+          "type": "island",
+          "shape": {
+            "x": 11,
+            "y": 26,
+            "w": 13,
+            "h": 14
+          },
+          "links": [
+            "l-bottleneck",
+            "l-riverlands",
+            "l-golden-lake"
+          ]
+        },
+        {
+          "id": "l-crusade",
+          "type": "island",
+          "shape": {
+            "x": -10,
+            "y": -40,
+            "w": 20,
+            "h": 21
+          },
+          "links": [
+            "l-riverlands",
+            "l-bohemia",
+            "l-breakthrough"
+          ]
+        },
+        {
+          "id": "l-bohemia",
+          "type": "island",
+          "shape": {
+            "x": 12,
+            "y": -48,
+            "w": 24,
+            "h": 17
+          },
+          "links": [
+            "l-crusade",
+            "l-hideouts",
+            "l-hinterlands",
+            "l-breakthrough"
+          ]
+        },
+        {
+          "id": "l-chalki",
+          "type": "island",
+          "shape": {
+            "x": 49,
+            "y": -44,
+            "w": 22,
+            "h": 15
+          },
+          "links": [
+            "l-natives",
+            "l-meadows",
+            "l-hinterlands"
+          ]
+        },
+        {
+          "id": "l-meadows",
+          "type": "island",
+          "shape": {
+            "x": 33,
+            "y": -80,
+            "w": 24,
+            "h": 23
+          },
+          "links": [
+            "l-chalki",
+            "l-hideouts",
+            "l-maze"
+          ]
+        },
+        {
+          "id": "l-hideouts",
+          "type": "island",
+          "shape": {
+            "x": 16,
+            "y": -67,
+            "w": 20,
+            "h": 18
+          },
+          "links": [
+            "l-meadows",
+            "l-midas",
+            "l-bohemia",
+            "l-breakthrough"
+          ]
+        },
+        {
+          "id": "l-midas",
+          "type": "island",
+          "shape": {
+            "x": 3,
+            "y": -104,
+            "w": 21,
+            "h": 20
+          },
+          "links": [
+            "l-hideouts",
+            "l-geryon",
+            "l-divide-and-konkr",
+            "l-breakthrough"
+          ]
+        },
+        {
+          "id": "l-maze",
+          "type": "island",
+          "shape": {
+            "x": 44,
+            "y": -109,
+            "w": 19,
+            "h": 16
+          },
+          "links": [
+            "l-meadows",
+            "l-yang",
+            "l-soleada"
+          ]
+        },
+        {
+          "id": "l-soleada",
+          "type": "island",
+          "shape": {
+            "x": 39,
+            "y": -127,
+            "w": 18,
+            "h": 17
+          },
+          "links": [
+            "l-maze",
+            "l-port-royale"
+          ]
+        },
+        {
+          "id": "l-divide-and-konkr",
+          "type": "island",
+          "shape": {
+            "x": 7,
+            "y": -138,
+            "w": 17,
+            "h": 28
+          },
+          "links": [
+            "l-midas",
+            "l-rekonkrista"
+          ]
+        },
+        {
+          "id": "l-rekonkrista",
+          "type": "island",
+          "shape": {
+            "x": 1,
+            "y": -155,
+            "w": 15,
+            "h": 17
+          },
+          "links": [
+            "l-tricero",
+            "l-canyonero",
+            "l-divide-and-konkr",
+            "l-geryon",
+            "l-dansui"
+          ]
+        },
+        {
+          "id": "l-geryon",
+          "type": "island",
+          "shape": {
+            "x": -10,
+            "y": -128,
+            "w": 18,
+            "h": 26
+          },
+          "links": [
+            "l-midas",
+            "l-rekonkrista"
+          ]
+        },
+        {
+          "id": "l-canyonero",
+          "type": "island",
+          "shape": {
+            "x": -13,
+            "y": -172,
+            "w": 18,
+            "h": 16
+          },
+          "links": [
+            "l-rekonkrista",
+            "l-dansui"
+          ]
+        },
+        {
+          "id": "l-yang",
+          "type": "island",
+          "shape": {
+            "x": 58,
+            "y": -122,
+            "w": 16,
+            "h": 20
+          },
+          "links": [
+            "l-maze",
+            "l-port-royale"
+          ]
+        },
+        {
+          "id": "l-tricero",
+          "type": "island",
+          "shape": {
+            "x": 21,
+            "y": -181,
+            "w": 22,
+            "h": 21
+          },
+          "links": [
+            "l-rekonkrista",
+            "l-port-royale",
+            "l-great-lakes",
+            "l-dansui"
+          ]
+        },
+        {
+          "id": "l-port-royale",
+          "type": "island",
+          "shape": {
+            "x": 47,
+            "y": -147,
+            "w": 17,
+            "h": 17
+          },
+          "links": [
+            "l-tricero",
+            "l-yang",
+            "l-great-lakes",
+            "l-soleada"
+          ]
+        },
+        {
+          "id": "l-great-lakes",
+          "type": "island",
+          "shape": {
+            "x": 54,
+            "y": -173,
+            "w": 20,
+            "h": 22
+          },
+          "links": [
+            "l-port-royale",
+            "l-tricero",
+            "l-furor"
+          ]
+        },
+        {
+          "id": "l-dansui",
+          "type": "island",
+          "shape": {
+            "x": 1,
+            "y": -185,
+            "w": 22,
+            "h": 17
+          },
+          "links": [
+            "l-tricero",
+            "l-gladius",
+            "l-orchard",
+            "l-canyonero",
+            "l-rekonkrista"
+          ]
+        },
+        {
+          "id": "l-gladius",
+          "type": "island",
+          "shape": {
+            "x": 14,
+            "y": -215,
+            "w": 17,
+            "h": 19
+          },
+          "links": [
+            "l-dansui",
+            "l-swordclash"
+          ]
+        },
+        {
+          "id": "l-orchard",
+          "type": "island",
+          "shape": {
+            "x": -11,
+            "y": -219,
+            "w": 22,
+            "h": 19
+          },
+          "links": [
+            "l-swordclash",
+            "l-dansui"
+          ]
+        },
+        {
+          "id": "l-furor",
+          "type": "island",
+          "shape": {
+            "x": 66,
+            "y": -195,
+            "w": 19,
+            "h": 23
+          },
+          "links": [
+            "l-great-lakes",
+            "l-strife",
+            "l-elvenpath"
+          ]
+        },
+        {
+          "id": "l-swordclash",
+          "type": "island",
+          "shape": {
+            "x": 6,
+            "y": -241,
+            "w": 24,
+            "h": 20
+          },
+          "links": [
+            "l-wandering-knight",
+            "l-orchard",
+            "l-sherwood",
+            "l-gladius"
+          ]
+        },
+        {
+          "id": "l-elvenpath",
+          "type": "island",
+          "shape": {
+            "x": 47,
+            "y": -223,
+            "w": 19,
+            "h": 20
+          },
+          "links": [
+            "l-sherwood",
+            "l-furor"
+          ]
+        },
+        {
+          "id": "l-sherwood",
+          "type": "island",
+          "shape": {
+            "x": 22,
+            "y": -257,
+            "w": 26,
+            "h": 20
+          },
+          "links": [
+            "l-swordclash",
+            "l-wandering-knight",
+            "l-elvenpath",
+            "l-hard-landing"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-strife",
+          "shape": {
+            "x": 77,
+            "y": -215,
+            "w": 22,
+            "h": 22
+          },
+          "links": [
+            "l-furor",
+            "x-islands-of-pain"
+          ]
+        },
+        {
+          "type": "expedition-portal",
+          "id": "x-islands-of-pain",
+          "shape": {
+            "x": 90,
+            "y": -230
+          },
+          "links": [
+            "l-strife"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-wandering-knight",
+          "shape": {
+            "x": 3,
+            "y": -263,
+            "w": 14,
+            "h": 14
+          },
+          "links": [
+            "l-swordclash",
+            "l-sherwood",
+            "l-hard-landing",
+            "l-fjords"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-hard-landing",
+          "shape": {
+            "x": 17,
+            "y": -286,
+            "w": 17,
+            "h": 16
+          },
+          "links": [
+            "l-wandering-knight",
+            "l-takiko",
+            "l-ashes",
+            "l-sherwood"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-takiko",
+          "shape": {
+            "x": 17,
+            "y": -302,
+            "w": 22,
+            "h": 15
+          },
+          "links": [
+            "megamap",
+            "l-hard-landing",
+            "l-ashes",
+            "l-desert"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-ashes",
+          "shape": {
+            "x": -2,
+            "y": -295,
+            "w": 21,
+            "h": 16
+          },
+          "links": [
+            "l-hard-landing",
+            "l-fjords",
+            "l-takiko",
+            "l-desert"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "megamap",
+          "shape": {
+            "x": 32,
+            "y": -338,
+            "w": 25,
+            "h": 25
+          },
+          "links": [
+            "l-takiko",
+            "l-entrenchment",
+            "l-outreach"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-outreach",
+          "shape": {
+            "x": 28,
+            "y": -356,
+            "w": 18,
+            "h": 16
+          },
+          "links": [
+            "l-fiefdoms",
+            "megamap"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-hourglass",
+          "shape": {
+            "x": -9,
+            "y": -345,
+            "w": 15,
+            "h": 20
+          },
+          "links": [
+            "l-desert",
+            "l-unrest"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-wotje",
+          "shape": {
+            "x": -41,
+            "y": -400,
+            "w": 18,
+            "h": 16
+          },
+          "links": [
+            "l-red-river",
+            "l-ride-out",
+            "l-humbridge"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-unrest",
+          "shape": {
+            "x": -15,
+            "y": -368,
+            "w": 20,
+            "h": 22
+          },
+          "links": [
+            "l-hourglass",
+            "l-triage",
+            "l-red-river"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-red-river",
+          "shape": {
+            "x": -27,
+            "y": -385,
+            "w": 16,
+            "h": 18
+          },
+          "links": [
+            "l-unrest",
+            "l-wotje"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-humbridge",
+          "shape": {
+            "x": -54,
+            "y": -419,
+            "w": 23,
+            "h": 19
+          },
+          "links": [
+            "l-wotje"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-fjords",
+          "shape": {
+            "x": -14,
+            "y": -288,
+            "w": 12,
+            "h": 22
+          },
+          "links": [
+            "l-wandering-knight",
+            "l-ashes",
+            "l-winter-is-coming"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-entrenchment",
+          "shape": {
+            "x": 49,
+            "y": -352,
+            "w": 16,
+            "h": 19
+          },
+          "links": [
+            "megamap",
+            "l-fiefdoms"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-triage",
+          "shape": {
+            "x": 4,
+            "y": -373,
+            "w": 15,
+            "h": 20
+          },
+          "links": [
+            "l-orissia",
+            "l-unrest"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-orissia",
+          "shape": {
+            "x": 7,
+            "y": -397,
+            "w": 22,
+            "h": 22
+          },
+          "links": [
+            "l-fiefdoms",
+            "l-triage",
+            "l-enclaves"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-ride-out",
+          "shape": {
+            "x": -29,
+            "y": -417,
+            "w": 20,
+            "h": 18
+          },
+          "links": [
+            "l-wotje",
+            "l-pelleas"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-expansion",
+          "shape": {
+            "x": 32,
+            "y": -416,
+            "w": 21,
+            "h": 24
+          },
+          "links": [
+            "l-enclaves",
+            "l-spoils-of-war"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-jotunheim-v2",
+          "shape": {
+            "x": 4,
+            "y": -465,
+            "w": 17,
+            "h": 24
+          },
+          "links": [
+            "l-promised-land",
+            "l-hillfort-v2",
+            "l-graggle",
+            "l-pelleas"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-graggle",
+          "shape": {
+            "x": 22,
+            "y": -475,
+            "w": 24,
+            "h": 23
+          },
+          "links": [
+            "l-jotunheim-v2",
+            "l-silkroad",
+            "l-promised-land"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-winter-is-coming",
+          "shape": {
+            "x": -34,
+            "y": -307,
+            "w": 14,
+            "h": 22
+          },
+          "links": [
+            "l-fjords",
+            "l-end-times"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-fiefdoms",
+          "shape": {
+            "x": 35,
+            "y": -377,
+            "w": 18,
+            "h": 14
+          },
+          "links": [
+            "l-orissia",
+            "l-spoils-of-war",
+            "l-entrenchment",
+            "l-outreach"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-spoils-of-war",
+          "shape": {
+            "x": 41,
+            "y": -392,
+            "w": 14,
+            "h": 14
+          },
+          "links": [
+            "l-fiefdoms",
+            "l-expansion"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-pelleas",
+          "shape": {
+            "x": -15,
+            "y": -441,
+            "w": 22,
+            "h": 21
+          },
+          "links": [
+            "l-ride-out",
+            "l-jotunheim-v2",
+            "l-enclaves"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-end-times",
+          "shape": {
+            "x": -54,
+            "y": -317,
+            "w": 19,
+            "h": 19
+          },
+          "links": [
+            "l-winter-is-coming",
+            "x-dead-islands"
+          ]
+        },
+        {
+          "type": "expedition-portal",
+          "id": "x-dead-islands",
+          "shape": {
+            "x": -65,
+            "y": -330
+          },
+          "links": [
+            "l-end-times"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-enclaves",
+          "shape": {
+            "x": 5,
+            "y": -418,
+            "w": 23,
+            "h": 18
+          },
+          "links": [
+            "l-hillfort-v2",
+            "l-expansion",
+            "l-orissia",
+            "l-pelleas"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-hillfort-v2",
+          "shape": {
+            "x": 12,
+            "y": -440,
+            "w": 23,
+            "h": 24
+          },
+          "links": [
+            "l-enclaves",
+            "l-silkroad",
+            "l-jotunheim-v2"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-desert",
+          "shape": {
+            "x": 1,
+            "y": -320,
+            "w": 16,
+            "h": 14
+          },
+          "links": [
+            "l-ashes",
+            "l-takiko",
+            "l-hourglass"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-promised-land",
+          "shape": {
+            "x": 9,
+            "y": -498,
+            "w": 19,
+            "h": 24
+          },
+          "links": [
+            "l-jotunheim-v2",
+            "l-graggle"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-silkroad",
+          "shape": {
+            "x": 40,
+            "y": -453,
+            "w": 22,
+            "h": 20
+          },
+          "links": [
+            "l-hillfort-v2",
+            "l-graggle"
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
