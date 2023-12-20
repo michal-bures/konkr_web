@@ -522,21 +522,22 @@
           "type": "island",
           "shape": {
             "x": 47,
-            "y": -223,
+            "y": -220,
             "w": 19,
             "h": 20
           },
           "links": [
             "l-sherwood",
-            "l-furor"
+            "l-furor",
+            "l-balanguera"
           ]
         },
         {
           "id": "l-sherwood",
           "type": "island",
           "shape": {
-            "x": 22,
-            "y": -257,
+            "x": 26,
+            "y": -255,
             "w": 26,
             "h": 20
           },
@@ -544,7 +545,8 @@
             "l-swordclash",
             "l-wandering-knight",
             "l-elvenpath",
-            "l-hard-landing"
+            "l-hard-landing",
+            "l-balanguera"
           ]
         },
         {
@@ -558,7 +560,8 @@
           },
           "links": [
             "l-furor",
-            "x-islands-of-pain"
+            "x-islands-of-pain",
+            "l-balanguera"
           ]
         },
         {
@@ -1009,6 +1012,22 @@
           "links": [
             "l-hillfort-v2",
             "l-graggle"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-balanguera",
+          "isNew": true,
+          "shape": {
+            "x": 59,
+            "y": -234,
+            "w": 20,
+            "h": 20
+          },
+          "links": [
+            "l-strife",
+            "l-sherwood",
+            "l-elvenpath"
           ]
         }
       ]
