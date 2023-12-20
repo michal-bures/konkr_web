@@ -4,16 +4,15 @@
       "id": "x-old-world",
       "metadata": {
         "name": "Old World",
-        "description": "The Old World offers a wide range of islands ripe for conquest. It is the perfect place to start your adventure."
+        "description": "The Old World offers a wide range\nof islands ripe for conquest.\nIt is the perfect place to start\nyour adventure."
       },
       "config": {},
       "objects": [
         {
           "id": "f1",
           "type": "flavor-text",
-          "maxWidth": 260,
           "shape": {
-            "x": 48,
+            "x": 46,
             "y": 83
           }
         },
