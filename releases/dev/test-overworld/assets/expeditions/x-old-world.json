@@ -4,10 +4,19 @@
       "id": "x-old-world",
       "metadata": {
         "name": "Old World",
-        "description": "Conquer the shattered seas!"
+        "description": "The Old World offers a wide range of islands ripe for conquest. It is the perfect place to start your adventure."
       },
       "config": {},
       "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "maxWidth": 260,
+          "shape": {
+            "x": 48,
+            "y": 83
+          }
+        },
         {
           "type": "expedition-portal",
           "id": "x-first-steps",

@@ -3,11 +3,19 @@
     {
       "id": "x-community-maps",
       "metadata": {
-        "name": "Community Islands",
-        "description": "Selection of some of the best level submitted on community, visit discord for more!"
+        "name": "Mapmaker's Archipelago",
+        "description": "Taste some of the best levels submitted by the community.\nBeware that most of them are extremely challenging!"
       },
       "config": {},
       "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "shape": {
+            "x": -32,
+            "y": 74
+          }
+        },
         {
           "type": "entrypoint",
           "id": "entrypoint",

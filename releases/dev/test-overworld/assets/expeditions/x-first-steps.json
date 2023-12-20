@@ -4,10 +4,18 @@
       "id": "x-first-steps",
       "metadata": {
         "name": "Tutorial",
-        "description": "Learn the basics of the game."
+        "description": "Learn the basics of the game\nby confronting the menace of\nGodfrey the Goose."
       },
       "config": {},
       "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "shape": {
+            "x": -20,
+            "y": 95
+          }
+        },
         {
           "type": "island",
           "id": "intro1",

@@ -4,10 +4,18 @@
       "id": "x-islands-of-pain",
       "metadata": {
         "name": "Islands of Pain",
-        "description": "Enjoy suffering? You'll find plenty of it here!"
+        "description": "Do you enjoy suffering?\nPrefer the odds stacked against you?\nThen this is the expedition for you!"
       },
       "config": {},
       "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "shape": {
+            "x": 10,
+            "y": -7
+          }
+        },
         {
           "type": "expedition-portal",
           "id": "x-old-world",
