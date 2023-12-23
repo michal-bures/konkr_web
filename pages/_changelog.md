@@ -1,6 +1,15 @@
 
 
 ---
+v2.25.0 <small>released 2023-12-23</small>
+- new expeditions system replaces the old campaign
+- new expedition levels
+- option to unlock all islands in expeditions
+- christmas theme, including a new option to give presents to your rivals
+- to play in portable mode with everything unlocked, add `/portable=1` at the end of the URL, that is: https://www.konkr.io/releases/dev/test-overworld/?portable=1
+- you can now press spacebar to restore the default zoom level
+
+---
 v2.24.25 <small>released 2023-12-14</small>
 - smoother zooming (esp. on trackpad)
 
