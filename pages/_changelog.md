@@ -1,6 +1,10 @@
 
 
 ---
+v2.25.2 <small>released 2023-12-23</small>
+- bugfix: disable surrender in the christmas level
+
+---
 v2.25.0 <small>released 2023-12-23</small>
 - new expeditions system replaces the old campaign
 - new expedition levels
