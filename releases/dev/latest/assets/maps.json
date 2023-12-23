@@ -1,365 +1,4 @@
 {
-  "campaigns": [
-    {
-      "id": "intro",
-      "name": "Campaign",
-      "levels": [
-        {
-          "id": "intro1",
-          "script": "tutorial1",
-          "fixedAIDifficulty": "normal"
-        },
-        {
-          "id": "l-tutorial2",
-          "script": "tutorial2",
-          "fixedAIDifficulty": "normal"
-        },
-        {
-          "id": "l-double-trouble",
-          "script": "tutorialDoubleTrouble",
-          "fixedAIDifficulty": "normal"
-        },
-        {
-          "id": "l-tutorial3",
-          "script": "tutorial3",
-          "fixedAIDifficulty": "normal"
-        },
-        {
-          "id": "l-intro2"
-        },
-        {
-          "id": "l-bottleneck"
-        },
-        {
-          "id": "l-breakthrough"
-        },
-        {
-          "id": "l-heritage"
-        },
-        {
-          "id": "l-khiro"
-        },
-        {
-          "id": "l-hinterlands"
-        },
-        {
-          "id": "l-rising-sun"
-        },
-        {
-          "id": "l-natives"
-        },
-        {
-          "id": "l-golden-lake"
-        },
-        {
-          "id": "l-riverlands"
-        },
-        {
-          "id": "l-ten-paces"
-        },
-        {
-          "id": "l-crusade"
-        },
-        {
-          "id": "l-bohemia"
-        },
-        {
-          "id": "l-chalki"
-        },
-        {
-          "id": "l-meadows"
-        },
-        {
-          "id": "l-hideouts"
-        },
-        {
-          "id": "l-midas"
-        },
-        {
-          "id": "l-maze"
-        },
-        {
-          "id": "l-soleada"
-        },
-        {
-          "id": "l-divide-and-konkr"
-        },
-        {
-          "id": "l-rekonkrista"
-        },
-        {
-          "id": "l-geryon"
-        },
-        {
-          "id": "l-canyonero"
-        },
-        {
-          "id": "l-yang"
-        },
-        {
-          "id": "l-tricero"
-        },
-        {
-          "id": "l-port-royale"
-        },
-        {
-          "id": "l-great-lakes"
-        },
-        {
-          "id": "l-dansui"
-        },
-        {
-          "id": "l-gladius"
-        },
-        {
-          "id": "l-orchard"
-        },
-        {
-          "id": "l-landahoy"
-        },
-        {
-          "id": "l-furor"
-        },
-        {
-          "id": "l-swordclash"
-        },
-        {
-          "id": "l-elvenpath"
-        },
-        {
-          "id": "l-sherwood"
-        },
-        {
-          "id": "l-strife"
-        },
-        {
-          "id": "l-wandering-knight"
-        },
-        {
-          "id": "l-overcrest"
-        },
-        {
-          "id": "l-hard-landing"
-        },
-        {
-          "id": "l-takiko"
-        },
-        {
-          "id": "l-ashes"
-        },
-        {
-          "id": "megamap"
-        },
-        {
-          "id": "l-outreach"
-        },
-        {
-          "id": "l-hourglass"
-        },
-        {
-          "id": "l-wotje"
-        },
-        {
-          "id": "l-unrest"
-        },
-        {
-          "id": "l-red-river"
-        },
-        {
-          "id": "l-salmo"
-        },
-        {
-          "id": "l-kippi"
-        },
-        {
-          "id": "l-uprising2"
-        },
-        {
-          "id": "l-humbridge"
-        },
-        {
-          "id": "l-fjords"
-        },
-        {
-          "id": "l-zanahary"
-        },
-        {
-          "id": "l-romula"
-        },
-        {
-          "id": "l-entrenchment"
-        },
-        {
-          "id": "l-resistance"
-        },
-        {
-          "id": "l-volcano"
-        },
-        {
-          "id": "l-triage"
-        },
-        {
-          "id": "l-orissia"
-        },
-        {
-          "id": "l-ride-out"
-        },
-        {
-          "id": "l-expansion"
-        },
-        {
-          "id": "l-snail"
-        },
-        {
-          "id": "l-underdog"
-        },
-        {
-          "id": "l-jotunheim-v2"
-        },
-        {
-          "id": "l-graggle"
-        },
-        {
-          "id": "l-winter-is-coming"
-        },
-        {
-          "id": "l-fiefdoms"
-        },
-        {
-          "id": "l-supression"
-        },
-        {
-          "id": "l-spiral"
-        },
-        {
-          "id": "l-new-world"
-        },
-        {
-          "id": "l-parched-empire"
-        },
-        {
-          "id": "l-orchid"
-        },
-        {
-          "id": "l-mortis"
-        },
-        {
-          "id": "l-ashstorm"
-        },
-        {
-          "id": "l-sedition"
-        },
-        {
-          "id": "l-spoils-of-war"
-        },
-        {
-          "id": "l-pelleas"
-        },
-        {
-          "id": "l-end-times"
-        },
-        {
-          "id": "l-jailbreak"
-        },
-        {
-          "id": "l-enclaves"
-        },
-        {
-          "id": "l-hillfort-v2"
-        },
-        {
-          "id": "l-borrowed-time"
-        },
-        {
-          "id": "l-anarchy"
-        },
-        {
-          "id": "l-desert"
-        },
-        {
-          "id": "l-gloria"
-        },
-        {
-          "id": "l-thrakia"
-        },
-        {
-          "id": "l-guardia"
-        },
-        {
-          "id": "l-spica"
-        },
-        {
-          "id": "l-riposte"
-        },
-        {
-          "id": "l-badlands"
-        },
-        {
-          "id": "l-heist"
-        },
-        {
-          "id": "l-trinity"
-        },
-        {
-          "id": "l-korvu"
-        },
-        {
-          "id": "l-promised-land"
-        },
-        {
-          "id": "l-decadence"
-        },
-        {
-          "id": "l-silkroad"
-        },
-        {
-          "id": "l-obsidio"
-        },
-        {
-          "id": "l-strongholds"
-        },
-        {
-          "id": "l-valhalla"
-        },
-        {
-          "id": "l-valor",
-          "script": "reinforcements"
-        },
-        {
-          "id": "l-wildfire"
-        },
-        {
-          "id": "l-foccacia"
-        }
-      ]
-    },
-    {
-      "id": "dead-islands",
-      "name": "Dead Islands",
-      "levels": [
-        {
-          "id": "l-dead-islands-arrival",
-          "fixedAIDifficulty": "normal"
-        },
-        {
-          "id": "l-dead-islands-hammer-of-faith",
-          "fixedAIDifficulty": "normal"
-        },
-        {
-          "id": "l-dead-islands-harvest",
-          "fixedAIDifficulty": "normal"
-        },
-        {
-          "id": "l-dead-islands-city-of-the-dead",
-          "fixedAIDifficulty": "normal"
-        },
-        {
-          "id": "l-dead-islands-heart-of-darkness",
-          "fixedAIDifficulty": "normal"
-        }
-      ]
-    }
-  ],
   "levels": [
     {
       "id": "intro1",
@@ -919,6 +558,57 @@
       "id": "l-korvu",
       "data": "konkrmap.v7.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",
       "name": "Korvu"
+    },
+    {
+      "id": "l-orris",
+      "data": "konkrmap.v7.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",
+      "name": "Orris"
+    },
+    {
+      "id": "l-knight-stalemate",
+      "data": "konkrmap.v7.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",
+      "name": "Knight Stalemate",
+      "author": "@lovalmidas"
+    },
+    {
+      "id": "l-heroic-blunder",
+      "data": "konkrmap.v7.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",
+      "name": "Heroic Blunder",
+      "author": "@lovalmidas"
+    },
+    {
+      "id": "l-colonial-competition",
+      "data": "konkrmap.v7.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",
+      "name": "Colonial Competition",
+      "author": "@lovalmidas"
+    },
+    {
+      "id": "l-native-resolution",
+      "data": "konkrmap.v7.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",
+      "name": "Native Resolution",
+      "author": "@lovalmidas"
+    },
+    {
+      "id": "l-invasion",
+      "name": "Invasion",
+      "data": "konkrmap.v7.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",
+      "author": "@lovalmidas"
+    },
+    {
+      "id": "l-bandicoot",
+      "name": "Bandicoot",
+      "data": "konkrmap.v7.eyJtYXAiOnsid2lkdGgiOjE1LCJoZWlnaHQiOjE3LCJwbHVnaW5zIjpbXSwibGV2ZWxJZCI6ImwtYmFuZGljb290In0sInZlcnNpb24iOjcsInJlZ2lvxTJ7ImlkIjoyLCJuYW1lIjoiSGVhcnRobGFuZCLEZXhlxCU4MDRdfSzGKzPJK0FtZXRoeXN0d2lsZcstNTA3yS3kAJ7HLkxhZHlzd29yzFgxNTA5yiw4ySxVbWJlcm5vb2vLLDgxMSw4MTIsOTEzyjM5y19yY2hzdGF05ADjyjY5MTDJLjIwyS5NYXJzaG1vcnJhyywzMDgsNDA4LOwAlTLqARpSZWR3ae0BFzcwOMop6gEYU3RvbnlkaWvsARUxMTA2yiw0ySxNaWRkbGVoaWxsyy05MDIsOTAzLDEwxAUx6wF9MjbKZnBpbmVob2x0zGYzMDcsMeQAyDE0zHDqAYZEdXNrd29ydGjMNjTrAbIy6gGGQm91bGRlcndh7QCdOOwBUuoBgEJhcnJvbnJvY+wBtDbrASEz6gF+TmV2ZXJnbGXsAakxMTA1yizqAXZNYWlucm937AFMOTA3LDnkAOQwzF/qAYBCYWluaG9sbG93zmA5LDEyxAUzMTDEPMUPy0HqAVtMZWRn8AGUMTLsAwTqAVFIaWdoZmFpcu0B7TAwMsos6gFRRGF5c2ll7gJ1MewDLzPqAVBUaeQDBG1hc3PLLTIwNiwzMDUsM+sB3TTqAVhFYWdsZe8DjjIwMiwzMDIsNOsAkzQxyTNTaGlyZWRl7ADqNjAzLDcw6gNlNOoBWk1haWRlbmJl7QEaNzA2LDQwMyw0MDUsNTA0LDUwNSw26wHNNDXMbmVsZHRob3Ju7ACkOOwAz+oBh0dsb3dzdW1tae0C4zQxMSwxMuQBwzPECjQxMiwxNTExykHqAZxG5ADccmHuA4nMbOoBm0dlbXZhbGxlecsr7AHyNOoBmk1lYWRo7gMUMesBXTXqAZBXaW50ZXJ25ADzyy00MOoArTXqAYpIb3DkAbzMVzfMV+sFo2lnaGfOKjEw5AP5MOsA3DXqBGRBc2hnZW3NLusBMDXrAZ90b3V0zis45AKeXSwiZmFj5AVa6gYy6gDmbmF0deUC/3RoZW1lSW5kZXjFH2NvbnRyb2xsZXLEJW/lAfLqBngzMyw0Nyw0OCw0OSw1MCw1MSw1Miw16gI26gEZUGxheWVyIDHfYmxvY2FsLXVzZXLOaDIsNOsFCtBWMs9WMc9WYWnNTjI3LDI4LDI5LDPqBQXqAx/HVDPPVDLeVDU0LDHqBAPqAbfHTjTPTjPeTjM5LDQwLDQxLDE4LDE5LDIwLDIyLDIzLDI0LDLrAh7QZjXPZjTfZjYsMzcsMzgsNOoEKOoDucdUNs9UNd5UMiwzLDQ15QJucGF36wJrMSwidHlwxFljYXN06ATe5ANqNMh8MskjdG935wZX5AfxNsghNNUhNTA1yCE11SE3MDPIITbVITMwMsghN8khY2/kCY7HIuQFtCJjb3VudCI6OMgsONYs5AWp0Sw51iw3MOUCCs4sMTDKLWFtcMgs5Ab9ySPqASzNIzMxMMkjM8kj5QpC5wS+xDzLSOoBU2ZvcmVzyiXqAXbkCqnVJDLqAbsx6gFZ0EjpAVvkCkfVJDQwMckk6gEoziQ3ykjkCgLzAcXkBkrJI+sCbuwBb8Qk6QFw6gEr5Aog1C/kBwXILukCZOQKJPUBWDkw6QHC5Aoc1SQ16gF7MuoBV84kODHqAOvqAVfOJOQKJMkl6gFYzyUx6gMa5AoS9AIxMMtI+AF85AaTyCXkCgHYJekA2zPqAX/PJTLqASTkCh/VJTgwN+QEP2N1cnJlbnRQaGFzZeQNN8gs5gbELXR1cuQB+8QHTnXkCWblBGPHHsUMdGFwcGVkVW5pdOUNVX3FX0hpc3RvcnkiOnt9fQ==",
+      "author": "@lovalmidas"
+    },
+    {
+      "id": "l-balanguera",
+      "name": "Balanguera",
+      "data": "konkrmap.v7.eyJtYXAiOnsid2lkdGgiOjIwLCJoZWlnaHTGDHBsdWdpbnMiOltdLCJsZXZlbElkIjoibC1iYWxhbmd1ZXJhIn0sInZlcnNpb24iOjcsInJlZ2lvxTN7ImlkIjoxLCJuYW1lIjoiTWFuc3NoaW5lIsRleGXEJDcwNyw2MDcsNzA2XX0sxjI0yTJSZWR0b3duc2hpcMs0MTUxMSwxNTEyLDE2MTDEBTHEBTIsMTfECjcxMslLNclLQmVhcm1vbnTLSDkxNyw5MTgsMTAxNsQFN8QFOCwxMcQKMTE4yUY3yUZHZW1jaXR5y0U0MDIsNDAzLDQwNCw0MDUsNTAyLDUwMyw2MDEsNjDqAIo5yURIYWxmaG9w7AEGMeQAvTEzLDExNCwxMTUsMjEyLDIxMywyMTQsMzE0yUUxMslGTGVhZmhhbGxvd8tINzDqALUxM8ksVHdpbmRpa85yMDfKK+oBckdheWLsAN8xMesBTjHqAU9IYW1tZXJyb3Royy01zCw2ySxQaWtlbGVkZ+wAgDYxNcor6gFgRXZlcmxhbmTLKjEwMTPKKzjJK1dpbmdyYWTMVTgxMMoq6gFxR3JheWluZ3RvbsxXMzA5yS3kAuvHLUxpdHRsZWlzbMxZMTPrAK8y6gLSV2luZHNoaWVs7ACxMusBhTLqAbFDcmFndGhvcu0B+TbrAvcy6wGxdW1ibGVjcm9zc8stMTXlAu4wOeQC5DAsMTjEBTTsAMfqAchEZWFkaG9sbcw/NOQCYjXEBeQCXDEzxgXqAl4y6gHfQ3Jhd2hlYXLsAy8xNOQDXjTkAqszxAozxAo06wFzMuoB81dha2Vzd29y7QHJMeQAsDHEOzLkAMQyxA8yxkrLReoCDVN0b2NraG/tAV05xDAwxDowxgrqAnIy6gIcQmVsbGxldHRlcss7NzE1LDgxMyw4MTQsOTEzLDnsAPvqAi5GZWxsZ2XtATnmA5vkA5wyy3Az6gI1RnVsbHRyYWlszjY1xDY2xDbFOzXEBeoB8DPqAkjmAnVibHXMdzjlALA2LDkxNSw5xEcwxEcw6wKKM+oB8EJhcnJvbnN1bW1p7AG05AURNzEyLDgxMSw57AC86wTTcmFuaXRlcnXtBZjkBVTkBVM2MTMs5AJt5AI3NusBpzPqAW3mAL13b2xmy0A1MTUs5AJh5AJ0NDE0LDXrAW0z6gFtU25vd2hh7AD2NjE0LDfFdTQsOOsAsjTqAW5Nb3VybndlbO8BbizkAlHkAlDkAp7kAp3sApw07AO15AU25AU8y0AzMDcsMzA4LDQwNyw06wPBNOoDweQD7Xdp7gKOMDYsOTDkBjgw5AGgxAoxzD3qAaBI5QWrZGFya80/OCw55AMLMDDkBnfrA8o06gOLUmV4bGFp7AS75AM+M8QEMTAs7AP/NOoDgEhlbWxh7QXxNTA4LDUwOSzkBEQ2MDgsNsw56gIOQmln7wKH5AP25AP1NTExyjHqAcJDZWRhcmxvY+wA2DcwOSw4MDcsODA4LDjLaDXqAcTkBQ5nbGXsANc55QPWzC/qAXxCZXJ5bGdyYe0FEDgwMyw4MDQsNzAzLDcw6gJgNeoFSURyYWdvbmNhc3TtBdA4MDUsOOsFezXqAalFZGluaG9v7AHmNTA0LDUwNSw25QfXNCw2MDUsNzDqA4c16gF4SmFzcGVyd2ntAlw0MDYsNcUEN119XSwiZmFjdO0JI+oBF25hdHVy5ACqdGhlbWVJbmRleMUfY29udHJvbGxlcsQlb+UDq+oJaTEsMzksNDcsNTAsMuoBP+oC8lBsYXllciAx31hsb2NhbC11c+UFNspeMzQsNCw1LDQyLDTrBq3QXTLPXTHPXWFpzlU4LOUGSSw0NSzkBB80LDIzLDI0LDLqAz7qAcbHYzPPYzLeYzQxLDQ0LOQFdjYsMTcsNTIsMjUsM+sEE9BgNM9gM95gNyw5LDQ5LDLrAkfQUjXPUjTeUuQKfTksMuQExiw1MywyMiwz6gN06wlQxl02z1013l0z5ATZLDU2LDLmAoZwYXfuC6Z0eXDEXmZvcmVz5wZEIjo3MDbrAfPXIzfIIzPXIzbKIzTXIzQxMsgjNdcjNTExyCM22UbJIzfXI+QHxMgkONgkMTE0yCQ52iQzyCQxMNclOTEwyST4AWPkBPTJJfkBQuoAkeQLrtUkN8sk+AFEOOoA/eQLotdI6gDZ6gEi5A2JyCI0MMpG6gEgzCLkDZXII+QLXtQjMDHpAhbkC1TTIzLqAIrkC0rTIjXqANDkC0DURDA4ySLqATrMIjbrAuTqATjMIuQNLskj6gE3zCM3y2fqAnvMIjjqAgzkCqvVZ+sAzvcBWDDqARPkCoHUIzMxNckj9gFY5Az9ySP2AVk2y0XqAVljb+QQDscjMjA45ARzdW505ACYyS7qAWXOLuQC3NIu6gFxzS7kD1fTLuoBfM0u5BAM0y7qAYjNLjYwNtQu6gGUzi7kA0zSLuoBn80uN/UBFOQKvdQu5A3C0y7qAbXNLuQB/NQv6gHB0C831C/3Ac7kAuTUL/cBz+QCrNQv9wHQ5AJy1C/3AdHkAsTUL/cB0uUSA9Mv6gHTdmlsbGFn6A4Q5AWZ6gaS6gHL0CbkEmrIJ+QKvdcnNTDpA5Q16gG80U3qA7rkCqLHJuwKnMVx6gcH6wF6ziUwMekEsTXrAXDNJTPqBg3kCqDVJDQwM+QICmN1cnJlbnRQaGFzZeQUDMcs5wqnLXR1cuQEFsQHTnVtYuQIXDHpCsXFDHRhcHBlZFVuaXTlFCp9xV9IaXN0b3J5Ijp7fX0="
+    },
+    {
+      "id": "l-xmas-1",
+      "name": "Merry Christmas",
+      "data": "konkrmap.v7.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"
     }
   ]
 }
