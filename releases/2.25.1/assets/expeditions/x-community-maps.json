@@ -1,0 +1,129 @@
+{
+  "expeditions": [
+    {
+      "id": "x-community-maps",
+      "metadata": {
+        "name": "Mapmaker's Archipelago",
+        "description": "Taste some of the best levels submitted by the community.\nBeware that most of them are extremely challenging!"
+      },
+      "config": {},
+      "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "shape": {
+            "x": -32,
+            "y": 74
+          }
+        },
+        {
+          "type": "entrypoint",
+          "id": "entrypoint",
+          "entrypoint": true,
+          "shape": {
+            "x": -32,
+            "y": 56
+          },
+          "links": [
+            "l-knight-stalemate",
+            "l-colonial-competition"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-colonial-competition",
+          "shape": {
+            "x": -23,
+            "y": 14,
+            "w": 29,
+            "h": 24
+          },
+          "links": [
+            "l-knight-stalemate",
+            "l-bandicoot",
+            "l-heroic-blunder",
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-knight-stalemate",
+          "shape": {
+            "x": -6,
+            "y": 44,
+            "w": 18,
+            "h": 24
+          },
+          "links": [
+            "l-heroic-blunder",
+            "l-colonial-competition",
+            "l-native-resolution",
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-heroic-blunder",
+          "shape": {
+            "x": 7,
+            "y": 20,
+            "w": 21,
+            "h": 23
+          },
+          "links": [
+            "l-native-resolution",
+            "l-knight-stalemate",
+            "l-bandicoot",
+            "l-invasion",
+            "l-colonial-competition"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-native-resolution",
+          "shape": {
+            "x": 17,
+            "y": 49,
+            "w": 24,
+            "h": 20
+          },
+          "links": [
+            "l-heroic-blunder",
+            "l-knight-stalemate",
+            "l-invasion"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-invasion",
+          "shape": {
+            "x": 23,
+            "y": 12,
+            "w": 20,
+            "h": 24
+          },
+          "links": [
+            "l-bandicoot",
+            "l-heroic-blunder",
+            "l-native-resolution"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-bandicoot",
+          "shape": {
+            "x": -3,
+            "y": -2,
+            "w": 15,
+            "h": 17
+          },
+          "links": [
+            "l-invasion",
+            "l-colonial-competition",
+            "l-heroic-blunder"
+          ]
+        }
+      ]
+    }
+  ]
+}
