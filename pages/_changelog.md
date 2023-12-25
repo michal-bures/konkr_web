@@ -1,6 +1,10 @@
 
 
 ---
+v2.25.3 <small>released 2023-12-25</small>
+- bugfix: fixed issue with unlocking kongregate badges 
+
+---
 v2.25.2 <small>released 2023-12-23</small>
 - bugfix: disable surrender in the christmas level
 
