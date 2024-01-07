@@ -1,0 +1,54 @@
+{
+  "expeditions": [
+    {
+      "id": "x-experimental",
+      "metadata": {
+        "name": "Unstable vortex",
+        "isNew": true,
+        "description": "The fabric of reality is warped around the Unstable Vortex.\nWeird and unusual islands sometimes emerge.\nMost of them sink back into the depths before too long.\nExplore them while you have the chance!"
+      },
+      "config": {},
+      "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "shape": {
+            "x": 0,
+            "y": 90
+          }
+        },
+        {
+          "id": "l-xmas-1",
+          "entrypoint": true,
+          "type": "island",
+          "fixedAIDifficulty": "normal",
+          "shape": {
+            "x": 30,
+            "y": 66,
+            "w": 15,
+            "h": 20
+          },
+          "links": [
+            "l-nomad"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-nomad",
+          "entrypoint": true,
+          "description": "Build new towns!",
+          "isNew": true,
+          "shape": {
+            "x": 10,
+            "y": 50,
+            "w": 21,
+            "h": 25
+          },
+          "links": [
+            "l-xmas-1"
+          ]
+        }
+      ]
+    }
+  ]
+}

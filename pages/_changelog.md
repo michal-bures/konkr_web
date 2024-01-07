@@ -1,6 +1,17 @@
 
 
 ---
+v2.26.0 <small>released 2024-01-07</small>
+- new conquest mode: Christmas (spawns christmas tree in the middle and allows giving presents to your rivals)
+- new levels from @adamjarm & @lovalmidas added to Mapmakers Archipelago, thanks guys!
+- new special expedition: Unstable Vortex
+- mute buttons state now persists after reload and is available also on mobile
+- option to gift presents removed from normal maps
+- bugfix: if win and lose condition is triggered at the same time, lose condition now gets priority
+- bugfix: drag-scrolling on the expedition selection screen no longer registers as button click
+- improved expedition selection screen layout on mobile
+
+---
 v2.25.3 <small>released 2023-12-25</small>
 - bugfix: fixed issue with unlocking kongregate badges 
 
