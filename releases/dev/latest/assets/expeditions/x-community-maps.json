@@ -25,8 +25,10 @@
             "y": 56
           },
           "links": [
-            "l-knight-stalemate",
-            "l-colonial-competition"
+            "l-desert-prowl",
+            "l-colonial-competition",
+            "l-pondfair",
+            "l-spider"
           ]
         },
         {
@@ -34,39 +36,38 @@
           "id": "l-colonial-competition",
           "shape": {
             "x": -23,
-            "y": 14,
+            "y": 17,
             "w": 29,
             "h": 24
           },
           "links": [
-            "l-knight-stalemate",
             "l-bandicoot",
             "l-heroic-blunder",
-            "entrypoint"
+            "entrypoint",
+            "l-desert-prowl"
           ]
         },
         {
           "type": "island",
           "id": "l-knight-stalemate",
           "shape": {
-            "x": -6,
-            "y": 44,
+            "x": 17,
+            "y": -14,
             "w": 18,
             "h": 24
           },
           "links": [
             "l-heroic-blunder",
-            "l-colonial-competition",
-            "l-native-resolution",
-            "entrypoint"
+            "l-bandicoot",
+            "l-invasion"
           ]
         },
         {
           "type": "island",
           "id": "l-heroic-blunder",
           "shape": {
-            "x": 7,
-            "y": 20,
+            "x": 15,
+            "y": 18,
             "w": 21,
             "h": 23
           },
@@ -74,38 +75,41 @@
             "l-native-resolution",
             "l-knight-stalemate",
             "l-bandicoot",
-            "l-invasion",
-            "l-colonial-competition"
+            "l-colonial-competition",
+            "l-desert-prowl",
+            "l-invasion"
           ]
         },
         {
           "type": "island",
           "id": "l-native-resolution",
           "shape": {
-            "x": 17,
+            "x": 33,
             "y": 49,
             "w": 24,
             "h": 20
           },
           "links": [
             "l-heroic-blunder",
-            "l-knight-stalemate",
-            "l-invasion"
+            "l-invasion",
+            "l-surrounded",
+            "l-desert-prowl"
           ]
         },
         {
           "type": "island",
           "id": "l-invasion",
           "shape": {
-            "x": 23,
-            "y": 12,
+            "x": 38,
+            "y": 7,
             "w": 20,
             "h": 24
           },
           "links": [
-            "l-bandicoot",
-            "l-heroic-blunder",
-            "l-native-resolution"
+            "l-native-resolution",
+            "l-surrounded",
+            "l-knight-stalemate",
+            "l-heroic-blunder"
           ]
         },
         {
@@ -118,9 +122,133 @@
             "h": 17
           },
           "links": [
-            "l-invasion",
             "l-colonial-competition",
-            "l-heroic-blunder"
+            "l-heroic-blunder",
+            "l-knight-stalemate"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-desert-prowl",
+          "shape": {
+            "x": 3,
+            "y": 41,
+            "w": 21,
+            "h": 20
+          },
+          "links": [
+            "l-heroic-blunder",
+            "l-colonial-competition",
+            "l-native-resolution",
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-surrounded",
+          "shape": {
+            "x": 55,
+            "y": 35,
+            "w": 11,
+            "h": 13
+          },
+          "links": [
+            "l-native-resolution",
+            "l-invasion"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-pondfair",
+          "shape": {
+            "x": -38,
+            "y": 19,
+            "w": 10,
+            "h": 17
+          },
+          "links": [
+            "l-envelopment",
+            "l-gravesor",
+            "l-spider",
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-envelopment",
+          "shape": {
+            "x": -59,
+            "y": -9,
+            "w": 16,
+            "h": 19
+          },
+          "links": [
+            "l-pondfair",
+            "l-fortsigil",
+            "l-gravesor"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-fortsigil",
+          "shape": {
+            "x": -74,
+            "y": -2,
+            "w": 9,
+            "h": 15
+          },
+          "links": [
+            "l-gravesor",
+            "l-envelopment",
+            "l-towerfall"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-gravesor",
+          "shape": {
+            "x": -59,
+            "y": 12,
+            "w": 16,
+            "h": 16
+          },
+          "links": [
+            "l-pondfair",
+            "l-towerfall",
+            "l-fortsigil",
+            "l-envelopment",
+            "l-spider"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-spider",
+          "shape": {
+            "x": -59,
+            "y": 31,
+            "w": 16,
+            "h": 16
+          },
+          "links": [
+            "l-towerfall",
+            "l-pondfair",
+            "entrypoint",
+            "l-gravesor"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-towerfall",
+          "shape": {
+            "x": -75,
+            "y": 18,
+            "w": 9,
+            "h": 15
+          },
+          "links": [
+            "l-spider",
+            "l-gravesor",
+            "l-fortsigil"
           ]
         }
       ]
