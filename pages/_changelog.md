@@ -1,6 +1,13 @@
 
 
 ---
+v2.27.0 <small>released 2024-01-14</small>
+- smooth transitions between expeditions menu and world map
+- adaptive grid layout on expeditions menu 
+- new community level by @tmczar
+- new Unstable Vortex level (reduced unit upkeep)
+
+---
 v2.26.0 <small>released 2024-01-07</small>
 - new conquest mode: Christmas (spawns christmas tree in the middle and allows giving presents to your rivals)
 - new levels from @adamjarm & @lovalmidas added to Mapmakers Archipelago, thanks guys!
