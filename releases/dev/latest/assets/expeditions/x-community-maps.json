@@ -28,7 +28,8 @@
             "l-desert-prowl",
             "l-colonial-competition",
             "l-pondfair",
-            "l-spider"
+            "l-spider",
+            "l-life-and-death"
           ]
         },
         {
@@ -249,6 +250,19 @@
             "l-spider",
             "l-gravesor",
             "l-fortsigil"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-life-and-death",
+          "shape": {
+            "x": -60,
+            "y": 54,
+            "w": 16,
+            "h": 15
+          },
+          "links": [
+            "entrypoint"
           ]
         }
       ]
