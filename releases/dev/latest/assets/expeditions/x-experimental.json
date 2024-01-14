@@ -4,7 +4,6 @@
       "id": "x-experimental",
       "metadata": {
         "name": "Unstable Vortex",
-        "isNew": true,
         "description": "The fabric of reality is warped around the Unstable Vortex.\nWeird and unusual islands sometimes emerge.\nMost of them sink back into the depths before too long.\nExplore them while you have the chance!"
       },
       "config": {},
@@ -29,15 +28,14 @@
             "h": 20
           },
           "links": [
-            "l-nomad"
+            "l-nomad",
+            "l-knightfight"
           ]
         },
         {
           "type": "island",
           "id": "l-nomad",
           "entrypoint": true,
-          "description": "Build new towns!",
-          "isNew": true,
           "shape": {
             "x": 10,
             "y": 50,
@@ -45,6 +43,23 @@
             "h": 25
           },
           "links": [
+            "l-xmas-1",
+            "l-knightfight"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-knightfight",
+          "entrypoint": true,
+          "isNew": true,
+          "shape": {
+            "x": 34,
+            "y": 38,
+            "w": 24,
+            "h": 23
+          },
+          "links": [
+            "l-nomad",
             "l-xmas-1"
           ]
         }
