@@ -12,7 +12,7 @@
           "id": "f1",
           "type": "flavor-text",
           "shape": {
-            "x": -32,
+            "x": -28,
             "y": 74
           }
         },
@@ -29,7 +29,8 @@
             "l-colonial-competition",
             "l-pondfair",
             "l-spider",
-            "l-life-and-death"
+            "l-life-and-death",
+            "l-knight-cove"
           ]
         },
         {
@@ -163,15 +164,15 @@
           "id": "l-pondfair",
           "shape": {
             "x": -38,
-            "y": 19,
+            "y": 24,
             "w": 10,
             "h": 17
           },
           "links": [
-            "l-envelopment",
             "l-gravesor",
             "l-spider",
-            "entrypoint"
+            "entrypoint",
+            "l-fortsigil"
           ]
         },
         {
@@ -184,7 +185,6 @@
             "h": 19
           },
           "links": [
-            "l-pondfair",
             "l-fortsigil",
             "l-gravesor"
           ]
@@ -193,15 +193,15 @@
           "type": "island",
           "id": "l-fortsigil",
           "shape": {
-            "x": -74,
-            "y": -2,
+            "x": -37,
+            "y": 3,
             "w": 9,
             "h": 15
           },
           "links": [
-            "l-gravesor",
             "l-envelopment",
-            "l-towerfall"
+            "l-pondfair",
+            "l-gravesor"
           ]
         },
         {
@@ -215,10 +215,9 @@
           },
           "links": [
             "l-pondfair",
-            "l-towerfall",
-            "l-fortsigil",
             "l-envelopment",
-            "l-spider"
+            "l-spider",
+            "l-fortsigil"
           ]
         },
         {
@@ -231,25 +230,9 @@
             "h": 16
           },
           "links": [
-            "l-towerfall",
             "l-pondfair",
             "entrypoint",
             "l-gravesor"
-          ]
-        },
-        {
-          "type": "island",
-          "id": "l-towerfall",
-          "shape": {
-            "x": -75,
-            "y": 18,
-            "w": 9,
-            "h": 15
-          },
-          "links": [
-            "l-spider",
-            "l-gravesor",
-            "l-fortsigil"
           ]
         },
         {
@@ -260,6 +243,19 @@
             "y": 54,
             "w": 16,
             "h": 15
+          },
+          "links": [
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-knight-cove",
+          "shape": {
+            "x": -56,
+            "y": 72,
+            "w": 23,
+            "h": 20
           },
           "links": [
             "entrypoint"

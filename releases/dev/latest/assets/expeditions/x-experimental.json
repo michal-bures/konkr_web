@@ -44,14 +44,14 @@
           },
           "links": [
             "l-xmas-1",
-            "l-knightfight"
+            "l-knightfight",
+            "l-bandit-fort"
           ]
         },
         {
           "type": "island",
           "id": "l-knightfight",
           "entrypoint": true,
-          "isNew": true,
           "shape": {
             "x": 34,
             "y": 38,
@@ -60,7 +60,24 @@
           },
           "links": [
             "l-nomad",
-            "l-xmas-1"
+            "l-xmas-1",
+            "l-bandit-fort"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-bandit-fort",
+          "entrypoint": true,
+          "isNew": true,
+          "shape": {
+            "x": 14,
+            "y": 26,
+            "w": 22,
+            "h": 18
+          },
+          "links": [
+            "l-nomad",
+            "l-knightfight"
           ]
         }
       ]
