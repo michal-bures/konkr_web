@@ -6,10 +6,6 @@
             overflow: hidden
         }
 
-        a {
-            color: #3b5998;
-        }
-
         h1 {
             text-align: center;
             position: fixed;
@@ -70,18 +66,6 @@
             font-size: 1em;
             font-weight: bold;
             font-style: italic;
-        }
-
-        /* news box */
-        #news-box {
-            position: absolute;
-            padding: 14px;
-            background-color: #aedcf2f2;
-            border-radius: 14px;
-            width: 400px;
-            left: calc(50% - 200px);
-            bottom: 40px;
-            transition: all 300ms ease-in-out;
         }
 
         /* hide news box if there's not enough screen estate for it */
@@ -168,7 +152,82 @@
             100% {
                 box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
             }
-        }</style><script defer="defer" src="vendors.12fc2b7133524e69fada.bundle.js"></script><script defer="defer" src="main.5f00dab6cad295107f60.bundle.js"></script></head><body class="center-screen"><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden"></div><div id="news-box">{{ content }}</div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.27.1-build-7521095944'
+        }
+
+        /* NEWS BOX*/
+
+        #news-box {
+            position: absolute;
+            width: 400px;
+            left: calc(50% - 200px);
+            bottom: 40px;
+            transition: all 300ms ease-in-out;
+
+            font-size: 14px;
+            text-align: left;
+            color: #f2f2f2;
+        }
+
+        #news-box article {
+            padding: 14px 14px 6px;
+            background-color: rgb(30, 75, 96);
+            border-radius: 14px 14px 0 0;
+            line-height: 1.3;
+        }
+
+        #news-box footer {
+            padding: 14px;
+        }
+
+        #news-box h3 {
+            margin-bottom: 8px;
+            margin-top: 0px;
+            font-family: Helvetica, Arial, sans-serif;;
+            font-weight: bold;
+        }
+
+        #news-box a,
+        #news-box a:visited {
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+
+        #news-box p.posted-at {
+            margin: 0;
+            margin-top: 4px;
+            color: #cccccc;
+            font-size: small;
+            float: right;
+        }
+
+        #news-box p {
+            margin-bottom: 8px;
+            color: #f2f2f2;
+        }
+
+        #news-box footer {
+            font-size: small
+        }
+
+        #news-box-button {
+            display: table;
+            margin-left: auto;
+            padding: 6px 10px;
+            border-radius: 6px;
+            background-color: #193E50;
+            color: #f2f2f2;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: small;
+        }
+
+        #footer-placeholder {
+            position: fixed;
+            height: 83px;
+            background-color: #193E50;
+            width: 100%;
+            bottom: 0;
+        }</style><script defer="defer" src="vendors.4687000c04968b1d20fb.bundle.js"></script><script defer="defer" src="main.42d0bb721089d82fa9fe.bundle.js"></script></head><body class="center-screen"><div id="footer-placeholder"></div><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden"></div><div id="news-box"><article id="news-box-body"><p class="posted-at">posted Jan 7, 2024</p><h3><a href="/update/2024/01/07/vortex">🌀 Enter the vortex!</a></h3><p>Happy new Year 🎉! There’s a number of little goodies in todays update!</p><a id="news-box-button" href="/update/2024/01/07/vortex" target="_blank">Read full blog post »</a></article><footer><a href="/news" target="_blank">Blog</a> | <a href="https://discord.com/invite/C9HucB9arH" target="_blank">Discuss on Discord</a> | <a href="/changelog" target="_blank">Changelog</a></footer></div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.27.1-build-7600885664'
     const SW_ENABLE = true
 
     // store current time for timing page load
