@@ -1,6 +1,15 @@
 
 
 ---
+v2.28.0 <small>released 2024-01-21</small>
+- new title screen
+- new unstable vortex level: bandit castles!
+- one level added and one remove (Towerfall) from Mapmakers Archipelago 
+- bugfix: fixed a frequent source of crashes when saving a replay on custom maps
+- bugfix: Christmas tree can no longer split conquest map in half
+- bugfix: fix ocean not changing color initially after switching from custom to default theme
+
+---
 v2.27.0 <small>released 2024-01-14</small>
 - smooth transitions between expeditions menu and world map
 - adaptive grid layout on expeditions menu 
