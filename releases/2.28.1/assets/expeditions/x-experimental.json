@@ -1,0 +1,86 @@
+{
+  "expeditions": [
+    {
+      "id": "x-experimental",
+      "metadata": {
+        "name": "Unstable Vortex",
+        "description": "The fabric of reality is warped around the Unstable Vortex.\nWeird and unusual islands sometimes emerge.\nMost of them sink back into the depths before too long.\nExplore them while you have the chance!"
+      },
+      "config": {},
+      "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "shape": {
+            "x": 0,
+            "y": 90
+          }
+        },
+        {
+          "id": "l-xmas-1",
+          "entrypoint": true,
+          "type": "island",
+          "fixedAIDifficulty": "normal",
+          "shape": {
+            "x": 30,
+            "y": 66,
+            "w": 15,
+            "h": 20
+          },
+          "links": [
+            "l-nomad",
+            "l-knightfight"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-nomad",
+          "entrypoint": true,
+          "shape": {
+            "x": 10,
+            "y": 50,
+            "w": 21,
+            "h": 25
+          },
+          "links": [
+            "l-xmas-1",
+            "l-knightfight",
+            "l-bandit-fort"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-knightfight",
+          "entrypoint": true,
+          "shape": {
+            "x": 34,
+            "y": 38,
+            "w": 24,
+            "h": 23
+          },
+          "links": [
+            "l-nomad",
+            "l-xmas-1",
+            "l-bandit-fort"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-bandit-fort",
+          "entrypoint": true,
+          "isNew": true,
+          "shape": {
+            "x": 14,
+            "y": 26,
+            "w": 22,
+            "h": 18
+          },
+          "links": [
+            "l-nomad",
+            "l-knightfight"
+          ]
+        }
+      ]
+    }
+  ]
+}
