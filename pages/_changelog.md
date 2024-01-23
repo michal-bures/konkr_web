@@ -1,6 +1,10 @@
 
 
 ---
+v2.28.2 <small>released 2024-01-23</small>
+- bugfix: fix bandits able to cross from camp into a walled off player territory
+
+---
 v2.28.0 <small>released 2024-01-21</small>
 - new title screen
 - new unstable vortex level: bandit castles!
