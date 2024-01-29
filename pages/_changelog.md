@@ -1,6 +1,10 @@
 
 
 ---
+v2.28.3 <small>released 2024-01-29</small>
+- new experimental map - conquer and settle new towns!
+
+---
 v2.28.2 <small>released 2024-01-23</small>
 - bugfix: fix bandits able to cross from camp into a walled off player territory
 
