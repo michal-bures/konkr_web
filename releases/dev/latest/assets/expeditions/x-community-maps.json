@@ -12,8 +12,8 @@
           "id": "f1",
           "type": "flavor-text",
           "shape": {
-            "x": -28,
-            "y": 74
+            "x": -17,
+            "y": 68
           }
         },
         {
@@ -27,18 +27,21 @@
           "links": [
             "l-desert-prowl",
             "l-colonial-competition",
-            "l-pondfair",
             "l-spider",
             "l-life-and-death",
-            "l-knight-cove"
+            "l-knight-cove",
+            "l-lazania",
+            "l-oasis",
+            "l-locked-in",
+            "l-ally"
           ]
         },
         {
           "type": "island",
           "id": "l-colonial-competition",
           "shape": {
-            "x": -23,
-            "y": 17,
+            "x": -7,
+            "y": 22,
             "w": 29,
             "h": 24
           },
@@ -53,8 +56,8 @@
           "type": "island",
           "id": "l-knight-stalemate",
           "shape": {
-            "x": 17,
-            "y": -14,
+            "x": 23,
+            "y": -3,
             "w": 18,
             "h": 24
           },
@@ -68,8 +71,8 @@
           "type": "island",
           "id": "l-heroic-blunder",
           "shape": {
-            "x": 15,
-            "y": 18,
+            "x": 24,
+            "y": 29,
             "w": 21,
             "h": 23
           },
@@ -86,8 +89,8 @@
           "type": "island",
           "id": "l-native-resolution",
           "shape": {
-            "x": 33,
-            "y": 49,
+            "x": 39,
+            "y": 54,
             "w": 24,
             "h": 20
           },
@@ -102,8 +105,8 @@
           "type": "island",
           "id": "l-invasion",
           "shape": {
-            "x": 38,
-            "y": 7,
+            "x": 44,
+            "y": 16,
             "w": 20,
             "h": 24
           },
@@ -118,8 +121,8 @@
           "type": "island",
           "id": "l-bandicoot",
           "shape": {
-            "x": -3,
-            "y": -2,
+            "x": 6,
+            "y": 3,
             "w": 15,
             "h": 17
           },
@@ -134,7 +137,7 @@
           "id": "l-desert-prowl",
           "shape": {
             "x": 3,
-            "y": 41,
+            "y": 44,
             "w": 21,
             "h": 20
           },
@@ -149,8 +152,8 @@
           "type": "island",
           "id": "l-surrounded",
           "shape": {
-            "x": 55,
-            "y": 35,
+            "x": 66,
+            "y": 39,
             "w": 11,
             "h": 13
           },
@@ -163,16 +166,15 @@
           "type": "island",
           "id": "l-pondfair",
           "shape": {
-            "x": -38,
-            "y": 24,
+            "x": -26,
+            "y": 6,
             "w": 10,
             "h": 17
           },
           "links": [
-            "l-gravesor",
-            "l-spider",
-            "entrypoint",
-            "l-fortsigil"
+            "l-fortsigil",
+            "l-lazania",
+            "l-gray-horizons"
           ]
         },
         {
@@ -186,22 +188,23 @@
           },
           "links": [
             "l-fortsigil",
-            "l-gravesor"
+            "l-gravesor",
+            "l-gray-horizons"
           ]
         },
         {
           "type": "island",
           "id": "l-fortsigil",
           "shape": {
-            "x": -37,
-            "y": 3,
+            "x": -38,
+            "y": -13,
             "w": 9,
             "h": 15
           },
           "links": [
             "l-envelopment",
             "l-pondfair",
-            "l-gravesor"
+            "l-lazania"
           ]
         },
         {
@@ -214,10 +217,11 @@
             "h": 16
           },
           "links": [
-            "l-pondfair",
             "l-envelopment",
             "l-spider",
-            "l-fortsigil"
+            "l-big-nations",
+            "l-gray-horizons",
+            "l-lazania"
           ]
         },
         {
@@ -230,9 +234,10 @@
             "h": 16
           },
           "links": [
-            "l-pondfair",
             "entrypoint",
-            "l-gravesor"
+            "l-gravesor",
+            "l-grinch",
+            "l-lazania"
           ]
         },
         {
@@ -259,6 +264,105 @@
           },
           "links": [
             "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-grinch",
+          "shape": {
+            "x": -82,
+            "y": 30,
+            "w": 22,
+            "h": 18
+          },
+          "links": [
+            "l-big-nations",
+            "l-spider"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-big-nations",
+          "shape": {
+            "x": -71,
+            "y": 11,
+            "w": 10,
+            "h": 17
+          },
+          "links": [
+            "l-grinch",
+            "l-gravesor"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-ally",
+          "shape": {
+            "x": -27,
+            "y": 29,
+            "w": 16,
+            "h": 15
+          },
+          "links": [
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-lazania",
+          "shape": {
+            "x": -39,
+            "y": 28,
+            "w": 10,
+            "h": 17
+          },
+          "links": [
+            "entrypoint",
+            "l-spider",
+            "l-fortsigil",
+            "l-pondfair",
+            "l-gravesor"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-oasis",
+          "shape": {
+            "x": -38,
+            "y": 89,
+            "w": 17,
+            "h": 18
+          },
+          "links": [
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-locked-in",
+          "shape": {
+            "x": -22,
+            "y": 77,
+            "w": 18,
+            "h": 19
+          },
+          "links": [
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-gray-horizons",
+          "shape": {
+            "x": -39,
+            "y": 7,
+            "w": 10,
+            "h": 17
+          },
+          "links": [
+            "l-gravesor",
+            "l-pondfair",
+            "l-envelopment"
           ]
         }
       ]
