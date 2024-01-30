@@ -1,6 +1,10 @@
 
 
 ---
+v2.28.6 <small>released 2024-01-30</small>
+- bugfix: removed unreachable rival in level Lazania
+
+---
 v2.28.4 <small>released 2024-01-30</small>
 - new experimental level - capture and settle new towns!
 - new community levels added to Mapmakers Archipelago, credit to @adamjarm, @CuteNepgear, @gidey and @MykhailoBarabash  
