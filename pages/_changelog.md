@@ -1,8 +1,9 @@
 
 
 ---
-v2.28.3 <small>released 2024-01-29</small>
-- new experimental map - conquer and settle new towns!
+v2.28.4 <small>released 2024-01-30</small>
+- new experimental level - capture and settle new towns!
+- new community levels added to Mapmakers Archipelago, credit to @adamjarm, @CuteNepgear, @gidey and @MykhailoBarabash  
 
 ---
 v2.28.2 <small>released 2024-01-23</small>
