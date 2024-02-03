@@ -1,6 +1,17 @@
 
 
 ---
+v2.28.7 <small>released 2024-02-03</small>
+- added difficulty label to level UI
+- bugfix: resizing window or opening sidebar no longer resets the state of difficulty slider on world map screen
+- bugfix: fixed a source of crashes after loading replay (including when clicking "watch latest replay")
+- bugfix: fixed "how to play button" not appearing after layout change
+- bugfix: fixed town graphic not updating after rival is bankrupted during bandit phase 
+- map editor fix: opening map editor from a menu screen no longer leads to crash when trying to playtest the level
+- map editor fix: "finalize" button removed, map sanitization is now done automatically on clicking play or export
+- map editor fix: all errors when loading modified map JSON are handled and shown in the UI, there should be no more silent freezes
+
+---
 v2.28.6 <small>released 2024-01-30</small>
 - bugfix: removed unreachable rival in level Lazania
 
