@@ -2,7 +2,7 @@
 
 ---
 v2.28.7 <small>released 2024-02-03</small>
-- added difficulty label to level UI
+- added difficulty label to level menu UI on mobile
 - bugfix: resizing window or opening sidebar no longer resets the state of difficulty slider on world map screen
 - bugfix: fixed a source of crashes after loading replay (including when clicking "watch latest replay")
 - bugfix: fixed "how to play button" not appearing after layout change
