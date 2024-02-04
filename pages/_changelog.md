@@ -1,6 +1,15 @@
 
 
 ---
+v2.29.0 <small>released 2024-02-04</small>
+- Occupation mode added to conquest (towns get captured instead of razed)
+- new Vortex level: defeated units always retreat  
+- new community level: Small World by @adamjarn
+- crisper art for abandoned towns + indication when town is being rebuilt
+- AI no longer builds castles on abandoned settlements and bandit camps don't spawn on them either 
+- bugfix: abandoned settlements rendering glitches cleanup
+ 
+---
 v2.28.7 <small>released 2024-02-03</small>
 - added difficulty label to level menu UI on mobile
 - bugfix: resizing window or opening sidebar no longer resets the state of difficulty slider on world map screen
