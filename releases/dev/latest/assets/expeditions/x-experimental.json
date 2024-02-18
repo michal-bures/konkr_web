@@ -78,13 +78,13 @@
           "links": [
             "l-nomad",
             "l-knightfight",
-            "l-occupation"
+            "l-occupation",
+            "l-sir-robin"
           ]
         },
         {
           "type": "island",
           "id": "l-occupation",
-          "isNew": true,
           "entrypoint": true,
           "shape": {
             "x": -11,
@@ -94,7 +94,23 @@
           },
           "links": [
             "l-bandit-fort",
-            "l-nomad"
+            "l-nomad",
+            "l-sir-robin"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-sir-robin",
+          "entrypoint": true,
+          "shape": {
+            "x": -6,
+            "y": 17,
+            "w": 18,
+            "h": 17
+          },
+          "links": [
+            "l-occupation",
+            "l-bandit-fort"
           ]
         }
       ]
