@@ -1,6 +1,11 @@
 
 
 ---
+v2.29.1 <small>released 2024-02-18</small>
+- added icons for a number of the recently added level modifiers, so that they can be recognized on the world map
+- added new community levels to the Mapmakers Archipelago by @adamjarn, @PositronicBranez and @sclark39 
+
+---
 v2.29.0 <small>released 2024-02-04</small>
 - Occupation mode added to conquest (towns get captured instead of razed)
 - new Vortex level: defeated units always retreat  
