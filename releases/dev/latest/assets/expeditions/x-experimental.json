@@ -62,7 +62,8 @@
           "links": [
             "l-nomad",
             "l-xmas-1",
-            "l-bandit-fort"
+            "l-bandit-fort",
+            "l-swamped"
           ]
         },
         {
@@ -79,7 +80,8 @@
             "l-nomad",
             "l-knightfight",
             "l-occupation",
-            "l-sir-robin"
+            "l-sir-robin",
+            "l-swamped"
           ]
         },
         {
@@ -111,6 +113,22 @@
           "links": [
             "l-occupation",
             "l-bandit-fort"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-swamped",
+          "isNew": true,
+          "entrypoint": true,
+          "shape": {
+            "x": 29,
+            "y": 6,
+            "w": 24,
+            "h": 22
+          },
+          "links": [
+            "l-bandit-fort",
+            "l-knightfight"
           ]
         }
       ]

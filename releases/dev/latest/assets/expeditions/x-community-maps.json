@@ -35,7 +35,8 @@
             "l-locked-in",
             "l-ally",
             "l-knights-before-christmas",
-            "l-first-down"
+            "l-first-down",
+            "l-vassalage"
           ]
         },
         {
@@ -339,7 +340,9 @@
             "h": 18
           },
           "links": [
-            "entrypoint"
+            "entrypoint",
+            "l-vassalage",
+            "l-ruined-kingdom"
           ]
         },
         {
@@ -437,6 +440,47 @@
           },
           "links": [
             "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-vassalage",
+          "shape": {
+            "x": -52,
+            "y": 51,
+            "w": 11,
+            "h": 15
+          },
+          "links": [
+            "entrypoint",
+            "l-oasis",
+            "l-backstab"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-backstab",
+          "shape": {
+            "x": -71,
+            "y": 50,
+            "w": 17,
+            "h": 17
+          },
+          "links": [
+            "l-vassalage"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-ruined-kingdom",
+          "shape": {
+            "x": -58,
+            "y": 109,
+            "w": 22,
+            "h": 23
+          },
+          "links": [
+            "l-oasis"
           ]
         }
       ]
