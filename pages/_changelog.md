@@ -1,6 +1,16 @@
 
 
 ---
+v2.29.4 <small>released 2024-02-25</small>
+- new vortex map featuring experimental Swamp terrain
+- new community levels by @SuperRoroB and @CuteNepgear
+- AI chatter messages grammar fixes and tweaks (courtesy of a fan pull request https://github.com/michal-bures/konkr_data/pull/1 ❤️)  
+- present spawn location is now deterministic (fixes presents breaking replays)
+- "Knights Before Christmas" level made slightly easier
+- map editor: hitting "play" always resets turn counter and saves current state for restart
+- bugfix: fixed town ruins sometimes rendering in front of units
+
+---
 v2.29.1 <small>released 2024-02-18</small>
 - added icons for a number of the recently added level modifiers, so that they can be recognized on the world map
 - added new community levels to the Mapmakers Archipelago by @adamjarn, @PositronicBranez and @sclark39 
