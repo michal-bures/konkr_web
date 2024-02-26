@@ -1,6 +1,10 @@
 
 
 ---
+v2.29.9 <small>released 2024-02-26</small>
+- bugfix: ahem, fixed the previous fix that made bandit no longer loot coins *anywhere*... 
+
+---
 v2.29.8 <small>released 2024-02-26</small>
 - bandits no longer loot coins from swamp
 - bugfix: fixed various inaccuracies in conquerable hexes
