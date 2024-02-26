@@ -1,6 +1,10 @@
 
 
 ---
+v2.29.7 <small>released 2024-02-26</small>
+- hotfix: fixed bandit camps and haunted towns spawning in forest on Conquest maps
+
+---
 v2.29.4 <small>released 2024-02-25</small>
 - new vortex map featuring experimental Swamp terrain
 - new community levels by @SuperRoroB and @CuteNepgear
