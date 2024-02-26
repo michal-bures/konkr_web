@@ -1,6 +1,11 @@
 
 
 ---
+v2.29.8 <small>released 2024-02-26</small>
+- bandits no longer loot coins from swamp
+- bugfix: fixed various inaccuracies in conquerable hexes
+
+---
 v2.29.7 <small>released 2024-02-26</small>
 - hotfix: fixed bandit camps and haunted towns spawning in forest on Conquest maps
 
