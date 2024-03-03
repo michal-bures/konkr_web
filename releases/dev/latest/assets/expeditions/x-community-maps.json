@@ -460,12 +460,13 @@
           "id": "l-backstab",
           "shape": {
             "x": -71,
-            "y": 50,
+            "y": 51,
             "w": 17,
             "h": 17
           },
           "links": [
-            "l-vassalage"
+            "l-vassalage",
+            "l-death-play"
           ]
         },
         {
@@ -479,6 +480,19 @@
           },
           "links": [
             "l-oasis"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-death-play",
+          "shape": {
+            "x": -85,
+            "y": 48,
+            "w": 16,
+            "h": 19
+          },
+          "links": [
+            "l-backstab"
           ]
         }
       ]

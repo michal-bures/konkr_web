@@ -81,7 +81,8 @@
             "l-knightfight",
             "l-occupation",
             "l-sir-robin",
-            "l-swamped"
+            "l-swamped",
+            "l-gold-rush"
           ]
         },
         {
@@ -112,13 +113,13 @@
           },
           "links": [
             "l-occupation",
-            "l-bandit-fort"
+            "l-bandit-fort",
+            "l-gold-rush"
           ]
         },
         {
           "type": "island",
           "id": "l-swamped",
-          "isNew": true,
           "entrypoint": true,
           "shape": {
             "x": 29,
@@ -128,7 +129,25 @@
           },
           "links": [
             "l-bandit-fort",
-            "l-knightfight"
+            "l-knightfight",
+            "l-gold-rush"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-gold-rush",
+          "isNew": true,
+          "entrypoint": true,
+          "shape": {
+            "x": 14,
+            "y": -9,
+            "w": 22,
+            "h": 24
+          },
+          "links": [
+            "l-swamped",
+            "l-bandit-fort",
+            "l-sir-robin"
           ]
         }
       ]
