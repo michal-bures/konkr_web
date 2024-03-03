@@ -1,6 +1,11 @@
 
 
 ---
+v2.29.11 <small>released 2024-03-03</small>
+- tuned how AI values swamp tiles
+- bugfix: fix crash on going to next level 
+
+---
 v2.29.10 <small>released 2024-03-03</small>
 - gold mines added to the game in a new Unstable Vortex level "Gold Rush"
 - swamp rules change: Heroes can now enter swamp tiles
