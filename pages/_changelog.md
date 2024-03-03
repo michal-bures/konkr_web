@@ -1,6 +1,16 @@
 
 
 ---
+v2.29.10 <small>released 2024-03-03</small>
+- gold mines added to the game in a new Unstable Vortex level "Gold Rush"
+- swamp rules change: Heroes can now enter swamp tiles
+- swamp graphics upgrade for better visibility
+- added tooltips for new tiles (abandoned settlements, gold mines, swamps)
+- new smooth transition between title and expedition screen
+- new map by @SuperRoroB added to Mapmakers Archipelago
+- bugfix: fixed inaccurate numbers in region ledger when there are bandits on swamp tiles
+
+---
 v2.29.9 <small>released 2024-02-26</small>
 - bugfix: ahem, fixed the previous fix that made bandit no longer loot coins *anywhere*... 
 
