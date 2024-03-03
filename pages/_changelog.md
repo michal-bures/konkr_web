@@ -1,6 +1,11 @@
 
 
 ---
+v2.29.12 <small>released 2024-03-03</small>
+- bugfix: fix display bug when summoning dread knight
+- bugfix: fix crash when AI tries to place dread knight on swamp terrain
+
+---
 v2.29.11 <small>released 2024-03-03</small>
 - tuned how AI values swamp tiles
 - bugfix: fix crash on going to next level 
