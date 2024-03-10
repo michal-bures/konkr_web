@@ -1,0 +1,155 @@
+{
+  "expeditions": [
+    {
+      "id": "x-experimental",
+      "metadata": {
+        "name": "Unstable Vortex",
+        "description": "The fabric of reality is warped around the Unstable Vortex.\nWeird and unusual islands sometimes emerge.\nMost of them sink back into the depths before too long.\nExplore them while you have the chance!"
+      },
+      "config": {},
+      "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "shape": {
+            "x": 0,
+            "y": 90
+          }
+        },
+        {
+          "id": "l-xmas-1",
+          "entrypoint": true,
+          "type": "island",
+          "fixedAIDifficulty": "normal",
+          "shape": {
+            "x": 30,
+            "y": 66,
+            "w": 15,
+            "h": 20
+          },
+          "links": [
+            "l-nomad",
+            "l-knightfight"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-nomad",
+          "entrypoint": true,
+          "shape": {
+            "x": 10,
+            "y": 50,
+            "w": 21,
+            "h": 25
+          },
+          "links": [
+            "l-xmas-1",
+            "l-knightfight",
+            "l-bandit-fort",
+            "l-occupation"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-knightfight",
+          "entrypoint": true,
+          "shape": {
+            "x": 34,
+            "y": 38,
+            "w": 24,
+            "h": 23
+          },
+          "links": [
+            "l-nomad",
+            "l-xmas-1",
+            "l-bandit-fort",
+            "l-swamped"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-bandit-fort",
+          "entrypoint": true,
+          "shape": {
+            "x": 14,
+            "y": 26,
+            "w": 22,
+            "h": 18
+          },
+          "links": [
+            "l-nomad",
+            "l-knightfight",
+            "l-occupation",
+            "l-sir-robin",
+            "l-swamped",
+            "l-gold-rush"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-occupation",
+          "entrypoint": true,
+          "shape": {
+            "x": -11,
+            "y": 43,
+            "w": 21,
+            "h": 16
+          },
+          "links": [
+            "l-bandit-fort",
+            "l-nomad",
+            "l-sir-robin"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-sir-robin",
+          "entrypoint": true,
+          "shape": {
+            "x": -6,
+            "y": 17,
+            "w": 18,
+            "h": 17
+          },
+          "links": [
+            "l-occupation",
+            "l-bandit-fort",
+            "l-gold-rush"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-swamped",
+          "entrypoint": true,
+          "shape": {
+            "x": 29,
+            "y": 6,
+            "w": 24,
+            "h": 22
+          },
+          "links": [
+            "l-bandit-fort",
+            "l-knightfight",
+            "l-gold-rush"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-gold-rush",
+          "entrypoint": true,
+          "shape": {
+            "x": 14,
+            "y": -9,
+            "w": 22,
+            "h": 24
+          },
+          "links": [
+            "l-swamped",
+            "l-bandit-fort",
+            "l-sir-robin"
+          ]
+        }
+      ]
+    }
+  ]
+}

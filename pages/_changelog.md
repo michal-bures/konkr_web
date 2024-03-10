@@ -1,6 +1,13 @@
 
 
 ---
+v2.29.13 <small>released 2024-03-10</small>
+- gold mines and swamps now appear in conquest mode
+- new level added to Islands of Pain
+- bugfix: fix rivals not valuing neutral gold mines
+- bugfix: don't allow landing on swamps or gold mines in King's landing mode
+
+---
 v2.29.12 <small>released 2024-03-03</small>
 - bugfix: fix display bug when summoning dread knight
 - bugfix: fix crash when AI tries to place dread knight on swamp terrain
