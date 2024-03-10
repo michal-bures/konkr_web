@@ -55,7 +55,8 @@
           "links": [
             "l-new-world",
             "l-riposte",
-            "l-parched-empire"
+            "l-parched-empire",
+            "l-greed"
           ]
         },
         {
@@ -349,8 +350,8 @@
           "type": "island",
           "id": "l-riposte",
           "shape": {
-            "x": 22,
-            "y": -103,
+            "x": 23,
+            "y": -100,
             "w": 22,
             "h": 24
           },
@@ -475,7 +476,8 @@
           "links": [
             "l-thrakia",
             "l-riposte",
-            "l-kippi"
+            "l-kippi",
+            "l-greed"
           ]
         },
         {
@@ -604,6 +606,21 @@
           "links": [
             "l-uprising2",
             "l-overcrest"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-greed",
+          "isNew": true,
+          "shape": {
+            "x": 41,
+            "y": -80,
+            "w": 23,
+            "h": 20
+          },
+          "links": [
+            "l-mortis",
+            "l-sedition"
           ]
         }
       ]
