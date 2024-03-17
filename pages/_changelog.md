@@ -1,6 +1,15 @@
 
 
 ---
+v2.29.14 <small>released 2024-03-17</small>
+- 6 new community maps in Mapmakers Archipelago, courtesy of @33333, @alexcornoffice, @Servo Omnissiah, @sclark39, @SuperRoroB, @tmczar
+- bugfix: prevent Christmas tree spawning on a tile with mine in conquest
+- bugfix: fixed a couple typos in tutorial prompts
+- bugfix: level feature icons no longer occasionally appearing misaligned in the expeditions levels list
+- bugfix: fix region income tooltip text occasionally overflowing when zooming out
+- bugfix: indication that town is about to be rebuild is present again (in occupation mode)
+
+---
 v2.29.13 <small>released 2024-03-10</small>
 - gold mines and swamps now appear in conquest mode
 - new level added to Islands of Pain
