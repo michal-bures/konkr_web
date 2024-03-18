@@ -205,6 +205,19 @@
 
 }
 
+.paging-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.paging-button {
+    min-width: 120px;
+    max-width: 180px;
+    font-size: 18px;
+    display: inline-block;
+}
+
 /**
  * Site footer
  */
