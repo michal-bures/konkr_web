@@ -1,8 +1,15 @@
 
 
 ---
+v2.29.15 <small>released 2024-03-18</small>
+- bugfix: fix side buttons alignment on mobile
+- bugfix: fix some islands in the Mapmakers Archipelago not appearing in the level list side panel
+- more grammar fixes
+- Insomnia level updated
+
+---
 v2.29.14 <small>released 2024-03-17</small>
-- 6 new community maps in Mapmakers Archipelago, courtesy of @33333, @alexcornoffice, @Servo Omnissiah, @sclark39, @SuperRoroB, @tmczar
+- 6 new community maps in Mapmakers Archipelago, courtesy of @33333, @alexvornoffice, @Servo Omnissiah, @sclark39, @SuperRoroB, @tmczar
 - bugfix: prevent Christmas tree spawning on a tile with mine in conquest
 - bugfix: fixed a couple typos in tutorial prompts
 - bugfix: level feature icons no longer occasionally appearing misaligned in the expeditions levels list
