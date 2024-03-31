@@ -1,6 +1,12 @@
 
 
 ---
+v2.29.17 <small>released 2024-03-31</small>
+- 12 new community maps added courtesy of @adamjarn, @Arran, @MemeWizard, @SuperRoroB, @33333, @ravageur
+- bugfix: fix rare cases of incorrect conquerable hexes highlighting on swamp tiles
+- added alert when players gold mine is occupied
+
+---
 v2.29.15 <small>released 2024-03-18</small>
 - bugfix: fix side buttons alignment on mobile
 - bugfix: fix some islands in the Mapmakers Archipelago not appearing in the level list side panel
