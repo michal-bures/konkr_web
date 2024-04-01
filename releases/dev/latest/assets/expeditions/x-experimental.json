@@ -29,7 +29,8 @@
           },
           "links": [
             "l-nomad",
-            "l-knightfight"
+            "l-knightfight",
+            "l-easter-egg"
           ]
         },
         {
@@ -63,7 +64,8 @@
             "l-nomad",
             "l-xmas-1",
             "l-bandit-fort",
-            "l-swamped"
+            "l-swamped",
+            "l-easter-egg"
           ]
         },
         {
@@ -147,6 +149,22 @@
             "l-swamped",
             "l-bandit-fort",
             "l-sir-robin"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-easter-egg",
+          "shape": {
+            "x": 50,
+            "y": 64,
+            "w": 10,
+            "h": 14
+          },
+          "entrypoint": true,
+          "isNew": true,
+          "links": [
+            "l-xmas-1",
+            "l-knightfight"
           ]
         }
       ]
