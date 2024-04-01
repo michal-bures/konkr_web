@@ -1,6 +1,11 @@
 
 
 ---
+v2.29.18 <small>released 2024-04-01</small>
+- new unstable vortex map "Easter Egg"
+- bugfix: fix province budget summary not updating after bandit movement in some cases (for both friendly and hostile province)
+
+---
 v2.29.17 <small>released 2024-03-31</small>
 - 12 new community maps added courtesy of @adamjarn, @Arran, @MemeWizard, @SuperRoroB, @33333, @ravageur
 - bugfix: fix rare cases of incorrect conquerable hexes highlighting on swamp tiles
