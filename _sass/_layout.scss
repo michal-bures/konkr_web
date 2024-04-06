@@ -400,6 +400,17 @@ body.framed {
     display:none
 }
 
+.paging-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paging-button {
+    font-size: 18px;
+    display: inline-block;
+}
+
 .framed .page-content .wrapper {
     background: none
 }

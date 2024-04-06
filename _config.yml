@@ -15,11 +15,20 @@ excerpt_separator: <!-- excerpt-end -->
 # Build settings
 markdown: kramdown
 highlighter: true
-
-
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/-
+  - releases/
+keep_files:
+  - releases
 defaults:
-  -
-    scope:
-      path:            "releases/**/*"
-    values:
+  - values:
       sitemap:         false
