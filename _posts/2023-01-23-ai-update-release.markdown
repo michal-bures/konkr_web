@@ -7,6 +7,8 @@ categories: update
 
 ...along with rebalanced campaign and a number of new levels!
 
+<!-- excerpt-end -->
+
 You should suddenly find the AI rivals to be much more cunning, diligent, but also less unhinged
 and hopefully more fun to play against. **[Let me know what you think!](https://forms.gle/1d3mQZ6KMgBmdF9q7)** (survey link).
 

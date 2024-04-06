@@ -8,7 +8,7 @@ With the upcoming user interface overhaul, the base ocean color will become cust
 You can already try this out in this [experimental branch](https://www.konkr.io/releases/dev/test-colors).
 Coming to the main game soon!
 
-Also, [continue reading](/update/2023/08/20/ui-overhaul-update.html) for a sneak peek at my work on the new menu UI!
+Also, continue reading for a sneak peek at my work on the new menu UI!
 
 <!-- excerpt-end -->
 

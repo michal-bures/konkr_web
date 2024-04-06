@@ -10,6 +10,8 @@ I'm finally quite happy with the current state of the new AI!
 **[GO MESS WITH IT HERE](https://www.konkr.io/releases/dev/test-ai-update/)** and let me know what you think! A more structured 
 feedback survey will be coming up shortly.
 
+<!-- excerpt-end -->
+
 It's also where you find the new levels for this week 😉.
 
 Coming up next in the AI update branch:

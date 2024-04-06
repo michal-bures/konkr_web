@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gearing up for greatness!"
+title:  "✨ Gearing up for greatness!"
 date:   2023-05-28 12:00:00
 categories: update
 ---

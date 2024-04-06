@@ -15,17 +15,57 @@ seo_frequency: weekly
       <li>
         <hr/>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p>
+          {% if post.content.size > post.excerpt.size %}
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} »</a>
+          {% else %}
+            <span class="post-link">{{ post.title }}</span>
+          {% endif %}
           {{ post.excerpt }}
-        </p>
+        {% if post.content.size > post.excerpt.size %}
+        <p><a href="{{ post.url | prepend: site.baseurl }}">read more »</a></p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
 
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+  {% assign currentYear = site.time | date: "%Y" %}
+  {% assign currentMonth = site.time | date: "%B" %}
+  {% for post in site.posts %}
+
+  {% assign postYear = post.date | date: "%Y" %}
+  {% assign postMonth = post.date  | date: "%B" %}
+
+  {% if forloop.first %}
+  <li> {{ postYear}}
+    <ul>
+      <li> {{ postMonth }}
+        <ul>
+          {% endif %}
+
+          {% if (postYear == currentYear and postMonth == currentMonth) or forloop.first %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endif %}
+
+          {% if postYear == currentYear and postMonth != currentMonth %}
+        </ul></li>
+      <li> {{ postMonth }}
+        <ul>
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endif %}
+
+          {% if postYear != currentYear %}
+        </ul></li></ul></li>
+  <li> {{ postYear}}
+    <ul>
+      <li> {{ postMonth }}
+        <ul>
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endif %}
+          {% assign currentYear = postYear %}
+          {% assign currentMonth = postMonth %}
+          {% endfor %}
+
+
+          <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 </div>

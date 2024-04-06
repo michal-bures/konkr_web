@@ -7,7 +7,7 @@ categories: update
 
 You should notice the rivals are playing quite a bit faster now! 
 
-**[Continue reading](/update/2023/02/13/performance-patch.html)** for a quick look at 
+Continue reading for a quick look at 
 the roadmap poll results.
 
 <!-- excerpt-end -->

@@ -7,6 +7,8 @@ categories: update
 
 So today marks the end of the roughly month and a half long period of what was essentially me roleplaying as a full-time indie game developer!
 
+<!-- excerpt-end -->
+
 I found myself with free time in between two jobs and decided to try what happens when I can really focus on Konkr for weeks at a time.
 And I have to say after letting the game more or less consume my life for the past month, I feel... Actually quite energized and excited to continue!
 

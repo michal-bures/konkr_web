@@ -6,12 +6,12 @@ seo_priority: 1
 seo_frequency: weekly
 ---
 {% for post in site.posts limit:1 %}
-<article>
+<article id='news-box-body'>
+    <p class="posted-at">{{ post.date | date: "%b %-d, %Y" }}</p>
     <h3><a href="{{post.url}}">{{post.title}}</a></h3>
-    <p class='posted-at'>posted {{ post.date | date: "%b %-d, %Y" }}</p>
     {{post.excerpt}}
-    <footer>
-        <a href="/news" target="_blank">view older news</a> | <a href="{{ site.discord_link }}" target="_blank">discuss on Discord</a> | <a href="/changelog" target="_blank">changelog</a> | <a href="/legacy" target="_blank">konkr v1</a>
-    </footer>
+    {% if post.content.size > post.excerpt.size %}
+        <a id='news-box-button' href="{{post.url}}" target='_blank'>Read full blog post »</a>
+    {% endif %}
 </article>
 {% endfor %}

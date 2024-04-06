@@ -7,7 +7,7 @@ categories: update
 Ocean color customization is now in the game! You can cycle through a bunch of color presets in the settings sidebar.
 Also, forgetting to save replays? Now the replay of your latest game will be available from the title screen!
 
-[Continue reading](/update/2023/09/03/ocean-colors.html) for a small update on the UI overhaul work.
+Continue reading for a small update on the UI overhaul work.
 
 <!-- excerpt-end -->
 

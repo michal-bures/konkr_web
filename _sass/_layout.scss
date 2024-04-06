@@ -335,9 +335,13 @@ div#konkr_loading_placeholder {
 .post-list {
     margin-left: 0;
     list-style: none;
-
     > li {
-        margin-bottom: $spacing-unit;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        > p {
+            margin-left: 25px;
+        }
+
     }
 }
 
@@ -348,7 +352,10 @@ div#konkr_loading_placeholder {
 
 .post-link {
     display: block;
-    font-size: 24px;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Helvetica;
 }
 
 
@@ -374,11 +381,11 @@ div#konkr_loading_placeholder {
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     h4 {

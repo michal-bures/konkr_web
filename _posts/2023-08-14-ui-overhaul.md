@@ -5,7 +5,7 @@ date:   2023-08-14 01:00:00
 categories: update
 ---
 You may have noticed some more minor UI improvements lately, including the new "C" hotkey to build a castle. But now I'm going for a big one: Total overhaul of the level select UI!
-[continue reading](/update/2023/08/14/ui-overhaul.html) for a bit more info about that.
+continue reading for a bit more info about that.
 
 <!-- excerpt-end -->
 

@@ -6,7 +6,7 @@ categories: update
 ---
 
 Hey everyone, I think it's about time for a new update on where Konkr is heading next! Get comfortable and  
-get ready to get excited, this will be a big post! **[continue reading](/update/2023/01/29/roadmap-update.html)**
+get ready to get excited, this will be a big post!
 
 <!-- excerpt-end -->
 

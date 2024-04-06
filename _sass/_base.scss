@@ -78,7 +78,8 @@ li {
 }
 
 hr {
-    border: 1px solid #a5b2b940
+    border: 1px solid #a5b2b940;
+    margin-bottom: 4px;
 }
 
 /**
@@ -86,10 +87,10 @@ hr {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    font-family: $title-font-family;
+    font-family: $base-font-family;
 }
-h2, h3 {
-    font-weight: bold;
+h1 {
+    font-family: $title-font-family;
 }
 
 
