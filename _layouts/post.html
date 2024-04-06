@@ -16,9 +16,9 @@ layout: default
 
     <div class="paging-div">
         {% if page.previous %}
-            <a class="paging-button" href="{{page.previous.url}}">« Previous </a>
+            <a class="paging-button" href="{{page.previous.url}}">« {{page.previous.title}} </a>
         {% endif %} {% if page.next %}
-            <a class="paging-button" href="{{page.next.url}}">Next »</a>
+            <a class="paging-button" href="{{page.next.url}}">{{page.next.title}} »</a>
         {% endif %}
     </div>
 </div>
