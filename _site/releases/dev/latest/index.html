@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><base href="/releases/dev/latest/"><meta charset="UTF-8"><meta name="description" content="A free turn-based strategy game that runs in your browser. Expand your kingdom, build up your economy and crush your enemies!"><meta name="keywords" content="konkr, konkr.io, game, strategy, turn-based, web game, online game, html5, fun, phaser"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="canonical" href="https://www.konkr.io/"><link rel="icon" type="image/png" sizes="16x16" href="./icons/regular-16.png"><link rel="apple-touch-icon" href="./icons/regular-192.png"><link rel="manifest" href="./manifest.json"><meta name="theme-color" content="#9bd6f2"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="application-name" content="Konkr"><meta name="apple-mobile-web-app-title" content="Konkr"><meta name="msapplication-TileColor" content="#9bd6f2"><meta name="msapplication-starturl" content="./"><link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/png"><link rel="apple-touch-icon" href="./icons/icons-192x192.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/css/main.css"><title>Konkr.io</title><style>html,
+<!doctype html><html lang="en"><head><base href="/_site/releases/dev/latest/"><meta charset="UTF-8"><meta name="description" content="A free turn-based strategy game that runs in you browser. Expand your kingdom, build up your economy and crush your enemies!"><meta name="keywords" content="konkr, konkr.io, game, strategy, turn-based, web game, online game, html5, fun, phaser"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="canonical" href="https://www.konkr.io/"><link rel="icon" type="image/png" sizes="16x16" href="./icons/regular-16.png"><link rel="apple-touch-icon" href="./icons/regular-192.png"><link rel="manifest" href="./manifest.json"><meta name="theme-color" content="#9bd6f2"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="application-name" content="Konkr"><meta name="apple-mobile-web-app-title" content="Konkr"><meta name="msapplication-TileColor" content="#9bd6f2"><meta name="msapplication-starturl" content="./"><link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/png"><link rel="apple-touch-icon" href="./icons/icons-192x192.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/css/main.css"><title>Konkr.io</title><style>html,
         body {
             font-family: Georgia, Arial, Trebuchet;
             margin: 0;
@@ -227,7 +227,7 @@
             background-color: #193E50;
             width: 100%;
             bottom: 0;
-        }</style><script defer="defer" src="vendors.5f8434fd5ddc9ed129dc.bundle.js"></script><script defer="defer" src="main.605a8b64549a5847cacb.bundle.js"></script></head><body class="center-screen"><div id="footer-placeholder"></div><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden"></div><div id="news-box"><article id="news-box-body"><p class="posted-at">Apr 01, 2024</p><h3><a href="/update/2024/04/01/update">🐇 Happy Easter!</a></h3><p>Catch the easter bunny in a newly added Unstable Vortex island or try some of the freshly added community maps in Mapmakers Archipelago!</p></article><footer><a href="/news" target="_blank">Blog</a> | <a href="https://discord.com/invite/C9HucB9arH" target="_blank">Discuss on Discord</a> | <a href="/changelog" target="_blank">Changelog</a></footer></div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.29.18-build-8512446427'
+        }</style><script defer="defer" src="vendors.e44d55f0a1228e0a6807.bundle.js"></script><script defer="defer" src="main.b98f735af7f1a8bbd075.bundle.js"></script></head><body class="center-screen"><div id="footer-placeholder"></div><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden"></div><div id="news-box"><article id="news-box-body">{{ content }}</article><footer><a href="/news" target="_blank">Blog</a> | <a href="https://discord.com/invite/C9HucB9arH" target="_blank">Discuss on Discord</a> | <a href="/changelog" target="_blank">Changelog</a></footer></div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.29.18-build-8580170808'
     const SW_ENABLE = true
 
     // store current time for timing page load
@@ -243,11 +243,11 @@
     }
 
     // if news-box has no content, inject warning
-    const newsBox = document.getElementById('news-box')
-    if (newsBox?.innerText === '{{ ' + 'content }}') {
-        newsBox.innerHTML = `<p></p><b>⚠ Warning:</b> Playing unsupported game version</p><p><code>${BUILD_NUMBER}</code></p>
+    const newsBox = document.getElementById('news-box-body')
+    if (newsBox?.innerText.startsWith('{{ ' + 'content }}')) {
+        newsBox.innerHTML = `<article><b>⚠ Warning:</b> Playing unsupported game version</p><p><code>${BUILD_NUMBER}</code></p>
                          <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
-                         Or don't, I'm not your boss, but proceed with caution.</p>`
+                         Or don't, I'm not your boss, but proceed with caution.</p></article>`
     }
 
     setLoadingStatus('loading game...')
