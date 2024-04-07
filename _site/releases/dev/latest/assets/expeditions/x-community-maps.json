@@ -27,15 +27,15 @@
           "links": [
             "l-desert-prowl",
             "l-colonial-competition",
-            "l-spider",
             "l-life-and-death",
             "l-knight-cove",
-            "l-lazania",
             "l-oasis",
             "l-ally",
             "l-knights-before-christmas",
             "l-first-down",
-            "l-vassalage"
+            "l-vassalage",
+            "l-rawr",
+            "l-iron-butterfly"
           ]
         },
         {
@@ -194,8 +194,7 @@
             "l-gravesor",
             "l-gray-horizons",
             "l-dream-big",
-            "l-government-change",
-            "l-invader"
+            "l-government-change"
           ]
         },
         {
@@ -203,7 +202,7 @@
           "id": "l-fortsigil",
           "shape": {
             "x": -38,
-            "y": -13,
+            "y": -19,
             "w": 9,
             "h": 15
           },
@@ -212,8 +211,8 @@
             "l-pondfair",
             "l-lazania",
             "l-key",
-            "l-invader",
-            "l-grinch"
+            "l-grinch",
+            "l-spider"
           ]
         },
         {
@@ -227,25 +226,24 @@
           },
           "links": [
             "l-envelopment",
-            "l-spider",
             "l-big-nations",
             "l-gray-horizons",
-            "l-lazania"
+            "l-lazania",
+            "l-rawr"
           ]
         },
         {
           "type": "island",
           "id": "l-spider",
           "shape": {
-            "x": -57,
-            "y": 30,
+            "x": -58,
+            "y": -26,
             "w": 16,
             "h": 16
           },
           "links": [
-            "entrypoint",
-            "l-gravesor",
-            "l-lazania"
+            "l-invader",
+            "l-fortsigil"
           ]
         },
         {
@@ -280,7 +278,7 @@
           "id": "l-grinch",
           "shape": {
             "x": -37,
-            "y": -34,
+            "y": -42,
             "w": 22,
             "h": 18
           },
@@ -308,8 +306,8 @@
           "type": "island",
           "id": "l-ally",
           "shape": {
-            "x": -25,
-            "y": 33,
+            "x": -24,
+            "y": 32,
             "w": 16,
             "h": 15
           },
@@ -322,16 +320,15 @@
           "id": "l-lazania",
           "shape": {
             "x": -39,
-            "y": 28,
+            "y": 15,
             "w": 10,
             "h": 17
           },
           "links": [
-            "entrypoint",
-            "l-spider",
             "l-fortsigil",
             "l-gravesor",
-            "l-small-world"
+            "l-small-world",
+            "l-iron-butterfly"
           ]
         },
         {
@@ -366,7 +363,7 @@
           "id": "l-gray-horizons",
           "shape": {
             "x": -39,
-            "y": 7,
+            "y": -3,
             "w": 10,
             "h": 17
           },
@@ -381,13 +378,14 @@
           "id": "l-small-world",
           "shape": {
             "x": -27,
-            "y": 24,
+            "y": 23,
             "w": 8,
             "h": 8
           },
           "links": [
             "l-pondfair",
-            "l-lazania"
+            "l-lazania",
+            "l-iron-butterfly"
           ]
         },
         {
@@ -560,7 +558,10 @@
             "h": 32
           },
           "links": [
-            "entrypoint2"
+            "entrypoint2",
+            "l-okinawa",
+            "l-hispanola",
+            "l-hex"
           ]
         },
         {
@@ -582,13 +583,14 @@
           "type": "island",
           "id": "l-hispanola",
           "shape": {
-            "x": 24,
-            "y": 150,
+            "x": 20,
+            "y": 153,
             "w": 23,
             "h": 12
           },
           "links": [
-            "l-mitsumata"
+            "l-mitsumata",
+            "l-moldova-1829"
           ]
         },
         {
@@ -624,21 +626,20 @@
           "id": "l-invader",
           "shape": {
             "x": -57,
-            "y": -33,
+            "y": -49,
             "w": 14,
             "h": 19
           },
           "links": [
             "l-government-change",
-            "l-fortsigil",
-            "l-envelopment"
+            "l-spider"
           ]
         },
         {
           "type": "island",
           "id": "l-government-change",
           "shape": {
-            "x": -72,
+            "x": -73,
             "y": -25,
             "w": 13,
             "h": 14
@@ -653,7 +654,7 @@
           "type": "island",
           "id": "l-cursed-city",
           "shape": {
-            "x": 53,
+            "x": 54,
             "y": 77,
             "w": 32,
             "h": 25
@@ -700,16 +701,16 @@
           },
           "links": [
             "l-inside-a-house",
-            "l-thailand",
-            "l-mitsumata"
+            "l-mitsumata",
+            "l-thailand"
           ]
         },
         {
           "type": "island",
           "id": "l-inside-a-house",
           "shape": {
-            "x": 72,
-            "y": 151,
+            "x": 71,
+            "y": 106,
             "w": 18,
             "h": 17
           },
@@ -750,8 +751,8 @@
           "type": "island",
           "id": "l-thailand",
           "shape": {
-            "x": 72,
-            "y": 119,
+            "x": 75,
+            "y": 124,
             "w": 21,
             "h": 26
           },
@@ -763,13 +764,104 @@
           "type": "island",
           "id": "l-theory-of-colors",
           "shape": {
-            "x": 52,
+            "x": 54,
             "y": 105,
             "w": 18,
             "h": 18
           },
           "links": [
             "entrypoint2"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-d-day",
+          "isNew": true,
+          "shape": {
+            "x": -15,
+            "y": 164,
+            "w": 25,
+            "h": 17
+          },
+          "links": [
+            "l-okinawa"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-okinawa",
+          "isNew": true,
+          "shape": {
+            "x": -4,
+            "y": 140,
+            "w": 18,
+            "h": 28
+          },
+          "links": [
+            "l-moldova-1829",
+            "l-constantinople",
+            "l-d-day"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-rawr",
+          "isNew": true,
+          "shape": {
+            "x": -58,
+            "y": 33,
+            "w": 17,
+            "h": 13
+          },
+          "links": [
+            "entrypoint",
+            "l-gravesor",
+            "l-iron-butterfly"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-constantinople",
+          "isNew": true,
+          "shape": {
+            "x": -22,
+            "y": 139,
+            "w": 21,
+            "h": 21
+          },
+          "links": [
+            "l-okinawa"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-hex",
+          "isNew": true,
+          "shape": {
+            "x": -10,
+            "y": 115,
+            "w": 20,
+            "h": 19
+          },
+          "links": [
+            "l-moldova-1829"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-iron-butterfly",
+          "isNew": true,
+          "shape": {
+            "x": -41,
+            "y": 35,
+            "w": 17,
+            "h": 12
+          },
+          "links": [
+            "entrypoint",
+            "l-rawr",
+            "l-lazania",
+            "l-small-world"
           ]
         }
       ]
