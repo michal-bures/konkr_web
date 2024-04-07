@@ -1,6 +1,17 @@
 
 
 ---
+v2.29.20 <small>released 2024-04-07</small>
+- experimental UI improvement: hold shift to auto-merge and buy units while conquering tiles
+- 6 new maps by @adamjarn, @33333 added to the Mapmakers Archipelago
+- allow zooming out with mouse wheel on the world map
+- bugfix: cleaned up glitched coins in "Ruined Kingdom" island
+
+---
+v2.29.19 <small>released 2024-04-06</small>
+- automatic camera zoom less aggressive and disabled during replays
+
+---
 v2.29.18 <small>released 2024-04-01</small>
 - new unstable vortex map "Easter Egg"
 - bugfix: fix province budget summary not updating after bandit movement in some cases (for both friendly and hostile province)
