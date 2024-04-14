@@ -30,7 +30,8 @@
           "links": [
             "l-nomad",
             "l-knightfight",
-            "l-easter-egg"
+            "l-easter-egg",
+            "l-regicide"
           ]
         },
         {
@@ -161,10 +162,26 @@
             "h": 14
           },
           "entrypoint": true,
-          "isNew": true,
           "links": [
             "l-xmas-1",
-            "l-knightfight"
+            "l-knightfight",
+            "l-regicide"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-regicide",
+          "entrypoint": true,
+          "isNew": true,
+          "shape": {
+            "x": 48,
+            "y": 87,
+            "w": 18,
+            "h": 19
+          },
+          "links": [
+            "l-xmas-1",
+            "l-easter-egg"
           ]
         }
       ]
