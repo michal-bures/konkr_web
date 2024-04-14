@@ -1,6 +1,16 @@
 
 
 ---
+v2.30.0 <small>released 2024-04-14</small>
+- while playing, level feature icons are displayed in the header panel next to level name
+- new level in Unstable Vortex: "Regicide", featuring warrior kings and refuge tiles
+- 5 new community maps in Mapmakers Archipelago by @33333, @Arran and @TegaeArIfs
+- small AI tweaks: reduced desirability of swamp tiles and gold mines
+- hunting down the bunny is now worth 10 coins
+- bugfix: don't show level introduction after rewind from defeat screen
+- bugfix: structures like mines and abandoned settlements no longer jump around to defend an adjacent tile
+
+---
 v2.29.20 <small>released 2024-04-07</small>
 - experimental UI improvement: hold shift to auto-merge and buy units while conquering tiles
 - 6 new maps by @adamjarn, @33333 added to the Mapmakers Archipelago
