@@ -1,6 +1,22 @@
 
 
 ---
+v2.30.1 <small>released 2024-04-21</small>
+- 5 new community maps in Mapmakers Archipelago by @33333, @Arran, @CuteNepgear and @SuperRoroB
+- Unique hero characters can go into swamps just like regular heroes
+- Zooming on expedition screen now works also with pinch-zoom on touch devices
+- Zombies that can't find a path to any town waltz around randomly instead of standing still
+- Clear occupied mine warning once the occupying pest is defeated
+- Renamed one of the two levels called "Spider" in Mapmakers Archipelago
+- bugfix: fixed sudden AI tantrums in levels with refuge tiles
+- bugfix: no longer able to buy villagers for rival factions in some cases when holding shift
+- bugfix: fixed error when importing a custom map
+- bugfix: fixed ghost coins in level "Siege Wall" and fixed map editor bug that could introduce them
+- bugfix: fixed glitched defense animation when multiple units defend the tile clicked by the player
+- bugfix: map introduction text now appears again after exiting map editor
+- bugfix: fixed town ruins graphic not updating after moving a unit out of it within your own territory
+
+---
 v2.30.0 <small>released 2024-04-14</small>
 - while playing, level feature icons are displayed in the header panel next to level name
 - new level in Unstable Vortex: "Regicide", featuring warrior kings and refuge tiles
