@@ -1,6 +1,13 @@
 
 
 ---
+v2.30.2 <small>released 2024-04-27</small>
+- bugfix: shift-cliking no longer causing occasional overkill when eliminating bandits/zombies on own territory
+- bugfix: gold looted by bandits/zombies no longer goes to the owner of the tile 
+- bugfix: fixed introduction message not showing after loading or importing game, including the kings landing introduction
+- support for obnoxiously long intro messages + tweaks to intro message positioning and color scheme 
+
+---
 v2.30.1 <small>released 2024-04-21</small>
 - 5 new community maps in Mapmakers Archipelago by @33333, @Arran, @CuteNepgear and @SuperRoroB
 - Unique hero characters can go into swamps just like regular heroes
