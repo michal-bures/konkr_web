@@ -486,7 +486,8 @@
             "h": 23
           },
           "links": [
-            "l-oasis"
+            "l-oasis",
+            "l-airstrip-1"
           ]
         },
         {
@@ -501,7 +502,7 @@
           "links": [
             "l-backstab",
             "l-jericho",
-            "l-king-under-the-mountain"
+            "l-art-of-war"
           ]
         },
         {
@@ -656,13 +657,14 @@
           "type": "island",
           "id": "l-cursed-city",
           "shape": {
-            "x": 83,
-            "y": 91,
+            "x": 81,
+            "y": 90,
             "w": 32,
             "h": 25
           },
           "links": [
-            "l-savage-woods"
+            "l-savage-woods",
+            "l-guerilla"
           ]
         },
         {
@@ -682,14 +684,14 @@
           "type": "island",
           "id": "l-king-under-the-mountain",
           "shape": {
-            "x": -103,
-            "y": 36,
+            "x": -108,
+            "y": 32,
             "w": 15,
             "h": 22
           },
           "links": [
-            "l-death-play",
-            "l-redeemer"
+            "l-redeemer",
+            "l-art-of-war"
           ]
         },
         {
@@ -718,7 +720,9 @@
           },
           "links": [
             "l-hex",
-            "l-conquistador"
+            "l-conquistador",
+            "l-rotting-cake",
+            "l-happy-present"
           ]
         },
         {
@@ -867,7 +871,6 @@
         {
           "type": "island",
           "id": "l-norman-conquest",
-          "isNew": true,
           "shape": {
             "x": 41,
             "y": 99,
@@ -876,13 +879,13 @@
           },
           "links": [
             "l-savage-woods",
-            "entrypoint2"
+            "entrypoint2",
+            "l-guerilla"
           ]
         },
         {
           "type": "island",
           "id": "l-spider-2",
-          "isNew": true,
           "shape": {
             "x": 30,
             "y": 182,
@@ -898,7 +901,6 @@
         {
           "type": "island",
           "id": "l-siege-wall",
-          "isNew": true,
           "shape": {
             "x": 5,
             "y": 113,
@@ -913,7 +915,6 @@
         {
           "type": "island",
           "id": "l-gold-swamp",
-          "isNew": true,
           "shape": {
             "x": -8,
             "y": 124,
@@ -927,16 +928,87 @@
         {
           "type": "island",
           "id": "l-savage-woods",
-          "isNew": true,
           "shape": {
-            "x": 58,
-            "y": 92,
+            "x": 55,
+            "y": 84,
             "w": 22,
             "h": 26
           },
           "links": [
             "l-cursed-city",
             "l-norman-conquest"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-airstrip-1",
+          "isNew": true,
+          "shape": {
+            "x": -80,
+            "y": 113,
+            "w": 22,
+            "h": 28
+          },
+          "links": [
+            "l-ruined-kingdom"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-rotting-cake",
+          "isNew": true,
+          "shape": {
+            "x": 88,
+            "y": 117,
+            "w": 17,
+            "h": 19
+          },
+          "links": [
+            "l-inside-a-house"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-art-of-war",
+          "isNew": true,
+          "shape": {
+            "x": -95,
+            "y": 49,
+            "w": 9,
+            "h": 10
+          },
+          "links": [
+            "l-king-under-the-mountain",
+            "l-death-play"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-happy-present",
+          "isNew": true,
+          "shape": {
+            "x": 93,
+            "y": 138,
+            "w": 16,
+            "h": 18
+          },
+          "links": [
+            "l-inside-a-house"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-guerilla",
+          "isNew": true,
+          "shape": {
+            "x": 61,
+            "y": 111,
+            "w": 17,
+            "h": 16
+          },
+          "links": [
+            "l-norman-conquest",
+            "l-cursed-city"
           ]
         }
       ]
