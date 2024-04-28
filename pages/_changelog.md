@@ -1,6 +1,10 @@
 
 
 ---
+v2.30.3 <small>released 2024-04-28</small>
+- 5 new levels in Mapmakers Archipelago by @33333
+
+---
 v2.30.2 <small>released 2024-04-27</small>
 - bugfix: shift-cliking no longer causing occasional overkill when eliminating bandits/zombies on own territory
 - bugfix: gold looted by bandits/zombies no longer goes to the owner of the tile 
