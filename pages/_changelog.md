@@ -1,6 +1,10 @@
 
 
 ---
+v2.30.4 <small>released 2024-04-29</small>
+- bugfix: fix starting state for "Happy Present" level
+
+---
 v2.30.3 <small>released 2024-04-28</small>
 - 5 new levels in Mapmakers Archipelago by @33333
 
