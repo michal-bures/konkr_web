@@ -519,7 +519,9 @@
             "l-swamp-camp",
             "l-theory-of-colors",
             "l-norman-conquest",
-            "l-siege-wall"
+            "l-siege-wall",
+            "l-uprising3",
+            "l-assasins"
           ]
         },
         {
@@ -838,7 +840,9 @@
           "links": [
             "l-thailand",
             "l-conquistador",
-            "l-antractica"
+            "l-antractica",
+            "l-nyc",
+            "l-one-memory"
           ]
         },
         {
@@ -1016,7 +1020,6 @@
         {
           "type": "island",
           "id": "l-up",
-          "isNew": true,
           "shape": {
             "x": 108,
             "y": 122,
@@ -1031,7 +1034,6 @@
         {
           "type": "island",
           "id": "l-partizan",
-          "isNew": true,
           "shape": {
             "x": 35,
             "y": 205,
@@ -1046,7 +1048,6 @@
         {
           "type": "island",
           "id": "l-nitro",
-          "isNew": true,
           "shape": {
             "x": 107,
             "y": 154,
@@ -1060,7 +1061,6 @@
         {
           "type": "island",
           "id": "l-imbalance",
-          "isNew": true,
           "shape": {
             "x": 36,
             "y": 152,
@@ -1075,7 +1075,6 @@
         {
           "type": "island",
           "id": "l-antractica",
-          "isNew": true,
           "shape": {
             "x": 98,
             "y": 175,
@@ -1084,7 +1083,65 @@
           },
           "links": [
             "l-constantinople",
-            "l-conquistador"
+            "l-conquistador",
+            "l-nyc"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-nyc",
+          "isNew": true,
+          "shape": {
+            "x": 108,
+            "y": 196,
+            "w": 19,
+            "h": 25
+          },
+          "links": [
+            "l-constantinople",
+            "l-antractica"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-uprising3",
+          "isNew": true,
+          "shape": {
+            "x": 16,
+            "y": 130,
+            "w": 13,
+            "h": 14
+          },
+          "links": [
+            "entrypoint2"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-one-memory",
+          "isNew": true,
+          "shape": {
+            "x": 87,
+            "y": 224,
+            "w": 17,
+            "h": 16
+          },
+          "links": [
+            "l-constantinople"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-assasins",
+          "isNew": true,
+          "shape": {
+            "x": -3,
+            "y": 136,
+            "w": 19,
+            "h": 19
+          },
+          "links": [
+            "entrypoint2"
           ]
         }
       ]
