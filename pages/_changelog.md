@@ -1,6 +1,13 @@
 
 
 ---
+v2.31.0 <small>released 2024-05-08</small>
+- new level detail menu and level info header
+- improve display of buyable pawns when there's a lot of them due to plugins 
+- new levels by @33333, @A_Nerd and @Jam2020 in Mapmakers Archipelago
+- various small UI graphics improvements
+
+---
 v2.30.4 <small>released 2024-04-29</small>
 - bugfix: fix starting state for "Happy Present" level
 
