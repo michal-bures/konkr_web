@@ -1,6 +1,10 @@
 
 
 ---
+v2.31.2 <small>released 2024-05-09</small>
+- use "leave" instead of "menu" on the victory/defeat screen
+
+---
 v2.31.1 <small>released 2024-05-09</small>
 - bugfix: help button not working on title screen
 - bugfix: fixed error when exiting replay
