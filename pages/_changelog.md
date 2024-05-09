@@ -1,6 +1,12 @@
 
 
 ---
+v2.31.1 <small>released 2024-05-09</small>
+- bugfix: help button not working on title screen
+- bugfix: fixed error when exiting replay
+- bugfix: fixed level menu glitching into view when loading replay 
+
+---
 v2.31.0 <small>released 2024-05-08</small>
 - new level detail menu and level info header
 - improve display of buyable pawns when there's a lot of them due to plugins 
