@@ -1,8 +1,12 @@
 
 
 ---
+v2.31.4 <small>released 2024-05-19</small>
+- 3 new levels by @33333 and @dys in Mapmakers Archipelago
+
+---
 v2.31.3 <small>released 2024-05-19</small>
-- bugfix: fixed mute/fullscreen buttons not appearing/dissapearing properly when toggling level menu or showing up at wrong place
+- bugfix: fixed mute/fullscreen buttons not appearing/disappearing properly when toggling level menu or showing up at wrong place
 - bugfix: fixed rewind controls not hiding on mobile when opening level menu
 - bugfix: fixed icons display on difficulty toggle when restarting level 
 - added a bunch of missing tooltips
