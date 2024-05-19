@@ -521,7 +521,8 @@
             "l-norman-conquest",
             "l-siege-wall",
             "l-uprising3",
-            "l-assasins"
+            "l-assasins",
+            "l-chinese-checkers"
           ]
         },
         {
@@ -911,7 +912,7 @@
           "id": "l-siege-wall",
           "shape": {
             "x": 5,
-            "y": 113,
+            "y": 116,
             "w": 15,
             "h": 17
           },
@@ -924,8 +925,8 @@
           "type": "island",
           "id": "l-gold-swamp",
           "shape": {
-            "x": -8,
-            "y": 124,
+            "x": -5,
+            "y": 126,
             "w": 13,
             "h": 13
           },
@@ -1021,14 +1022,16 @@
           "type": "island",
           "id": "l-up",
           "shape": {
-            "x": 108,
-            "y": 122,
+            "x": 117,
+            "y": 117,
             "w": 15,
             "h": 26
           },
           "links": [
             "l-rotting-cake",
-            "l-happy-present"
+            "l-happy-present",
+            "l-bulldozer",
+            "l-treble"
           ]
         },
         {
@@ -1049,13 +1052,14 @@
           "type": "island",
           "id": "l-nitro",
           "shape": {
-            "x": 107,
+            "x": 109,
             "y": 154,
             "w": 21,
             "h": 15
           },
           "links": [
-            "l-happy-present"
+            "l-happy-present",
+            "l-treble"
           ]
         },
         {
@@ -1090,7 +1094,7 @@
         {
           "type": "island",
           "id": "l-nyc",
-          "isNew": true,
+
           "shape": {
             "x": 108,
             "y": 196,
@@ -1105,7 +1109,7 @@
         {
           "type": "island",
           "id": "l-uprising3",
-          "isNew": true,
+
           "shape": {
             "x": 16,
             "y": 130,
@@ -1119,7 +1123,7 @@
         {
           "type": "island",
           "id": "l-one-memory",
-          "isNew": true,
+
           "shape": {
             "x": 87,
             "y": 224,
@@ -1133,15 +1137,58 @@
         {
           "type": "island",
           "id": "l-assasins",
-          "isNew": true,
+
           "shape": {
             "x": -3,
-            "y": 136,
+            "y": 139,
             "w": 19,
             "h": 19
           },
           "links": [
             "entrypoint2"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-chinese-checkers",
+          "isNew": true,
+          "shape": {
+            "x": -18,
+            "y": 105,
+            "w": 18,
+            "h": 23
+          },
+          "links": [
+            "entrypoint2"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-bulldozer",
+          "isNew": true,
+          "shape": {
+            "x": 118,
+            "y": 99,
+            "w": 26,
+            "h": 15
+          },
+          "links": [
+            "l-up"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-treble",
+          "isNew": true,
+          "shape": {
+            "x": 130,
+            "y": 137,
+            "w": 12,
+            "h": 24
+          },
+          "links": [
+            "l-up",
+            "l-nitro"
           ]
         }
       ]
