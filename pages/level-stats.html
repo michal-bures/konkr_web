@@ -7,6 +7,16 @@ seo_frequency: monthly
 ---
 
 <style>
+    h1 {
+        margin-bottom: 0;
+        line-height: 1
+    }
+    #subtitle {
+        margin-top: 0;
+        font-size: 14px;
+        color: #74a7c0
+    }
+
     .chartContainer {
         position: relative;
         height: 150px;
@@ -24,50 +34,112 @@ seo_frequency: monthly
         margin-bottom: 0;
     }
 
-    .section:hover {
-        background-color: #f0f0f0;
+    .section.clickable:not(.selected) {
+        cursor: pointer;
+    }
+    .section.clickable:not(.selected):hover {
+        background-color: #d8f3ff;
+    }
+
+    .section .chartContainer {
+        display: none
+    }
+
+    .section.selected .chartContainer {
+        display: block
     }
 
     .playerCountRow {
-        margin-bottom: 8px
+        padding-bottom: 8px;
+    }
+
+    .splash {
+        display: block;
+        text-align: center;
+        margin-top: 100px;
+        color: #74a7c0;
+    }
+
+    .loader {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: block;
+        margin:15px auto;
+        position: relative;
+        color: #FFF;
+        left: -100px;
+        box-sizing: border-box;
+        animation: shadowRolling 2s linear infinite;
+    }
+
+    @keyframes shadowRolling {
+        0% {
+            box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+        }
+        12% {
+            box-shadow: 100px 0 #74a7c0, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+        }
+        25% {
+            box-shadow: 110px 0 #74a7c0, 100px 0 #74a7c0, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+        }
+        36% {
+            box-shadow: 120px 0 #74a7c0, 110px 0 #74a7c0, 100px 0 #74a7c0, 0px 0 rgba(255, 255, 255, 0);
+        }
+        50% {
+            box-shadow: 130px 0 #74a7c0, 120px 0 #74a7c0, 110px 0 #74a7c0, 100px 0 #74a7c0;
+        }
+        62% {
+            box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 #74a7c0, 120px 0 #74a7c0, 110px 0 #74a7c0;
+        }
+        75% {
+            box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 #74a7c0, 120px 0 #74a7c0;
+        }
+        87% {
+            box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 #74a7c0;
+        }
+        100% {
+            box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+        }
     }
 </style>
 <body>
-<div id="loader">
-    Loading level data...
+<div id="loader" class="splash">
+    <span class="loader"></span>
+    loading level statistics...
 </div>
-<div id="error" style="display: none">
+<div id="error" class="splash" style="display: none">
     Oops! Something went wrong.
 </div>
 <div id="content" style="display: none">
     <div class="titleLayout">
         <h1 id="title"></h1>
-        <p id="subtitle"></p>
+        <h2 id="subtitle"></h2>
     </div>
-    <div class="section">
-        <p class="playerCountRow">
+    <div class="section clickable" id="hardStats">
+        <div class="playerCountRow">
             <img src="/img/icons/gold-trophy.png">
             <span class="counter" id="hardVictoryCount">?</span>
-            players won on hard difficulty
-        </p>
+            won on hard difficulty
+        </div>
         <div class="chartContainer">
             <canvas id="hardVictoryChart"></canvas>
         </div>
     </div>
-    <div class="section">
-        <p class="playerCountRow">
+    <div class="section clickable" id="normalStats">
+        <div class="playerCountRow">
             <img src="/img/icons/silver-trophy.png">
-            <span class="counter" id="normalVictoryCount">?</span> players won on normal difficulty
-        </p>
-        <div class="chartContainer">
+            <span class="counter" id="normalVictoryCount">?</span> won on normal difficulty
+        </div>
+        <div class="chartContainer" id="defeatStats">
             <canvas class="counter" id="normalVictoryChart"></canvas>
         </div>
     </div>
     <div class="section">
-        <p class="playerCountRow" style="padding-bottom: 8px">
+        <div class="playerCountRow" style="padding-bottom: 8px">
             <img src="/img/icons/grave.png">
-            <span class='counter' id="defeatCount">?</span> players weren't up to the challenge for now
-        </p>
+            <span class='counter' id="defeatCount">?</span> weren't up to the challenge so far
+        </div>
     </div>
 </div>
 
@@ -78,12 +150,19 @@ seo_frequency: monthly
     Chart.register(ChartDataLabels);
 
     const DOM = {
-        content: document.getElementById('content'),
-        loader: document.getElementById('loader'),
-        error: document.getElementById('error'),
+        modes: {
+            content: document.getElementById('content'),
+            loader: document.getElementById('loader'),
+            error: document.getElementById('error'),
+        },
         titleLayout: document.getElementById('titleLayout'),
         title: document.getElementById('title'),
         subtitle: document.getElementById('subtitle'),
+        sections: {
+            hardStats: document.getElementById('hardStats'),
+            normalStats: document.getElementById('normalStats'),
+            defeatStats: document.getElementById('defeatStats')
+        },
         charts: {
             normalVictory: document.getElementById('normalVictoryChart'),
             hardVictory: document.getElementById('hardVictoryChart')
@@ -94,17 +173,31 @@ seo_frequency: monthly
             defeatCount: document.getElementById('defeatCount')
         }
     }
+
+    const { difficulty } = getUrlParams()
+    if (difficulty === 'hard' || !difficulty) DOM.sections.hardStats.classList.add('selected')
+    if (difficulty === 'normal' || !difficulty) DOM.sections.normalStats.classList.add('selected')
+    DOM.sections.hardStats.onclick = () => {
+        DOM.sections.hardStats.classList.add('selected')
+    }
+    DOM.sections.normalStats.onclick = () => {
+        DOM.sections.normalStats.classList.add('selected')
+    }
+
     fetchData()
 
     function setMode(mode) {
-        DOM.content.style.display = 'none'
-        DOM.loader.style.display = 'none'
-        DOM.error.style.display = 'none'
-        DOM[mode].style.display = 'block'
+        Object.values(DOM.modes).forEach(m => m.style.display = 'none')
+        DOM.modes[mode].style.display = 'block'
     }
 
     function percentage(count, total) {
         return Math.round(count / total * 100) + '%'
+    }
+
+    function errorMessage(message) {
+        setMode('error')
+        DOM.modes.error.innerText = message
     }
 
     async function fetchData() {
@@ -112,24 +205,25 @@ seo_frequency: monthly
         const { id, difficulty, turns } = getUrlParams()
         setMode('loader')
 
-        if (!id || !difficulty || !turns) {
-            console.error('Missing url parameters')
-            setMode('error')
-            return
-        }
+        if (!id) return errorMessage('Level statistics for each level are now accessible from within the game!')
 
         try {
-            const data = await fetch(`{{ site.level_stats_url }}/${id}.json`)
-                .then(response => response.json())
-            console.log('DATA', data)
+            const response = await fetch(`{{ site.level_stats_url }}/${id}.json`)
+
+            if (response.status === 404) {
+                return errorMessage('Statistics for this level are not available yet, come back later!')
+            }
+            const data = await response.json()
             const { generatedAt, levelName } = data.metadata
             DOM.title.innerText = `${levelName}`
-            DOM.subtitle.innerText = `level statistics updated ${generatedAt}`
+            DOM.subtitle.innerHTML = `level statistics last updated <abbr title='${new Date(generatedAt).toString()}'>${getRelativeDate(generatedAt)}`
 
 
-            DOM.counters.defeatCount.innerText = percentage(data.outcomes.lost + data.outcomes.left, data.players)
-            DOM.counters.normalVictoryCount.innerText = percentage(data.outcomes['won-normal'] ?? 0, data.players)
-            DOM.counters.hardVictoryCount.innerText = percentage(data.outcomes['won-hard'] ?? 0, data.players)
+            const total = data.outcomes.lost + data.outcomes['won-normal'] + data.outcomes['won-hard']
+
+            DOM.counters.defeatCount.innerText = percentage(data.outcomes.lost, total)
+            DOM.counters.normalVictoryCount.innerText = percentage(data.outcomes['won-normal'], total)
+            DOM.counters.hardVictoryCount.innerText = percentage(data.outcomes['won-hard'], total)
 
             const hardChartOptions = difficulty === 'hard'? { highlightIndex: turns - 1, highlightColor: '#ffcc00' }: {}
             const normalChartOptions = difficulty === 'normal'? { highlightIndex: turns - 1, highlightColor: '#cccccc' }: {}
@@ -147,8 +241,8 @@ seo_frequency: monthly
 
     function createChart(element, data, options) {
         const {highlightIndex=-1, highlightColor='#ffcc00ff'} = options
-        const values = data.map((record,i) => Math.max(i===highlightIndex ? 1:0, record.players))
-        const labels = data.map(record => record.turns)
+        const values = data.map((record,i) => Math.max(i===highlightIndex ? 1:0, record.players) || null)
+        const labels = data.map(record => highlightIndex === -1 ? `${record.turns} turns` : record.turns)
 
         new Chart(element, {
             type: 'bar',
@@ -159,6 +253,7 @@ seo_frequency: monthly
                     label: 'players',
                     data: values,
                     barPercentage: 1,
+                    borderRadius: {topLeft: 2, topRight: 2},
                     categoryPercentage: 1,
                     borderColor: 0,
                     borderSkipped: false,
@@ -185,7 +280,7 @@ seo_frequency: monthly
                 }]
             },
             options: {
-                aspectRatio: 5,
+                maintainAspectRatio: false,
                 transitions: false,
                 layout: {
                     padding: {
@@ -238,6 +333,17 @@ seo_frequency: monthly
             difficulty: params.get('difficulty'),
             turns: Number(params.get('turns'))
         }
+    }
+
+    function getRelativeDate(isoDate) {
+        const date = new Date(isoDate)
+        const now = new Date()
+        const diff = now - date
+
+        if (now.toDateString() === date.toDateString()) return 'today'
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+        if (days <= 1) return 'yesterday'
+        return `${days} days ago`
     }
 
 </script>
