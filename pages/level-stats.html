@@ -1,61 +1,227 @@
 ---
 layout: default
-title: Level Stats
-description: Levels turn to completion statistics
+description: Level statistics
 permalink: /level-stats/
 seo_priority: 0.1
 seo_frequency: monthly
 ---
 
-<body>
-<p>Number of turns to <b>first victory</b> per player per campaign level. Based on snapshot from 2023/08/13.</p>
+<style>
+    .chartContainer {
+        position: relative;
+        height: 150px;
+        width: 100%;
+    }
 
-<div id="charts">
+    .counter {
+        font-weight: bold;
+        font-size: 120%;
+    }
+
+    .section {
+        border-top: 1px solid #8cb0c2;
+        padding: 8px 8px 0px;
+        margin-bottom: 0;
+    }
+
+    .section:hover {
+        background-color: #f0f0f0;
+    }
+
+    .playerCountRow {
+        margin-bottom: 8px
+    }
+</style>
+<body>
+<div id="loader">
+    Loading level data...
+</div>
+<div id="error" style="display: none">
+    Oops! Something went wrong.
+</div>
+<div id="content" style="display: none">
+    <div class="titleLayout">
+        <h1 id="title"></h1>
+        <p id="subtitle"></p>
+    </div>
+    <div class="section">
+        <p class="playerCountRow">
+            <img src="/img/icons/gold-trophy.png">
+            <span class="counter" id="hardVictoryCount">?</span>
+            players won on hard difficulty
+        </p>
+        <div class="chartContainer">
+            <canvas id="hardVictoryChart"></canvas>
+        </div>
+    </div>
+    <div class="section">
+        <p class="playerCountRow">
+            <img src="/img/icons/silver-trophy.png">
+            <span class="counter" id="normalVictoryCount">?</span> players won on normal difficulty
+        </p>
+        <div class="chartContainer">
+            <canvas class="counter" id="normalVictoryChart"></canvas>
+        </div>
+    </div>
+    <div class="section">
+        <p class="playerCountRow" style="padding-bottom: 8px">
+            <img src="/img/icons/grave.png">
+            <span class='counter' id="defeatCount">?</span> players weren't up to the challenge for now
+        </p>
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 
 <script>
-    const charts = document.getElementById('charts');
+    Chart.register(ChartDataLabels);
 
-
+    const DOM = {
+        content: document.getElementById('content'),
+        loader: document.getElementById('loader'),
+        error: document.getElementById('error'),
+        titleLayout: document.getElementById('titleLayout'),
+        title: document.getElementById('title'),
+        subtitle: document.getElementById('subtitle'),
+        charts: {
+            normalVictory: document.getElementById('normalVictoryChart'),
+            hardVictory: document.getElementById('hardVictoryChart')
+        },
+        counters: {
+            hardVictoryCount: document.getElementById('hardVictoryCount'),
+            normalVictoryCount: document.getElementById('normalVictoryCount'),
+            defeatCount: document.getElementById('defeatCount')
+        }
+    }
     fetchData()
 
+    function setMode(mode) {
+        DOM.content.style.display = 'none'
+        DOM.loader.style.display = 'none'
+        DOM.error.style.display = 'none'
+        DOM[mode].style.display = 'block'
+    }
+
+    function percentage(count, total) {
+        return Math.round(count / total * 100) + '%'
+    }
+
     async function fetchData() {
-        const data = await fetch('/level-stats-data.csv')
-            .then(response => response.text())
 
-        const rows = data.split('\n')
-        const labels = rows.shift().split(',')
-        labels.shift()
+        const { id, difficulty, turns } = getUrlParams()
+        setMode('loader')
 
-        for (let row of rows) {
-            const [levelId, ...values] = row.split(',')
-            if (values.length===0) continue
-            const elementId = `chart-${levelId}`
-            charts.append(htmlToElement(
-                `<div><h2>${levelId}</h2><canvas id="${elementId}"></canvas></div>`
-            ))
-            const ctx = document.getElementById(`${elementId}`);
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels,
-                    datasets: [{
-                        label: 'players',
-                        data: values,
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
+        if (!id || !difficulty || !turns) {
+            console.error('Missing url parameters')
+            setMode('error')
+            return
         }
+
+        try {
+            const data = await fetch(`{{ site.level_stats_url }}/${id}.json`)
+                .then(response => response.json())
+            console.log('DATA', data)
+            const { generatedAt, levelName } = data.metadata
+            DOM.title.innerText = `${levelName}`
+            DOM.subtitle.innerText = `level statistics updated ${generatedAt}`
+
+
+            DOM.counters.defeatCount.innerText = percentage(data.outcomes.lost + data.outcomes.left, data.players)
+            DOM.counters.normalVictoryCount.innerText = percentage(data.outcomes['won-normal'] ?? 0, data.players)
+            DOM.counters.hardVictoryCount.innerText = percentage(data.outcomes['won-hard'] ?? 0, data.players)
+
+            const hardChartOptions = difficulty === 'hard'? { highlightIndex: turns - 1, highlightColor: '#ffcc00' }: {}
+            const normalChartOptions = difficulty === 'normal'? { highlightIndex: turns - 1, highlightColor: '#cccccc' }: {}
+
+            createChart(DOM.charts.hardVictory, data.turnsToVictory.hard, hardChartOptions)
+            createChart(DOM.charts.normalVictory, data.turnsToVictory.normal, normalChartOptions)
+            setMode('content')
+        } catch (error) {
+            console.error(error)
+            setMode('error')
+        }
+
+    }
+
+
+    function createChart(element, data, options) {
+        const {highlightIndex=-1, highlightColor='#ffcc00ff'} = options
+        const values = data.map((record,i) => Math.max(i===highlightIndex ? 1:0, record.players))
+        const labels = data.map(record => record.turns)
+
+        new Chart(element, {
+            type: 'bar',
+            responsive: false,
+            data: {
+                labels,
+                datasets: [{
+                    label: 'players',
+                    data: values,
+                    barPercentage: 1,
+                    categoryPercentage: 1,
+                    borderColor: 0,
+                    borderSkipped: false,
+                    borderWidth: ({index}) => (index === highlightIndex) ? 1 : 0,
+                    backgroundColor: ({index}) => (index === highlightIndex) ? highlightColor: '#8cb0c2',
+                    datalabels: {
+                        color: '#ffffff',
+                        anchor: 'end',
+                        align: 'top',
+                        textAlign: 'center',
+                        offset: 5,
+                        font: {
+                            weight: 'bold'
+                        },
+                        padding: {
+                            bottom: 2,
+                        },
+                        backgroundColor:'#000000c0',
+                        borderRadius: 4,
+                        borderWidth: 0,
+                        display: ({dataIndex}) => (dataIndex === highlightIndex),
+                        formatter: (value, context) => `${context.dataIndex + 1} turns`,
+                    }
+                }]
+            },
+            options: {
+                aspectRatio: 5,
+                transitions: false,
+                layout: {
+                    padding: {
+                        top: 32
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        titleMarginBottom: -2,
+                        filter: ({dataIndex}) => {
+                            return dataIndex !== highlightIndex
+                        },
+                        callbacks: {
+                            label: () => null
+                        },
+                        xAlign: 'center',
+                        yAlign: 'bottom'
+                    },
+
+
+                },
+                elements: {
+                    bar: {
+                        borderWidth: 0,
+                    }
+                },
+                scales: {
+                    y: { display: false },
+                    x: { display: false }
+                },
+
+            }
+        });
     }
 
     function htmlToElement(html) {
@@ -63,6 +229,15 @@ seo_frequency: monthly
         html = html.trim(); // Never return a text node of whitespace as the result
         template.innerHTML = html;
         return template.content.firstChild;
+    }
+
+    function getUrlParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            id: params.get('id'),
+            difficulty: params.get('difficulty'),
+            turns: Number(params.get('turns'))
+        }
     }
 
 </script>
