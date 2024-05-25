@@ -11,6 +11,7 @@ seo_frequency: monthly
         margin-bottom: 0;
         line-height: 1
     }
+
     #subtitle {
         margin-top: 0;
         font-size: 14px;
@@ -37,6 +38,7 @@ seo_frequency: monthly
     .section.clickable:not(.selected) {
         cursor: pointer;
     }
+
     .section.clickable:not(.selected):hover {
         background-color: #d8f3ff;
     }
@@ -60,12 +62,26 @@ seo_frequency: monthly
         color: #74a7c0;
     }
 
+    #playLevelButton {
+        border: 1px solid #74a7c0;
+        padding: 4px;
+        border-radius: 8px;
+        display: inline-block;
+        background: #d8f3ff;
+        font: 16px Helvetica, Arial, sans-serif;
+        vertical-align: bottom;
+    }
+    #playLevelButton:hover {
+        background: #65a0bd;
+        text-decoration: none;
+    }
+
     .loader {
         width: 10px;
         height: 10px;
         border-radius: 50%;
         display: block;
-        margin:15px auto;
+        margin: 15px auto;
         position: relative;
         color: #FFF;
         left: -100px;
@@ -109,11 +125,12 @@ seo_frequency: monthly
     loading level statistics...
 </div>
 <div id="error" class="splash" style="display: none">
-    Oops! Something went wrong.
+    Oops! Something went wrong trying to retrieve statistics for this level. Please try again later.
 </div>
 <div id="content" style="display: none">
     <div class="titleLayout">
-        <h1 id="title"></h1>
+        <h1><span id="title"></span> <a id="playLevelButton">» Play Level</a></h1>
+
         <h2 id="subtitle"></h2>
     </div>
     <div class="section clickable" id="hardStats">
@@ -147,14 +164,13 @@ seo_frequency: monthly
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 
 <script>
-    Chart.register(ChartDataLabels);
-
     const DOM = {
         modes: {
             content: document.getElementById('content'),
             loader: document.getElementById('loader'),
             error: document.getElementById('error'),
         },
+        playLevelButton: document.getElementById('playLevelButton'),
         titleLayout: document.getElementById('titleLayout'),
         title: document.getElementById('title'),
         subtitle: document.getElementById('subtitle'),
@@ -174,17 +190,28 @@ seo_frequency: monthly
         }
     }
 
-    const { difficulty } = getUrlParams()
-    if (difficulty === 'hard' || !difficulty) DOM.sections.hardStats.classList.add('selected')
-    if (difficulty === 'normal' || !difficulty) DOM.sections.normalStats.classList.add('selected')
-    DOM.sections.hardStats.onclick = () => {
-        DOM.sections.hardStats.classList.add('selected')
-    }
-    DOM.sections.normalStats.onclick = () => {
-        DOM.sections.normalStats.classList.add('selected')
+    main().catch(e => {
+        console.error(e)
+        setMode('error')
+    })
+
+    async function main() {
+        Chart.register(ChartDataLabels);
+
+        const {id, difficulty} = getUrlParams()
+        if (difficulty === 'hard' || !difficulty) DOM.sections.hardStats.classList.add('selected')
+        if (difficulty === 'normal' || !difficulty) DOM.sections.normalStats.classList.add('selected')
+        DOM.sections.hardStats.onclick = () => {
+            DOM.sections.hardStats.classList.add('selected')
+        }
+        DOM.sections.normalStats.onclick = () => {
+            DOM.sections.normalStats.classList.add('selected')
+        }
+        DOM.playLevelButton.href = `https://www.konkr.io/#campaign/${encodeURIComponent(id)}`
+
+        await fetchData()
     }
 
-    fetchData()
 
     function setMode(mode) {
         Object.values(DOM.modes).forEach(m => m.style.display = 'none')
@@ -202,7 +229,7 @@ seo_frequency: monthly
 
     async function fetchData() {
 
-        const { id, difficulty, turns } = getUrlParams()
+        const {id, difficulty, turns} = getUrlParams()
         setMode('loader')
 
         if (!id) return errorMessage('Level statistics for each level are now accessible from within the game!')
@@ -214,8 +241,8 @@ seo_frequency: monthly
                 return errorMessage('Statistics for this level are not available yet, come back later!')
             }
             const data = await response.json()
-            const { generatedAt, levelName } = data.metadata
-            DOM.title.innerText = `${levelName}`
+            const {generatedAt, levelName} = data.metadata
+            DOM.title.innerText = levelName
             DOM.subtitle.innerHTML = `level statistics last updated <abbr title='${new Date(generatedAt).toString()}'>${getRelativeDate(generatedAt)}`
 
 
@@ -225,8 +252,11 @@ seo_frequency: monthly
             DOM.counters.normalVictoryCount.innerText = percentage(data.outcomes['won-normal'], total)
             DOM.counters.hardVictoryCount.innerText = percentage(data.outcomes['won-hard'], total)
 
-            const hardChartOptions = difficulty === 'hard'? { highlightIndex: turns - 1, highlightColor: '#ffcc00' }: {}
-            const normalChartOptions = difficulty === 'normal'? { highlightIndex: turns - 1, highlightColor: '#cccccc' }: {}
+            const hardChartOptions = difficulty === 'hard' ? {highlightIndex: turns - 1, highlightColor: '#ffcc00'} : {}
+            const normalChartOptions = difficulty === 'normal' ? {
+                highlightIndex: turns - 1,
+                highlightColor: '#cccccc'
+            } : {}
 
             createChart(DOM.charts.hardVictory, data.turnsToVictory.hard, hardChartOptions)
             createChart(DOM.charts.normalVictory, data.turnsToVictory.normal, normalChartOptions)
@@ -240,8 +270,8 @@ seo_frequency: monthly
 
 
     function createChart(element, data, options) {
-        const {highlightIndex=-1, highlightColor='#ffcc00ff'} = options
-        const values = data.map((record,i) => Math.max(i===highlightIndex ? 1:0, record.players) || null)
+        const {highlightIndex = -1, highlightColor = '#ffcc00ff'} = options
+        const values = data.map((record, i) => Math.max(i === highlightIndex ? 1 : 0, record.players) || null)
         const labels = data.map(record => highlightIndex === -1 ? `${record.turns} turns` : record.turns)
 
         new Chart(element, {
@@ -258,7 +288,7 @@ seo_frequency: monthly
                     borderColor: 0,
                     borderSkipped: false,
                     borderWidth: ({index}) => (index === highlightIndex) ? 1 : 0,
-                    backgroundColor: ({index}) => (index === highlightIndex) ? highlightColor: '#8cb0c2',
+                    backgroundColor: ({index}) => (index === highlightIndex) ? highlightColor : '#8cb0c2',
                     datalabels: {
                         color: '#ffffff',
                         anchor: 'end',
@@ -271,7 +301,7 @@ seo_frequency: monthly
                         padding: {
                             bottom: 2,
                         },
-                        backgroundColor:'#000000c0',
+                        backgroundColor: '#000000c0',
                         borderRadius: 4,
                         borderWidth: 0,
                         display: ({dataIndex}) => (dataIndex === highlightIndex),
@@ -311,8 +341,8 @@ seo_frequency: monthly
                     }
                 },
                 scales: {
-                    y: { display: false },
-                    x: { display: false }
+                    y: {display: false},
+                    x: {display: false}
                 },
 
             }
