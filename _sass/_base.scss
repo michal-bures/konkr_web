@@ -169,7 +169,8 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: $content-width;
+        max-width: min($content-width, 100%);
+        min-width: 400px;
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
