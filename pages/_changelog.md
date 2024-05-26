@@ -1,6 +1,14 @@
 
 
 ---
+v2.31.6 <small>released 2024-05-26</small>
+- added link to level stats in level detail menu and victory screen
+- added button to sort level list on expedition screen by name, personal best number of turns, or active modes
+- new levels by @CuteNepgear and @Jam2020
+- bugfix: changing color theme on expedition screen now works properly 
+- bugfix: don't show defense marker icon over swamps when placing towers
+
+---
 v2.31.4 <small>released 2024-05-19</small>
 - 3 new levels by @33333 and @dys in Mapmakers Archipelago
 
