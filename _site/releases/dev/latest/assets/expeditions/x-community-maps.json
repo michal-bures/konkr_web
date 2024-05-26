@@ -487,7 +487,8 @@
           },
           "links": [
             "l-oasis",
-            "l-airstrip-1"
+            "l-airstrip-1",
+            "l-colony-trouble"
           ]
         },
         {
@@ -1094,7 +1095,6 @@
         {
           "type": "island",
           "id": "l-nyc",
-
           "shape": {
             "x": 108,
             "y": 196,
@@ -1109,7 +1109,6 @@
         {
           "type": "island",
           "id": "l-uprising3",
-
           "shape": {
             "x": 16,
             "y": 130,
@@ -1123,7 +1122,6 @@
         {
           "type": "island",
           "id": "l-one-memory",
-
           "shape": {
             "x": 87,
             "y": 224,
@@ -1137,7 +1135,6 @@
         {
           "type": "island",
           "id": "l-assasins",
-
           "shape": {
             "x": -3,
             "y": 139,
@@ -1145,13 +1142,13 @@
             "h": 19
           },
           "links": [
-            "entrypoint2"
+            "entrypoint2",
+            "l-cashflow"
           ]
         },
         {
           "type": "island",
           "id": "l-chinese-checkers",
-          "isNew": true,
           "shape": {
             "x": -18,
             "y": 105,
@@ -1165,7 +1162,6 @@
         {
           "type": "island",
           "id": "l-bulldozer",
-          "isNew": true,
           "shape": {
             "x": 118,
             "y": 99,
@@ -1179,7 +1175,6 @@
         {
           "type": "island",
           "id": "l-treble",
-          "isNew": true,
           "shape": {
             "x": 130,
             "y": 137,
@@ -1189,6 +1184,34 @@
           "links": [
             "l-up",
             "l-nitro"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-colony-trouble",
+          "isNew": true,
+          "shape": {
+            "x": -59,
+            "y": 135,
+            "w": 20,
+            "h": 20
+          },
+          "links": [
+            "l-ruined-kingdom"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-cashflow",
+          "isNew": true,
+          "shape": {
+            "x": -26,
+            "y": 155,
+            "w": 26,
+            "h": 25
+          },
+          "links": [
+            "l-assasins"
           ]
         }
       ]
