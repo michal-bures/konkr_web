@@ -1,0 +1,116 @@
+---
+layout: default
+title: Level statistics
+description: Level statistics
+permalink: /level-stats-index/
+seo_priority: 0.1
+seo_frequency: monthly
+---
+<style>
+    h1 {
+        margin-bottom: 0;
+        line-height: 1
+    }
+
+    #subtitle {
+        margin-top: 0;
+        font-size: 14px;
+        color: #74a7c0
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+    th {
+        text-align: left;
+        padding: 0.5em;
+        border-bottom: 1px solid #74a7c0;
+
+    }
+    tr:hover {
+        background-color: #d8f3ff;
+    }
+    td {
+        padding: 0.5em;
+    }
+</style>
+
+<h1>Level statistics</h1>
+<h2 id="subtitle"></h2>
+
+<table id="level-stats-table">
+
+</table>
+
+<script>
+
+    const DOM = {
+        levelStatsTable: document.getElementById('level-stats-table'),
+        subtitle: document.getElementById('subtitle')
+    }
+
+    main().catch(e => {
+        console.error(e)
+    })
+
+    async function main() {
+        const response = await fetch(`{{ site.konkr_data_url }}/stats/levels-index.json`)
+        const data = await response.json()
+        console.log('DATA', data)
+        DOM.subtitle.innerHTML = `last updated <abbr title='${new Date(data.metadata.generatedAt).toString()}'>${getRelativeDate(data.metadata.generatedAt)}`
+        const html = createLevelsIndexHtmlReport(data)
+        DOM.levelStatsTable.innerHTML = html
+    }
+
+    function createLevelsIndexHtmlReport(levelsIndex) {
+        return levelsIndex.expeditions.map(expedition => {
+            const header = createHeaderRow(expedition.name)
+            const levelRows = expedition.levels.map(level => {
+                const wonHardPct = Math.round((level.outcomes['won-hard'] ?? 0) / level.totalPlayers * 100)
+                const wonNormalPct = Math.round((level.outcomes['won-normal'] ?? 0) / level.totalPlayers * 100)
+                const lostPct = Math.round((level.outcomes['lost'] ?? 0) / level.totalPlayers * 100)
+                const feedbackPct = Math.round(level.positiveFeedbackCount / level.feedbackCount * 100)
+                return `
+            <tr>
+                <td><a href="/level-stats?id=${level.id}">${level.numberInExpedition}. ${level.name}</a></td>
+                <td>${formatPct(wonHardPct)}</td>
+                <td>${formatPct(wonNormalPct)}</td>
+                <td>${formatPct(lostPct)}</td>
+                <td>${formatPct(feedbackPct)}</td>
+                <td>${level.feedbackCount || ''}</td>
+            </tr>`
+            })
+            return [header, ...levelRows].join(`\n`)
+        }).join(`\n`)
+    }
+
+    function createHeaderRow(title) {
+        return `
+         <tr>
+             <th>${title}</th>
+             <th><img src="/img/icons/gold-trophy.png" title="% of players that won on hard difficulty"></th>
+             <th><img src="/img/icons/silver-trophy.png" title="% of players that won on normal difficulty"></th>
+             <th><img src="/img/icons/grave.png" title="% of players that weren't able to win"></th>
+             <th><img src="/img/icons/emoji-happy.png" title="% of positive feedback ratings"></th>
+             <th title="number of feedback ratings"># of ratings</th>
+         </tr>`
+    }
+
+    function formatPct(value) {
+        if (Number.isNaN(value) || value === 0) {
+            return ''
+        }
+        return `${value}%`
+    }
+
+    function getRelativeDate(isoDate) {
+        const date = new Date(isoDate)
+        const now = new Date()
+        const diff = now - date
+
+        if (now.toDateString() === date.toDateString()) return 'today'
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+        if (days <= 1) return 'yesterday'
+        return `${days} days ago`
+    }
+</script>

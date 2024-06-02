@@ -1,6 +1,6 @@
 ---
 layout: default
-description: Level statistics
+description: Level Statistics
 permalink: /level-stats/
 seo_priority: 0.1
 seo_frequency: monthly
@@ -12,7 +12,7 @@ seo_frequency: monthly
         line-height: 1
     }
 
-    #subtitle {
+    .navtext {
         margin-top: 0;
         font-size: 14px;
         color: #74a7c0
@@ -129,9 +129,10 @@ seo_frequency: monthly
 </div>
 <div id="content" style="display: none">
     <div class="titleLayout">
+        <h2 id="header-nav" class="navtext"><a href="/level-stats-index/">« Level statistics</a></h2>
         <h1><span id="title"></span> <a id="playLevelButton">» Play Level</a></h1>
 
-        <h2 id="subtitle"></h2>
+        <h2 id="subtitle" class="navtext"></h2>
     </div>
     <div class="section clickable" id="hardStats">
         <div class="playerCountRow">
@@ -235,7 +236,7 @@ seo_frequency: monthly
         if (!id) return errorMessage('Level statistics for each level are now accessible from within the game!')
 
         try {
-            const response = await fetch(`{{ site.level_stats_url }}/${id}.json`)
+            const response = await fetch(`{{ site.konkr_data_url }}/stats/levels/${id}.json`)
 
             if (response.status === 404) {
                 return errorMessage('Statistics for this level are not available yet, come back later!')
@@ -243,7 +244,7 @@ seo_frequency: monthly
             const data = await response.json()
             const {generatedAt, levelName, expeditionName, fixedAIDifficulty} = data.metadata
             DOM.title.innerText = levelName
-            DOM.subtitle.innerHTML = `level statistics last updated <abbr title='${new Date(generatedAt).toString()}'>${getRelativeDate(generatedAt)}`
+            DOM.subtitle.innerHTML = `last updated <abbr title='${new Date(generatedAt).toString()}'>${getRelativeDate(generatedAt)}`
 
 
             const total = data.outcomes.lost + data.outcomes['won-normal'] + data.outcomes['won-hard']
