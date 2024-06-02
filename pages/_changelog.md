@@ -1,6 +1,10 @@
 
 
 ---
+v2.31.7 <small>released 2024-06-02</small>
+- bugfix: in "always retreat" mode units no longer prefer death to retreating away from town 
+
+---
 v2.31.6 <small>released 2024-05-26</small>
 - added link to level stats in level detail menu and victory screen
 - added button to sort level list on expedition screen by name, personal best number of turns, or active modes
