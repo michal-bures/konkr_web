@@ -165,6 +165,12 @@ seo_frequency: monthly
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 
 <script>
+    const params = new URLSearchParams(window.location.search);
+    const QUERY_PARAMS = {
+        id: params.get('id'),
+        difficulty: params.get('difficulty'),
+        turns: Number(params.get('turns'))
+    }
     const DOM = {
         modes: {
             content: document.getElementById('content'),
@@ -200,7 +206,7 @@ seo_frequency: monthly
     async function main() {
         Chart.register(ChartDataLabels);
 
-        const {id} = getUrlParams()
+        const {id} = QUERY_PARAMS
 
         DOM.sections.hardStats.onclick = () => {
             DOM.sections.hardStats.classList.add('selected')
@@ -228,9 +234,35 @@ seo_frequency: monthly
         DOM.modes.error.innerText = message
     }
 
+    function getLocalResult() {
+        const { id } = QUERY_PARAMS
+        const userId = localStorage.getItem('konkr.userId') ?? localStorage.getItem('konkr.defaultUserId')
+        if (!userId) return undefined
+        console.log('userId', userId)
+        const userDataKey = `konkr.userData.v2.${userId}`
+        const rawUserData = localStorage.getItem(userDataKey)
+        console.log('rawUserData', rawUserData)
+        if (!rawUserData) return undefined
+
+        try {
+            const data = JSON.parse(rawUserData)
+            const bestResult = data.levels[id].won
+            console.log('best result', bestResult)
+            if (bestResult) {
+                return { difficulty: bestResult.difficulty ?? 'hard', turns: bestResult.turns}
+            }
+        } catch (error) {
+            console.error('Failed to parse user data', error)
+        }
+    }
+
     async function fetchData() {
 
-        const {id, difficulty, turns} = getUrlParams()
+        const userData = getLocalResult()
+        const id = QUERY_PARAMS.id
+        const difficulty = QUERY_PARAMS.difficulty ?? userData?.difficulty
+        const turns = userData?.turns
+
         setMode('loader')
 
         if (!id) return errorMessage('Level statistics for each level are now accessible from within the game!')
@@ -341,8 +373,6 @@ seo_frequency: monthly
                         xAlign: 'center',
                         yAlign: 'bottom'
                     },
-
-
                 },
                 elements: {
                     bar: {
@@ -356,22 +386,6 @@ seo_frequency: monthly
 
             }
         });
-    }
-
-    function htmlToElement(html) {
-        var template = document.createElement('template');
-        html = html.trim(); // Never return a text node of whitespace as the result
-        template.innerHTML = html;
-        return template.content.firstChild;
-    }
-
-    function getUrlParams() {
-        const params = new URLSearchParams(window.location.search);
-        return {
-            id: params.get('id'),
-            difficulty: params.get('difficulty'),
-            turns: Number(params.get('turns'))
-        }
     }
 
     function getRelativeDate(isoDate) {
