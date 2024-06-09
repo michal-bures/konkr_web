@@ -35,7 +35,8 @@
             "l-first-down",
             "l-vassalage",
             "l-rawr",
-            "l-small-world"
+            "l-small-world",
+            "l-mines-conquest"
           ]
         },
         {
@@ -250,8 +251,8 @@
           "type": "island",
           "id": "l-life-and-death",
           "shape": {
-            "x": -34,
-            "y": 78,
+            "x": -28,
+            "y": 76,
             "w": 16,
             "h": 15
           },
@@ -264,8 +265,8 @@
           "type": "island",
           "id": "l-knight-cove",
           "shape": {
-            "x": -70,
-            "y": 90,
+            "x": -68,
+            "y": 89,
             "w": 23,
             "h": 20
           },
@@ -335,8 +336,8 @@
           "type": "island",
           "id": "l-oasis",
           "shape": {
-            "x": -48,
-            "y": 89,
+            "x": -45,
+            "y": 85,
             "w": 17,
             "h": 18
           },
@@ -422,8 +423,8 @@
           "type": "island",
           "id": "l-knights-before-christmas",
           "shape": {
-            "x": -15,
-            "y": 76,
+            "x": -12,
+            "y": 77,
             "w": 12,
             "h": 22
           },
@@ -480,8 +481,8 @@
           "type": "island",
           "id": "l-ruined-kingdom",
           "shape": {
-            "x": -58,
-            "y": 109,
+            "x": -56,
+            "y": 107,
             "w": 22,
             "h": 23
           },
@@ -530,7 +531,7 @@
           "type": "island",
           "id": "l-crowded",
           "shape": {
-            "x": -23,
+            "x": -20,
             "y": 92,
             "w": 9,
             "h": 15
@@ -1210,6 +1211,35 @@
           },
           "links": [
             "l-assasins"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-mines-conquest",
+          "shape": {
+            "x": -34,
+            "y": 104,
+            "w": 16,
+            "h": 16
+          },
+          "isNew": true,
+          "links": [
+            "l-waiting-for-help",
+            "entrypoint"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-waiting-for-help",
+          "isNew": true,
+          "shape": {
+            "x": -36,
+            "y": 127,
+            "w": 19,
+            "h": 17
+          },
+          "links": [
+            "l-mines-conquest"
           ]
         }
       ]
