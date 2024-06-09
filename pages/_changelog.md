@@ -1,6 +1,18 @@
 
 
 ---
+v2.31.9 <small>released 2024-06-09</small>
+- two new maps in Mapmakers Archipelago by @kardinalg
+- drag&drop for files and replays now works also with plain text and discord attachment links  
+- swamp rules adjustment: cannot merge pikeman into knight on swamp tiles
+- small tweak to "Reckoning" tutorial level to prevent Godfrey wiping out enemy king on turn 1
+- bugfix: fixed more cases of incorrect conquerable hexes and auto-merge behavior when conquering protected swamp tiles
+- bugfix: rewind button layout in play menu sometimes broken when first opened
+- bugfix: broken "more info" button in "Double Trouble" tutorial level
+- bugfix: prevent overlapping tooltips in help sidebar panel  
+- bugfix: prevent side panel buttons background sometimes incorrectly remaining in place after menu was collapsed on mobile
+ 
+---
 v2.31.7 <small>released 2024-06-02</small>
 - bugfix: in "always retreat" mode units no longer prefer death to retreating away from town 
 
