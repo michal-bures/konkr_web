@@ -1,0 +1,110 @@
+{
+  "expeditions": [
+    {
+      "id": "x-dead-islands",
+      "metadata": {
+        "name": "Dead Islands",
+        "description": "The Heart of Darkness awaits the brave!"
+      },
+      "config": {
+        "theme": "muted"
+      },
+      "objects": [
+        {
+          "id": "f1",
+          "type": "flavor-text",
+          "shape": {
+            "x": -10,
+            "y": 98
+          }
+        },
+        {
+          "type": "expedition-portal",
+          "id": "x-old-world",
+          "shape": {
+            "x": -6,
+            "y": 114
+          },
+          "links": [
+            "l-dead-islands-arrival"
+          ]
+        },
+        {
+          "id": "l-dead-islands-arrival",
+          "type": "island",
+          "entrypoint": true,
+          "fixedAIDifficulty": "normal",
+          "shape": {
+            "x": 5,
+            "y": 110,
+            "w": 12,
+            "h": 11
+          },
+          "links": [
+            "l-dead-islands-hammer-of-faith",
+            "x-old-world"
+          ]
+        },
+        {
+          "id": "l-dead-islands-hammer-of-faith",
+          "type": "island",
+          "fixedAIDifficulty": "normal",
+          "shape": {
+            "x": 17,
+            "y": 103,
+            "w": 21,
+            "h": 15
+          },
+          "links": [
+            "l-dead-islands-harvest",
+            "l-dead-islands-arrival"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-dead-islands-harvest",
+          "fixedAIDifficulty": "normal",
+          "shape": {
+            "x": 31,
+            "y": 79,
+            "w": 20,
+            "h": 29
+          },
+          "links": [
+            "l-dead-islands-city-of-the-dead",
+            "l-dead-islands-hammer-of-faith"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-dead-islands-city-of-the-dead",
+          "fixedAIDifficulty": "normal",
+          "shape": {
+            "x": 22,
+            "y": 52,
+            "w": 21,
+            "h": 27
+          },
+          "links": [
+            "l-dead-islands-heart-of-darkness",
+            "l-dead-islands-harvest"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-dead-islands-heart-of-darkness",
+          "fixedAIDifficulty": "normal",
+          "shape": {
+            "x": 3,
+            "y": 69,
+            "w": 20,
+            "h": 23
+          },
+          "links": [
+            "l-dead-islands-city-of-the-dead"
+          ]
+        }
+      ]
+    }
+  ]
+}

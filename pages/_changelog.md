@@ -1,6 +1,12 @@
 
 
 ---
+v2.31.10 <small>released 2024-06-16</small>
+- using "view replay" while post-defeat spectating starts the replay from the beginning
+- bugfix: using rewind after spectating no longer breaks the game
+- bugfix: fix ghost notifications after finishing spectating mode 
+
+---
 v2.31.9 <small>released 2024-06-09</small>
 - two new maps in Mapmakers Archipelago by @kardinalg
 - drag&drop for files and replays now works also with plain text and discord attachment links  
