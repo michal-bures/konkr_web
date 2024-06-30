@@ -251,8 +251,8 @@
           "type": "island",
           "id": "l-life-and-death",
           "shape": {
-            "x": -28,
-            "y": 76,
+            "x": -29,
+            "y": 75,
             "w": 16,
             "h": 15
           },
@@ -337,7 +337,7 @@
           "id": "l-oasis",
           "shape": {
             "x": -45,
-            "y": 85,
+            "y": 82,
             "w": 17,
             "h": 18
           },
@@ -351,12 +351,13 @@
           "id": "l-locked-in",
           "shape": {
             "x": -4,
-            "y": 91,
+            "y": 118,
             "w": 18,
             "h": 19
           },
           "links": [
-            "entrypoint2"
+            "entrypoint2",
+            "l-hexed-forest"
           ]
         },
         {
@@ -423,8 +424,8 @@
           "type": "island",
           "id": "l-knights-before-christmas",
           "shape": {
-            "x": -12,
-            "y": 77,
+            "x": -13,
+            "y": 73,
             "w": 12,
             "h": 22
           },
@@ -532,7 +533,7 @@
           "id": "l-crowded",
           "shape": {
             "x": -20,
-            "y": 92,
+            "y": 90,
             "w": 9,
             "h": 15
           },
@@ -590,8 +591,8 @@
           "type": "island",
           "id": "l-hispanola",
           "shape": {
-            "x": 29,
-            "y": 167,
+            "x": 33,
+            "y": 175,
             "w": 23,
             "h": 12
           },
@@ -793,8 +794,8 @@
           "type": "island",
           "id": "l-d-day",
           "shape": {
-            "x": 1,
-            "y": 169,
+            "x": 2,
+            "y": 180,
             "w": 25,
             "h": 17
           },
@@ -807,8 +808,8 @@
           "type": "island",
           "id": "l-okinawa",
           "shape": {
-            "x": 17,
-            "y": 142,
+            "x": 18,
+            "y": 148,
             "w": 18,
             "h": 28
           },
@@ -898,7 +899,7 @@
           "id": "l-spider-2",
           "shape": {
             "x": 30,
-            "y": 182,
+            "y": 197,
             "w": 21,
             "h": 19
           },
@@ -906,15 +907,16 @@
             "l-hispanola",
             "l-moldova-1829",
             "l-thailand",
-            "l-partizan"
+            "l-partizan",
+            "l-splitted"
           ]
         },
         {
           "type": "island",
           "id": "l-siege-wall",
           "shape": {
-            "x": 5,
-            "y": 116,
+            "x": 10,
+            "y": 96,
             "w": 15,
             "h": 17
           },
@@ -927,8 +929,8 @@
           "type": "island",
           "id": "l-gold-swamp",
           "shape": {
-            "x": -5,
-            "y": 126,
+            "x": -3,
+            "y": 93,
             "w": 13,
             "h": 13
           },
@@ -947,7 +949,8 @@
           },
           "links": [
             "l-cursed-city",
-            "l-norman-conquest"
+            "l-norman-conquest",
+            "l-china-1937"
           ]
         },
         {
@@ -1041,7 +1044,7 @@
           "id": "l-partizan",
           "shape": {
             "x": 35,
-            "y": 205,
+            "y": 217,
             "w": 20,
             "h": 20
           },
@@ -1111,8 +1114,8 @@
           "type": "island",
           "id": "l-uprising3",
           "shape": {
-            "x": 16,
-            "y": 130,
+            "x": 18,
+            "y": 134,
             "w": 13,
             "h": 14
           },
@@ -1137,8 +1140,8 @@
           "type": "island",
           "id": "l-assasins",
           "shape": {
-            "x": -3,
-            "y": 139,
+            "x": -2,
+            "y": 142,
             "w": 19,
             "h": 19
           },
@@ -1151,8 +1154,8 @@
           "type": "island",
           "id": "l-chinese-checkers",
           "shape": {
-            "x": -18,
-            "y": 105,
+            "x": -14,
+            "y": 101,
             "w": 18,
             "h": 23
           },
@@ -1204,8 +1207,8 @@
           "type": "island",
           "id": "l-cashflow",
           "shape": {
-            "x": -26,
-            "y": 155,
+            "x": -23,
+            "y": 159,
             "w": 26,
             "h": 25
           },
@@ -1217,8 +1220,8 @@
           "type": "island",
           "id": "l-mines-conquest",
           "shape": {
-            "x": -34,
-            "y": 104,
+            "x": -36,
+            "y": 99,
             "w": 16,
             "h": 16
           },
@@ -1231,13 +1234,55 @@
           "type": "island",
           "id": "l-waiting-for-help",
           "shape": {
-            "x": -36,
-            "y": 127,
+            "x": -34,
+            "y": 114,
             "w": 19,
             "h": 17
           },
           "links": [
             "l-mines-conquest"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-china-1937",
+          "isNew": true,
+          "shape": {
+            "x": 67,
+            "y": 59,
+            "w": 29,
+            "h": 28
+          },
+          "links": [
+            "l-savage-woods"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-splitted",
+          "isNew": true,
+          "shape": {
+            "x": 12,
+            "y": 205,
+            "w": 13,
+            "h": 15
+          },
+          "links": [
+            "l-spider-2"
+          ]
+        },
+        {
+          "type": "island",
+          "id": "l-hexed-forest",
+          "isNew": true,
+          "shape": {
+            "x": -24,
+            "y": 131,
+            "w": 25,
+            "h": 25
+          },
+          "links": [
+            "l-locked-in"
           ]
         }
       ]
