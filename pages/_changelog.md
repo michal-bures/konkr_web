@@ -1,6 +1,12 @@
 
 
 ---
+v2.31.11 <small>released 2024-06-30</small>
+- bugfix: fix auto unit merge occasionally attempting to use tiles outside owners province
+- bugfix: fix crash attempting to upgrade pikeman into knight after picking him up form a swamp tile
+- various bugfixes in map editor
+
+---
 v2.31.10 <small>released 2024-06-16</small>
 - using "view replay" while post-defeat spectating starts the replay from the beginning
 - bugfix: using rewind after spectating no longer breaks the game
