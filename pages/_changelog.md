@@ -1,7 +1,8 @@
 
 
 ---
-v2.31.12 <small>released 2024-07-07</small>
+v2.31.13 <small>released 2024-07-07</small>
+- bugfix: fixed game breaking when switching theme while watching replay
 - bugfix: fixed another case where the auto-attack functionality would try to use knight on a swamp tile 
 
 ---
