@@ -1,0 +1,155 @@
+---
+permalink: /inspector/
+seo_priority: 0
+seo_frequency: never
+---
+<html>
+<head>
+
+    <title>Konkr data inspector</title>
+    <link rel="icon" type="image/png" href="/img/favicon-16.png" sizes="16x16">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+            integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lzutf8/0.6.3/lzutf8.min.js"
+            integrity="sha512-jsnMjzAAVwJt3pKB5KXVMj/TO9pc8NrmEEde/ynXffVEEiaoH74/x2KIqIa0ZaLvNsJfNPaLdukkVWa0RRKbOw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.0/jsoneditor.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.0/jsoneditor.min.css"
+          integrity="sha512-8G+Vb2+10BSrSo+wupdzJIylDLpGtEYniQhp0rsbTigPG7Onn2S08Ai/KEGlxN2Ncx9fGqVHtRehMuOjPb9f8g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+    <style>
+        #root {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            display: flex;
+            align-items: stretch;
+        }
+
+
+        #root > *:nth-child(1) {
+            max-height: 120px;
+        }
+
+        #root > *:nth-child(2) {
+            flex-grow: 1;
+        }
+        .panel {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #decoded {
+            flex-grow: 1;
+        }
+
+        #encoded {
+            flex-grow: 1;
+            font-family: monospace;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+<div id="root">
+    <div class="panel">
+        <textarea id="encoded" placeholder="paste encoded konkr data here"></textarea>
+    </div>
+    <div class="panel">
+        <input id="prefix" placeholder="prefix"></input>
+        <div id="decoded"></div>
+    </div>
+
+</div>
+
+<script>
+
+    const {_} = window;
+
+    const DOM = {
+        encoded: document.getElementById('encoded'),
+        decoded: document.getElementById('decoded'),
+        prefix: document.getElementById('prefix'),
+    }
+    const decodedEditor = new JSONEditor(DOM.decoded, {
+        mode: 'code',
+        onChange: _.debounce(encode, 300),
+        modes: ['code', 'tree']
+    })
+
+    DOM.encoded.oninput = _.debounce(() => {
+        persistInput()
+        decode();
+    }, 300)
+    DOM.encoded.onfocus = ()=> {
+        DOM.encoded.select()
+    }
+    DOM.prefix.oninput = _.debounce(encode, 300)
+
+    restoreInput()
+
+    function persistInput() {
+        window.localStorage?.setItem('decoded', DOM.encoded.value)
+    }
+
+    function restoreInput() {
+        DOM.encoded.value = window.localStorage?.getItem('decoded') ?? ''
+        if (DOM.encoded.value) decode()
+    }
+
+    function decode() {
+        if (DOM.encoded.value.startsWith('"')) {
+            DOM.encoded.value = DOM.encoded.value.slice(1)
+        }
+        if (DOM.encoded.value.endsWith('"')) {
+            DOM.encoded.value = DOM.encoded.value.slice(0, -1)
+        }
+
+        try {
+            const {prefix, data} = gzipDecode(DOM.encoded.value)
+            DOM.prefix.value = prefix
+            DOM.decoded.value = data
+            decodedEditor.set(JSON.parse(data))
+        } catch (err) {
+            console.error(err)
+            DOM.prefix.value = ''
+            decodedEditor.set(`Error: ${err.message}`)
+        }
+    }
+
+    function encode() {
+        try {
+            DOM.encoded.value = gzipEncode(DOM.prefix.value + '.',decodedEditor.get())
+        } catch (err) {
+            console.error(err)
+            DOM.encoded.value = `Error: ${err.message}`
+        }
+    }
+
+    function gzipEncode(prefix, object) {
+        const stringifiedState = JSON.stringify(object)
+        return prefix + LZUTF8.compress(stringifiedState, {inputEncoding: 'String', outputEncoding: 'Base64'})
+    }
+
+    function gzipDecode(serializedData) {
+        const prefix = serializedData.split('.').slice(0, 2).join('.')
+        const payload = serializedData.substring(prefix.length + 1)
+        const stringData = LZUTF8.decompress(payload, {inputEncoding: 'Base64', outputEncoding: 'String'}).toString()
+
+        return {
+            prefix,
+            data: stringData
+        }
+    }
+
+</script>
+</body>
+
+
+</html>
