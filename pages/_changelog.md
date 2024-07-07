@@ -1,6 +1,10 @@
 
 
 ---
+v2.31.12 <small>released 2024-07-07</small>
+- bugfix: fixed another case where the auto-attack functionality would try to use knight on a swamp tile 
+
+---
 v2.31.11 <small>released 2024-06-30</small>
 - bugfix: fix auto unit merge occasionally attempting to use tiles outside owners province
 - bugfix: fix crash attempting to upgrade pikeman into knight after picking him up form a swamp tile
