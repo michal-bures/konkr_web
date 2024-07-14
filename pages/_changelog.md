@@ -1,6 +1,16 @@
 
 
 ---
+v2.31.15 <small>released 2024-07-14</small>
+- Custom maps support: Custom maps are no longer treated as conquest maps in menu, player is able to adjust difficulty
+- Custom maps support: map files can now contain name, author and other fields as part of the map data 
+- Map Editor: Hitting "play" in map editor allows you to play test the map and return to map editor upon exiting the level
+- Map Editor: Unlimited rewinds while play testing from map editor
+- Map Editor: Improved JSON editor
+- Expedition map details loading optimization
+- new level in Mapmakers Archipelago by @HumblyMe
+
+---
 v2.31.13 <small>released 2024-07-07</small>
 - bugfix: fixed game breaking when switching theme while watching replay
 - bugfix: fixed another case where the auto-attack functionality would try to use knight on a swamp tile 
