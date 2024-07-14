@@ -1,6 +1,11 @@
 
 
 ---
+v2.31.16 <small>released 2024-07-14</small>
+- bugfix: fixed conquest islands shown as "Unknown Island" 
+- bugfix: fixed copy link button in Conquest mode
+
+---
 v2.31.15 <small>released 2024-07-14</small>
 - Custom maps support: Custom maps are no longer treated as conquest maps in menu, player is able to adjust difficulty
 - Custom maps support: map files can now contain name, author and other fields as part of the map data 
