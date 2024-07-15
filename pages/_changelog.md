@@ -1,6 +1,11 @@
 
 
 ---
+v2.31.17 <small>released 2024-07-15</small>
+- bugfix: fixed some levels no longer having fixed AI difficulty (leading to medals turning from gold to silver)
+- bugfix: fixed initial town not appearing in Kings Landing mode
+
+---
 v2.31.16 <small>released 2024-07-14</small>
 - bugfix: fixed conquest islands shown as "Unknown Island" 
 - bugfix: fixed copy link button in Conquest mode
