@@ -1,6 +1,13 @@
 
 
 ---
+v2.31.19 <small>released 2024-07-28</small>
+- 3 new levels in Mapmakers Archipelago by @HumblyMe and @kardinalg
+- display level author in play menu
+- map editor: use level name for the export filename if available
+- map editor bugfix: fix crash when placing camp/haunted town on forest tile
+
+---
 v2.31.17 <small>released 2024-07-15</small>
 - bugfix: fixed some levels no longer having fixed AI difficulty (leading to medals turning from gold to silver)
 - bugfix: fixed initial town not appearing in Kings Landing mode
