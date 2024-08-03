@@ -1,6 +1,10 @@
 
 
 ---
+v2.32.0 <small>released 2024-08-03</small>
+- bugfix: fix tutorial messages appearing in the Unity level
+
+---
 v2.31.19 <small>released 2024-07-28</small>
 - 3 new levels in Mapmakers Archipelago by @HumblyMe and @kardinalg
 - display level author in play menu
