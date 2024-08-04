@@ -1,6 +1,11 @@
 
 
 ---
+v2.34.0 <small>released 2024-08-04</small>
+- bugfix: fix mouse input glitches in JSON editor, mainly on firefox
+- bugfix: restore difficulty selection for Unity level
+
+---
 v2.32.0 <small>released 2024-08-03</small>
 - bugfix: fix tutorial messages appearing in the Unity level
 
