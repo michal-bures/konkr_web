@@ -1,6 +1,15 @@
 
 
 ---
+v2.34.1 <small>released 2024-08-18</small>
+- loading a replay now shows the level name and difficulty in the top-left corner
+- zombie spawning tweak: haunted towns will always spawn a zombie as long as there's am available adjacent tile (even if that tile is further away from a viable source of brains than the haunted town itself)
+- UI tweak: hitting Escape while spectating previous turn skips the replay instead of opening the level menu 
+- bugfix: fixed source of lag when re-saving a loaded replay 
+- bugfix: disallow accepting surrender during enemy turn
+- bugfix: rewinding during AI turn should no longer cause glitches
+
+---
 v2.34.0 <small>released 2024-08-04</small>
 - bugfix: fix mouse input glitches in JSON editor, mainly on firefox
 - bugfix: restore difficulty selection for Unity level
