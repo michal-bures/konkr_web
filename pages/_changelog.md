@@ -1,6 +1,18 @@
 
 
 ---
+v2.34.2 <small>released 2024-10-27</small>
+- When restarting a conquest level, you can now adjust the rivals difficulty level (just like in expeditions)
+- bugfix: fixed cases of rivals difficulty change not sticking in conquest after restart (kudos @PositronicBranez for report)
+- bugfix: "Next Island" and subsequent difficulty selection prompt are available again after finishing final tutorial level
+- bugfix: Cancel button on "Play again" dialog restarts the level anyway (kudos @PositronicBranez for report)
+- bugfix: fixed rare crash in the AI turn after players units were left stranded (kudos @IOMAN for report)
+- bugfix: fixed tutorial prompts and other elements remaining on screen after loading a replay (kudos @PositronicBranez for report)  
+- bugfix: fixed rare bug in zombie&bandit pathfinding (kudos @HBar for report; may break older replays where this bug occured)
+- bugfix: fixed bankrupcy symbol not appearing above freshly bought pawn
+- bugfix: hitting the E hotkey no longer freezes the game while watching imported replay 
+
+---
 v2.34.1 <small>released 2024-08-18</small>
 - loading a replay now shows the level name and difficulty in the top-left corner
 - zombie spawning tweak: haunted towns will always spawn a zombie as long as there's am available adjacent tile (even if that tile is further away from a viable source of brains than the haunted town itself)
