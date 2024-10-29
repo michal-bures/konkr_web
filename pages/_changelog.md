@@ -1,6 +1,11 @@
 
 
 ---
+v2.34.4 <small>released 2024-10-29</small>
+- Option to "zombify" any conquest level
+- bugfix: give difficulty toggle button proper color scheme in various contexts and themes
+
+---
 v2.34.2 <small>released 2024-10-27</small>
 - When restarting a conquest level, you can now adjust the rivals difficulty level (just like in expeditions)
 - bugfix: fixed cases of rivals difficulty change not sticking in conquest after restart (kudos @PositronicBranez for report)
