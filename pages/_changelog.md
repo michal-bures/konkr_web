@@ -1,6 +1,10 @@
 
 
 ---
+v2.34.6 <small>released 2024-11-10</small>
+- "zombify" conquest mode no longer on by default for new players
+
+---
 v2.34.4 <small>released 2024-10-29</small>
 - Option to "zombify" any conquest level
 - bugfix: give difficulty toggle button proper color scheme in various contexts and themes
