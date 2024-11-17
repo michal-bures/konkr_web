@@ -1,0 +1,204 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.0/jsoneditor.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.0/jsoneditor.min.css"
+      integrity="sha512-8G+Vb2+10BSrSo+wupdzJIylDLpGtEYniQhp0rsbTigPG7Onn2S08Ai/KEGlxN2Ncx9fGqVHtRehMuOjPb9f8g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+<style>
+    #jsoneditor-root {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        height: 100%;
+        background-color: #2F3129;
+    }
+    #jsoneditor-editor {
+        flex-grow: 1;
+    }
+    #jsoneditor-controls {
+        padding: 8px;
+        min-height: 36px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        display:flex;
+        flex-direction: row;
+    }
+    #jsoneditor-status {
+        flex-grow: 1;
+    }
+
+    #jsoneditor-save {
+        background-color: #008C00;
+    }
+    #jsoneditor-save:disabled {
+        background-color: #52524d;
+    }
+
+    #jsoneditor-cancel {
+        background-color: #c83737;
+    }
+
+    #jsoneditor-cancel, #jsoneditor-save {
+        cursor: pointer;
+        font-weight: bold;
+        margin: 0 10px;
+        width: 100px;
+        min-height: 36px;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+    /* JSON Editor Theme */
+    .jsoneditor-statusbar {
+        background: #49483E;
+        border-top: none
+    }
+
+    .jsoneditor {
+        border: none
+    }
+
+    .jsoneditor .ace_gutter {
+                          background: #2F3129;
+                          color: #8F908A
+    }
+
+    .jsoneditor .ace_print-margin {
+        width: 1px;
+        background: #555651
+    }
+
+    .jsoneditor .ace_scroller {
+        background-color: #272822;
+    }
+
+    .jsoneditor .ace {
+        background-color: #272822;
+        color: #F8F8F2
+    }
+
+    .jsoneditor .ace_cursor {
+        color: #F8F8F0;
+        border-color:#F8F8F0
+    }
+
+    .jsoneditor .ace_marker-layer .ace_selection {
+        background: #49483E
+    }
+
+    .jsoneditor .ace-monokai.ace_multiselect .ace_selection.ace_start {
+        box-shadow: 0 0 3px 0px #272822;
+    }
+
+    .jsoneditor .ace_marker-layer .ace_step {
+        background: rgb(102, 82, 0)
+    }
+
+    .jsoneditor .ace_marker-layer .ace_bracket {
+        margin: -1px 0 0 -1px;
+        border: 1px solid #49483E
+    }
+
+    .jsoneditor .ace_marker-layer .ace_active-line {
+        background: #202020
+    }
+
+    .jsoneditor .ace_gutter-active-line {
+        background-color: #272727
+    }
+
+    .jsoneditor .ace_marker-layer .ace_selected-word {
+        border: 1px solid #49483E
+    }
+
+    .jsoneditor .ace_invisible {
+        color: #52524d
+    }
+
+    .jsoneditor .ace_entity.ace_name.ace_tag,
+    .jsoneditor .ace_keyword,
+    .jsoneditor .ace_meta.ace_tag,
+    .jsoneditor .ace_storage {
+        color: #F92672
+    }
+
+    .jsoneditor .ace_punctuation,
+    .jsoneditor .ace_punctuation.ace_tag {
+        color: #fff
+    }
+
+    .jsoneditor .ace_constant.ace_character,
+    .jsoneditor .ace_constant.ace_language,
+    .jsoneditor .ace_constant.ace_numeric,
+    .jsoneditor .ace_constant.ace_other {
+        color: #AE81FF
+    }
+
+    .jsoneditor .ace_invalid {
+        color: #F8F8F0;
+        background-color: #F92672
+    }
+
+    .jsoneditor .ace_invalid.ace_deprecated {
+        color: #F8F8F0;
+        background-color: #AE81FF
+    }
+
+    .jsoneditor .ace_support.ace_constant,
+    .jsoneditor .ace_support.ace_function {
+        color: #66D9EF
+    }
+
+    .jsoneditor .ace_fold {
+        background-color: #A6E22E;
+        border-color: #F8F8F2
+    }
+
+    .jsoneditor .ace_storage.ace_type,
+    .jsoneditor .ace_support.ace_class,
+    .jsoneditor .ace_support.ace_type {
+        font-style: italic;
+        color: #66D9EF
+    }
+
+    .jsoneditor .ace_entity.ace_name.ace_function,
+    .jsoneditor .ace_entity.ace_other,
+    .jsoneditor .ace_entity.ace_other.ace_attribute-name,
+    .jsoneditor .ace_variable {
+        color: #A6E22E
+    }
+
+    .jsoneditor .ace_variable.ace_parameter {
+        font-style: italic;
+        color: #FD971F
+    }
+
+    .jsoneditor .ace_string {
+        color: #E6DB74
+    }
+
+    .jsoneditor .ace_comment {
+        color: #75715E
+    }
+
+    .jsoneditor .ace_indent-guide {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y
+    }
+
+    .jsoneditor .ace_indent-guide-active {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQIW2PQ1dX9zzBz5sz/ABCcBFFentLlAAAAAElFTkSuQmCC) right repeat-y;
+    }
+
+</style>
+
+<div id="jsoneditor-root">
+    <div id="jsoneditor-editor"></div>
+    <div id="jsoneditor-controls">
+        <div id='jsoneditor-status'></div>
+        <button id='jsoneditor-cancel'>CANCEL</button>
+        <button id='jsoneditor-save'>SAVE</button>
+    </div>
+
+</div>
+
