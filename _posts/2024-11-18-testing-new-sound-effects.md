@@ -29,7 +29,7 @@ particularly awesome, don't hesitate to lobby for them!
 
 Same if you have an entirely different idea what kind of sound effect would be the best fit. I've listened to so many
 different thuds and whooshes and jingles this weekend it's making me a bit dizzy, but I'm still on the lookout for discovering those rare
-bits of audio feedback that just feel delightful. Making player actions feel satisfying is my favourite thing to chase 😉.
+bits of audio feedback that just feel delightful. Making player actions feel satisfying is my favourite thing to chase 😊.
 
 I realize adding new sounds to the game runs a risk of adding a new source of annoyance for some players, so I'll be listening closely to all feedback
 and likely iterating a bit more on some of these. I'm in no rush to get them into the main game until I'm sure they will be widely appreciated!
