@@ -20,7 +20,7 @@ Also, in the top left corner, you get a control panel that lets you experiment w
 - `dodge` - played when an enemy pawn successfully retreats from your attack
 - `grabCoins` - played when you loot some coins from a town or chest
 - `grabManyCoins` - played instead of `grabCoins` when you loot over 20 coins from a town or chest
-- `depositCoins` - played when coins land in your town
+- `depositCoins` - played when coins are delivered to your town or units
 - `spawnCoins` - played when some coins spawn at the start of your turn
 - `spawnManyCoins` - played instead of `spawnCoins` when at least 10 coins spawn for you at the start of your turn
 
