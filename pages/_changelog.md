@@ -1,6 +1,15 @@
 
 
 ---
+v2.35.0 <small>released 2024-12-15</small>
+- pawn movement and coin transitions polish (smoother, more juicy)
+- added sound FX for coin transactions, conquering and dodging
+- bugfix: fixed restarting game during AI turn sometimes putting the player in control of the first AI rival
+- bugfix: fixed the animation and lack of alert when pawn gets infected by zombie that just spawned from a haunted town
+- bugfix: fixed zombies looting for the faction from whose territory they moved
+- bugfix: fixed AI not approving of another faction killing zombies if said zombies were holding ladder 
+
+---
 v2.34.6 <small>released 2024-11-10</small>
 - "zombify" conquest mode no longer on by default for new players
 
