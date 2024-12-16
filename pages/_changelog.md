@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.1 <small>released 2024-12-16</small>
+- bugfix: fix occasional glitched out animation after skipping rival turn
+
+---
 v2.35.0 <small>released 2024-12-15</small>
 - pawn movement and coin transitions polish (smoother, more juicy)
 - added sound FX for coin transactions, conquering and dodging
