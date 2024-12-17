@@ -1,6 +1,11 @@
 
 
 ---
+v2.35.2 <small>released 2024-12-17</small>
+- bugfix: fix occasional freeze while hitting undo while holding a newly merged pawn 
+- clear old userdata backups from local storage
+
+---
 v2.35.1 <small>released 2024-12-16</small>
 - bugfix: fix occasional glitched out animation after skipping rival turn
 
