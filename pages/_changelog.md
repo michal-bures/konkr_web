@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.4 <small>released 2024-12-23</small>
+- Christmas decorations
+
+---
 v2.35.2 <small>released 2024-12-17</small>
 - bugfix: fix occasional freeze while hitting undo while holding a newly merged pawn 
 - clear old userdata backups from local storage
