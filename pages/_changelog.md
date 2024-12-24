@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.5 <small>released 2024-12-24</small>
+- Temporarily add buy gift ability to conquest maps
+
+---
 v2.35.4 <small>released 2024-12-23</small>
 - Christmas decorations
 
