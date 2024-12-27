@@ -1,6 +1,16 @@
 
 
 ---
+v2.35.6 <small>released 2024-12-27</small>
+- added sound FX for enemy capturing chest
+- presents now spawn properly on zombified christmas mode conquest maps
+- bugfix: fix incorrect message trigger in final tutorial island
+- bugfix: fix typos in help section
+- bugfix: fix tutorial text box positino so it doesn't get hidden behind map features on higher zoom levels
+- bugfix: fix zombies not destroying presents when spawning from haunted town
+ 
+
+---
 v2.35.5 <small>released 2024-12-24</small>
 - Temporarily add buy gift ability to conquest maps
 
