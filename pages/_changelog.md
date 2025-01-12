@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.7 <small>released 2025-01-12</small>
+- restore default theme and disable gifts in conquest outside of christmas mode
+
+---
 v2.35.6 <small>released 2024-12-27</small>
 - added sound FX for enemy capturing chest
 - presents now spawn properly on zombified christmas mode conquest maps
