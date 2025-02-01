@@ -1,6 +1,12 @@
 
 
 ---
+v2.35.8 <small>released 2025-02-01</small>
+- bugfix: fix a rare issue with hex incoming going to the incorrect province (thanks @HostileWL for report)
+- bugfix: lazy pawns reminded to start jumping again when switching from replay mode back to live gameplay (thanks @Ghost of a Slain Bandit for report)
+- subtle tweak to default faction colors for better contrast (kudos @PositronicBranez) 
+
+---
 v2.35.7 <small>released 2025-01-12</small>
 - restore default theme and disable gifts in conquest outside of christmas mode
 
