@@ -1,6 +1,13 @@
 
 
 ---
+v2.35.9 <small>released 2025-02-02</small>
+- AI optimization - in a 1v1 situation, AI won't waste time thinking past a winning move
+- bugfix: fixed game putting player in control of rival faction in some cases after rewind or instant replay
+- bugfix: towns taken over by zombies count towards the "all towns must survive" defeat condition
+- bugfix: custom chatter file import via drag&drop works again
+
+---
 v2.35.8 <small>released 2025-02-01</small>
 - bugfix: fix a rare issue with hex incoming going to the incorrect province (thanks @HostileWL for report)
 - bugfix: lazy pawns reminded to start jumping again when switching from replay mode back to live gameplay (thanks @Ghost of a Slain Bandit for report)
