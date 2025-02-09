@@ -1,6 +1,12 @@
 
 
 ---
+v2.35.10 <small>released 2025-02-09</small>
+- bugfix: fixed defeat screen in some cases showing rival emoji over an already captured tile 
+- bugfix: knight purchase detection fix in 1st tutorial level
+- AI bugfix: fix AI only ever defending town from zombies with villagers 
+
+---
 v2.35.9 <small>released 2025-02-02</small>
 - AI optimization - in a 1v1 situation, AI won't waste time thinking past a winning move
 - bugfix: fixed game putting player in control of rival faction in some cases after rewind or instant replay
