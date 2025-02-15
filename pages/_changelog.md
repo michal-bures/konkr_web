@@ -1,6 +1,11 @@
 
 
 ---
+v2.35.11 <small>released 2025-02-15</small>
+- bugfix: fixed inaccurate region entries when bandits involved
+- bugfix: fix christmas tree tooltip in conquest mode
+
+---
 v2.35.10 <small>released 2025-02-09</small>
 - bugfix: fixed defeat screen in some cases showing rival emoji over an already captured tile 
 - bugfix: knight purchase detection fix in 1st tutorial level
