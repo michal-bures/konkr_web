@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.12 <small>released 2025-02-16</small>
+- bugfix: fix missing transition for parts of play menu panel
+
+---
 v2.35.11 <small>released 2025-02-15</small>
 - bugfix: fixed inaccurate region entries when bandits involved
 - bugfix: fix christmas tree tooltip in conquest mode
