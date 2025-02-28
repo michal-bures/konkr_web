@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.14 <small>released 2025-02-28</small>
+- bugfix: if a unique hero is present, town should appear as level 4 even when bankrupt 
+
+---
 v2.35.13 <small>released 2025-02-28</small>
 - bugfix: ensure Kings Landing conquest maps always have at least 3 landable spots
 - bugfix: don't highlight end turn button after placing initial town in Kings Landing mode
