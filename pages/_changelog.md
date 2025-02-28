@@ -1,6 +1,12 @@
 
 
 ---
+v2.35.13 <small>released 2025-02-28</small>
+- bugfix: ensure Kings Landing conquest maps always have at least 3 landable spots
+- bugfix: don't highlight end turn button after placing initial town in Kings Landing mode
+- bugfix: fix unit preview over swamp sometimes mistakenly showing knight instead of hero in auto-merge (shift) mode   
+
+---
 v2.35.12 <small>released 2025-02-16</small>
 - bugfix: fix missing transition for parts of play menu panel
 
