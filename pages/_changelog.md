@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.17 <small>released 2025-03-15</small>
+- bugfix: shortcircuiting the AI calculation when game-winning move is found works more reliably 
+
+---
 v2.35.15 <small>released 2025-03-09</small>
 - new emoji when rival AI is thinking 
 - tweaked label shown during rival turn
