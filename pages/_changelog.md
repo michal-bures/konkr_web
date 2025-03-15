@@ -1,6 +1,11 @@
 
 
 ---
+v2.35.15 <small>released 2025-03-09</small>
+- new emoji when rival AI is thinking 
+- tweaked label shown during rival turn
+
+---
 v2.35.14 <small>released 2025-02-28</small>
 - bugfix: if a unique hero is present, town should appear as level 4 even when bankrupt 
 
