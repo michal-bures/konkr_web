@@ -1,6 +1,12 @@
 
 
 ---
+v2.35.18 <small>released 2025-04-19</small>
+- bugfix: fix major issue with AI sometimes miscalculating income from swamps, leading to suicidal moves 
+- bugfix: fix "thinking" emoji state sometimes lingering after fast-forwarding
+- bugfix: fix camera scrolling off-center when resizing window 
+
+---
 v2.35.17 <small>released 2025-03-15</small>
 - bugfix: shortcircuiting the AI calculation when game-winning move is found works more reliably 
 
