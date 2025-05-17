@@ -1,6 +1,13 @@
 
 
 ---
+v2.35.19 <small>released 2025-05-17</small>
+- small improvement in AI prioritization of zombies next to it's town
+- moves made after player victory (can happen when a rival triggers the players win condition) no longer saved into replay
+- better recovery after encountering invalid data during replay (game state is resynced with snapshot on start of the first players next turn)
+- bugfix: fix spectate button missing on defeat screen if the rival finishes off the rest of the players during the same turn
+
+---
 v2.35.18 <small>released 2025-04-19</small>
 - bugfix: fix major issue with AI sometimes miscalculating income from swamps, leading to suicidal moves 
 - bugfix: fix "thinking" emoji state sometimes lingering after fast-forwarding
