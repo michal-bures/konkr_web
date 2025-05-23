@@ -1,6 +1,11 @@
 
 
 ---
+v2.35.20 <small>released 2025-05-23</small>
+- "pawn-destroyed" win condition support added (unlike "defeat-pawn" works when unit was destroyed by any faction or)
+- bugfix: moves made after player victory no longer shown after skipping the final turn 
+
+---
 v2.35.19 <small>released 2025-05-17</small>
 - small improvement in AI prioritization of zombies next to it's town
 - moves made after player victory (can happen when a rival triggers the players win condition) no longer saved into replay
