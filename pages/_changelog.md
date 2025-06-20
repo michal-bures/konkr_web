@@ -1,6 +1,11 @@
 
 
 ---
+v2.35.22 <small>released 2025-06-20</small>
+- added new accessibility color theme "Inferno" (kudos @PositronicBranez)
+- AI bugfix: fix swamps next to towers/towns considered protected by walls in some AI calculations 
+
+---
 v2.35.20 <small>released 2025-05-23</small>
 - "pawn-destroyed" win condition support added (unlike "defeat-pawn" works when unit was destroyed by any faction or)
 - bugfix: moves made after player victory no longer shown after skipping the final turn 
