@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.23 <small>released 2025-06-22</small>
+- Experimental feature: show treasure+income overlay over rival regions (hotkey Q)
+
+---
 v2.35.22 <small>released 2025-06-20</small>
 - added new accessibility color theme "Inferno" (kudos @PositronicBranez)
 - AI bugfix: fix swamps next to towers/towns considered protected by walls in some AI calculations 
