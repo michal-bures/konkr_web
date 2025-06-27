@@ -1,6 +1,13 @@
 
 
 ---
+v2.35.24 <small>released 2025-06-27</small>
+- Bandits can now spawn a new camp when looting a chest/present
+- Sharper budget overlay font rendering when zoomed in
+- fixed major performance bottleneck in map editor
+- bugfix: fix visual glitch when toggling budget overlay while watching replay 
+
+---
 v2.35.23 <small>released 2025-06-22</small>
 - Experimental feature: show treasure+income overlay over rival regions (hotkey Q)
 
