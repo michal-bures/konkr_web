@@ -311,7 +311,10 @@ seo_frequency: monthly
 
 
     function createChart(element, data, options) {
-        const {highlightIndex = -1, highlightColor = '#ffcc00ff'} = options
+        let {highlightIndex = -1, highlightColor = '#ffcc00ff'} = options
+        if (highlightIndex<0 || highlightIndex >= data.length) {
+            highlightIndex = -1
+        }
         const values = data.map((record, i) => Math.max(i === highlightIndex ? 1 : 0, record.players) || null)
         const labels = data.map(record => highlightIndex === -1 ? `${record.turns} turns` : record.turns)
 
