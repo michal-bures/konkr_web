@@ -1,6 +1,10 @@
 
 
 ---
+v2.35.25 <small>released 2025-08-02</small>
+- AI bugfix: fixed move bug that made AI hesitant to capture very rich towns in some cases 
+
+---
 v2.35.24 <small>released 2025-06-27</small>
 - Bandits can now spawn a new camp when looting a chest/present
 - Sharper budget overlay font rendering when zoomed in
