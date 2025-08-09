@@ -1,6 +1,11 @@
 
 
 ---
+v2.35.26 <small>released 2025-08-09</small>
+- bugfix: the "always retreat" modifier no longer changes how neutral units such as Bunny retreat
+- bugfix: fix some provinces in conquest mode occasionally starting with not enough treasury to buy villager on turn 1 
+
+---
 v2.35.25 <small>released 2025-08-02</small>
 - AI bugfix: fixed move bug that made AI hesitant to capture very rich towns in some cases 
 
