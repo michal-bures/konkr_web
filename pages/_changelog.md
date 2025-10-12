@@ -1,6 +1,11 @@
 
 
 ---
+v2.35.27 <small>released 2025-10-12</small>
+- bugfix: fix refuge tiles shown as fertile land in the budget ledger
+- bugfix: update victory turns correctly if surrender was achieved earlier after rewind
+
+---
 v2.35.26 <small>released 2025-08-09</small>
 - bugfix: the "always retreat" modifier no longer changes how neutral units such as Bunny retreat
 - bugfix: fix some provinces in conquest mode occasionally starting with not enough treasury to buy villager on turn 1 
