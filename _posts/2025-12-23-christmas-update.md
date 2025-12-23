@@ -5,8 +5,6 @@ date:   2025-12-23 01:00:00
 categories: update
 ---
 
-##  Merry Christmas
-
 Looks like it's raining presents again in conquest mode!
 
 <!-- excerpt-end -->
