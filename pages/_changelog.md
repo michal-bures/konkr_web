@@ -1,6 +1,12 @@
 
 
 ---
+v2.35.30 <small>released 2026-01-01</small>
+- AI bugfix: fixed bug in attack/defense balancing causing AI to sometimes avoid taking high value tiles in early game 
+- AI bugfix: AI slightly better at choosing the least bad option in hopeless situations 
+- bugfix: hitting rewind -> Esc during enemy turn now rewinds to the end of player turn, no longer causing a crash
+
+---
 v2.35.27 <small>released 2025-10-12</small>
 - bugfix: fix refuge tiles shown as fertile land in the budget ledger
 - bugfix: update victory turns correctly if surrender was achieved earlier after rewind
