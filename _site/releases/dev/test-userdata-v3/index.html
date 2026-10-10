@@ -1,243 +1,69 @@
-<!doctype html><html lang="en"><head><base href="/releases/dev/test-userdata-v3/"><meta charset="UTF-8"><meta name="description" content="A free turn-based strategy game that runs in your browser. Expand your kingdom, build up your economy and crush your enemies!"><meta name="keywords" content="konkr, konkr.io, game, strategy, turn-based, web game, online game, html5, fun, phaser"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="canonical" href="https://www.konkr.io/"><link rel="icon" type="image/png" sizes="16x16" href="./icons/regular-16.png"><link rel="apple-touch-icon" href="./icons/regular-192.png"><link rel="manifest" href="./manifest.json"><meta name="theme-color" content="#9bd6f2"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="application-name" content="Konkr"><meta name="apple-mobile-web-app-title" content="Konkr"><meta name="msapplication-TileColor" content="#9bd6f2"><meta name="msapplication-starturl" content="./"><link rel="shortcut icon" href="./icons/favicon-16x16.png" type="image/png"><link rel="apple-touch-icon" href="./icons/icons-192x192.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/css/main.css"><title>Konkr.io</title><style>html,
-        body {
-            font-family: Georgia, Arial, Trebuchet;
-            margin: 0;
-            background-color: #327DA0;
-            overflow: hidden
-        }
+<!DOCTYPE html>
+<html lang='en'>
+<head>
 
-        h1 {
-            text-align: center;
-            position: fixed;
-            font-size: 2em;
-            font-weight: normal;
-            top: calc(50vh + 120px);
-            left: 0;
-            margin: 0 auto;
-            width: 100%;
-            color: #161632;
-        }
+    <base href='/releases/dev/test-userdata-v3/'>
+    <meta charset='UTF-8'>
+    <meta name='description'
+          content='A free turn-based strategy game that runs in your browser. Expand your kingdom, build up your economy and crush your enemies!'>
+    <meta name='keywords'
+          content='konkr, konkr.io, game, strategy, turn-based, web game, online game, html5, fun, phaser'>
+    <meta
+        name='viewport'
+        content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover'
+    >
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
 
-        h2 {
-            text-align: center;
-            position: fixed;
-            font-size: 1em;
-            font-weight: normal;
-            font-style: italic;
-            top: calc(50% + 170px);
-            left: 0;
-            margin: 0 auto;
-            width: 100%;
-            color: #161632;
-        }
+    <link rel='canonical' href='https://www.konkr.io/'>
+    <link rel='icon' type='image/png' sizes='16x16' href='./icons/regular-16.png'>
+    <link rel='apple-touch-icon' href='./icons/regular-192.png'>
+    <link rel='manifest' href='./manifest.json'>
 
+    <meta name='theme-color' content='#9bd6f2'>
 
-        .center-screen {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            min-height: 100vh;
-        }
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='application-name' content='Konkr'>
+    <meta name='apple-mobile-web-app-title' content='Konkr'>
 
-        #phaser-game {
-            position: fixed;
-            pointer-events: auto;
-            background-color: #327DA0;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-        }
+    <meta name='msapplication-TileColor' content='#9bd6f2'>
+    <meta name='msapplication-starturl' content='./'>
+    <link rel='shortcut icon' href='./icons/favicon-16x16.png' type='image/png'>
+    <link rel='apple-touch-icon' href='./icons/icons-192x192.png'>
 
-        .hidden {
-            visibility: hidden
-        }
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='/css/main.css'>
 
-        li {
-            text-align: left;
-        }
+    <title>Konkr.io</title>
+    <style>html,body{background-color:#327da0;margin:0;font-family:Georgia,Arial,Trebuchet;overflow:hidden}h1{text-align:center;color:#161632;width:100%;margin:0 auto;font-size:2em;font-weight:400;position:fixed;top:calc(50vh + 120px);left:0}h2{text-align:center;color:#161632;width:100%;margin:0 auto;font-size:1em;font-style:italic;font-weight:400;position:fixed;top:calc(50% + 170px);left:0}.center-screen{text-align:center;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;display:flex}#phaser-game{pointer-events:auto;background-color:#327da0;position:fixed;top:0;bottom:0;left:0;right:0}.hidden{visibility:hidden}li{text-align:left}#status{color:#fff;margin:15px auto;font-size:1em;font-style:italic;font-weight:700;position:relative}@media only screen and (max-width:890px){#news-box{visibility:hidden}}.dg.main{position:absolute;left:0}#file-drop-zone{background-color:#ffffff90;width:100%;height:100%;padding:40px;display:flex;position:fixed}#file-drop-zone>div{box-sizing:border-box;color:#3b5998;border:4px dashed #3b5998;flex-wrap:wrap;flex-grow:1;place-content:center;margin:20px;padding:20px;font-size:4rem;display:flex}#file-drop-zone *{pointer-events:none}#loader{color:#fff;box-sizing:border-box;border-radius:50%;width:10px;height:10px;margin:15px auto;animation:2s linear infinite shadowRolling;display:block;position:relative;left:-100px}@keyframes shadowRolling{0%{box-shadow:0 0 #fff0,0 0 #fff0,0 0 #fff0,0 0 #fff0}12%{box-shadow:100px 0 #fff,0 0 #fff0,0 0 #fff0,0 0 #fff0}25%{box-shadow:110px 0 #fff,100px 0 #fff,0 0 #fff0,0 0 #fff0}36%{box-shadow:120px index0 white, 110px 0 white, 100px 0 white, 0px 0 #fff0}50%{box-shadow:130px 0 #fff,120px 0 #fff,110px 0 #fff,100px 0 #fff}62%{box-shadow:200px 0 #fff0,130px 0 #fff,120px 0 #fff,110px 0 #fff}75%{box-shadow:200px 0 #fff0,200px 0 #fff0,130px 0 #fff,120px 0 #fff}87%{box-shadow:200px 0 #fff0,200px 0 #fff0,200px 0 #fff0,130px 0 #fff}to{box-shadow:200px 0 #fff0,200px 0 #fff0,200px 0 #fff0,200px 0 #fff0}}#news-box{text-align:left;color:#f2f2f2;width:400px;font-size:14px;transition:all .3s ease-in-out;position:absolute;bottom:40px;left:calc(50% - 200px)}#news-box article{background-color:#1e4b60;border-radius:14px 14px 0 0;padding:14px 14px 6px;line-height:1.3}#news-box footer{padding:14px}#news-box h3{margin-top:0;margin-bottom:8px;font-family:Helvetica,Arial,sans-serif;font-weight:700}#news-box article a{color:#73afff;text-decoration:none}#news-box article h3 a,#news-box article h3 a:visited,#news-box footer a,#news-box footer a:visited{color:#f2f2f2;text-decoration:none}#news-box p.posted-at{color:#ccc;float:right;margin:4px 0 0;font-size:small}#news-box p{color:#f2f2f2;margin-bottom:8px}#news-box footer{box-sizing:content-box;height:15px;font-size:small}#news-box-button{color:#f2f2f2;background-color:#193e50;border-radius:6px;margin-left:auto;padding:6px 10px;font-size:small;font-weight:700;text-decoration:none;display:table}#footer-placeholder{background-color:#193e50;width:100%;height:83px;position:fixed;bottom:0}</style>
+  <script type="module" crossorigin src="./index-Cml5Lgty.js"></script>
+  <link rel="modulepreload" crossorigin href="./rolldown-runtime-DEYIRq-r.js">
+  <link rel="modulepreload" crossorigin href="./vendors-tDm8dtIm.js">
+</head>
+<body class='center-screen'>
+<div id='footer-placeholder'>
+</div>
+<span id='loader'></span>
+<article id='status'>
+    <noscript>Please enable javascript to play this game.</noscript>
+</article>
 
-        #status {
-            margin: 15px auto;
-            position: relative;
-            color: white;
-            font-size: 1em;
-            font-weight: bold;
-            font-style: italic;
-        }
+<div id='phaser-game' class='hidden'></div>
+<!-- content the following div will substituted by jekyll when deployed to konkr_web -->
+<div id='news-box'>
+    <article id='news-box-body'>
+        {{ content }}
+    </article>
+    <footer>
+        <a href="/news" target="_blank">Blog</a> |
+        <a href="https://discord.com/invite/C9HucB9arH" target="_blank">Discuss on Discord</a> |
+        <a href="/changelog" target="_blank">Changelog</a>
+    </footer>
+</div>
+<div id='file-drop-zone' class='hidden'><div><span>+ IMPORT DATA</span></div></div>
 
-        /* hide news box if there's not enough screen estate for it */
-        @media only screen and (max-width: 890px) {
-            #news-box {
-                visibility: hidden;
-            }
-        }
-
-
-        /* Dat.gui styles */
-        .dg.main {
-            position: absolute;
-            left: 0px
-        }
-
-        /* File dropzone */
-        #file-drop-zone {
-            display: flex;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff90;
-            padding: 40px;
-        }
-
-        #file-drop-zone > div {
-            display: flex;
-            box-sizing: border-box;
-            color: #3b5998;
-            border: 4px dashed #3b5998;
-            margin: 20px;
-            padding: 20px;
-            font-size: 4rem;
-            flex-grow: 1;
-            align-content: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        #file-drop-zone * {
-            pointer-events: none;
-        }
-
-        /* Loader */
-        #loader {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            display: block;
-            margin: 15px auto;
-            position: relative;
-            color: #FFF;
-            left: -100px;
-            box-sizing: border-box;
-            animation: shadowRolling 2s linear infinite;
-        }
-
-        @keyframes shadowRolling {
-            0% {
-                box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
-            }
-            12% {
-                box-shadow: 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
-            }
-            25% {
-                box-shadow: 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
-            }
-            36% {
-                box-shadow: 120px index0 white, 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0);
-            }
-            50% {
-                box-shadow: 130px 0 white, 120px 0 white, 110px 0 white, 100px 0 white;
-            }
-            62% {
-                box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white, 110px 0 white;
-            }
-            75% {
-                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white;
-            }
-            87% {
-                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white;
-            }
-            100% {
-                box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
-            }
-        }
-
-        /* NEWS BOX*/
-
-        #news-box {
-            position: absolute;
-            width: 400px;
-            left: calc(50% - 200px);
-            bottom: 40px;
-            transition: all 300ms ease-in-out;
-
-            font-size: 14px;
-            text-align: left;
-            color: #f2f2f2;
-        }
-
-        #news-box article {
-            padding: 14px 14px 6px;
-            background-color: rgb(30, 75, 96);
-            border-radius: 14px 14px 0 0;
-            line-height: 1.3;
-        }
-
-        #news-box footer {
-            padding: 14px;
-        }
-
-        #news-box h3 {
-            margin-bottom: 8px;
-            margin-top: 0px;
-            font-family: Helvetica, Arial, sans-serif;;
-            font-weight: bold;
-        }
-
-        #news-box article a {
-            color: #73afff;
-            text-decoration: none;
-        }
-
-        #news-box article h3 a,
-        #news-box article h3 a:visited,
-        #news-box footer a,
-        #news-box footer a:visited {
-            color: #f2f2f2;
-            text-decoration: none;
-        }
-
-
-        #news-box p.posted-at {
-            margin: 0;
-            margin-top: 4px;
-            color: #cccccc;
-            font-size: small;
-            float: right;
-        }
-
-        #news-box p {
-            margin-bottom: 8px;
-            color: #f2f2f2;
-        }
-
-        #news-box footer {
-            font-size: small;
-            height: 15px;
-            box-sizing: content-box;
-        }
-
-        #news-box-button {
-            display: table;
-            margin-left: auto;
-            padding: 6px 10px;
-            border-radius: 6px;
-            background-color: #193E50;
-            color: #f2f2f2;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: small;
-        }
-
-        #footer-placeholder {
-            position: fixed;
-            height: 83px;
-            background-color: #193E50;
-            width: 100%;
-            bottom: 0;
-        }</style><script defer="defer" src="vendors.746de967624481a8108f.bundle.js"></script><script defer="defer" src="main.573dc256e15e37011ec6.bundle.js"></script></head><body class="center-screen"><div id="footer-placeholder"></div><span id="loader"></span><article id="status"><noscript>Please enable javascript to play this game.</noscript></article><div id="phaser-game" class="hidden"></div><div id="news-box"><article id="news-box-body">{{ content }}</article><footer><a href="/news" target="_blank">Blog</a> | <a href="https://discord.com/invite/C9HucB9arH" target="_blank">Discuss on Discord</a> | <a href="/changelog" target="_blank">Changelog</a></footer></div><div id="file-drop-zone" class="hidden"><div><span>+ IMPORT DATA</span></div></div><script>const BUILD_NUMBER = '2.35.30-build-38076548045'
+<script>
+    const BUILD_NUMBER = '2.35.30-build-38081170198'
     const SW_ENABLE = true
 
     // store current time for timing page load
@@ -343,4 +169,9 @@
                     registration.unregister()
                 }
             })
-    }</script></body></html>
+    }
+</script>
+<!-- module scripts are deferred: game.ts defines window.launchGame before DOMContentLoaded calls boot() -->
+
+</body>
+</html>
