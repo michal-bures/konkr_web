@@ -30,6 +30,11 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+// body is weight 300, so the default `bolder` only reaches 400 (= no visible bold on fonts without a light face)
+strong, b {
+    font-weight: bold;
+}
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm

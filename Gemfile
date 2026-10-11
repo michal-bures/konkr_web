@@ -5,3 +5,4 @@ gem "jekyll"
 gem "kramdown-parser-gfm"
 gem "webrick", "~> 1.7"
 
+gem "erb"
