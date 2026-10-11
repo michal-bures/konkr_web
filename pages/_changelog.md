@@ -1,6 +1,10 @@
 
 
 ---
+v2.36.3 <small>released 2026-10-11</small>
+- rivals now look properly shocked when their head flies off (+ a few aditional animation tweaks)
+
+---
 v2.36.0 <small>released 2026-10-11</small>
 - ending your turn early now asks for a second click on the button instead of opening a dialog
 - improved budget numbers overlay positioning (Q hotkey)
