@@ -1,6 +1,23 @@
 
 
 ---
+v2.36.0 <small>released 2026-10-11</small>
+- ending your turn early now asks for a second click on the button instead of opening a dialog
+- improved budget numbers overlay positioning (Q hotkey)
+- map makers can give their islands a color theme preset, or their own faction colors and ocean color (via Edit Raw JSON in the map editor). Island previews show these colors too
+- level color themes (like the Halloween zombie theme) now apply even if you picked your own color theme. Turn them off in Preferences, or with the palette button next to the island name
+- rival heads and crowns fly off when you conquer their town
+- rivals now look shocked when you are about to capture their town
+- rival speech bubbles fade when you hover over them and can be dismissed by clicking or tapping them
+- the Christmas theme now comes with falling snow
+- bugfix: dropping incompatible text onto the game now shows an error dialog instead of failing silently
+- bugfix: quickly picking up a unit right after dropping it no longer leaves a duplicate copy on the board
+- tutorial bugfix: placing the second villager on a free tile instead of merging no longer skips ahead to the end-turn step
+- bugfix: on mobile, units dragged onto the shopping tray (from the board or from the tray itself) no longer get stuck there instead of returning
+- AI bugfix: AI now kills the zombie that is about to take its town first, instead of one stuck outside the town walls
+- AI bugfix: improved AI attack pathfinding heuristic, making it less likely to skip obvious attack opportunities when it's army is top-heavy (more pikemen then villagers)
+ 
+---
 v2.35.30 <small>released 2026-01-01</small>
 - AI bugfix: fixed bug in attack/defense balancing causing AI to sometimes avoid taking high value tiles in early game 
 - AI bugfix: AI slightly better at choosing the least bad option in hopeless situations 
