@@ -52,6 +52,40 @@ seo_frequency: never
             font-family: monospace;
             font-size: 10px;
         }
+
+        #decoded-row {
+            flex-grow: 1;
+            display: flex;
+        }
+
+        #sketch {
+            overflow: auto;
+            padding: 8px;
+            font-family: monospace;
+            font-size: 10px;
+        }
+
+        /* island sketch, see docs/plans/island-sketch.md in the game repo */
+        .sketch-row {
+            display: flex;
+            height: 10px;
+        }
+
+        .sketch-row.even {
+            padding-left: 6px;
+        }
+
+        .sketch-hex {
+            flex: none;
+            width: 11px;
+            height: 11px;
+            margin-right: 1px;
+            border-radius: 2px;
+            color: white;
+            font-size: 9px;
+            line-height: 11px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -63,7 +97,10 @@ seo_frequency: never
     </div>
     <div class="panel">
         <input id="prefix" placeholder="prefix"></input>
-        <div id="decoded"></div>
+        <div id="decoded-row">
+            <div id="decoded"></div>
+            <div id="sketch"></div>
+        </div>
     </div>
 
 </div>
@@ -76,10 +113,14 @@ seo_frequency: never
         encoded: document.getElementById('encoded'),
         decoded: document.getElementById('decoded'),
         prefix: document.getElementById('prefix'),
+        sketch: document.getElementById('sketch'),
     }
     const decodedEditor = new JSONEditor(DOM.decoded, {
         mode: 'code',
-        onChange: _.debounce(encode, 300),
+        onChange: _.debounce(() => {
+            encode()
+            showSketch(tryGetEditorData())
+        }, 300),
         modes: ['code', 'tree']
     })
 
@@ -116,10 +157,12 @@ seo_frequency: never
             DOM.prefix.value = prefix
             DOM.decoded.value = data
             decodedEditor.set(JSON.parse(data))
+            showSketch(JSON.parse(data))
         } catch (err) {
             console.error(err)
             DOM.prefix.value = ''
             decodedEditor.set(`Error: ${err.message}`)
+            showSketch(undefined)
         }
     }
 
@@ -146,6 +189,91 @@ seo_frequency: never
             prefix,
             data: stringData
         }
+    }
+
+    function tryGetEditorData() {
+        try {
+            return decodedEditor.get()
+        } catch (err) {
+            return undefined // invalid JSON while typing
+        }
+    }
+
+    // Island sketch: a copy of sketchIsland() from the game repo (src/gamestate/sketch/islandSketch.ts).
+    // One line per hex row, one character per hex: ' ' no land, '.' neutral land, '*' neutral forest,
+    // 'a'-'f' land of faction 1-6, 'A'-'F' town of faction 1-6
+    const GRID_MAX_DIMENSION = 100
+    const FACTION_LETTERS = 'abcdefghijklmnopqrstuvwxyz'
+    // the default theme's faction colors
+    const FACTION_COLORS = ['#106600', '#d8a353', '#6fae33', '#da7553', '#886347', '#545c62']
+
+    function sketchIsland(state) {
+        const factionByRegion = new Map()
+        for (const faction of state.factions ?? []) {
+            for (const regionId of faction.regions ?? []) factionByRegion.set(regionId, faction.id)
+        }
+        const forests = new Set(state.pawns.filter(p => p.type === 'forest').map(p => p.hex))
+        const towns = new Set(state.pawns.filter(p => p.type === 'town').map(p => p.hex))
+        const rows = []
+        for (const region of state.regions) {
+            const factionId = factionByRegion.get(region.id)
+            for (const hexId of region.hexes) {
+                const x = hexId % GRID_MAX_DIMENSION
+                const y = Math.floor(hexId / GRID_MAX_DIMENSION)
+                while (rows.length <= y) rows.push([])
+                while (rows[y].length <= x) rows[y].push(' ')
+                let char = '.'
+                if (factionId === 0) {
+                    if (forests.has(hexId)) char = '*'
+                } else if (factionId !== undefined) {
+                    char = FACTION_LETTERS[factionId - 1] ?? '?'
+                    if (towns.has(hexId)) char = char.toUpperCase()
+                }
+                rows[y][x] = char
+            }
+        }
+        return rows.map(row => row.join('')).join('\n')
+    }
+
+    function showSketch(data) {
+        DOM.sketch.replaceChildren()
+        // game states have regions at the top level, replays keep them in a snapshot
+        const state = data?.regions ? data : data?.snapshot
+        if (!state?.regions || !state.pawns) return
+        let sketch
+        try {
+            sketch = sketchIsland(state)
+        } catch (err) {
+            console.error(err)
+            DOM.sketch.textContent = `Sketch error: ${err.message}`
+            return
+        }
+        sketch.split('\n').forEach((line, y) => {
+            const row = document.createElement('div')
+            row.className = 'sketch-row' + (y % 2 === 0 ? ' even' : '')
+            for (const char of line) {
+                const hex = document.createElement('span')
+                hex.className = 'sketch-hex'
+                const factionIndex = FACTION_LETTERS.indexOf(char.toLowerCase())
+                if (char === ' ') {
+                    hex.style.visibility = 'hidden'
+                } else if (factionIndex >= 0) {
+                    hex.style.background = FACTION_COLORS[factionIndex] ?? 'magenta'
+                    if (char !== char.toLowerCase()) hex.textContent = '⌂'
+                } else {
+                    hex.style.background = '#bdb7a6'
+                    if (char === '*') {
+                        hex.textContent = '♣'
+                        hex.style.color = '#2f5d2a'
+                    }
+                }
+                row.appendChild(hex)
+            }
+            DOM.sketch.appendChild(row)
+        })
+        const raw = document.createElement('pre')
+        raw.textContent = sketch
+        DOM.sketch.appendChild(raw)
     }
 
 </script>
