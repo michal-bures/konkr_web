@@ -1,6 +1,14 @@
 
 
 ---
+v2.36.5 <small>released 2026-10-12</small>
+- bugfix: units moved onto a town they capture no longer sometimes turn invisible
+
+---
+v2.36.4 <small>released 2026-10-12</small>
+- bugfix: units dropped onto a gold mine (or town ruins) no longer turn invisible
+
+---
 v2.36.3 <small>released 2026-10-11</small>
 - rivals now look properly shocked when their head flies off (+ a few aditional animation tweaks)
 
