@@ -1,0 +1,132 @@
+<style>
+
+    .login-buttons {
+        list-style: none;
+        margin: 1em 0;
+        padding: 0;
+        margin: 0;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .login-buttons li {
+        padding-bottom: 15px;
+    }
+
+    .login-buttons button {
+        direction: ltr;
+        font-weight: bold;
+        height: auto;
+        line-height: normal;
+        max-width: 220px;
+        min-height: 40px;
+        padding: 8px 16px;
+        text-align: left;
+        width: 100%;
+
+        border: none;
+        border-radius: 2px;
+        color: #000;
+        position: relative;
+        margin: 0;
+        min-width: 64px;
+        display: inline-block;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        overflow: hidden;
+        will-change: box-shadow;
+        transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+        outline: 0;
+        cursor: pointer;
+        text-decoration: none;
+        vertical-align: middle;
+
+        background: rgba(158, 158, 158, .2);
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    }
+
+    .login-buttons button:active {
+        box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 20%);
+    }
+
+    .login-buttons .icon-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .login-buttons .icon {
+        border: none;
+        display: inline-block;
+        height: 18px;
+        vertical-align: middle;
+        width: 18px;
+    }
+
+    .login-buttons button .text {
+        display: table-cell;
+        font-size: 14px;
+        padding-left: 16px;
+        text-transform: none;
+        vertical-align: middle;
+    }
+
+    .login-buttons button#login-google .text {
+        color: #757575;
+    }
+
+    .login-buttons button#login-google {
+        background-color: #fff;
+    }
+
+    .login-buttons button#login-facebook .text,
+    .login-buttons button#login-email .text {
+        color: #fff;
+    }
+
+    .login-buttons button#login-facebook {
+        background-color: #3b5998;
+    }
+
+    .login-buttons button#login-email {
+        background-color: #db4437;
+    }
+
+    .privacy-footer a {
+        font-size: 8pt;
+        color: #4f4f4e;
+    }
+
+</style>
+
+<div>
+    <ul class='login-buttons'>
+        <li>
+            <button id='login-google'>
+                <span class='icon-wrapper'>
+                    <img class='icon' alt='' src='https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg'>
+                </span>
+                <span class='text'>Sign in with Google</span>
+            </button>
+        </li>
+        <li>
+            <button id='login-facebook'>
+                <span class='icon-wrapper'>
+                    <img class='icon' alt='' src='https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/facebook.svg'>
+                </span>
+                <span class='text'>Sign in with Facebook</span>
+            </button>
+        </li>
+        <li>
+            <button id='login-email'>
+                <span class='icon-wrapper'>
+                    <img class='icon' alt='' src='https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/mail.svg'>
+                </span>
+                <span class='text'>Sign in with Email</span>
+            </button>
+        </li>
+    </ul>
+
+    <div class='privacy-footer'><a href='/privacy'>Privacy policy</a></div>
+</div>
+
