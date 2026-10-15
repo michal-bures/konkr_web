@@ -1,0 +1,69 @@
+<html>
+<head>
+    <link rel='stylesheet' href='./help.css'>
+    <script src='help-section.js'></script>
+</head>
+<body>
+<header id='navigator'></header>
+<div id='content' class='content'>
+    <div class='page' id='zombies' data-title='Zombies'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/panel-zombies.png' />
+            </div>
+            <p>Zombies operate similar to bandits, but:</p>
+            <ul>
+                <li>If there's an adjacent unit, the zombie will turn it into another zombie!</li>
+                <li>Normal zombies can't move or infect units through walls.</li>
+                <li><b>But</b> when a zombie has nowhere else to go, it may build itself a ladder and cross over unmanned walls on the next turn!</li>
+                <li>Zombies can never infect <img class='inline-icon' src='./img/icons/castle.png'>castles.</li>
+            </ul>
+            <p>Haunted towns produce a new zombie every turn. To win a map with zombies, you need to not only defeat
+                your rivals, but also <b>clear all haunted towns!</b></p>
+        </div>
+    </div>
+    <div class='page' id='necromancers' data-title='Necromancers'>
+        <div class='slide-content'>
+            <div class='figure'>
+                <img class='main-image' alt='illustration' src='./img/panel-necromancers.png' />
+            </div>
+            <p><b>Necromancers</b> are very different from traditional rivals:</p>
+            <ul>
+                <li>They rely on <a href='#zombies'>zombies</a> to expand their territory.</li>
+                <li>Eventually, they can spawn powerful <b>Dread Knights</b>.</li>
+                <li>They are vicious but predictable. They always blindly attack the most obvious target and have no diplomatic relations with anyone.</li>
+            </ul>
+            <p><b>Necromancer Lairs</b> are somewhat similar to <img class='inline-icon' src='./img/icons/town.png'>towns, but with some major differences:</p>
+            <ul>
+                <li>They don't gather coins, instead they collect <b>mana</b>.</li>
+                <li>When a <b>zombie is destroyed on Necromancer's territory</b>, the closest connected Lair <b>gains 1 mana</b>.
+                <li>If a Lair or a Haunted Town cannot spawn a zombie, it also generates 1 mana for the nearest Lair.</li>
+                <li>Once a Lair has accumulated 6 mana, it will spawn a <b>Dread Knight</b> on the Necromancers turn. The mana is then allocated to maintaining the Dread Knight until it's destroyed.</li>
+            </ul>
+            <p><b>Dread Knights</b> are elite undead soldiers:</p>
+            <ul>
+                <li>They are as strong as regular <img class='inline-icon' src='./img/icons/knight.png'>Knights and can move freely across the Necromancers province.</li>
+                <li>They need no coin upkeep, but they require a Necromancers Lair with a full mana reserve to maintain their existence.</li>
+                <li>Cutting them off from the Lair <b>instantly turns them into a regular zombie</b>.</li>
+            </ul>
+        </div>
+    </div>
+    <div class='page' id='unique-heroes' data-title='Unique Heroes'>
+        <div class='slide-content'>
+            <p><b>Unique heroes</b> <img class='inline-icon' src='./img/icons/unique-hero-rosaline.png'><img class='inline-icon' src='./img/icons/unique-hero.png'>
+                are as strong as <img class='inline-icon' src='./img/icons/hero.png'> regular heroes, but additionaly:</p>
+            <ul>
+                <li>Cost no <img class='inline-icon' src='./img/icons/coins.png'>coins to upkeep. </li>
+                <li>Don't turn into bandits when separated from town. Instead, they just become immobile until reconnected.</li>
+                <li>Cannot be infected by <a href='#zombies'>zombies</a>.</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <footer id='footer-navigator'></footer>
+</div>
+
+</body>
+</html>

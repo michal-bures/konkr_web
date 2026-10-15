@@ -1,6 +1,10 @@
 
 
 ---
+v2.36.6 <small>released 2026-10-15</small>
+- bugfix: all factions showed up green on maps made with the newer test build of the game
+
+---
 v2.36.5 <small>released 2026-10-12</small>
 - bugfix: units moved onto a town they capture no longer sometimes turn invisible
 
