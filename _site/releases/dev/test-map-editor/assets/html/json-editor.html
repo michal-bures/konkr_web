@@ -1,9 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.0/jsoneditor.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.0/jsoneditor.min.css"
-      integrity="sha512-8G+Vb2+10BSrSo+wupdzJIylDLpGtEYniQhp0rsbTigPG7Onn2S08Ai/KEGlxN2Ncx9fGqVHtRehMuOjPb9f8g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-
 <style>
     #jsoneditor-root {
         flex-direction: column;
@@ -49,144 +43,144 @@
         border: 0px;
     }
 
-    /* JSON Editor Theme */
-    .jsoneditor-statusbar {
+    /* JSON Editor theme, scoped to win over jsoneditor.css, which loads later */
+    #jsoneditor-root .jsoneditor-statusbar {
         background: #49483E;
         border-top: none
     }
 
-    .jsoneditor {
+    #jsoneditor-root .jsoneditor {
         border: none
     }
 
-    .jsoneditor .ace_gutter {
+    #jsoneditor-root .jsoneditor .ace_gutter {
                           background: #2F3129;
                           color: #8F908A
     }
 
-    .jsoneditor .ace_print-margin {
+    #jsoneditor-root .jsoneditor .ace_print-margin {
         width: 1px;
         background: #555651
     }
 
-    .jsoneditor .ace_scroller {
+    #jsoneditor-root .jsoneditor .ace_scroller {
         background-color: #272822;
     }
 
-    .jsoneditor .ace {
+    #jsoneditor-root .jsoneditor .ace {
         background-color: #272822;
         color: #F8F8F2
     }
 
-    .jsoneditor .ace_cursor {
+    #jsoneditor-root .jsoneditor .ace_cursor {
         color: #F8F8F0;
         border-color:#F8F8F0
     }
 
-    .jsoneditor .ace_marker-layer .ace_selection {
+    #jsoneditor-root .jsoneditor .ace_marker-layer .ace_selection {
         background: #49483E
     }
 
-    .jsoneditor .ace-monokai.ace_multiselect .ace_selection.ace_start {
+    #jsoneditor-root .jsoneditor .ace-monokai.ace_multiselect .ace_selection.ace_start {
         box-shadow: 0 0 3px 0px #272822;
     }
 
-    .jsoneditor .ace_marker-layer .ace_step {
+    #jsoneditor-root .jsoneditor .ace_marker-layer .ace_step {
         background: rgb(102, 82, 0)
     }
 
-    .jsoneditor .ace_marker-layer .ace_bracket {
+    #jsoneditor-root .jsoneditor .ace_marker-layer .ace_bracket {
         margin: -1px 0 0 -1px;
         border: 1px solid #49483E
     }
 
-    .jsoneditor .ace_marker-layer .ace_active-line {
+    #jsoneditor-root .jsoneditor .ace_marker-layer .ace_active-line {
         background: #202020
     }
 
-    .jsoneditor .ace_gutter-active-line {
+    #jsoneditor-root .jsoneditor .ace_gutter-active-line {
         background-color: #272727
     }
 
-    .jsoneditor .ace_marker-layer .ace_selected-word {
+    #jsoneditor-root .jsoneditor .ace_marker-layer .ace_selected-word {
         border: 1px solid #49483E
     }
 
-    .jsoneditor .ace_invisible {
+    #jsoneditor-root .jsoneditor .ace_invisible {
         color: #52524d
     }
 
-    .jsoneditor .ace_entity.ace_name.ace_tag,
-    .jsoneditor .ace_keyword,
-    .jsoneditor .ace_meta.ace_tag,
-    .jsoneditor .ace_storage {
+    #jsoneditor-root .jsoneditor .ace_entity.ace_name.ace_tag,
+    #jsoneditor-root .jsoneditor .ace_keyword,
+    #jsoneditor-root .jsoneditor .ace_meta.ace_tag,
+    #jsoneditor-root .jsoneditor .ace_storage {
         color: #F92672
     }
 
-    .jsoneditor .ace_punctuation,
-    .jsoneditor .ace_punctuation.ace_tag {
+    #jsoneditor-root .jsoneditor .ace_punctuation,
+    #jsoneditor-root .jsoneditor .ace_punctuation.ace_tag {
         color: #fff
     }
 
-    .jsoneditor .ace_constant.ace_character,
-    .jsoneditor .ace_constant.ace_language,
-    .jsoneditor .ace_constant.ace_numeric,
-    .jsoneditor .ace_constant.ace_other {
+    #jsoneditor-root .jsoneditor .ace_constant.ace_character,
+    #jsoneditor-root .jsoneditor .ace_constant.ace_language,
+    #jsoneditor-root .jsoneditor .ace_constant.ace_numeric,
+    #jsoneditor-root .jsoneditor .ace_constant.ace_other {
         color: #AE81FF
     }
 
-    .jsoneditor .ace_invalid {
+    #jsoneditor-root .jsoneditor .ace_invalid {
         color: #F8F8F0;
         background-color: #F92672
     }
 
-    .jsoneditor .ace_invalid.ace_deprecated {
+    #jsoneditor-root .jsoneditor .ace_invalid.ace_deprecated {
         color: #F8F8F0;
         background-color: #AE81FF
     }
 
-    .jsoneditor .ace_support.ace_constant,
-    .jsoneditor .ace_support.ace_function {
+    #jsoneditor-root .jsoneditor .ace_support.ace_constant,
+    #jsoneditor-root .jsoneditor .ace_support.ace_function {
         color: #66D9EF
     }
 
-    .jsoneditor .ace_fold {
+    #jsoneditor-root .jsoneditor .ace_fold {
         background-color: #A6E22E;
         border-color: #F8F8F2
     }
 
-    .jsoneditor .ace_storage.ace_type,
-    .jsoneditor .ace_support.ace_class,
-    .jsoneditor .ace_support.ace_type {
+    #jsoneditor-root .jsoneditor .ace_storage.ace_type,
+    #jsoneditor-root .jsoneditor .ace_support.ace_class,
+    #jsoneditor-root .jsoneditor .ace_support.ace_type {
         font-style: italic;
         color: #66D9EF
     }
 
-    .jsoneditor .ace_entity.ace_name.ace_function,
-    .jsoneditor .ace_entity.ace_other,
-    .jsoneditor .ace_entity.ace_other.ace_attribute-name,
-    .jsoneditor .ace_variable {
+    #jsoneditor-root .jsoneditor .ace_entity.ace_name.ace_function,
+    #jsoneditor-root .jsoneditor .ace_entity.ace_other,
+    #jsoneditor-root .jsoneditor .ace_entity.ace_other.ace_attribute-name,
+    #jsoneditor-root .jsoneditor .ace_variable {
         color: #A6E22E
     }
 
-    .jsoneditor .ace_variable.ace_parameter {
+    #jsoneditor-root .jsoneditor .ace_variable.ace_parameter {
         font-style: italic;
         color: #FD971F
     }
 
-    .jsoneditor .ace_string {
+    #jsoneditor-root .jsoneditor .ace_string {
         color: #E6DB74
     }
 
-    .jsoneditor .ace_comment {
+    #jsoneditor-root .jsoneditor .ace_comment {
         color: #75715E
     }
 
-    .jsoneditor .ace_indent-guide {
+    #jsoneditor-root .jsoneditor .ace_indent-guide {
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y
     }
 
-    .jsoneditor .ace_indent-guide-active {
+    #jsoneditor-root .jsoneditor .ace_indent-guide-active {
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQIW2PQ1dX9zzBz5sz/ABCcBFFentLlAAAAAElFTkSuQmCC) right repeat-y;
     }
 
