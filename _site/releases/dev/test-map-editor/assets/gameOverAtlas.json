@@ -4,8 +4,8 @@
 			"image": "gameOverAtlas.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 950,
-				"h": 1512
+				"w": 954,
+				"h": 1640
 			},
 			"scale": 1,
 			"frames": [
@@ -24,8 +24,8 @@
 						"h": 86
 					},
 					"frame": {
-						"x": 657,
-						"y": 942,
+						"x": 797,
+						"y": 955,
 						"w": 59,
 						"h": 86
 					}
@@ -45,8 +45,8 @@
 						"h": 44
 					},
 					"frame": {
-						"x": 382,
-						"y": 1251,
+						"x": 618,
+						"y": 1170,
 						"w": 36,
 						"h": 44
 					}
@@ -54,7 +54,7 @@
 				{
 					"filename": "levelPanel",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
 						"w": 615,
 						"h": 291
@@ -63,13 +63,13 @@
 						"x": 0,
 						"y": 0,
 						"w": 615,
-						"h": 187
+						"h": 291
 					},
 					"frame": {
 						"x": 1,
-						"y": 1324,
+						"y": 955,
 						"w": 615,
-						"h": 187
+						"h": 291
 					}
 				},
 				{
@@ -88,7 +88,7 @@
 					},
 					"frame": {
 						"x": 618,
-						"y": 1251,
+						"y": 955,
 						"w": 177,
 						"h": 213
 					}
@@ -108,8 +108,8 @@
 						"h": 307
 					},
 					"frame": {
-						"x": 382,
-						"y": 942,
+						"x": 394,
+						"y": 1248,
 						"w": 273,
 						"h": 307
 					}
@@ -129,8 +129,8 @@
 						"h": 86
 					},
 					"frame": {
-						"x": 718,
-						"y": 942,
+						"x": 858,
+						"y": 955,
 						"w": 59,
 						"h": 86
 					}
@@ -138,51 +138,49 @@
 				{
 					"filename": "victoryHalo",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
 						"w": 391,
 						"h": 391
 					},
 					"spriteSourceSize": {
-						"x": 6,
-						"y": 5,
-						"w": 379,
-						"h": 380
+						"x": 0,
+						"y": 0,
+						"w": 391,
+						"h": 391
 					},
 					"frame": {
 						"x": 1,
-						"y": 942,
-						"w": 379,
-						"h": 380
+						"y": 1248,
+						"w": 391,
+						"h": 391
 					}
 				},
 				{
 					"filename": "victoryRays",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
 						"w": 952,
 						"h": 952
 					},
 					"spriteSourceSize": {
-						"x": 1,
-						"y": 11,
-						"w": 948,
-						"h": 939
+						"x": 0,
+						"y": 0,
+						"w": 952,
+						"h": 952
 					},
 					"frame": {
 						"x": 1,
 						"y": 1,
-						"w": 948,
-						"h": 939
+						"w": 952,
+						"h": 952
 					}
 				}
 			]
 		}
 	],
 	"meta": {
-		"app": "https://www.codeandweb.com/texturepacker",
-		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:076f8fd168bc08ace9020cde4ccc3e23:f1a0d3f3839a71cee1aebde51c5ea431:6769eb2a70289033a97b96142d3fe305$"
+		"app": "dev-tools/pack-atlas.ts"
 	}
 }
