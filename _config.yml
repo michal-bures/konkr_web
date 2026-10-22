@@ -16,6 +16,9 @@ excerpt_separator: <!-- excerpt-end -->
 # Build settings
 markdown: kramdown
 highlighter: true
+# Netlify reads _redirects from the built site, and Jekyll skips files starting with _ unless included
+include:
+  - _redirects
 exclude:
   - .sass-cache/
   - .jekyll-cache/
