@@ -31,4 +31,5 @@ Hand edits to `_includes/game.html` (e.g. the `display: none` on `#news-box`) ge
 - `_posts/`: blog posts. A post prefixed `HIDDEN_` doesn't match Jekyll's date-filename pattern, so it isn't published; that prefix is how drafts are kept. To publish, rename to `YYYY-MM-DD-slug.md` and make sure the front matter `date:` matches.
 - Excerpts are split with `<!-- excerpt-end -->`. The home page (`pages/index.html`) shows the newest post's excerpt in the game's news box.
 - `pages/`: about, how-to-play, news, changelog, privacy, level-stats, inspector, legacy.
-- `netlify.toml`: redirect for `/v2/dev/*`, rewrites that serve the game page for its deep links (`/expeditions`, `/levels/<id>`, ... on the home page, releases and dev builds), plus a CSP `frame-ancestors` allowlist for portals that embed the game (itch, Kongregate, Newgrounds, ...). Add new embedding sites there.
+- `_redirects` (copied into the site via `include` in `_config.yml`): the `/v2/dev/*` redirect, and rewrites that serve the game page at every path without a file (the game's deep links like `/levels/<id>`, on the home page, releases and dev builds).
+- `netlify.toml`: a CSP `frame-ancestors` allowlist for portals that embed the game (itch, Kongregate, Newgrounds, ...). Add new embedding sites there.

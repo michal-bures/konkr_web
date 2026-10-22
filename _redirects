@@ -1,0 +1,8 @@
+/v2/dev/*                /                                  301
+# the game's deep links (konkr2 src/services/appRoutes.ts) open the game page of the home page, a release or a dev build.
+# Rewrites skip paths where a file exists, so assets and the site's pages are unaffected. dev comes first, :version would match it too
+/releases/dev/:branch/*  /releases/dev/:branch/index.html   200
+/releases/:version/*     /releases/:version/index.html      200
+# the one page whose URL has no .html, kept out of the catch-all below in case the extensionless lookup comes after it
+/privacy                 /privacy.html                      200
+/*                       /index.html                        200
