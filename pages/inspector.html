@@ -14,6 +14,9 @@ seo_frequency: never
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lzutf8/0.6.3/lzutf8.min.js"
             integrity="sha512-jsnMjzAAVwJt3pKB5KXVMj/TO9pc8NrmEEde/ynXffVEEiaoH74/x2KIqIa0ZaLvNsJfNPaLdukkVWa0RRKbOw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fflate@0.8.3/umd/index.js"
+            integrity="sha384-ETfVLWAUsU3zp3SpnQsPDbAyrF6jYv2w8aNYo6KtY2JuyxXhzYLOL7e0ATbLSIHP"
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.0/jsoneditor.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.0/jsoneditor.min.css"
           integrity="sha512-8G+Vb2+10BSrSo+wupdzJIylDLpGtEYniQhp0rsbTigPG7Onn2S08Ai/KEGlxN2Ncx9fGqVHtRehMuOjPb9f8g=="
@@ -153,7 +156,7 @@ seo_frequency: never
         }
 
         try {
-            const {prefix, data} = gzipDecode(DOM.encoded.value)
+            const {prefix, data} = decodeKonkr(DOM.encoded.value)
             DOM.prefix.value = prefix
             DOM.decoded.value = data
             decodedEditor.set(JSON.parse(data))
@@ -168,27 +171,44 @@ seo_frequency: never
 
     function encode() {
         try {
-            DOM.encoded.value = gzipEncode(DOM.prefix.value + '.',decodedEditor.get())
+            DOM.encoded.value = encodeKonkr(DOM.prefix.value, decodedEditor.get())
         } catch (err) {
             console.error(err)
             DOM.encoded.value = `Error: ${err.message}`
         }
     }
 
-    function gzipEncode(prefix, object) {
-        const stringifiedState = JSON.stringify(object)
-        return prefix + LZUTF8.compress(stringifiedState, {inputEncoding: 'String', outputEncoding: 'Base64'})
+    // gzip strings carry a 'gz' marker after the version (konkrmap.v7.gz.<base64>), older ones are LZUTF8
+    function encodeKonkr(prefix, object) {
+        const json = JSON.stringify(object)
+        if (prefix.endsWith('.gz')) {
+            const bytes = fflate.gzipSync(fflate.strToU8(json), {mtime: 0})
+            return prefix + '.' + bytesToBase64(bytes)
+        }
+        return prefix + '.' + LZUTF8.compress(json, {inputEncoding: 'String', outputEncoding: 'Base64'})
     }
 
-    function gzipDecode(serializedData) {
-        const prefix = serializedData.split('.').slice(0, 2).join('.')
+    function decodeKonkr(serializedData) {
+        const segments = serializedData.split('.')
+        const gzip = segments[2] === 'gz'
+        const prefix = segments.slice(0, gzip ? 3 : 2).join('.')
         const payload = serializedData.substring(prefix.length + 1)
-        const stringData = LZUTF8.decompress(payload, {inputEncoding: 'Base64', outputEncoding: 'String'}).toString()
+        const data = gzip
+            ? fflate.strFromU8(fflate.gunzipSync(base64ToBytes(payload)))
+            : LZUTF8.decompress(payload, {inputEncoding: 'Base64', outputEncoding: 'String'}).toString()
+        return {prefix, data}
+    }
 
-        return {
-            prefix,
-            data: stringData
+    function bytesToBase64(bytes) {
+        let binary = ''
+        for (let i = 0; i < bytes.length; i += 0x8000) {
+            binary += String.fromCharCode(...bytes.subarray(i, i + 0x8000))
         }
+        return btoa(binary)
+    }
+
+    function base64ToBytes(base64) {
+        return Uint8Array.from(atob(base64), char => char.charCodeAt(0))
     }
 
     function tryGetEditorData() {
