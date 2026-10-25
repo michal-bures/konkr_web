@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<!-- build-fonts 81e8e9072bb6bd5b -->
+<!-- build-fonts c773c77e2d7604a2 -->
 <font>
   <info face="main" size="24" bold="0" italic="0" charset="" unicode="1" stretchH="100" smooth="1" aa="1" padding="0,0,0,0" spacing="1,1" outline="0"/>
   <common lineHeight="24" base="17" scaleW="256" scaleH="256" pages="1" packed="0" alphaChnl="0" redChnl="4" greenChnl="4" blueChnl="4"/>
   <pages>
     <page id="0" file="main.png" />
   </pages>
-  <chars count="332">
-    <char id="32" x="171" y="165" width="0" height="0" xoffset="0" yoffset="0" xadvance="4" page="0" chnl="15" />
+  <chars count="333">
+    <char id="32" x="180" y="165" width="0" height="0" xoffset="0" yoffset="0" xadvance="4" page="0" chnl="15" />
     <char id="33" x="247" y="133" width="3" height="9" xoffset="0" yoffset="8" xadvance="4" page="0" chnl="15" />
     <char id="34" x="25" y="165" width="5" height="4" xoffset="1" yoffset="7" xadvance="7" page="0" chnl="15" />
     <char id="35" x="0" y="145" width="8" height="9" xoffset="0" yoffset="8" xadvance="8" page="0" chnl="15" />
@@ -102,7 +102,7 @@
     <char id="124" x="7" y="0" width="2" height="16" xoffset="1" yoffset="5" xadvance="4" page="0" chnl="15" />
     <char id="125" x="42" y="0" width="4" height="15" xoffset="0" yoffset="5" xadvance="4" page="0" chnl="15" />
     <char id="126" x="92" y="165" width="8" height="3" xoffset="0" yoffset="11" xadvance="8" page="0" chnl="15" />
-    <char id="160" x="172" y="165" width="0" height="0" xoffset="0" yoffset="0" xadvance="4" page="0" chnl="15" />
+    <char id="160" x="181" y="165" width="0" height="0" xoffset="0" yoffset="0" xadvance="4" page="0" chnl="15" />
     <char id="161" x="227" y="145" width="3" height="9" xoffset="0" yoffset="8" xadvance="4" page="0" chnl="15" />
     <char id="162" x="205" y="133" width="7" height="10" xoffset="1" yoffset="8" xadvance="8" page="0" chnl="15" />
     <char id="163" x="240" y="121" width="8" height="11" xoffset="0" yoffset="6" xadvance="8" page="0" chnl="15" />
@@ -338,9 +338,10 @@
     <char id="8222" x="84" y="165" width="7" height="4" xoffset="0" yoffset="16" xadvance="7" page="0" chnl="15" />
     <char id="8226" x="11" y="165" width="4" height="5" xoffset="2" yoffset="10" xadvance="8" page="0" chnl="15" />
     <char id="8230" x="161" y="165" width="9" height="2" xoffset="1" yoffset="15" xadvance="10" page="0" chnl="15" />
+    <char id="8722" x="171" y="165" width="8" height="2" xoffset="0" yoffset="12" xadvance="8" page="0" chnl="15" />
     <char id="8734" x="16" y="165" width="8" height="5" xoffset="0" yoffset="10" xadvance="8" page="0" chnl="15" />
   </chars>
-  <kernings count="38">
+  <kernings count="40">
     <kerning first="42" second="46" amount="-2" />
     <kerning first="42" second="8230" amount="-2" />
     <kerning first="44" second="178" amount="-1" />
@@ -352,6 +353,7 @@
     <kerning first="46" second="185" amount="-1" />
     <kerning first="46" second="8211" amount="-1" />
     <kerning first="46" second="8212" amount="-1" />
+    <kerning first="46" second="8722" amount="-1" />
     <kerning first="178" second="44" amount="-1" />
     <kerning first="178" second="46" amount="-1" />
     <kerning first="178" second="8218" amount="-1" />
@@ -379,5 +381,6 @@
     <kerning first="8230" second="185" amount="-1" />
     <kerning first="8230" second="8211" amount="-1" />
     <kerning first="8230" second="8212" amount="-1" />
+    <kerning first="8230" second="8722" amount="-1" />
   </kernings>
 </font>
