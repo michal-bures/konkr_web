@@ -1,6 +1,45 @@
 
 
 ---
+v2.37.0 <small>released 2026-10-27</small>
+- Ghosts, a new Halloween rule mode for Conquest, on by default during Halloween
+- a big refresh of the whole UI: menus, panels, buttons, dialogs and notifications share one look and new fonts, and stay readable on every ocean color
+- the Conquest screen follows the ocean color like the other menus
+- the seasonal theme (like the Halloween look) can be switched on and off on the title screen and in settings
+- the sea looks more like a sea: shallow water and soft shadows around islands, glints and decals on the water
+- a new Graphics setting - pick Fast to trade fancy effects for better performance
+- the settings panel is reorganized into cards
+- right-click (or long-press) a unit you moved or bought this turn to undo just that unit
+- the numbers overlay (Q) is now the Spyglass: it also shows the coins in towns and chests, adjustable in Settings
+- the help pages got a fresh look in the game's fonts and the colors of your ocean theme
+- Import file... on the title screen opens maps, replays and exported progress, also on phones and tablets
+- maps and replays you export or share are up to 4× smaller; versions of the game before v2.36.11 can't open them
+- the province label warns you with exclamation mark when province is about to go bankrupt
+- rival faces on the power bar while you watch the AI play
+- tooltips show the hotkeys of buttons
+- the - and = keys zoom the map
+- units hop over longer distances in stead of sliding in straight line
+- on a browser too old to run the game, a message asks you to update it instead of the loading screen getting stuck
+- errors that stop the game from loading show your browser and link to Discord for help
+- the game shows a notice when your browser's storage is full and progress can't be saved, instead of failing silently
+- on phones, the "Enter Fullscreen" button can be dismissed with the × next to it (fullscreen stays available in Settings)
+- bugfix: restarting an imported or custom map on a different difficulty now remembers that difficulty
+- bugfix: rivals only surrender on maps you win by defeating them, not on maps like Easter Egg
+- bugfix: bunnies hop around at random instead of always fleeing in the same direction
+- bugfix: the start of your turn no longer freezes the game for seconds on maps with huge regions
+- bugfix: clicking an expedition portal on the map no longer sometimes starts a level in the expedition it leads to
+- bugfix: leaving Conquest while an island was still being generated could break the next screen
+- bugfix: the level introduction at the top of the screen no longer spills out of its panel
+- bugfix: theme effects like snow show up right away when you reload the game with that theme selected
+- AI bugfix: the AI is once again slightly less likely to accidentally bankrupt itself
+- AI bugfix: the AI's hearts and shocked faces at the end of a turn match more accurately how much its opinion of you really changed
+- AI bugfix: the AI judges how strong each faction is the same way at every point of the round
+
+---
+v2.36.11 <small>released 2026-10-23</small>
+- the game can now open maps and replays shared from newer versions of the game
+
+---
 v2.36.6 <small>released 2026-10-15</small>
 - bugfix: all factions showed up green on maps made with the newer test build of the game
 
