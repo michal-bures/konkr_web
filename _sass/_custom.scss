@@ -1,0 +1,25 @@
+// Two-column post section: text on the left, image on the right (stacks on phones)
+.feature-row {
+    display: flex;
+    gap: $spacing-unit;
+    align-items: flex-start;
+    margin-bottom: $spacing-unit;
+
+    > :first-child {
+        flex: 1;
+        min-width: 0;
+    }
+
+    > img {
+        width: 40%;
+        flex-shrink: 0;
+    }
+
+    @include media-query($on-palm) {
+        flex-direction: column;
+
+        > img {
+            width: 100%;
+        }
+    }
+}
