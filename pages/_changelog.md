@@ -1,6 +1,11 @@
 
 
 ---
+v2.37.1 <small>released 2026-10-27</small>
+- bugfix: switching the seasonal theme during a level no longer shifts the rulers' crowns and hats off their heads
+- bugfix: the Ghosts rule mode no longer has a help link that opened the Zombies page
+
+---
 v2.37.0 <small>released 2026-10-27</small>
 - Ghosts, a new Halloween rule mode for Conquest, on by default during Halloween
 - a big refresh of the whole UI: menus, panels, buttons, dialogs and notifications share one look and new fonts, and stay readable on every ocean color
