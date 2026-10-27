@@ -10,16 +10,18 @@
         min-width: 0;
     }
 
+    // native width, capped at 40% of the row (never stretched)
     > img {
-        width: 40%;
+        max-width: 40%;
         flex-shrink: 0;
+        border-radius: 12px;
     }
 
     @include media-query($on-palm) {
         flex-direction: column;
 
         > img {
-            width: 100%;
+            max-width: 100%;
         }
     }
 }
