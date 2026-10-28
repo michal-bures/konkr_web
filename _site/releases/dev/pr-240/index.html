@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+    <base href='/releases/dev/pr-240/'>
+    <meta charset='UTF-8'>
+    <meta name='description'
+          content='A free turn-based strategy game that runs in your browser. Expand your kingdom, build up your economy and crush your enemies!'>
+    <meta name='keywords'
+          content='konkr, konkr.io, game, strategy, turn-based, web game, online game, html5, fun, phaser'>
+    <meta
+        name='viewport'
+        content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover'
+    >
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+    <link rel='canonical' href='https://www.konkr.io/'>
+    <link rel='icon' type='image/png' sizes='16x16' href='./icons/channel-16.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='./icons/channel-32.png'>
+    <link rel='apple-touch-icon' href='./icons/regular-192.png'>
+    <link rel='manifest' href='./manifest.json'>
+
+    <meta name='theme-color' content='#9bd6f2'>
+
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='application-name' content='Konkr #240 feedback-email-reply-link'>
+    <meta name='apple-mobile-web-app-title' content='Konkr #240 feedback-email-reply-link'>
+
+    <meta name='msapplication-TileColor' content='#9bd6f2'>
+    <meta name='msapplication-starturl' content='./'>
+
+    <link rel='stylesheet' href='/css/main.css'>
+
+    <title>#240 feedback-email-reply-link · Konkr</title>
+    <style>html,body{background-color:#327da0;margin:0;font-family:Georgia,Arial,Trebuchet;overflow:hidden}h1{text-align:center;color:#161632;width:100%;margin:0 auto;font-size:2em;font-weight:400;position:fixed;top:calc(50vh + 120px);left:0}h2{text-align:center;color:#161632;width:100%;margin:0 auto;font-size:1em;font-style:italic;font-weight:400;position:fixed;top:calc(50% + 170px);left:0}.center-screen{text-align:center;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;display:flex}#phaser-game{pointer-events:auto;background-color:#327da0;position:fixed;top:0;bottom:0;left:0;right:0}.hidden{visibility:hidden}li{text-align:left}#status{color:#fff;margin:15px auto;font-size:1em;font-style:italic;font-weight:700;position:relative}#status a,#status a:visited{color:#fff}#status .fatal-error-help{font-size:.85em;font-weight:400}@media only screen and (max-width:890px){#news-box{visibility:hidden}}.lil-gui.autoPlace{left:0;right:auto}#file-drop-zone{background-color:#ffffff90;width:100%;height:100%;padding:40px;display:flex;position:fixed}#file-drop-zone>div{box-sizing:border-box;color:#3b5998;border:4px dashed #3b5998;flex-wrap:wrap;flex-grow:1;place-content:center;margin:20px;padding:20px;font-size:4rem;display:flex}#file-drop-zone *{pointer-events:none}#loader{color:#fff;box-sizing:border-box;border-radius:50%;width:10px;height:10px;margin:15px auto;animation:2s linear infinite shadowRolling;display:block;position:relative;left:-100px}@keyframes shadowRolling{0%{box-shadow:0 0 #fff0,0 0 #fff0,0 0 #fff0,0 0 #fff0}12%{box-shadow:100px 0 #fff,0 0 #fff0,0 0 #fff0,0 0 #fff0}25%{box-shadow:110px 0 #fff,100px 0 #fff,0 0 #fff0,0 0 #fff0}36%{box-shadow:120px index0 white, 110px 0 white, 100px 0 white, 0px 0 #fff0}50%{box-shadow:130px 0 #fff,120px 0 #fff,110px 0 #fff,100px 0 #fff}62%{box-shadow:200px 0 #fff0,130px 0 #fff,120px 0 #fff,110px 0 #fff}75%{box-shadow:200px 0 #fff0,200px 0 #fff0,130px 0 #fff,120px 0 #fff}87%{box-shadow:200px 0 #fff0,200px 0 #fff0,200px 0 #fff0,130px 0 #fff}to{box-shadow:200px 0 #fff0,200px 0 #fff0,200px 0 #fff0,200px 0 #fff0}}#news-box{text-align:left;color:#f2f2f2;width:400px;font-size:14px;transition:all .3s ease-in-out;position:absolute;bottom:40px;left:calc(50% - 200px)}#news-box article{background-color:#1e4b60;border-radius:14px 14px 0 0;padding:14px 14px 6px;line-height:1.3}#news-box footer{padding:14px}#news-box h3{margin-top:0;margin-bottom:8px;font-family:Helvetica,Arial,sans-serif;font-weight:700}#news-box article a{color:#73afff;text-decoration:none}#news-box article h3 a,#news-box article h3 a:visited,#news-box footer a,#news-box footer a:visited{color:#f2f2f2;text-decoration:none}#news-box p.build-info{color:#ccc;background-color:#0000004d;border-radius:6px;padding:6px 8px;font-family:monospace;font-size:13px}#news-box p.posted-at{color:#ccc;float:right;margin:4px 0 0;font-size:small}#news-box p{color:#f2f2f2;margin-bottom:8px}#news-box footer{box-sizing:content-box;height:15px;font-size:small}#news-box-button{color:#f2f2f2;background-color:#193e50;border-radius:6px;margin-left:auto;padding:6px 10px;font-size:small;font-weight:700;text-decoration:none;display:table}#footer-placeholder{background-color:#193e50;width:100%;height:83px;position:fixed;bottom:0}</style>
+  <script type="module" crossorigin src="./index-CfneHpfh.js"></script>
+  <link rel="modulepreload" crossorigin href="./rolldown-runtime-i1r7xZRf.js">
+  <link rel="modulepreload" crossorigin href="./vendors-yFV29jvn.js">
+</head>
+<body class='center-screen'>
+<div id='footer-placeholder'>
+</div>
+<span id='loader'></span>
+<article id='status'>
+    <noscript>Please enable javascript to play this game.</noscript>
+</article>
+
+<div id='phaser-game' class='hidden'></div>
+<!-- content the following div will substituted by jekyll when deployed to konkr_web -->
+<div id='news-box'>
+    <article id='news-box-body'>
+        {{ content }}
+    </article>
+    <footer>
+        <a href="/news" target="_blank">Blog</a> ·
+        <a href="https://discord.com/invite/C9HucB9arH" target="_blank">Discuss on Discord</a> ·
+        <a href="/changelog" target="_blank">Changelog</a>
+    </footer>
+</div>
+<div id='file-drop-zone' class='hidden'><div><span>+ IMPORT DATA</span></div></div>
+
+<script>
+    // ES5 on purpose, so it runs on browsers too old for the script below. The bundles are ES2021 (vite.config.mts),
+    // with core-js polyfills for newer built-ins; older browsers fail to parse them, so check the newest syntax they
+    // use (logical assignment: Chrome 85, Safari 14, Firefox 79) and tell the player instead of loading forever
+    window.konkrBrowserSupported = (function () {
+        try {
+            new Function('let a = null; a ??= 1; a ||= 2; a &&= 3; return 1_000')
+            return true
+        } catch (e) {
+            return false
+        }
+    })()
+    // here rather than in the script below, so the unsupported browser message can use it
+    window.showFatalError = function (message) {
+        document.getElementById('status').innerHTML = message + "<br/><br/><span class='fatal-error-help'>" +
+            'Your browser: ' + describeBrowser(navigator.userAgent) + '<br/>' +
+            "Still stuck? <a href='https://discord.gg/uAxWkPuP6A' target='_blank'>Ask on Discord</a></span>"
+        document.getElementById('loader').className = 'hidden'
+        document.getElementById('phaser-game').className = 'hidden'
+        // it would cover the help line on short screens, and its news don't matter when the game can't start
+        document.getElementById('news-box').style.display = 'none'
+    }
+
+    // players often can't tell, and it's the first thing to ask them; the whole user agent when it's none of these
+    function describeBrowser(userAgent) {
+        var browsers = [
+            ['Edge', /Edg(?:e|A|iOS)?\/(\d+)/],
+            ['Opera', /OPR\/(\d+)/],
+            ['Samsung Internet', /SamsungBrowser\/(\d+)/],
+            ['Firefox', /(?:Firefox|FxiOS)\/(\d+)/],
+            ['Chrome', /(?:Chrome|CriOS)\/(\d+)/],
+            ['Safari', /Version\/(\d+(?:\.\d+)?).*Safari/]
+        ]
+        // every iOS browser runs on the system's Safari, so the iOS version is what decides
+        var ios = /(?:iPhone|iPad|iPod).* OS (\d+)_(\d+)/.exec(userAgent)
+        var onIos = ios ? ' on iOS ' + ios[1] + '.' + ios[2] : ''
+        for (var i = 0; i < browsers.length; i++) {
+            var match = browsers[i][1].exec(userAgent)
+            if (match) return browsers[i][0] + ' ' + match[1] + onIos
+        }
+        return userAgent.replace(/</g, '&lt;')
+    }
+
+    if (!window.konkrBrowserSupported) {
+        showFatalError("Konkr can't run in this browser.<br/>Please update your browser, or try a recent Chrome, Firefox, Safari or Edge.")
+    }
+</script>
+<script>
+    const BUILD_NUMBER = '2.37.1-build-40646243488'
+    const BUILD_LABEL = '#240 feedback-email-reply-link'
+    const SW_ENABLE = true
+
+    // store current time for timing page load
+    window.tStart = performance.now()
+    const statusElement = document.getElementById('status')
+    const loaderElement = document.getElementById('loader')
+    const gameElement = document.getElementById('phaser-game')
+    window.setLoadingStatus = (status, isLoading) => {
+        statusElement.innerHTML = status
+        if (isLoading === false) {
+            loaderElement.classList.add('hidden')
+            if (!status) {
+                gameElement.classList.remove('hidden')
+            } else {
+                gameElement.classList.add('hidden')
+            }
+        } else {
+            loaderElement.classList.remove('hidden')
+            gameElement.classList.add('hidden')
+        }
+
+    }
+
+    // if news-box has no content, inject warning
+    const newsBox = document.getElementById('news-box-body')
+    if (newsBox?.innerText.startsWith('{{ ' + 'content }}')) {
+        newsBox.innerHTML = `<p><b>⚠ Warning:</b> Playing unsupported game version</p><p class='build-info'>${[BUILD_LABEL, BUILD_NUMBER].filter(Boolean).join('<br/>')}</p>
+                         <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
+                         Or don't, I'm not your boss, but proceed with caution.</p>`
+    }
+
+    // otherwise the script above shows why the game can't start
+    if (window.konkrBrowserSupported) {
+        setLoadingStatus('loading game...')
+        window.addEventListener('DOMContentLoaded', () => boot())
+    }
+
+    function supportsServiceWorker()  {
+        try {
+            return !!(window.localStorage && navigator.serviceWorker);
+        } catch (e) {
+            return false;
+        }
+    }
+
+    function startGame() {
+        // missing when the game's script failed to download or threw while loading
+        if (typeof window.launchGame !== 'function') {
+            console.error('window.launchGame is not defined, the game script failed to load')
+            showFatalError(`The game couldn't load.<br/>Check your connection and reload the page.`)
+            return
+        }
+        window.launchGame()
+    }
+
+    async function boot(safeMode = false) {
+        if (!safeMode && supportsServiceWorker()) {
+            try {
+                const cachedBuild = window.localStorage?.getItem('konkr.cached_build')
+                window.localStorage.setItem('konkr.cached_build', BUILD_NUMBER)
+                if (cachedBuild && cachedBuild !== BUILD_NUMBER) {
+                    setLoadingStatus('downloading update...')
+                    //new version detected => purge cache and any old service workers and reload
+                    console.warn(`New version is available! (installed = ${cachedBuild}, available = ${BUILD_NUMBER}), updating!`)
+                    window.caches?.keys()
+                        .then(cacheNames => {
+                            cacheNames.forEach(cacheName => {
+                                caches.delete(cacheName)
+                            })
+                        })
+                        .then(purgeServiceWorkers)
+                        .then(() => {
+                            window.location.reload()
+                        })
+                    return
+                } else {
+                    //version recognized, everything is most likely already cached by SW
+                    setLoadingStatus('loading game...')
+                    startGame()
+                }
+
+                navigator.serviceWorker.addEventListener('controllerchange', () => {
+                    //reload if new service worker takes control of running app
+                    console.info('new service worker activated')
+                })
+
+                if (SW_ENABLE) {
+                    navigator.serviceWorker.register('./sw.js', { scope: serviceWorkerScope() }).catch(err=> {
+                        console.error('Failed to register service worker', err)
+                    })
+                } else {
+                    await purgeServiceWorkers()
+                }
+            } catch (error) {
+                console.error('error updating game, restarting in safe mode')
+
+                try {
+                    await purgeServiceWorkers()
+                } catch(error) {
+                    console.error('failed to purge service workers')
+                }
+                await boot(true)
+            }
+
+        } else {
+            setLoadingStatus('loading game...')
+            startGame()
+        }
+    }
+
+    // the game's root, not the deep link the page was opened at (as routeRootPath() in src/services/appRoutes.ts)
+    function serviceWorkerScope() {
+        const basePath = new URL(document.baseURI).pathname
+        const { pathname } = window.location
+        return pathname.startsWith(basePath) || pathname + '/' === basePath ? basePath : '/'
+    }
+
+    function purgeServiceWorkers() {
+        return navigator.serviceWorker.getRegistrations()
+            .then(registrations => {
+                for (let registration of registrations) {
+                    registration.unregister()
+                }
+            })
+    }
+</script>
+<!-- module scripts are deferred: game.ts defines window.launchGame before DOMContentLoaded calls boot() -->
+
+</body>
+</html>
