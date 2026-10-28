@@ -1,0 +1,10 @@
+// Cloudflare Workers static assets: the built site, deployed by .github/workflows/deploy-cloudflare.yml
+{
+    "name": "konkr",
+    "compatibility_date": "2026-10-28",
+    "assets": {
+        "directory": "./_site",
+        // paths without a file get the root index.html, like the /* rule on Netlify
+        "not_found_handling": "single-page-application"
+    }
+}

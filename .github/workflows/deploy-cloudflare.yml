@@ -1,0 +1,56 @@
+name: Deploy to Cloudflare
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# a running deploy finishes, pushes made meanwhile collapse into one deploy of the newest commit
+concurrency:
+  group: deploy-cloudflare
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # the whole job, checkout included, comparable to Netlify's deploy time
+      - run: echo "DEPLOY_START=$(date +%s)" >> "$GITHUB_ENV"
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+      - run: bundle exec jekyll build
+      # Cloudflare serves privacy.html at /privacy and the root index.html at paths without a file on its own,
+      # and rewrites even where a file exists, so the Netlify catch-all would answer assets with the game page
+      - name: Drop the Netlify-only rules
+        run: |
+          sed -i -E '/^\/(privacy|\*)[[:space:]]/d' _site/_redirects
+          if grep -E '^\/(privacy|\*)[[:space:]]' _site/_redirects; then echo "Netlify-only rules left in _redirects"; exit 1; fi
+      - name: Deploy
+        # pinned: wrangler changes behaviour within a major (4.154 hands `pages` commands to Workers)
+        run: npx --yes wrangler@4.154.0 deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Notify Discord
+        if: success() || failure()
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_DEPLOY_WEBHOOK }}
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message || github.sha }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          if [ -z "$WEBHOOK" ]; then echo "DISCORD_DEPLOY_WEBHOOK is not set, skipping the deploy notification"; exit 0; fi
+          title=$(printf '%s' "$COMMIT_MESSAGE" | head -n 1)
+          if [ "$JOB_STATUS" = success ]; then
+            content="Deployed to Cloudflare in $(( $(date +%s) - DEPLOY_START )) s: $title"
+          else
+            content="❌ Cloudflare deploy failed: $title
+          > $RUN_URL"
+          fi
+          jq -n --arg content "$content" '{content: $content, allowed_mentions: {parse: []}}' |
+            curl --fail-with-body -sS -H 'Content-Type: application/json' -d @- "$WEBHOOK"

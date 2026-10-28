@@ -16,9 +16,10 @@ excerpt_separator: <!-- excerpt-end -->
 # Build settings
 markdown: kramdown
 highlighter: true
-# Netlify reads _redirects from the built site, and Jekyll skips files starting with _ unless included
+# Netlify and Cloudflare read _redirects and _headers from the built site, and Jekyll skips files starting with _ unless included
 include:
   - _redirects
+  - _headers
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -29,6 +30,7 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - netlify/
+  - wrangler.jsonc
   - vendor/gems/
   - vendor/ruby/-
   - releases/
