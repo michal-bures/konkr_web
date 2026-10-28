@@ -30,9 +30,11 @@ jobs:
         run: |
           sed -i -E '/^\/(privacy|\*)[[:space:]]/d' _site/_redirects
           if grep -E '^\/(privacy|\*)[[:space:]]' _site/_redirects; then echo "Netlify-only rules left in _redirects"; exit 1; fi
+      # bunx installs wrangler in a few seconds, npx took 13
+      - uses: oven-sh/setup-bun@v2
       - name: Deploy
         # pinned: wrangler changes behaviour within a major (4.154 hands `pages` commands to Workers)
-        run: npx --yes wrangler@4.154.0 deploy
+        run: bunx wrangler@4.154.0 deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
