@@ -31,9 +31,9 @@ Hand edits to `_includes/game.html` (e.g. the `display: none` on `#news-box`) ge
 - `_posts/`: blog posts. A post prefixed `HIDDEN_` doesn't match Jekyll's date-filename pattern, so it isn't published; that prefix is how drafts are kept. To publish, rename to `YYYY-MM-DD-slug.md` and make sure the front matter `date:` matches.
 - Excerpts are split with `<!-- excerpt-end -->`. The home page (`pages/index.html`) shows the newest post's excerpt in the game's news box.
 - `pages/`: about, how-to-play, news, changelog, privacy, level-stats, inspector, legacy.
-- `_redirects` (copied into the site via `include` in `_config.yml`): the `/v2/dev/*` redirect, and rewrites that serve the game page at the game's deep links (konkr2 `src/services/appRoutes.ts`: `/levels/<id>`, `/conquest`, ...) on the home page, releases and dev builds. A new game route needs its three rules here. Cloudflare rewrites even where a file exists, so no catch-all rules except the Netlify-only ones at the end
+- `_redirects` (copied into the site via `include` in `_config.yml`): the `/v2/dev/*` redirect, and rewrites that serve the game page at the game's deep links (konkr2 `src/services/appRoutes.ts`: `/levels/<id>`, `/conquest`, ...) on releases and dev builds. A new game route needs its two rules here; the home page's deep links get the root `index.html` from the fallback. Cloudflare rewrites even where a file exists, so no catch-all rules except the Netlify-only ones at the end
 - `_headers` (copied like `_redirects`): a CSP `frame-ancestors` allowlist for portals that embed the game (itch, Kongregate, Newgrounds, ...), and `Service-Worker-Allowed`. Add new embedding sites there.
 
 ## Hosting
 
-Netlify serves konkr.io. During the move to Cloudflare (konkr_design `plans/cloudflare-pages-hosting.md`), every push to `master` also deploys the site to a Cloudflare Worker with static assets (`wrangler.jsonc`, `.github/workflows/deploy-cloudflare.yml`), which drops the Netlify-only rules from `_redirects`.
+Netlify serves konkr.io. During the move to Cloudflare (konkr_design `plans/cloudflare-hosting.md`), every push to `master` also deploys the site to a Cloudflare Worker with static assets (`wrangler.jsonc`, `.github/workflows/deploy-cloudflare.yml`), which drops the Netlify-only rules from `_redirects`.

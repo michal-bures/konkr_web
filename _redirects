@@ -1,5 +1,5 @@
 /v2/dev/*                            /                        301
-# the game's deep links (konkr2 src/services/appRoutes.ts) open the game page of the home page, a release or a dev build.
+# the game's deep links (konkr2 src/services/appRoutes.ts) open the game page of a release or a dev build.
 # One rule per route: Cloudflare follows rewrites even where a file exists, so a catch-all would answer assets with the game page.
 # dev comes first, :version would match it too
 /releases/dev/:branch/expeditions    /releases/dev/:branch/   200
@@ -16,14 +16,7 @@
 /releases/:version/library           /releases/:version/      200
 /releases/:version/editor            /releases/:version/      200
 /releases/:version/quickload         /releases/:version/      200
-/expeditions                         /                        200
-/expeditions/*                       /                        200
-/levels/*                            /                        200
-/conquest                            /                        200
-/library                             /                        200
-/editor                              /                        200
-/quickload                           /                        200
 # Netlify only, the Cloudflare deploy drops these two lines (.github/workflows/deploy-cloudflare.yml): Cloudflare serves
-# privacy.html at /privacy and the root index.html at paths without a file on its own
+# privacy.html at /privacy and the root index.html at paths without a file on its own. Both serve the root's deep links that way
 /privacy                             /privacy.html            200
 /*                                   /index.html              200

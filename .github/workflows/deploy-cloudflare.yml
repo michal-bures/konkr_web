@@ -14,10 +14,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # the whole job, checkout included, comparable to Netlify's deploy time
+      - run: echo "DEPLOY_START=$(date +%s)" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-      - run: echo "DEPLOY_START=$(date +%s)" >> "$GITHUB_ENV"
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.4'
@@ -30,7 +31,8 @@ jobs:
           sed -i -E '/^\/(privacy|\*)[[:space:]]/d' _site/_redirects
           if grep -E '^\/(privacy|\*)[[:space:]]' _site/_redirects; then echo "Netlify-only rules left in _redirects"; exit 1; fi
       - name: Deploy
-        run: npx --yes wrangler@4 deploy
+        # pinned: wrangler changes behaviour within a major (4.154 hands `pages` commands to Workers)
+        run: npx --yes wrangler@4.154.0 deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
