@@ -7,12 +7,13 @@ exports.handler = async (event) => {
         return { statusCode: 200 }
     }
     const { payload } = JSON.parse(event.body)
+    const title = (payload.title || payload.commit_ref || payload.id).split('\n')[0]
     const seconds = payload.deploy_time ? ` in ${payload.deploy_time} s` : ''
     const response = await fetch(webhook, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            content: `Deployed${seconds}: ${payload.title || payload.commit_ref || payload.id}`,
+            content: `Deployed${seconds}: ${title}`,
             allowed_mentions: { parse: [] }
         })
     })
