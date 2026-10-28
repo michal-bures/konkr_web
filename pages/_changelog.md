@@ -1,6 +1,18 @@
 
 
 ---
+v2.37.2 <small>released 2026-10-28</small>
+- bugfix: undoing or rewinding right after ending your turn no longer lets you play the next rival's turn for it
+- bugfix: closing the game on the victory or defeat screen no longer brings you back into the finished island
+- bugfix: rewinding while a rival is thinking no longer leaves it looking stuck in thought
+- bugfix: the first tutorial no longer asks you to recruit a villager you can't afford after undoing a merge
+- bugfix: a long press or swipe on the Enter Fullscreen button no longer shows an error
+- bugfix: the warning on units that can't get paid names what they turn into on Zombies and Ghosts maps, not always bandits
+- bugfix: the spyglass no longer shows income for necromancers, who don't use gold
+- bugfix: on a shaky connection the game retries loading its maps, and says to check the connection when it still fails
+- the spyglass help no longer says holding Alt/Option only turns it on (it flips it either way)
+
+---
 v2.37.1 <small>released 2026-10-27</small>
 - bugfix: switching the seasonal theme during a level no longer shifts the rulers' crowns and hats off their heads
 - bugfix: the Ghosts rule mode no longer has a help link that opened the Zombies page
