@@ -15,7 +15,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # the whole job, checkout included, comparable to Netlify's deploy time
-      - run: echo "DEPLOY_START=$(date +%s)" >> "$GITHUB_ENV"
+      - id: start
+        run: |
+          echo "DEPLOY_START=$(date +%s)" >> "$GITHUB_ENV"
+          echo "day=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+      # The day's first run clones and saves .git, later runs fetch only the new commit into it. No fallback
+      # to an older day's cache, so the saved clone never piles up objects of builds deleted since
+      - uses: actions/cache@v4
+        with:
+          path: .git
+          key: konkr-web-git-${{ steps.start.outputs.day }}
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
