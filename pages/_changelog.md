@@ -1,6 +1,11 @@
 
 
 ---
+v2.37.3 <small>released 2026-10-28</small>
+- bugfix: automatic merging no longer moves a unit it just merged out of the way, and merges as close to the target as it can
+- bugfix: recruiting a unit onto a bandit now clears the ❗ warning on that tile, as moving a unit there does
+
+---
 v2.37.2 <small>released 2026-10-28</small>
 - bugfix: undoing or rewinding right after ending your turn no longer lets you play the next rival's turn for it
 - bugfix: closing the game on the victory or defeat screen no longer brings you back into the finished island
