@@ -1,6 +1,16 @@
 
 
 ---
+v2.37.4 <small>released 2026-10-29</small>
+- the game downloads about 30% less on your first visit
+- the loading screen and the phone browser toolbar now match your sea color
+- UI fixes for better legibility on light ocean backgrounds, especially for conquest screen
+- tweaks and bugfixes to the first tutorial level (more robustness, a little less overbearing hand-holding)
+- bugfix: the Conquest settings, the Spooky mode and difficulty pickers and the expedition island list are readable on light seas
+- bugfix: sound effects play the moment you click, not a tenth of a second later
+- bugfix: leaving an island after rewinding out of a defeat no longer loses the moves made since the rewind
+
+---
 v2.37.3 <small>released 2026-10-28</small>
 - bugfix: automatic merging no longer moves a unit it just merged out of the way, and merges as close to the target as it can
 - bugfix: recruiting a unit onto a bandit now clears the ❗ warning on that tile, as moving a unit there does
