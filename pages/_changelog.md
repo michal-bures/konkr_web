@@ -1,12 +1,16 @@
 
 
 ---
+v2.37.5 <small>released 2026-10-29</small>
+- bugfix: after scrolling the settings panel or the level menu, clicking the side tabs and menu buttons no longer hits the wrong one
+
+
+---
 v2.37.4 <small>released 2026-10-29</small>
 - the game downloads about 30% less on your first visit
 - the loading screen and the phone browser toolbar now match your sea color
 - UI fixes for better legibility on light ocean backgrounds, especially for conquest screen
 - tweaks and bugfixes to the first tutorial level (more robustness, a little less overbearing hand-holding)
-- bugfix: the Conquest settings, the Spooky mode and difficulty pickers and the expedition island list are readable on light seas
 - bugfix: sound effects play the moment you click, not a tenth of a second later
 - bugfix: leaving an island after rewinding out of a defeat no longer loses the moves made since the rewind
 
