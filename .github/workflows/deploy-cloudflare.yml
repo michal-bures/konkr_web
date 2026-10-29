@@ -51,17 +51,35 @@ jobs:
         if: success() || failure()
         env:
           WEBHOOK: ${{ secrets.DISCORD_DEPLOY_WEBHOOK }}
+          # Discord user ID to ping on releases; no ping when unset
+          PING_USER_ID: ${{ vars.DISCORD_PING_USER_ID }}
           COMMIT_MESSAGE: ${{ github.event.head_commit.message || github.sha }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           JOB_STATUS: ${{ job.status }}
         run: |
           if [ -z "$WEBHOOK" ]; then echo "DISCORD_DEPLOY_WEBHOOK is not set, skipping the deploy notification"; exit 0; fi
           title=$(printf '%s' "$COMMIT_MESSAGE" | head -n 1)
-          if [ "$JOB_STATUS" = success ]; then
-            content="Deployed to Cloudflare in $(( $(date +%s) - DEPLOY_START )) s: $title"
+          seconds=$(( $(date +%s) - DEPLOY_START ))
+          # konkr2's publish.yml titles release commits "release v<version>"
+          version=$(printf '%s' "$title" | sed -nE 's/^release (v[0-9.]+)$/\1/p')
+          if [ -n "$version" ]; then
+            mention=${PING_USER_ID:+<@$PING_USER_ID> }
+            if [ "$JOB_STATUS" = success ]; then
+              embed=$(jq -n --arg v "$version" --arg s "$seconds" \
+                '{title: "🚀 Konkr \($v) is live", url: "https://konkr.io", description: "Deployed to Cloudflare in \($s) s", color: 3066993}')
+            else
+              embed=$(jq -n --arg v "$version" --arg url "$RUN_URL" \
+                '{title: "❌ Konkr \($v) failed to deploy", url: $url, color: 15158332}')
+            fi
+            jq -n --arg content "${mention}" --arg id "$PING_USER_ID" --argjson embed "$embed" \
+              '{content: $content, embeds: [$embed], allowed_mentions: {parse: [], users: ([$id] - [""])}}' > payload.json
           else
-            content="❌ Cloudflare deploy failed: $title
+            if [ "$JOB_STATUS" = success ]; then
+              content="Deployed to Cloudflare in $seconds s: $title"
+            else
+              content="❌ Cloudflare deploy failed: $title
           > $RUN_URL"
+            fi
+            jq -n --arg content "$content" '{content: $content, allowed_mentions: {parse: []}}' > payload.json
           fi
-          jq -n --arg content "$content" '{content: $content, allowed_mentions: {parse: []}}' |
-            curl --fail-with-body -sS -H 'Content-Type: application/json' -d @- "$WEBHOOK"
+          curl --fail-with-body -sS -H 'Content-Type: application/json' -d @payload.json "$WEBHOOK"

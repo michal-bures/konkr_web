@@ -16,7 +16,7 @@ Setup notes (Arch/CachyOS, Ruby 3.4):
 
 ## Release pipeline (generated files, don't hand-edit)
 
-A GitHub Action in the game repo pushes "auto-publish dev build (branch X)" commits here. Each one updates:
+A GitHub Action in the game repo (`publish.yml`) pushes commits here titled `release v2.37.5`, `latest build (master)`, `test build (test-x)` or `preview of PR #N (branch)`. The title is also the Discord deploy notification; `deploy-cloudflare.yml` posts `release v…` ones as a card and pings the user in the `DISCORD_PING_USER_ID` repo variable. Each one updates:
 - `_site/releases/<version>/` or `_site/releases/<branch>/`: the built game (`latest`, `dev`, and `test-*` branches live here too)
 - `_includes/game.html`: game entry page, pointing `<base href>` at the current release; used by `_layouts/game.html` for the home page
 - `pages/_changelog.md`: gets the new release's changelog entry prepended
