@@ -1,6 +1,10 @@
 
 
 ---
+v2.37.6 <small>released 2026-10-29</small>
+- opening the game from an old bookmark no longer shows a "Page not found" warning
+
+---
 v2.37.5 <small>released 2026-10-29</small>
 - bugfix: after scrolling the settings panel or the level menu, clicking the side tabs and menu buttons no longer hits the wrong one
 
