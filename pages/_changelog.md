@@ -1,6 +1,12 @@
 
 
 ---
+v2.37.7 <small>released 2026-10-30</small>
+- bugfix: signing in with an email link works again
+- bugfix: Brave on iPhone and iPad no longer shows a "game failed to load" message while the game is loading
+
+
+---
 v2.37.6 <small>released 2026-10-29</small>
 - opening the game from an old bookmark no longer shows a "Page not found" warning
 
