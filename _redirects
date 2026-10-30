@@ -9,6 +9,7 @@
 /releases/dev/:branch/library        /releases/dev/:branch/   200
 /releases/dev/:branch/editor         /releases/dev/:branch/   200
 /releases/dev/:branch/quickload      /releases/dev/:branch/   200
+/releases/dev/:branch/storybook      /releases/dev/:branch/   200
 /releases/:version/expeditions       /releases/:version/      200
 /releases/:version/expeditions/*     /releases/:version/      200
 /releases/:version/levels/*          /releases/:version/      200
