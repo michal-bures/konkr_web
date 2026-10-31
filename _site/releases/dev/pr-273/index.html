@@ -52,9 +52,9 @@
             }
         })()
     </script>
-  <script type="module" crossorigin src="./index-lLplBNyH.js"></script>
-  <link rel="modulepreload" crossorigin href="./rolldown-runtime-Bypop5j0.js">
-  <link rel="modulepreload" crossorigin href="./vendors-N5xM-Dqm.js">
+  <script type="module" crossorigin src="./index-BCmXtw_C.js"></script>
+  <link rel="modulepreload" crossorigin href="./rolldown-runtime-hKkttATG.js">
+  <link rel="modulepreload" crossorigin href="./vendors-Zi9btosw.js">
 </head>
 <body class='center-screen'>
 <div id='footer-placeholder'>
@@ -126,7 +126,7 @@
     }
 </script>
 <script>
-    const BUILD_NUMBER = '2.37.7-build-41172487115'
+    const BUILD_NUMBER = '2.37.7-build-41174300332'
     const BUILD_LABEL = '#273 card-action-menu'
     const SW_ENABLE = true
 
@@ -192,13 +192,15 @@
                     setLoadingStatus('downloading update...')
                     //new version detected => purge cache and any old service workers and reload
                     console.warn(`New version is available! (installed = ${cachedBuild}, available = ${BUILD_NUMBER}), updating!`)
-                    window.caches?.keys()
+                    Promise.resolve(window.caches?.keys() ?? [])
                         .then(cacheNames => {
                             cacheNames.forEach(cacheName => {
                                 caches.delete(cacheName)
                             })
                         })
                         .then(purgeServiceWorkers)
+                        // e.g. a browser that blocks service workers: reload anyway, or the game never starts
+                        .catch(err => console.warn('failed to clear the previous version', err))
                         .then(() => {
                             window.location.reload()
                         })
