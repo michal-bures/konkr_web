@@ -1,6 +1,20 @@
 
 
 ---
+v2.37.8 <small>released 2026-10-31</small>
+- island intros and the text above text fields in dialogs now use the game's regular text font
+- Ghosts modifier no longer forces the halloween theme in map editor 
+- bugfix: the Continue panel on the title screen shows the name of a custom map instead of "Unknown Island"
+- bugfix: rivals' units no longer jump around on fast spectating speeds when they merge and then chase a retreating unit
+- bugfix: on phones, the tutorial now highlights the menu button and then the right button inside the menu when it asks you to replay, rewind or restart
+- bugfix: moving between Conquest and the title screen no longer flashes your own theme when both show the same level theme
+- bugfix: when the browser resets the game's graphics, e.g. coming back to the tab on a phone, the game reloads and continues where you left off instead of stopping with an error
+- bugfix: prevent rare crashes when restarting an island while rivals are thinking or double-tapping certain buttons
+- bugfix: a very narrow window no longer crashes the game
+- bugfix: a game file that fails to download now shows the "failed to load" message instead of crashing the game later
+- bugfix: after an update, the game no longer gets stuck on "downloading update..." in browsers that block service workers
+
+---
 v2.37.7 <small>released 2026-10-30</small>
 - bugfix: signing in with an email link works again
 - bugfix: Brave on iPhone and iPad no longer shows a "game failed to load" message while the game is loading

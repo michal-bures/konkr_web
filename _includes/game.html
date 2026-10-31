@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 
-    <base href='/releases/2.37.7/'>
+    <base href='/releases/2.37.8/'>
     <meta charset='UTF-8'>
     <meta name='description'
           content='A free turn-based strategy game that runs in your browser. Expand your kingdom, build up your economy and crush your enemies!'>
@@ -52,9 +52,9 @@
             }
         })()
     </script>
-  <script type="module" crossorigin src="./index-BOmqmySw.js"></script>
-  <link rel="modulepreload" crossorigin href="./rolldown-runtime-CLOWshPA.js">
-  <link rel="modulepreload" crossorigin href="./vendors-IbKNPkna.js">
+  <script type="module" crossorigin src="./index-Md6mrHoc.js"></script>
+  <link rel="modulepreload" crossorigin href="./rolldown-runtime-BuexoIZm.js">
+  <link rel="modulepreload" crossorigin href="./vendors-DN4vOZVJ.js">
 </head>
 <body class='center-screen'>
 <div id='footer-placeholder'>
@@ -126,7 +126,7 @@
     }
 </script>
 <script>
-    const BUILD_NUMBER = '2.37.7'
+    const BUILD_NUMBER = '2.37.8'
     const BUILD_LABEL = ''
     const SW_ENABLE = true
 
@@ -192,13 +192,15 @@
                     setLoadingStatus('downloading update...')
                     //new version detected => purge cache and any old service workers and reload
                     console.warn(`New version is available! (installed = ${cachedBuild}, available = ${BUILD_NUMBER}), updating!`)
-                    window.caches?.keys()
+                    Promise.resolve(window.caches?.keys() ?? [])
                         .then(cacheNames => {
                             cacheNames.forEach(cacheName => {
                                 caches.delete(cacheName)
                             })
                         })
                         .then(purgeServiceWorkers)
+                        // e.g. a browser that blocks service workers: reload anyway, or the game never starts
+                        .catch(err => console.warn('failed to clear the previous version', err))
                         .then(() => {
                             window.location.reload()
                         })
