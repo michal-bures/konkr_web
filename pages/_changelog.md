@@ -1,6 +1,12 @@
 
 
 ---
+v2.37.9 <small>released 2026-11-01</small>
+- a performance test mode for running benchmarks and sharing the results 
+- when the game can't use your graphics card, the error now suggests how to fix it
+- the "Read more" dialog of an island's intro is no longer taller than its text
+
+---
 v2.37.8 <small>released 2026-10-31</small>
 - island intros and the text above text fields in dialogs now use the game's regular text font
 - Ghosts modifier no longer forces the halloween theme in map editor 
@@ -13,6 +19,7 @@ v2.37.8 <small>released 2026-10-31</small>
 - bugfix: a very narrow window no longer crashes the game
 - bugfix: a game file that fails to download now shows the "failed to load" message instead of crashing the game later
 - bugfix: after an update, the game no longer gets stuck on "downloading update..." in browsers that block service workers
+- bugfix: watching the AI play or a replay could occasionally freeze
 
 ---
 v2.37.7 <small>released 2026-10-30</small>
