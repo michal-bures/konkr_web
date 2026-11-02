@@ -1,6 +1,16 @@
 
 
 ---
+v2.37.10 <small>released 2026-11-02</small>
+- graves in Spooky mode now explain in their tooltip what breaking them does
+- the ? button on the title screen opens the help panel, as on every other screen, instead of the "about" webpage
+- bugfix: on phones, the tutorial's highlight box no longer flashes and lags behind the buttons as the menu opens
+- bugfix: on phones, the menu button's background no longer stays behind in the corner while a unit is selected
+- bugfix: the side menu's X no longer needs two clicks, or a mouse move for the hand cursor, when the mouse hasn't moved since the menu opened
+- bugfix: the side menu's tab icons no longer shake while its content scrolls
+- bugfix: switching sidebar tabs after scrolling down no longer leaves a blank area at the bottom of the new tab
+
+---
 v2.37.9 <small>released 2026-11-01</small>
 - a performance test mode for running benchmarks and sharing the results 
 - when the game can't use your graphics card, the error now suggests how to fix it
