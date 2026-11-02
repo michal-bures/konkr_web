@@ -7,6 +7,8 @@
 /releases/dev/:branch/levels/*       /releases/dev/:branch/   200
 /releases/dev/:branch/conquest       /releases/dev/:branch/   200
 /releases/dev/:branch/library        /releases/dev/:branch/   200
+/releases/dev/:branch/my-realm      /releases/dev/:branch/   200
+/releases/dev/:branch/my-realm/*      /releases/dev/:branch/   200
 /releases/dev/:branch/editor         /releases/dev/:branch/   200
 /releases/dev/:branch/quickload      /releases/dev/:branch/   200
 /releases/dev/:branch/storybook      /releases/dev/:branch/   200
@@ -15,6 +17,8 @@
 /releases/:version/levels/*          /releases/:version/      200
 /releases/:version/conquest          /releases/:version/      200
 /releases/:version/library           /releases/:version/      200
+/releases/:version/my-realm         /releases/:version/      200
+/releases/:version/my-realm/*         /releases/:version/      200
 /releases/:version/editor            /releases/:version/      200
 /releases/:version/quickload         /releases/:version/      200
 # Netlify only, the Cloudflare deploy drops these two lines (.github/workflows/deploy-cloudflare.yml): Cloudflare serves
