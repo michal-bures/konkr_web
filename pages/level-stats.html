@@ -234,34 +234,10 @@ seo_frequency: monthly
         DOM.modes.error.innerText = message
     }
 
-    function getLocalResult() {
-        const { id } = QUERY_PARAMS
-        const userId = localStorage.getItem('konkr.userId') ?? localStorage.getItem('konkr.defaultUserId')
-        if (!userId) return undefined
-        console.log('userId', userId)
-        const userDataKey = `konkr.userData.v2.${userId}`
-        const rawUserData = localStorage.getItem(userDataKey)
-        console.log('rawUserData', rawUserData)
-        if (!rawUserData) return undefined
-
-        try {
-            const data = JSON.parse(rawUserData)
-            const bestResult = data.levels[id].won
-            console.log('best result', bestResult)
-            if (bestResult) {
-                return { difficulty: bestResult.difficulty ?? 'hard', turns: bestResult.turns}
-            }
-        } catch (error) {
-            console.error('Failed to parse user data', error)
-        }
-    }
-
     async function fetchData() {
 
-        const userData = getLocalResult()
-        const id = QUERY_PARAMS.id
-        const difficulty = QUERY_PARAMS.difficulty ?? userData?.difficulty
-        const turns = userData?.turns
+        // the game puts the player's best win into the link; turns is 0 without one
+        const {id, difficulty, turns} = QUERY_PARAMS
 
         setMode('loader')
 
