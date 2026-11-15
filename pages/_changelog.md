@@ -1,6 +1,19 @@
 
 
 ---
+v2.37.11 <small>released 2026-11-15</small>
+- the Muted theme (zombie islands) gets a gloomy look of its own with Fancy graphics: drifting mist, a light drizzle with drops hitting the sea, and darker screen edges
+- new "Ambient effects" setting: turns off the fog, rain, snow and other effects of themes while keeping their colors and costumes
+- the Halloween fog stays in place when the game pans to a new island, instead of flying along and snapping back
+- unit tooltips on the map stay hidden while you hold Shift
+- town ruins' tooltip is titled "Town Ruins" instead of the town's name
+- pinching zooms the map as far as your fingers spread
+- tooltips no longer show keyboard shortcuts when you play with touch
+- bugfix: on touch screens, swiping a scrolling list like the settings panel sometimes didn't scroll it, and a slightly shaky tap could scroll it
+- bugfix: an error during an animation no longer freezes the game
+- bugfix: tooltips near the edge of the screen no longer stick out of it when they expand
+
+---
 v2.37.10 <small>released 2026-11-02</small>
 - graves in Spooky mode now explain in their tooltip what breaking them does
 - the ? button on the title screen opens the help panel, as on every other screen, instead of the "about" webpage
