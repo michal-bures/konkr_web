@@ -4,7 +4,8 @@
     "compatibility_date": "2026-10-28",
     "assets": {
         "directory": "./_site",
-        // paths without a file get the root index.html, like the /* rule on Netlify
-        "not_found_handling": "single-page-application"
+        // paths without a file get 404.html with a 404 status: a missing script or image must fail, or a service worker
+        // caches the game page in its place. The game's deep links get their page from rewrites in _redirects
+        "not_found_handling": "404-page"
     }
 }
