@@ -1,6 +1,10 @@
 
 
 ---
+v2.37.12 <small>released 2026-11-19</small>
+- bugfix: in browsers that ask before allowing WebGL (e.g. LibreWolf), the game now starts as soon as you allow it
+
+---
 v2.37.11 <small>released 2026-11-15</small>
 - the Muted theme (zombie islands) gets a gloomy look of its own with Fancy graphics: drifting mist, a light drizzle with drops hitting the sea, and darker screen edges
 - new "Ambient effects" setting: turns off the fog, rain, snow and other effects of themes while keeping their colors and costumes
