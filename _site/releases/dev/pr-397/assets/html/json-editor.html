@@ -7,8 +7,26 @@
         height: 100%;
         background-color: #2F3129;
     }
-    #jsoneditor-editor {
+    #jsoneditor-main {
         flex-grow: 1;
+        position: relative;
+    }
+    #jsoneditor-editor {
+        height: 100%;
+    }
+    /* over the editor while the library downloads and the game state goes in */
+    #jsoneditor-loading {
+        display: none;
+        position: absolute;
+        inset: 0;
+        align-items: center;
+        justify-content: center;
+        background-color: #272822;
+        color: #8F908A;
+        font-size: 16px;
+    }
+    #jsoneditor-root.loading #jsoneditor-loading {
+        display: flex;
     }
     #jsoneditor-controls {
         padding: 8px;
@@ -187,7 +205,10 @@
 </style>
 
 <div id="jsoneditor-root">
-    <div id="jsoneditor-editor"></div>
+    <div id="jsoneditor-main">
+        <div id="jsoneditor-editor"></div>
+        <div id="jsoneditor-loading">Loading editor…</div>
+    </div>
     <div id="jsoneditor-controls">
         <div id='jsoneditor-status'></div>
         <button id='jsoneditor-cancel'>CANCEL</button>
