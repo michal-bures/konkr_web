@@ -52,9 +52,9 @@
             }
         })()
     </script>
-  <script type="module" crossorigin src="./index-BEqeDsvd.js"></script>
-  <link rel="modulepreload" crossorigin href="./rolldown-runtime-DOsu5KUr.js">
-  <link rel="modulepreload" crossorigin href="./vendors-CFK1KR-d.js">
+  <script type="module" crossorigin src="./index-CwyhSAwe.js"></script>
+  <link rel="modulepreload" crossorigin href="./rolldown-runtime-D6BAfoqp.js">
+  <link rel="modulepreload" crossorigin href="./vendors-CBFgBrcp.js">
 </head>
 <body class='center-screen'>
 <div id='footer-placeholder'>
@@ -126,7 +126,7 @@
     }
 </script>
 <script>
-    const BUILD_NUMBER = '2.37.10-build-42367318584'
+    const BUILD_NUMBER = '2.37.10-build-44887946356'
     const BUILD_LABEL = '#310 oddities'
     const SW_ENABLE = true
 
@@ -151,9 +151,9 @@
 
     }
 
-    // if news-box has no content, inject warning
+    // if news-box has no content, inject warning; textContent, as innerText skips the box while CSS hides it on narrow screens
     const newsBox = document.getElementById('news-box-body')
-    if (newsBox?.innerText.startsWith('{{ ' + 'content }}')) {
+    if (newsBox?.textContent.trim().startsWith('{{ ' + 'content }}')) {
         newsBox.innerHTML = `<p><b>⚠ Warning:</b> Playing unsupported game version</p><p class='build-info'>${[BUILD_LABEL, BUILD_NUMBER].filter(Boolean).join('<br/>')}</p>
                          <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
                          Or don't, I'm not your boss, but proceed with caution.</p>`
