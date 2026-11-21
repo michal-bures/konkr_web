@@ -1,6 +1,11 @@
 
 
 ---
+v2.37.13 <small>released 2026-11-21</small>
+- bugfix: a province that joins a larger unnamed one keeps its town's name instead of going blank
+- bugfix: the game no longer crashes when its window shrinks to a few pixels for a moment, e.g. while minimizing it
+
+---
 v2.37.12 <small>released 2026-11-19</small>
 - bugfix: in browsers that ask before allowing WebGL (e.g. LibreWolf), the game now starts as soon as you allow it
 
