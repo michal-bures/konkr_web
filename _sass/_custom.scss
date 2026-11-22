@@ -17,11 +17,32 @@
         border-radius: 12px;
     }
 
-    @include media-query($on-palm) {
+    // several images stacked in the image column, under the same cap
+    > .feature-images {
+        max-width: 40%;
+        flex-shrink: 0;
+        display: flex;
         flex-direction: column;
+        gap: $spacing-unit * 0.5;
 
         > img {
             max-width: 100%;
+            border-radius: 12px;
         }
     }
+
+    @include media-query($on-palm) {
+        flex-direction: column;
+
+        > img, > .feature-images {
+            max-width: 100%;
+        }
+    }
+}
+
+// small game sprites inside a line of text, as tall as the text
+img.inline-icon {
+    height: 1.4em;
+    vertical-align: -0.35em;
+    margin: 0 0.05em;
 }
