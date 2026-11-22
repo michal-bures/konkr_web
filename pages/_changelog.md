@@ -1,6 +1,35 @@
 
 
 ---
+v2.38.0 <small>released 2026-11-22</small>
+- My Realm: including map editor, chronicles, favourites, and more
+- Map Sharing: Share your islands by link and see how many players tried them, how they did on each difficulty, how many turns their wins took and how they rated them
+- Profile: name your realm and your ruler, and give it a coat of arms, your sign-in and data backup/deletion also lives there now
+- Intro Panel: islands open with a slim panel listing their special goals and rules, where you can switch the rivals' difficulty until you end your first turn
+- signing in now syncs your islands, favorites and game history too, not just your progress
+- if your sign-in is lost without you signing out, the game tells you and signs you back in with one click
+- export your whole profile (progress, islands, favorites, game history) to a file and import it back
+- news emails: sign in and opt in from Profile or the expeditions screen to hear when new expeditions or big features come out
+- phones: a new layout with a footer on every screen; its ☰ opens the drawer, which now lets phones sign in, see the sync status and back up their progress
+- phones: the play screen's buttons stand in two columns at the sides, with a speed button for the rivals' turns
+- phones: undo with nothing left to undo opens the rewind buttons, with your hearts above it
+- phones: a News button on the title screen shows the latest blog post, with a dot while there's news you haven't read
+- phones: various other small UI improvements
+- holding Shift and hovering a unit shows a + when you can upgrade it, and Shift-clicking upgrades it by merging your other units into it
+- phones: tap your province's town for Muster mode, where the next tap works like the Shift-click on desktop
+- the game menu shows your best win on the level beside its name, with a button to set/change the feedback given to the level
+- the game menu's buttons (favorite, stats, link, edit) sit under the level's name
+- leaving a level no longer pops up a request for feedback: a small box in the game menu and on the victory and defeat screens asks instead
+- simplified the title screen's Give me feedback! button
+- islands with gimmicks (bunnies, refuges, Always Retreat, Low Upkeep...) show those icons last, with a purple outline
+- level feature icons and the edit, fight, play and replay icons are redrawn and look sharp on high-resolution screens
+- screens slide and morph into each other more smoothly (fixed a number of missing transitions)
+- bugfix: fixed a typo in the Buy Towns modifier's description
+- bugfix: Escape, and back on phones, close dialogs again
+- bugfix: text fields in dialogs are ready for typing as soon as they open
+- bugfix: an error while switching screens no longer leaves the game stuck, ignoring every click
+
+---
 v2.37.14 <small>released 2026-11-22</small>
 - the settings have a new Privacy card, where you can turn off the usage statistics the game sends
 - bugfix: in Safari, letters that reach below the line, like the Q in "Conquest", are no longer cut off
