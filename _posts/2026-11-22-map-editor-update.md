@@ -17,7 +17,7 @@ It took a while, but **the Map Editor update is here!** Paint your own islands a
 ### 🏰 My Realm
 
 The new home for _your stuff_ in Konkr!
- - Make it truly yours with a custom coat of arms, name and ruler name. 
+ - Make it truly yours with a custom coat of arms and name. 
  - **My Islands** is where your own creations go.
  - **Chronicles** is what I call the drawer on the right side, which shows your recent play history - an easy way to revisit a previously played level or replay!
  - **Favorites** is where you can bookmark your favorite levels, be it expeditions, conquest or custom levels shared by other players. You can use the ☆ star button to add levels to your favorites from the level menu or victory screen.
