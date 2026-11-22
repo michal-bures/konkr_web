@@ -50,14 +50,18 @@ jobs:
       - name: Notify Discord
         if: success() || failure()
         env:
-          WEBHOOK: ${{ secrets.DISCORD_DEPLOY_WEBHOOK }}
+          # Two channels by severity: failures go to #alerts (notifications on), successful deploys
+          # to #notifications (muted).
+          ALERTS_WEBHOOK: ${{ secrets.DISCORD_ALERTS_WEBHOOK }}
+          NOTIFICATIONS_WEBHOOK: ${{ secrets.DISCORD_NOTIFICATIONS_WEBHOOK }}
           # Discord user ID to ping on releases; no ping when unset
           PING_USER_ID: ${{ vars.DISCORD_PING_USER_ID }}
           COMMIT_MESSAGE: ${{ github.event.head_commit.message || github.sha }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           JOB_STATUS: ${{ job.status }}
         run: |
-          if [ -z "$WEBHOOK" ]; then echo "DISCORD_DEPLOY_WEBHOOK is not set, skipping the deploy notification"; exit 0; fi
+          if [ "$JOB_STATUS" = success ]; then WEBHOOK=$NOTIFICATIONS_WEBHOOK; else WEBHOOK=$ALERTS_WEBHOOK; fi
+          if [ -z "$WEBHOOK" ]; then echo "No Discord webhook is set for a deploy that ended in $JOB_STATUS, skipping the notification"; exit 0; fi
           title=$(printf '%s' "$COMMIT_MESSAGE" | head -n 1)
           seconds=$(( $(date +%s) - DEPLOY_START ))
           # konkr2's publish.yml titles release commits "release v<version>"
