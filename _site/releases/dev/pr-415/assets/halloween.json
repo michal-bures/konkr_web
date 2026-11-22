@@ -1,0 +1,270 @@
+{
+	"textures": [
+		{
+			"image": "halloween.webp",
+			"format": "RGBA8888",
+			"size": {
+				"w": 171,
+				"h": 182
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "attitude-emoji/crown",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 40,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 36
+					},
+					"frame": {
+						"x": 83,
+						"y": 109,
+						"w": 40,
+						"h": 36
+					}
+				},
+				{
+					"filename": "logos/game-icon",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 65,
+						"h": 82
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 65,
+						"h": 82
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 65,
+						"h": 82
+					}
+				},
+				{
+					"filename": "pawns/chest",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 37,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 37,
+						"h": 31
+					},
+					"frame": {
+						"x": 61,
+						"y": 147,
+						"w": 37,
+						"h": 31
+					}
+				},
+				{
+					"filename": "pawns/hero",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 44
+					},
+					"frame": {
+						"x": 136,
+						"y": 1,
+						"w": 34,
+						"h": 44
+					}
+				},
+				{
+					"filename": "pawns/knight",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 44
+					},
+					"frame": {
+						"x": 136,
+						"y": 47,
+						"w": 32,
+						"h": 44
+					}
+				},
+				{
+					"filename": "pawns/pikeman",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 40,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 44
+					},
+					"frame": {
+						"x": 83,
+						"y": 63,
+						"w": 40,
+						"h": 44
+					}
+				},
+				{
+					"filename": "pawns/rabbit",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 27,
+						"y": 147,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "pawns/town-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 34
+					},
+					"frame": {
+						"x": 1,
+						"y": 147,
+						"w": 24,
+						"h": 34
+					}
+				},
+				{
+					"filename": "pawns/town-2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 30,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 30,
+						"h": 50
+					},
+					"frame": {
+						"x": 51,
+						"y": 85,
+						"w": 30,
+						"h": 50
+					}
+				},
+				{
+					"filename": "pawns/town-3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 60
+					},
+					"frame": {
+						"x": 1,
+						"y": 85,
+						"w": 48,
+						"h": 60
+					}
+				},
+				{
+					"filename": "pawns/town-4",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 66,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 66,
+						"h": 60
+					},
+					"frame": {
+						"x": 68,
+						"y": 1,
+						"w": 66,
+						"h": 60
+					}
+				},
+				{
+					"filename": "pawns/villager",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 38
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 38
+					},
+					"frame": {
+						"x": 125,
+						"y": 93,
+						"w": 32,
+						"h": 38
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "dev-tools/pack-atlas.ts"
+	}
+}
