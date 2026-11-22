@@ -12,6 +12,8 @@ konkr_data_url: https://michal-bures.github.io/konkr_data
 
 linkedin_url: "https://www.linkedin.com/in/michal-bures"
 excerpt_separator: <!-- excerpt-end -->
+# Posts are served without .html, as Netlify's Pretty URLs used to rewrite their links
+permalink: /:categories/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
