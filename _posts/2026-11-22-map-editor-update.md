@@ -59,7 +59,7 @@ but might add some dedicated help pages if needed.
 
 ### 🔗 Sharing islands
 Go to the **Sharing** tab in the map editor to share your creations with other players through a simple link. 
-For example, here's Afar, a shared island I made for you to celebrate the feature: https://www.konkr.io/levels/cl-oBOwncfO  
+For example, here's [Afar](https://www.konkr.io/levels/cl-oBOwncfO), a shared island I made for you to celebrate the feature!  
 
 After you've shared your island, you can also see how many players played it, how many managed to beat it and their feedback ratings on the classic <img class="inline-icon" src="/img/blog/mood-1.png" alt="angry"/><img class="inline-icon" src="/img/blog/mood-2.png" alt="grumpy"/><img class="inline-icon" src="/img/blog/mood-3.png" alt="meh"/><img class="inline-icon" src="/img/blog/mood-4.png" alt="happy"/><img class="inline-icon" src="/img/blog/mood-5.png" alt="delighted"/> scale.
 
