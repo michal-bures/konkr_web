@@ -104,7 +104,7 @@ More upgrades are coming to make the Konkr experience on phones truly equal to t
 
 ### 📬 The Konkr Newsletter
 
-Want to hear about the next big update without checking the blog? Konkr now has a newsletter. Don't worry, it won't be every blog post: I've capped myself at 4 emails a year, for the big stuff only, like new expeditions or features as big as this one.
+Want to hear about the next big update without checking the blog? Konkr now has a newsletter. Don't worry, it won't be every blog post: I've capped myself at 4 emails a year, reserved for truly major news.
 
 If you're signed in, subscribing is one click on your Profile page. A sign-up option for players without an account will come later.
 
