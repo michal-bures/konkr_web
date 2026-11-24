@@ -1,6 +1,12 @@
 
 
 ---
+v2.38.3 <small>released 2026-11-24</small>
+- map editor: pressing X or C again switches back to the tool you had before, as Tab already did
+- bugfix: leaving a game for another island no longer warns that it wasn't kept when it was
+- bugfix: the game no longer crashes when you close the province income panel during the first tutorial
+
+---
 v2.38.0 <small>released 2026-11-22</small>
 - My Realm: including map editor, chronicles, favourites, and more
 - Map Sharing: Share your islands by link and see how many players tried them, how they did on each difficulty, how many turns their wins took and how they rated them
