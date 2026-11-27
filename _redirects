@@ -5,6 +5,7 @@
 /releases/dev/:branch/expeditions    /releases/dev/:branch/   200
 /releases/dev/:branch/expeditions/*  /releases/dev/:branch/   200
 /releases/dev/:branch/levels/*       /releases/dev/:branch/   200
+/releases/dev/:branch/replays/*      /releases/dev/:branch/   200
 /releases/dev/:branch/conquest       /releases/dev/:branch/   200
 /releases/dev/:branch/library        /releases/dev/:branch/   200
 /releases/dev/:branch/my-realm      /releases/dev/:branch/   200
@@ -15,6 +16,7 @@
 /releases/:version/expeditions       /releases/:version/      200
 /releases/:version/expeditions/*     /releases/:version/      200
 /releases/:version/levels/*          /releases/:version/      200
+/releases/:version/replays/*         /releases/:version/      200
 /releases/:version/conquest          /releases/:version/      200
 /releases/:version/library           /releases/:version/      200
 /releases/:version/my-realm         /releases/:version/      200
@@ -24,6 +26,7 @@
 /expeditions                         /                        200
 /expeditions/*                       /                        200
 /levels/*                            /                        200
+/replays/*                           /                        200
 /conquest                            /                        200
 /library                             /                        200
 /my-realm                            /                        200
