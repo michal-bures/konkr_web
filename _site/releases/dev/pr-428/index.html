@@ -4,6 +4,27 @@
 
     <base href='/releases/dev/pr-428/'>
     <meta charset='UTF-8'>
+    <script>
+        // ?noLocalStorage and ?noIndexedDB take storage away before anything else runs, as blocked site data and some
+        // private modes and embedded frames do (docs/dev/debugging.md). Not in releases. ES5, like the browser check
+        (function () {
+            if ('pr' === 'production') return
+            // names in any case, like urlParams() in src/config/urlFlags.ts
+            var params = {}
+            new URLSearchParams(window.location.search).forEach(function (value, name) { params[name.toLowerCase()] = value })
+            if ('nolocalstorage' in params) {
+                Object.defineProperty(window, 'localStorage', {
+                    configurable: true,
+                    get: function () { throw new DOMException('Access is denied for this document.', 'SecurityError') }
+                })
+                console.warn('?noLocalStorage: localStorage throws a SecurityError')
+            }
+            if ('noindexeddb' in params) {
+                Object.defineProperty(window, 'indexedDB', { configurable: true, value: undefined })
+                console.warn('?noIndexedDB: there is no indexedDB')
+            }
+        })()
+    </script>
     <meta name='description'
           content='A free turn-based strategy game that runs in your browser. Expand your kingdom, build up your economy and crush your enemies!'>
     <meta name='keywords'
@@ -52,9 +73,9 @@
             }
         })()
     </script>
-  <script type="module" crossorigin src="./index-Cfb3RClI.js"></script>
-  <link rel="modulepreload" crossorigin href="./rolldown-runtime-D9usUuTL.js">
-  <link rel="modulepreload" crossorigin href="./vendors-Sul6vpbP.js">
+  <script type="module" crossorigin src="./index-CJibRRld.js"></script>
+  <link rel="modulepreload" crossorigin href="./rolldown-runtime-oObOxWek.js">
+  <link rel="modulepreload" crossorigin href="./vendors-6cxTROwJ.js">
 </head>
 <body class='center-screen'>
 <div id='footer-placeholder'>
@@ -126,7 +147,7 @@
     }
 </script>
 <script>
-    const BUILD_NUMBER = '2.37.15-build-45042349771'
+    const BUILD_NUMBER = '2.38.3-build-45954945100'
     const BUILD_LABEL = '#428 drop-beta-converter'
     const SW_ENABLE = true
 
