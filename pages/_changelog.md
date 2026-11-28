@@ -1,6 +1,11 @@
 
 
 ---
+v2.38.4 <small>released 2026-11-28</small>
+- bugfix: quick Shift-clicks (or Muster taps) on a tile no longer upgrade the unit you just bought there before it has arrived
+- bugfix: on iPhones and iPads, the game keeps saving your islands and games after you come back to its tab
+
+---
 v2.38.3 <small>released 2026-11-24</small>
 - map editor: pressing X or C again switches back to the tool you had before, as Tab already did
 - bugfix: leaving a game for another island no longer warns that it wasn't kept when it was
